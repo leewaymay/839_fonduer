@@ -32,6 +32,12 @@ For OS X using [homebrew](https://brew.sh):
 brew install poppler
 brew install postgresql
 ```
+>>> note start running postgresql after installation
+
+>>>For macOS, to have launch start postgresql now and restart at login:
+  ```brew services start postgresql```. Or, if you don't want/need a background service you can just run:
+  ```pg_ctl -D /usr/local/var/postgres start```.
+  
 
 On Debian-based distros:
 
@@ -40,22 +46,20 @@ sudo apt-get install poppler-utils
 sudo apt-get install postgresql
 ```
 
-For the Python dependencies, we recommend using a
-[virtualenv](https://virtualenv.pypa.io/en/stable/). Once you have cloned the
-repository, change directories to the root of the repository and run
+For the Python dependencies, we recommend using a Conda Virtual environment
 
 ```bash
-virtualenv -p python3 .venv
+conda create -n fonduer python
 ```
 
 Once the virtual environment is created, activate it by running
 
 ```bash
-source .venv/bin/activate
+source activate fonduer
 ```
 
 Any Python libraries installed will now be contained within this virtual
-environment. To deactivate the environment, simply run `deactivate`.
+environment. To deactivate the environment, simply run `source deactivate`.
 
 `Fonduer` adds some additional python packages to the default Snorkel
 installation which can be installed using `pip`:
