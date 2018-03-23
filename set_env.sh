@@ -1,0 +1,5 @@
+export FONDUERHOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo "Fonduer home directory: $FONDUERHOME"
+export PYTHONPATH="$PYTHONPATH:$FONDUERHOME"
+echo "Using PYTHONPATH=${PYTHONPATH}"
+echo "Environment variables set!"
