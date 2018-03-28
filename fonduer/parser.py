@@ -13,7 +13,7 @@ from lxml import etree
 from lxml.html import fromstring
 from pprint import pformat
 
-from fonduer.models import Table, Cell, Figure, Phrase
+from fonduer.models import Table, Cell, Figure, Phrase, DetailedFigure
 from fonduer.visual import VisualLinker
 from fonduer.snorkel.models import (Candidate, Context, Document,
                                     construct_stable_id, split_stable_id)
@@ -221,10 +221,10 @@ class OmniParserUDF(UDF):
         self.contents = ""
         block_lengths = []
         self.parent = document
-
-        figure_info = FigureInfo(document, parent=document)
+        ## Added by Wei Li (wli284@wisc.edu)
+        #figure_info = FigureInfo(document, parent=document)
+        figure_info = DetailedFigureInfo(document, parent=document)
         self.figure_idx = -1
-
         if self.tabular:
             table_info = TableInfo(document, parent=document)
             self.table_idx = -1
@@ -242,7 +242,6 @@ class OmniParserUDF(UDF):
                 return
             if self.blacklist and node.tag in self.blacklist:
                 return
-
             self.figure_idx = figure_info.enter_figure(node, self.figure_idx)
 
             if self.tabular:
@@ -304,11 +303,11 @@ class OmniParserUDF(UDF):
                         child,
                         TableInfo(document=table_info.document),
                         figure_info)
-                elif child.tag == 'img':
-                    yield from parse_node(
-                        child,
-                        table_info,
-                        FigureInfo(document=figure_info.document))
+                # elif child.tag == 'img':
+                #     yield from parse_node(
+                #         child,
+                #         table_info,
+                #         FigureInfo(document=figure_info.document))
                 else:
                     yield from parse_node(child, table_info, figure_info)
 
@@ -448,5 +447,52 @@ class FigureInfo(object):
 
     def exit_figure(self, node):
         if node.tag == "img":
+            self.figure = None
+            self.parent = self.document
+
+
+class DetailedFigureInfo(object):
+    """Detailed figure info node added by Wei Li (wli284@wisc.edu)"""
+    def __init__(self, document, figure=None, parent=None):
+        self.document = document
+        self.figure = figure
+        self.parent = parent
+
+    def enter_figure(self, node, figure_idx):
+        if node.tag == "div" and 'class' in node.attrib and node.attrib['class']=='image_table':
+            figure_idx += 1
+            stable_id = "%s::%s:%s:%s" % \
+                (self.document.name, "figure", figure_idx, figure_idx)
+            figure_src = ''
+            figure_description = ''
+            figure_name = ''
+            found_source = 0
+            for element in node.iter():
+                if element.tag == 'img' and 'src' in element.attrib:
+                    figure_src = element.attrib['src']
+                    found_source += 1
+                if element.tag == 'span' and 'class' in element.attrib and element.attrib['class'] == 'graphic_title':
+                    figure_description = element.text
+                    found_source += 1
+                if element.tag == 'td' and 'class' in element.attrib and element.attrib['class'] == 'image_title':
+                    for child in element:
+                        if child.tag == 'b':
+                            figure_name = child.text
+                            found_source += 1
+                            break
+                if found_source == 3:
+                    break
+            self.figure = DetailedFigure(
+                document=self.document,
+                stable_id=stable_id,
+                position=figure_idx,
+                url=figure_src,
+                description = figure_description,
+                name = figure_name)
+            self.parent = self.figure
+        return figure_idx
+
+    def exit_figure(self, node):
+        if node.tag == "div" and 'class' in node.attrib and node.attrib['class']=='image_table':
             self.figure = None
             self.parent = self.document

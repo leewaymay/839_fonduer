@@ -66,6 +66,34 @@ class Table(Context):
         return self.__repr__() > other.__repr__()
 
 
+class DetailedFigure(Context):
+    """A Detailed figure Context in a Document. Added by Wei Li (wli284@wisc.edu)"""
+    __tablename__ = 'detailed_figure'
+    id            = Column(Integer, ForeignKey('context.id', ondelete='CASCADE'), primary_key=True)
+    document_id   = Column(Integer, ForeignKey('document.id', ondelete='CASCADE'))
+    position      = Column(Integer, nullable=False)
+    document      = relationship('Document', backref=backref('detailed_figures', order_by=position, cascade='all, delete-orphan'), foreign_keys=document_id)
+    url = Column(String)
+    description = Column(String)
+    name = Column(String)
+
+
+    __mapper_args__ = {
+        'polymorphic_identity': 'figure',
+    }
+
+    __table_args__ = (
+        UniqueConstraint(document_id, position),
+    )
+
+    def __repr__(self):
+        return "Detailed Figure(Doc: %s, Position: %s, Url: %s, Figure_description: %s)" % (self.document.name.encode('utf-8'), self.position, self.url, self.description)
+
+    def __gt__(self, other):
+        # Allow sorting by comparing the string representations of each
+        return self.__repr__() > other.__repr__()
+
+
 class Figure(Context):
     """A figure Context in a Document."""
     __tablename__ = 'figure'
@@ -76,7 +104,7 @@ class Figure(Context):
     url = Column(String)
 
     __mapper_args__ = {
-        'polymorphic_identity': 'figure',
+        'polymorphic_identity': 'detail_figure',
     }
 
     __table_args__ = (
