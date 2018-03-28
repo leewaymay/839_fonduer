@@ -78,6 +78,7 @@ class OmniParser(UDFRunner):
             structural=True,  # structural information
             blacklist=["style"],  # ignore tag types, default: style
             flatten=['span', 'br'],  # flatten tag types, default: span, br
+            ignore=[], # ignore style class like italic, bold.
             flatten_delim='',
             lingual=True,  # lingual information
             strip=True,
@@ -96,6 +97,7 @@ class OmniParser(UDFRunner):
             OmniParserUDF,
             structural=structural,
             blacklist=blacklist,
+            ignore=ignore,
             flatten=flatten,
             flatten_delim=flatten_delim,
             lingual=lingual,
@@ -118,6 +120,7 @@ class OmniParserUDF(UDF):
             self,
             structural,  # structural
             blacklist,
+            ignore,
             flatten,
             flatten_delim,
             lingual,  # lingual
@@ -144,6 +147,7 @@ class OmniParserUDF(UDF):
         self.structural = structural
         self.blacklist = blacklist if isinstance(blacklist,
                                                  list) else [blacklist]
+        self.ignore = ignore
         self.flatten = flatten if isinstance(flatten, list) else [flatten]
         self.flatten_delim = flatten_delim
 
@@ -194,28 +198,24 @@ class OmniParserUDF(UDF):
                 yield phrase
 
     def _flatten(self, node):
-        # if a child of this node is in self.flatten, construct a string
-        # containing all text/tail results of the tree based on that child
-        # and append that to the tail of the previous child or head of node
-        num_children = len(node)
-        for i, child in enumerate(node[::-1]):
-            if child.tag in self.flatten:
-                j = num_children - 1 - i  # child index walking backwards
-                contents = ['']
-                for descendant in child.getiterator():
-                    if descendant.text and descendant.text.strip():
-                        contents.append(descendant.text)
-                    if descendant.tail and descendant.tail.strip():
-                        contents.append(descendant.tail)
-                if j == 0:
-                    if node.text is None:
-                        node.text = ''
-                    node.text += self.flatten_delim.join(contents)
-                else:
-                    if node[j - 1].tail is None:
-                        node[j - 1].tail = ''
-                    node[j - 1].tail += self.flatten_delim.join(contents)
+        contents = ['']
+        for child in node[::-1]:
+            if child.tag in self.flatten or child.tag == 'span' and child.attrib.get('class') in self.ignore:  # zhewen
+                texts = []
+                tails = []
+                for descendant in child.iter():
+                    if descendant.tag == 'span' and descendant.attrib.get('class') == 'sup_ref':  # zhewen
+                        continue
+                    texts.append(descendant.text if descendant.text else '')
+                    tails.append(descendant.tail if descendant.tail else '')
+                contents.append(''.join(texts) + ''.join(tails[::-1]))
                 node.remove(child)
+        string = ''.join(contents[::-1])
+        if string:
+            if node.text:
+                node.text += ''.join(contents[::-1])
+            else:
+                node.text = ''.join(contents[::-1])
 
     def parse_structure(self, document, text):
         self.contents = ""
