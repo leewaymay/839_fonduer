@@ -1,0 +1,4 @@
+.idea/
+__pycache__
+project_data
+debug_*.py
