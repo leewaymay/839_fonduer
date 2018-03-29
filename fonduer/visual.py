@@ -33,6 +33,7 @@ class VisualLinker(object):
         self.html_word_list = None
         self.links = None
         self.pdf_dim = None
+        self.html_pdf_dim_ratio = None
         delimiters = u"([\(\)\,\?\u2212\u201C\u201D\u2018\u2019\u00B0\*\']|(?<!http):|\.$|\.\.\.)"
         self.separators = re.compile(delimiters)
 
@@ -43,39 +44,34 @@ class VisualLinker(object):
         if not os.path.isfile(self.pdf_file):
             self.pdf_file = self.pdf_file[:-3] + "PDF"
         try:
-            self.extract_pdf_image()
-            self.extract_pdf_words()
+            self.extract_pdf_image_words()
+            #self.extract_pdf_words()
         except RuntimeError as e:
             print('WARNING: no image or words found in pdf!')
             return
         self.extract_html_words()
-        self.extract_html_images()
+
         self.link_lists(search_max=200)
         for phrase in self.update_coordinates():
             yield phrase
+        for figure in self.update_html_images():
+            yield figure
 
     #
-    def help_OCR(self, img_list, coordinate_map):
-        img_ocr_list = {}
-        for img in img_list:
-            img_str = img.string
-            cap = re.search('((Fig)|(Scheme)|(Figure))\s*\.?\s*\d+', img_str).group()
-            cap = cap.replace(" ", "")
-            if cap in coordinate_map:
-                src_img = coordinate_map.get(cap)
-                path = "./" + src_img.get('src')
-                try:
-                    img = Image.open(path)
-
-                except:
-                    print("OCR: Image not found!")
+    def help_OCR(self):
+        img_ocr_dict = {}
+        for cap, src_img in self.coordinate_image_map.items():
+            path = "./" + src_img.get('src')
+            try:
+                img = Image.open(path)
                 ocr_text = pytesseract.image_to_string(img, lang='eng')
-                img_ocr_list.update({cap : ocr_text})
+                img_ocr_dict.update({cap: ocr_text})
+            except:
+                print("OCR: Image not found!")
+        return img_ocr_dict
 
-        return img_ocr_list
 
-
-    def extract_pdf_image(self):
+    def extract_pdf_image_words(self):
         num_pages = subprocess.check_output(
             "pdfinfo '{}' | grep -a Pages | sed 's/[^0-9]*//'".format(
                 self.pdf_file),
@@ -119,7 +115,7 @@ class VisualLinker(object):
         self.coordinate_image_map = coordinate_image_map
 
         # Xiuyuan He
-        self.OCR_list = self.help_OCR(pdf_image_list, coordinate_image_map)
+        self.OCR_dict = self.help_OCR()
 
         if len(self.pdf_word_list) == 0:
             raise RuntimeError(
@@ -128,9 +124,12 @@ class VisualLinker(object):
             raise RuntimeError(
                 "Images could not be extracted from PDF: %s" % self.pdf_file)
         # take last page dimensions
-        page_width, page_height = int(float(pages[0].get('width'))), int(
-            float(pages[0].get('height')))
+        page_width, page_height = int(float(w_pages[0].get('width'))), int(
+            float(w_pages[0].get('height')))
+        html_page_width_ratio, html_page_height_ratio = float(w_pages[0].get('width'))/float(pages[0].get('width')), \
+                                                        float(w_pages[0].get('height'))/float(pages[0].get('height'))
         self.pdf_dim = (page_width, page_height)
+        self.html_pdf_dim_ratio = (html_page_width_ratio, html_page_height_ratio)
         if self.verbose:
             print("Extracted %d pdf words" % len(self.pdf_word_list))
         if self.verbose:
@@ -155,6 +154,7 @@ class VisualLinker(object):
             found = None
             for fig_name, coord_dict in coordinate_caption_map.items():
                 if self.help_match(candidate.attrs, coord_dict, page):
+                    candidate.attrs['page_num'] = page_num
                     coordinate_image_map[fig_name] = candidate.attrs
                     found = fig_name
                     image_list.append(fig_name)
@@ -169,7 +169,6 @@ class VisualLinker(object):
     def help_match(self, dict1, dict2, page):
         return abs(float(dict1['top'])+float(dict1['height']) - float(dict2['top'])) < float(page.get('height'))/10 and \
             abs(float(dict1['left']) - float(dict2['left'])) < float(page.get('width'))/5
-
 
     def extract_pdf_words(self):
         num_pages = subprocess.check_output(
@@ -245,8 +244,20 @@ class VisualLinker(object):
         if self.verbose:
             print("Extracted %d html words" % len(self.html_word_list))
 
-    def extract_html_images(self):
-        pass
+    def update_html_images(self):
+        for figure in self.figures:
+            figure_name = figure.name.replace(' ', '')
+            src_img = self.coordinate_image_map.get(figure_name)
+            figure.top = int(float(src_img.get('top'))*self.html_pdf_dim_ratio[1])
+            figure.bottom = int((float(src_img.get('top')) + float(src_img.get('height')))*self.html_pdf_dim_ratio[1])
+            figure.left = int(float(src_img.get('left'))*self.html_pdf_dim_ratio[0])
+            figure.right = int((float(src_img.get('left')) + float(src_img.get('width')))*self.html_pdf_dim_ratio[0])
+            figure.text = self.OCR_dict.get(figure_name)
+            figure.page = src_img.get('page_num')
+            yield figure
+
+        if self.verbose:
+            print("Updated coordinates in database")
 
 
     def link_lists(self, search_max=100, edit_cost=20, offset_cost=1):

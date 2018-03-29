@@ -551,7 +551,14 @@ class DetailedFigureInfo(object):
                 position=figure_idx,
                 url=figure_src,
                 description = figure_description,
-                name = figure_name)
+                name = figure_name,
+                text='',
+                page=0,
+                top=0,
+                left=0,
+                bottom=0,
+                right=0
+            )
             self.parent = self.figure
         return figure_idx
 
