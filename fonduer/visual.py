@@ -117,6 +117,7 @@ class VisualLinker(object):
         coordinate_caption_map = {}
         coordinate_image_map = {}
         captions = []
+        image_list = []
 
         for candidate in page.find_all('text'):
             result = re.search('((Fig)|(Scheme)|(Figure))\s*\.?\s*\d+', candidate.text)
@@ -132,11 +133,12 @@ class VisualLinker(object):
                 if self.help_match(candidate.attrs, coord_dict, page):
                     coordinate_image_map[fig_name] = candidate.attrs
                     found = fig_name
+                    image_list.append(fig_name)
                     break
             if found:
                 del coordinate_caption_map[found]
 
-        return captions, coordinate_image_map
+        return image_list, coordinate_image_map
 
 
 
