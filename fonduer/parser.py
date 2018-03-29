@@ -82,6 +82,7 @@ class OmniParser(UDFRunner):
             flatten_delim='',
             lingual=True,  # lingual information
             strip=True,
+            span_list=['italic bold', 'bold', 'italic', 'bold italic', 'strong'],
             # Modified by Wei Li
             #replacements=[(u'[\u2010\u2011\u2012\u2013\u2014\u2212\uf02d]',
             #               '-')],
@@ -104,6 +105,7 @@ class OmniParser(UDFRunner):
             flatten_delim=flatten_delim,
             lingual=lingual,
             strip=strip,
+            span_list=span_list,
             replacements=replacements,
             tabular=tabular,
             visual=visual,
@@ -125,6 +127,7 @@ class OmniParserUDF(UDF):
             flatten,
             flatten_delim,
             lingual,  # lingual
+            span_list,
             strip,
             replacements,
             tabular,  # tabular
@@ -154,6 +157,7 @@ class OmniParserUDF(UDF):
         # lingual setup
         self.lingual = lingual
         self.strip = strip
+        self.span_list = span_list
         self.replacements = []
         for (pattern, replace) in replacements:
             self.replacements.append((re.compile(pattern, flags=re.UNICODE),
@@ -237,15 +241,15 @@ class OmniParserUDF(UDF):
 
         return self.flatten_delim.join(content)
 
-    def _wei_flatten(self, node):
+    def custom_flatten(self, node, flatten_all=False):
         # if a child of this node is in self.flatten, construct a string
         # containing all text/tail results of the tree based on that child
         # and append that to the tail of the previous child or head of node
         num_children = len(node)
-        span_list = ['italic bold', 'bold', 'italic', "bold italic"]
+
         for i, child in enumerate(node[::-1]):
-            if child.tag in self.flatten or \
-                    (child.tag == 'span' and child.get('class', default='Other') in span_list):
+            if flatten_all or child.tag in self.flatten or \
+                    (child.tag == 'span' and child.get('class', default='Other') in self.span_list):
                 j = num_children - 1 - i  # child index walking backwards
                 contents = ['']
                 contents.append(self.get_content(child))
@@ -272,7 +276,7 @@ class OmniParserUDF(UDF):
         self.parent = document
         ## Added by Wei Li (wli284@wisc.edu)
         #figure_info = FigureInfo(document, parent=document)
-        figure_info = DetailedFigureInfo(document, parent=document)
+        figure_info = DetailedFigureInfo(document, parent=document, caller=self)
         self.figure_idx = -1
         if self.tabular:
             table_info = TableInfo(document, parent=document)
@@ -291,16 +295,18 @@ class OmniParserUDF(UDF):
                 return
             if self.blacklist and node.tag in self.blacklist:
                 return
-            self.figure_idx = figure_info.enter_figure(node, self.figure_idx)
-
-            if self.tabular:
-                self.table_idx = table_info.enter_tabular(node, self.table_idx)
 
             # flattens children of node that are in the 'flatten' list
             if self.flatten:
                 # Modified by Wei Li (wli284@wisc.edu)
                 #self._flatten(node)
-                self._wei_flatten(node)
+                self.custom_flatten(node)
+
+            self.figure_idx = figure_info.enter_figure(node, self.figure_idx)
+
+            if self.tabular:
+                self.table_idx = table_info.enter_tabular(node, self.table_idx)
+
 
             for field in ['text', 'tail']:
                 text = getattr(node, field)
@@ -505,10 +511,11 @@ class FigureInfo(object):
 
 class DetailedFigureInfo(object):
     """Detailed figure info node added by Wei Li (wli284@wisc.edu)"""
-    def __init__(self, document, figure=None, parent=None):
+    def __init__(self, document, figure=None, parent=None, caller=None):
         self.document = document
         self.figure = figure
         self.parent = parent
+        self.caller = caller
 
     def enter_figure(self, node, figure_idx):
         if node.tag == "div" and 'class' in node.attrib and node.attrib['class']=='image_table':
@@ -524,7 +531,11 @@ class DetailedFigureInfo(object):
                     figure_src = element.attrib['src']
                     found_source += 1
                 if element.tag == 'span' and 'class' in element.attrib and element.attrib['class'] == 'graphic_title':
+                    if self.caller:
+                        self.caller.custom_flatten(element, flatten_all=True)
                     figure_description = element.text
+                    if element.tail:
+                        figure_description += ' ' + element.tail
                     found_source += 1
                 if element.tag == 'td' and 'class' in element.attrib and element.attrib['class'] == 'image_title':
                     for child in element:
