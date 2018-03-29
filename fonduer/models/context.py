@@ -79,7 +79,7 @@ class DetailedFigure(Context):
 
 
     __mapper_args__ = {
-        'polymorphic_identity': 'figure',
+        'polymorphic_identity': 'detailed_figure',
     }
 
     __table_args__ = (
@@ -104,7 +104,7 @@ class Figure(Context):
     url = Column(String)
 
     __mapper_args__ = {
-        'polymorphic_identity': 'detail_figure',
+        'polymorphic_identity': 'figure',
     }
 
     __table_args__ = (

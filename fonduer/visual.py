@@ -26,26 +26,123 @@ class VisualLinker(object):
         self.time = time
         self.coordinate_map = None
         self.pdf_word_list = None
+        self.pdf_image_list = None
+        self.coordinate_image_map = None
         self.html_word_list = None
         self.links = None
         self.pdf_dim = None
         delimiters = u"([\(\)\,\?\u2212\u201C\u201D\u2018\u2019\u00B0\*\']|(?<!http):|\.$|\.\.\.)"
         self.separators = re.compile(delimiters)
 
-    def parse_visual(self, document_name, phrases, pdf_path):
+    def parse_visual(self, document_name, phrases, figures, pdf_path):
         self.phrases = phrases
+        self.figures = figures
         self.pdf_file = pdf_path + document_name + '.pdf'
         if not os.path.isfile(self.pdf_file):
             self.pdf_file = self.pdf_file[:-3] + "PDF"
         try:
+            self.extract_pdf_image()
             self.extract_pdf_words()
         except RuntimeError as e:
-            warnings.warn(e.message, RuntimeWarning)
+            print('WARNING: no image or words found in pdf!')
             return
         self.extract_html_words()
+        self.extract_html_images()
         self.link_lists(search_max=200)
         for phrase in self.update_coordinates():
             yield phrase
+
+
+    #
+    def extract_pdf_image(self):
+        num_pages = subprocess.check_output(
+            "pdfinfo '{}' | grep -a Pages | sed 's/[^0-9]*//'".format(
+                self.pdf_file),
+            shell=True)
+        pdf_word_list = []
+        pdf_image_list = []
+        coordinate_map = {}
+        coordinate_image_map = {}
+        tempDir = self.pdf_file[:-4]
+        if not os.path.exists(tempDir): os.mkdir(tempDir)
+        os.chdir(tempDir)
+        for i in range(1, int(num_pages) + 1):
+            html_content = subprocess.check_output(
+                "pdftohtml -f {} -l {} -xml -stdout '{}' -".format(
+                    str(i), str(i), self.pdf_file),
+                shell=True)
+            w_html_content = subprocess.check_output(
+                "pdftotext -f {} -l {} -bbox-layout '{}' -".format(
+                    str(i), str(i), self.pdf_file),
+                shell=True)
+            w_soup = BeautifulSoup(w_html_content, "html.parser")
+            soup = BeautifulSoup(html_content, "xml")
+            w_pages = w_soup.find_all('page')
+            pages = soup.find_all('page')
+            pdf_image_list_i, coordinate_image_map_i = self._coordinates_from_XML_Image(
+                pages[0], i)
+
+            pdf_word_list_i, coordinate_map_i = self._coordinates_from_HTML(
+                w_pages[0], i)
+
+            pdf_word_list += pdf_word_list_i
+            pdf_image_list += pdf_image_list_i
+            # update coordinate map
+            coordinate_map.update(coordinate_map_i)
+            coordinate_image_map.update(coordinate_image_map_i)
+
+        self.pdf_word_list = pdf_word_list
+        self.coordinate_map = coordinate_map
+
+        self.pdf_image_list = pdf_image_list
+        self.coordinate_image_map = coordinate_image_map
+
+        if len(self.pdf_word_list) == 0:
+            raise RuntimeError(
+                "Words could not be extracted from PDF: %s" % self.pdf_file)
+        if len(self.pdf_image_list) == 0:
+            raise RuntimeError(
+                "Images could not be extracted from PDF: %s" % self.pdf_file)
+        # take last page dimensions
+        page_width, page_height = int(float(pages[0].get('width'))), int(
+            float(pages[0].get('height')))
+        self.pdf_dim = (page_width, page_height)
+        if self.verbose:
+            print("Extracted %d pdf words" % len(self.pdf_word_list))
+        if self.verbose:
+            print("Extracted %d pdf images" % len(self.pdf_image_list))
+        os.chdir('../')
+
+    def _coordinates_from_XML_Image(self, page, page_num):
+        coordinate_caption_map = {}
+        coordinate_image_map = {}
+        captions = []
+
+        for candidate in page.find_all('text'):
+            result = re.search('((Fig)|(Scheme)|(Figure))\s*\.?\s*\d+', candidate.text)
+            if result and result.span()[0] == 0:
+                result = result.group()
+                key = ''.join(result.split())
+                coordinate_caption_map[key] = candidate.attrs
+                captions.append(candidate)
+
+        for candidate in page.find_all('image'):
+            found = None
+            for fig_name, coord_dict in coordinate_caption_map.items():
+                if self.help_match(candidate.attrs, coord_dict, page):
+                    coordinate_image_map[fig_name] = candidate.attrs
+                    found = fig_name
+                    break
+            if found:
+                del coordinate_caption_map[found]
+
+        return captions, coordinate_image_map
+
+
+
+    def help_match(self, dict1, dict2, page):
+        return abs(float(dict1['top'])+float(dict1['height']) - float(dict2['top'])) < float(page.get('height'))/10 and \
+            abs(float(dict1['left']) - float(dict2['left'])) < float(page.get('width'))/5
 
     def extract_pdf_words(self):
         num_pages = subprocess.check_output(
@@ -120,6 +217,10 @@ class VisualLinker(object):
         self.html_word_list = html_word_list
         if self.verbose:
             print("Extracted %d html words" % len(self.html_word_list))
+
+    def extract_html_images(self):
+        pass
+
 
     def link_lists(self, search_max=100, edit_cost=20, offset_cost=1):
         # NOTE: there are probably some inefficiencies here from rehashing words

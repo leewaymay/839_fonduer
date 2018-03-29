@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.63.0">
+<page number="1" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="0" size="29" family="Times" color="#61b0c7"/>
+	<fontspec id="1" size="27" family="Times" color="#2056ad"/>
+	<fontspec id="2" size="20" family="Times" color="#5f5c5d"/>
+	<fontspec id="3" size="19" family="Times" color="#ffffff"/>
+	<fontspec id="4" size="8" family="Times" color="#231f20"/>
+	<fontspec id="5" size="21" family="Times" color="#231f20"/>
+	<fontspec id="6" size="13" family="Times" color="#231f20"/>
+	<fontspec id="7" size="9" family="Times" color="#231f20"/>
+	<fontspec id="8" size="19" family="Times" color="#231f20"/>
+	<fontspec id="9" size="11" family="Times" color="#231f20"/>
+	<fontspec id="10" size="6" family="Times" color="#231f20"/>
+	<fontspec id="11" size="10" family="Times" color="#000000"/>
+	<fontspec id="12" size="11" family="Times" color="#ffffff"/>
+	<fontspec id="13" size="7" family="Times" color="#ffffff"/>
+<image top="30" left="500" width="329" height="80" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-1_1.png"/>
+<image top="210" left="64" width="147" height="28" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-1_2.png"/>
+<image top="319" left="526" width="15" height="15" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-1_3.png"/>
+<text top="53" left="64" width="145" height="29" font="0">ORGANIC</text>
+<text top="48" left="218" width="145" height="34" font="1">CHEMISTRY</text>
+<text top="93" left="64" width="128" height="20" font="2">FRONTIERS</text>
+<text top="149" left="77" width="204" height="20" font="3">RESEARCH ARTICLE</text>
+<text top="255" left="64" width="178" height="10" font="4">Cite this: DOI: 10.1039/c8qo00187a</text>
+<text top="378" left="64" width="142" height="10" font="4">Received 21st February 2018,</text>
+<text top="392" left="64" width="126" height="10" font="4">Accepted 7th March 2018</text>
+<text top="411" left="64" width="130" height="10" font="4">DOI: 10.1039/c8qo00187a</text>
+<text top="434" left="64" width="102" height="10" font="4"><a href="http://www.rsc.li/frontiers-organic">rsc.li/frontiers-organic</a></text>
+<text top="208" left="259" width="536" height="22" font="5">Synthesis and characterization of a doubly spin-</text>
+<text top="236" left="259" width="489" height="22" font="5">labelled electrochemically driven molecular</text>
+<text top="262" left="259" width="78" height="22" font="5">shuttle</text>
+<text top="257" left="337" width="12" height="31" font="5">†</text>
+<text top="305" left="259" width="470" height="14" font="6">Valentina Bleve, Paola Franchi, Lorenzo Gualandi, Francesco Romano,</text>
+<text top="323" left="259" width="265" height="14" font="6">Elisabetta Mezzina* and Marco Lucarini</text>
+<text top="323" left="544" width="7" height="14" font="6">*</text>
+<text top="361" left="259" width="570" height="11" font="7">The EPR properties of novel nitroxide-spin-labelled rotaxanes containing a tetrathiafulvalene (TTF) unit</text>
+<text top="379" left="259" width="137" height="11" font="7">and a cyclobis( paraquat-</text>
+<text top="376" left="396" width="433" height="16" font="7">p-phenylene) ring are described. The rotaxanes were spin labelled both at the</text>
+<text top="397" left="259" width="455" height="11" font="7">thread and the wheel. Single-electron oxidation of the TTF unit resulted in a signi</text>
+<text top="394" left="714" width="115" height="16" font="7">ﬁcant through-space</text>
+<text top="415" left="259" width="178" height="11" font="7">magnetic interaction between di</text>
+<text top="412" left="437" width="392" height="16" font="7">ﬀerent radical units. In some cases, rotaxanation is proved to have dra-</text>
+<text top="433" left="259" width="40" height="11" font="7">matic e</text>
+<text top="430" left="299" width="199" height="16" font="7">ﬀects on such magnetic interactions.</text>
+<text top="490" left="64" width="120" height="19" font="8">Introduction</text>
+<text top="525" left="64" width="374" height="13" font="9">Mechanically interlocked molecules (MIMs), such as rotax-</text>
+<text top="543" left="64" width="374" height="13" font="9">anes, are characterized by an interesting dynamic behaviour</text>
+<text top="561" left="64" width="374" height="13" font="9">due to the lack of strong chemical bonds between their mole-</text>
+<text top="579" left="64" width="374" height="13" font="9">cular parts that involve changes in the relative position of the</text>
+<text top="597" left="64" width="374" height="13" font="9">components (co-conformation) in response to external stimuli</text>
+<text top="615" left="64" width="374" height="13" font="9">(switching), such as variations in pH, absorption of light and</text>
+<text top="633" left="64" width="206" height="13" font="9">removal or addition of electrons.</text>
+<text top="630" left="270" width="5" height="9" font="10">1</text>
+<text top="633" left="282" width="156" height="13" font="9">Switching at a molecular</text>
+<text top="651" left="64" width="38" height="13" font="9">level o</text>
+<text top="648" left="102" width="336" height="18" font="9">ﬀers huge opportunities for the development of a series</text>
+<text top="669" left="64" width="374" height="13" font="9">of applications ranging from information and communication</text>
+<text top="687" left="64" width="102" height="13" font="9">technology (ICT),</text>
+<text top="684" left="166" width="5" height="9" font="10">2</text>
+<text top="687" left="175" width="53" height="13" font="9">catalysis,</text>
+<text top="684" left="228" width="5" height="9" font="10">3</text>
+<text top="687" left="237" width="74" height="13" font="9">to medicine.</text>
+<text top="684" left="311" width="5" height="9" font="10">4</text>
+<text top="705" left="82" width="356" height="13" font="9">The use of molecular movements to execute tasks, however,</text>
+<text top="723" left="64" width="73" height="13" font="9">is still a di</text>
+<text top="720" left="136" width="302" height="18" font="9">ﬃcult research challenge, and more studies are</text>
+<text top="741" left="64" width="374" height="13" font="9">required to increase the range of viable functionalities that may</text>
+<text top="759" left="64" width="374" height="13" font="9">be accessed through the control of motion at the nanoscale. In</text>
+<text top="777" left="64" width="374" height="13" font="9">this context, a stimulating possibility is the incorporation of</text>
+<text top="795" left="64" width="374" height="13" font="9">persistent radicals into the molecular components of MIMs.</text>
+<text top="813" left="64" width="374" height="13" font="9">Tagging MIMs with specific radical labels makes possible not</text>
+<text top="831" left="64" width="374" height="13" font="9">only to carry out EPR-based co-conformational investigations</text>
+<text top="849" left="64" width="145" height="13" font="9">on interlocked systems,</text>
+<text top="846" left="208" width="5" height="9" font="10">5</text>
+<text top="849" left="220" width="147" height="13" font="9">but also to switch on/o</text>
+<text top="846" left="368" width="70" height="18" font="9">ﬀ magnetic</text>
+<text top="867" left="64" width="336" height="13" font="9">interactions by chemically driven reversible mechanical e</text>
+<text top="864" left="400" width="35" height="18" font="9">ﬀects.</text>
+<text top="885" left="82" width="356" height="13" font="9">As a notable example of the latter aspect, Tanaka and co-</text>
+<text top="903" left="64" width="368" height="13" font="9">workers described a fourfold rotaxane where switchable spin</text>
+<text top="900" left="431" width="6" height="18" font="9">–</text>
+<text top="921" left="64" width="374" height="13" font="9">spin communication between mechanically interlocked para-</text>
+<text top="939" left="64" width="78" height="13" font="9">magnetic Cu</text>
+<text top="936" left="142" width="11" height="9" font="10">2+</text>
+<text top="939" left="159" width="279" height="13" font="9">complexes could be induced by a change in</text>
+<text top="489" left="455" width="374" height="13" font="9">their relative distance and spatial arrangements in response to</text>
+<text top="507" left="455" width="95" height="13" font="9">a change in pH.</text>
+<text top="504" left="550" width="5" height="9" font="10">6</text>
+<text top="507" left="559" width="270" height="13" font="9">More recently, we described the first example</text>
+<text top="525" left="455" width="374" height="13" font="9">of a [2]rotaxane incorporating stable 2,2,6,6-tetramethyl-piper-</text>
+<text top="543" left="455" width="374" height="13" font="9">idine-1-oxyl (TEMPO) radical units into both the ring (dibenzo</text>
+<text top="561" left="455" width="374" height="13" font="9">[24]crown-8) and the dumbbell component in which a pH-</text>
+<text top="579" left="455" width="374" height="13" font="9">dependent shuttling motion was exploited to reversibly modify</text>
+<text top="597" left="455" width="374" height="13" font="9">the distance between the two spin centers and thus, enabling</text>
+<text top="615" left="455" width="374" height="13" font="9">or preventing a through-space electron exchange between</text>
+<text top="633" left="455" width="35" height="13" font="9">them.</text>
+<text top="630" left="490" width="5" height="9" font="10">7</text>
+<text top="633" left="499" width="331" height="13" font="9">Very recently, the synthesis of a rotaxane where the nitr-</text>
+<text top="651" left="455" width="374" height="13" font="9">oxide unit is a part of the macrocycle ring which can be moved</text>
+<text top="669" left="455" width="308" height="13" font="9">along a molecular thread has also been described.</text>
+<text top="666" left="763" width="5" height="9" font="10">8</text>
+<text top="669" left="773" width="56" height="13" font="9">In all the</text>
+<text top="687" left="455" width="210" height="13" font="9">above examples radical centers are</text>
+<text top="684" left="670" width="160" height="18" font="9">“transported” by changing</text>
+<text top="705" left="455" width="374" height="13" font="9">the pH of the solution. However, redox-responsive bistable [2]</text>
+<text top="723" left="455" width="374" height="13" font="9">rotaxanes are also of considerable interest because the redox</text>
+<text top="741" left="455" width="374" height="13" font="9">switching process is usually rapid and precise and can be con-</text>
+<text top="759" left="455" width="330" height="13" font="9">trolled within solid-state devices, as well as on surfaces.</text>
+<text top="756" left="785" width="5" height="9" font="10">9</text>
+<text top="777" left="473" width="356" height="13" font="9">Thus, we decided to prepare a new spin-labelled rotaxane</text>
+<text top="795" left="455" width="365" height="13" font="9">where the spin-exchange interaction could be switched on/o</text>
+<text top="792" left="820" width="9" height="18" font="9">ﬀ</text>
+<text top="813" left="455" width="271" height="13" font="9">by redox-driven reversible mechanical e</text>
+<text top="810" left="726" width="103" height="18" font="9">ﬀects. For this</text>
+<text top="831" left="455" width="374" height="13" font="9">purpose, we prepared an interlocked structure based on a</text>
+<text top="849" left="455" width="54" height="13" font="9">modified</text>
+<text top="846" left="518" width="312" height="18" font="9">“Stoddart–Heath type” bistable [2]rotaxane which</text>
+<text top="867" left="455" width="77" height="13" font="9">comprises a</text>
+<text top="864" left="541" width="288" height="18" font="9">π-electron-deficient cyclobis(paraquat-p-phenyl-</text>
+<text top="885" left="455" width="76" height="13" font="9">ene) (CBPQT</text>
+<text top="882" left="531" width="11" height="9" font="10">4+</text>
+<text top="885" left="542" width="287" height="13" font="9">) ring and a tetrathiafulvalene (TTF) recognition</text>
+<text top="903" left="455" width="176" height="13" font="9">unit in the thread (see Fig. 1).</text>
+<text top="900" left="631" width="11" height="9" font="10">10</text>
+<text top="921" left="473" width="45" height="13" font="9">In TTF</text>
+<text top="918" left="518" width="49" height="18" font="9">–CBPQT</text>
+<text top="918" left="567" width="11" height="9" font="10">4+</text>
+<text top="921" left="578" width="252" height="13" font="9">-based rotaxanes, shuttling of the ring</text>
+<text top="939" left="455" width="374" height="13" font="9">along the thread from the TTF station to another recognition</text>
+<text top="957" left="455" width="374" height="13" font="9">site (generally 1,5-dioxynaphthalene unit, DNP) is achieved by</text>
+<text top="975" left="455" width="374" height="13" font="9">single-electron oxidation of the TTF moiety (at +0.43 V vs. Ag/</text>
+<text top="993" left="455" width="144" height="13" font="9">AgCl in ACN) to the TTF</text>
+<text top="988" left="599" width="9" height="12" font="10">•+</text>
+<text top="993" left="612" width="153" height="13" font="9">radical cation (see Fig. 1).</text>
+<text top="990" left="764" width="11" height="9" font="10">10</text>
+<text top="993" left="779" width="50" height="13" font="9">The pro-</text>
+<text top="1011" left="455" width="374" height="13" font="9">posed rotaxanes were doubly spin labelled both at the ring and</text>
+<text top="1029" left="455" width="374" height="13" font="9">the dumbbell by introducing nitroxide units which represent</text>
+<text top="1047" left="455" width="374" height="13" font="9">the most well-known class of spin labels in supramolecular</text>
+<text top="1065" left="455" width="136" height="13" font="9">assemblies (see Fig. 2).</text>
+<text top="1062" left="591" width="11" height="9" font="10">11</text>
+<text top="1035" left="64" width="374" height="14" font="4">†Electronic supplementary information (ESI) available: General information on</text>
+<text top="1053" left="64" width="374" height="10" font="4">synthetic procedures and characterization, synthetic details and additional NMR</text>
+<text top="1068" left="64" width="204" height="10" font="4">and EPR data. See DOI: 10.1039/c8qo00187a</text>
+<text top="993" left="64" width="110" height="10" font="4">Department of Chemistry</text>
+<text top="990" left="177" width="237" height="14" font="4">“G. Ciamician” – Alma Mater Studiorum-University of</text>
+<text top="1008" left="64" width="230" height="10" font="4">Bologna, Via San Giacomo 11, 40126 Bologna, Italy.</text>
+<text top="1023" left="64" width="275" height="10" font="4">E-mail: elisabetta.mezzina@unibo.it, marco.lucarini@unibo.it</text>
+<text top="1115" left="64" width="220" height="13" font="7">This journal is © the Partner Organisations 2018</text>
+<text top="1115" left="745" width="85" height="13" font="7">Org. Chem. Front.</text>
+<text top="706" left="17" width="0" height="11" font="11">Published on 08 March 2018. Downloaded by University of Wisconsin - Madison on 26/03/2018 20:27:21. </text>
+<text top="141" left="679" width="124" height="14" font="12"><a href="http://dx.doi.org/10.1039/C8QO00187A"><b>View Article Online</b></a></text>
+<text top="160" left="679" width="56" height="9" font="13"><a href="http://pubs.rsc.org/en/journals/journal/QO"><b>View Journal</b></a></text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="14" size="9" family="Times" color="#2c3839"/>
+	<fontspec id="15" size="7" family="Times" color="#000000"/>
+<image top="76" left="102" width="299" height="177" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-2_1.png"/>
+<image top="342" left="115" width="271" height="191" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-2_2.png"/>
+<image top="717" left="191" width="509" height="335" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-2_3.png"/>
+<text top="617" left="82" width="356" height="13" font="9">It will be shown that the proposed molecular machines are</text>
+<text top="635" left="64" width="159" height="13" font="9">capable of switching on/o</text>
+<text top="632" left="223" width="215" height="18" font="9">ﬀ magnetic interactions by electro-</text>
+<text top="653" left="64" width="248" height="13" font="9">chemically driven reversible mechanical e</text>
+<text top="650" left="312" width="35" height="18" font="9">ﬀects.</text>
+<text top="77" left="455" width="216" height="19" font="8">Results and discussion</text>
+<text top="106" left="455" width="188" height="13" font="9">Molecular design and synthesis</text>
+<text top="130" left="455" width="374" height="13" font="9">The structure of the proposed paramagnetic redox-active rotax-</text>
+<text top="148" left="455" width="59" height="13" font="9">ane (Rot1</text>
+<text top="145" left="514" width="5" height="9" font="10">2</text>
+<text top="143" left="519" width="14" height="12" font="10">•4+</text>
+<text top="148" left="534" width="296" height="13" font="9">) is shown in Scheme 1. The electron-rich reco-</text>
+<text top="166" left="455" width="374" height="13" font="9">gnition units are represented by the redox active tetrathiafulva-</text>
+<text top="184" left="455" width="374" height="13" font="9">lene (TTF) group and the 1,5-dioxynaphthalene (DNP) com-</text>
+<text top="202" left="455" width="374" height="13" font="9">ponent. The two nitroxidic spin labels are located both at the</text>
+<text top="220" left="455" width="374" height="13" font="9">wheel and the axle. One nitroxide unit is located at one end of</text>
+<text top="238" left="455" width="374" height="13" font="9">the thread and also behaves as a stopper unit. Because the</text>
+<text top="256" left="455" width="374" height="13" font="9">TEMPO unit is not large enough to be used as the end-cap</text>
+<text top="274" left="455" width="203" height="13" font="9">group in CBPQT-based rotaxanes,</text>
+<text top="271" left="658" width="11" height="9" font="10">12</text>
+<text top="274" left="674" width="155" height="13" font="9">we introduced a sterically</text>
+<text top="292" left="455" width="374" height="13" font="9">hindered nitroxide containing spirocyclohexyl substituents at 2</text>
+<text top="310" left="455" width="374" height="13" font="9">and 6 positions of the piperidine-N-oxyl ring as a terminal</text>
+<text top="328" left="455" width="72" height="13" font="9">radical unit.</text>
+<text top="325" left="527" width="11" height="9" font="10">13</text>
+<text top="346" left="473" width="356" height="13" font="9">The other spin label is positioned on the CBPQT host. We</text>
+<text top="364" left="455" width="374" height="13" font="9">have already described the synthetic procedure for the intro-</text>
+<text top="382" left="455" width="374" height="13" font="9">duction of one or two TEMPO paramagnetic side-arms into the</text>
+<text top="400" left="455" width="169" height="13" font="9">aromatic ring of the CBPQT</text>
+<text top="397" left="624" width="11" height="9" font="10">4+</text>
+<text top="400" left="640" width="44" height="13" font="9">moiety.</text>
+<text top="397" left="683" width="11" height="9" font="10">14</text>
+<text top="400" left="699" width="130" height="13" font="9">In the same work, we</text>
+<text top="418" left="455" width="374" height="13" font="9">have also shown that the complexation ability of the spin-</text>
+<text top="436" left="455" width="95" height="13" font="9">labelled CBPQT</text>
+<text top="433" left="550" width="11" height="9" font="10">4+</text>
+<text top="436" left="567" width="262" height="13" font="9">macrocycle toward electron-rich molecules,</text>
+<text top="454" left="455" width="374" height="13" font="9">such as 1,5-dimethoxynaphthalene, is maintained in the pres-</text>
+<text top="472" left="455" width="131" height="13" font="9">ence of the spin label.</text>
+<text top="490" left="473" width="356" height="13" font="9">For complete characterization of the system, single station</text>
+<text top="508" left="455" width="214" height="13" font="9">[2]rotaxanes containing TTF (Rot2</text>
+<text top="503" left="669" width="14" height="12" font="10">•4+</text>
+<text top="508" left="692" width="58" height="13" font="9">and Rot3</text>
+<text top="505" left="750" width="5" height="9" font="10">2</text>
+<text top="503" left="755" width="14" height="12" font="10">•4+</text>
+<text top="508" left="770" width="60" height="13" font="9">) or DNP</text>
+<text top="526" left="455" width="32" height="13" font="9">(Rot4</text>
+<text top="523" left="487" width="5" height="9" font="10">2</text>
+<text top="521" left="492" width="14" height="12" font="10">•4+</text>
+<text top="526" left="506" width="323" height="13" font="9">) were also prepared (see Scheme 1). The general strat-</text>
+<text top="544" left="455" width="374" height="13" font="9">egy adopted for the preparation of the bis-labelled rotaxanes</text>
+<text top="562" left="455" width="27" height="13" font="9">Rot3</text>
+<text top="559" left="482" width="5" height="9" font="10">2</text>
+<text top="557" left="488" width="14" height="12" font="10">•4+</text>
+<text top="562" left="512" width="60" height="13" font="9">and Rot4</text>
+<text top="559" left="572" width="5" height="9" font="10">2</text>
+<text top="557" left="577" width="14" height="12" font="10">•4+</text>
+<text top="562" left="601" width="228" height="13" font="9">followed the approach reported by</text>
+<text top="580" left="455" width="87" height="13" font="9">Stoddart et al.</text>
+<text top="577" left="542" width="11" height="9" font="10">15</text>
+<text top="580" left="559" width="212" height="13" font="9">based on the formation of CBPQT</text>
+<text top="577" left="771" width="11" height="9" font="10">4+</text>
+<text top="580" left="787" width="36" height="13" font="9">donor</text>
+<text top="576" left="823" width="6" height="18" font="9">–</text>
+<text top="598" left="455" width="374" height="13" font="9">acceptor pseudorotaxanes with TTF or DNP-containing axial</text>
+<text top="616" left="455" width="374" height="13" font="9">derivatives. The axial derivatives included an azide group at</text>
+<text top="634" left="455" width="374" height="13" font="9">one edge and the 2,6-diisopropyl phenyl diamagnetic stopper</text>
+<text top="652" left="455" width="374" height="13" font="9">unit at the other end. Once the pseudorotaxane was formed, it</text>
+<text top="269" left="64" width="28" height="10" font="7">Fig. 1</text>
+<text top="269" left="103" width="219" height="10" font="7">Schematic representation of a Stoddart</text>
+<text top="266" left="322" width="116" height="15" font="7">–Heath type bistable</text>
+<text top="284" left="64" width="61" height="10" font="7">[2]rotaxane.</text>
+<text top="549" left="64" width="28" height="10" font="7">Fig. 2</text>
+<text top="549" left="104" width="334" height="10" font="7">Schematic representation of the switching process in the investi-</text>
+<text top="564" left="64" width="93" height="10" font="7">gated [2]rotaxane.</text>
+<text top="1067" left="64" width="51" height="10" font="7">Scheme 1</text>
+<text top="1067" left="126" width="398" height="10" font="7">Structures of the investigated [2]rotaxanes and the corresponding dumbbells.</text>
+<text top="40" left="64" width="90" height="11" font="14">Research Article</text>
+<text top="40" left="672" width="157" height="11" font="14">Organic Chemistry Frontiers</text>
+<text top="1115" left="64" width="85" height="13" font="7">Org. Chem. Front.</text>
+<text top="1115" left="609" width="220" height="13" font="7">This journal is © the Partner Organisations 2018</text>
+<text top="706" left="17" width="0" height="11" font="11">Published on 08 March 2018. Downloaded by University of Wisconsin - Madison on 26/03/2018 20:27:21. </text>
+<text top="17" left="746" width="83" height="9" font="15"><a href="http://dx.doi.org/10.1039/C8QO00187A"><b>View Article Online</b></a></text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="16" size="7" family="Times" color="#231f20"/>
+	<fontspec id="17" size="5" family="Times" color="#231f20"/>
+<image top="76" left="72" width="353" height="318" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-3_1.png"/>
+<image top="76" left="493" width="294" height="288" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-3_2.png"/>
+<text top="486" left="64" width="208" height="13" font="9">was reacted in the presence of Cu(</text>
+<text top="489" left="272" width="3" height="9" font="16">I</text>
+<text top="486" left="275" width="163" height="13" font="9">) (click conditions) with an</text>
+<text top="505" left="64" width="301" height="13" font="9">alkyne spirocyclic nitroxide radical (see Scheme 2).</text>
+<text top="522" left="82" width="356" height="13" font="9">In a typical experiment, rotaxanation was achieved when</text>
+<text top="540" left="64" width="212" height="13" font="9">the spin labelled host (CBPQTNO</text>
+<text top="536" left="276" width="4" height="12" font="10">•</text>
+<text top="540" left="280" width="158" height="13" font="9">) was incubated with the</text>
+<text top="559" left="64" width="86" height="13" font="9">axle in DMF at</text>
+<text top="555" left="154" width="141" height="18" font="9">−10 °C for ten minutes.</text>
+<text top="576" left="82" width="356" height="13" font="9">The bulky stopper alkyne spirocyclic nitroxide was then</text>
+<text top="594" left="64" width="374" height="13" font="9">added to ensure the interlocking of the thread as a result of</text>
+<text top="613" left="64" width="297" height="13" font="9">Huisgen cycloaddition catalyzed by [Cu(MeCN)</text>
+<text top="618" left="360" width="5" height="9" font="10">4</text>
+<text top="613" left="366" width="19" height="13" font="9">]PF</text>
+<text top="618" left="385" width="5" height="9" font="10">6</text>
+<text top="613" left="398" width="40" height="13" font="9">in the</text>
+<text top="630" left="64" width="374" height="13" font="9">presence of (benzyltriazolylmethyl)amine (TBTA) as a stabil-</text>
+<text top="648" left="64" width="374" height="13" font="9">izer. The desired rotaxanes were obtained in a non-optimized</text>
+<text top="667" left="64" width="14" height="13" font="9">22</text>
+<text top="663" left="78" width="360" height="18" font="9">–26% yield, in some cases along with a small amount of the</text>
+<text top="684" left="64" width="374" height="13" font="9">corresponding dumbbell (see synthetic procedures in the</text>
+<text top="702" left="64" width="20" height="13" font="9">ESI</text>
+<text top="699" left="83" width="15" height="18" font="9">†).</text>
+<text top="754" left="64" width="240" height="13" font="9">Characterization of molecular structures</text>
+<text top="778" left="64" width="374" height="13" font="9">ESI-MS analysis and NMR and EPR spectroscopy techniques</text>
+<text top="796" left="64" width="374" height="13" font="9">were used to provide evidence for the formation of the inter-</text>
+<text top="814" left="64" width="374" height="13" font="9">locked structures. Although NMR studies are hampered by the</text>
+<text top="832" left="64" width="374" height="13" font="9">presence of paramagnetic centers which are responsible for</text>
+<text top="850" left="64" width="321" height="13" font="9">severe signal broadening, we found significant di</text>
+<text top="846" left="385" width="53" height="18" font="9">ﬀerences</text>
+<text top="868" left="64" width="127" height="13" font="9">upon comparing the</text>
+<text top="865" left="198" width="5" height="9" font="10">1</text>
+<text top="868" left="203" width="235" height="13" font="9">H NMR data of the rotaxane and the</text>
+<text top="886" left="64" width="374" height="13" font="9">corresponding free dumbbell. This allowed us to provide a</text>
+<text top="904" left="64" width="374" height="13" font="9">good assignment of the interlocked structure despite the bi-</text>
+<text top="922" left="64" width="374" height="13" font="9">radical nature of the rotaxanes. In principle, to render the</text>
+<text top="940" left="64" width="374" height="13" font="9">paramagnetic compound more suitable for NMR analysis it</text>
+<text top="958" left="64" width="374" height="13" font="9">could quantitatively be converted into the corresponding</text>
+<text top="976" left="64" width="374" height="13" font="9">hydroxylamine derivative by adding a stoichiometric amount</text>
+<text top="994" left="64" width="121" height="13" font="9">of phenylhydrazine.</text>
+<text top="991" left="185" width="11" height="9" font="10">16</text>
+<text top="994" left="202" width="236" height="13" font="9">In the present case, however, phenyl-</text>
+<text top="1012" left="64" width="374" height="13" font="9">hydrazine is not a good additive as it gives rise to several</text>
+<text top="1030" left="64" width="374" height="13" font="9">signals in the aromatic region that overlap with those due to</text>
+<text top="1048" left="64" width="374" height="13" font="9">the TTF and DNP units making the analysis even more</text>
+<text top="1066" left="64" width="12" height="13" font="9">di</text>
+<text top="1062" left="76" width="39" height="18" font="9">ﬃcult.</text>
+<text top="544" left="473" width="23" height="13" font="9">The</text>
+<text top="541" left="505" width="5" height="9" font="10">1</text>
+<text top="544" left="510" width="319" height="13" font="9">H NMR spectrum of the single station rotaxane</text>
+<text top="562" left="455" width="27" height="13" font="9">Rot4</text>
+<text top="559" left="482" width="5" height="9" font="10">2</text>
+<text top="557" left="488" width="14" height="12" font="10">•4+</text>
+<text top="562" left="508" width="321" height="13" font="9">(shown in Fig. 3 along with those of the dumbbell</text>
+<text top="580" left="455" width="44" height="13" font="9">Dumb4</text>
+<text top="575" left="499" width="4" height="12" font="10">•</text>
+<text top="580" left="508" width="113" height="13" font="9">and the CBPQTNO</text>
+<text top="575" left="621" width="4" height="12" font="10">•</text>
+<text top="580" left="629" width="200" height="13" font="9">ring) clarifies the presence of the</text>
+<text top="598" left="455" width="242" height="13" font="9">macrocycle on the DNP recognition unit.</text>
+<text top="616" left="473" width="356" height="13" font="9">An upfield shift was observed for the peaks corresponding</text>
+<text top="634" left="455" width="374" height="13" font="9">to the DNP protons when passing from the free dumbbell to</text>
+<text top="652" left="455" width="374" height="13" font="9">the corresponding rotaxane, indicating the presence of the</text>
+<text top="670" left="455" width="374" height="13" font="9">macrocycle around the electron donor naphthalene station. In</text>
+<text top="688" left="455" width="374" height="13" font="9">addition, the paramagnetic host exhibited a marked change in</text>
+<text top="706" left="455" width="374" height="13" font="9">signals displaying a substantial broadening as a consequence</text>
+<text top="724" left="455" width="374" height="13" font="9">of both the decrease in the tumbling rate in the rotaxane struc-</text>
+<text top="742" left="455" width="374" height="13" font="9">ture and the presence of the additional stopper paramagnetic</text>
+<text top="760" left="455" width="28" height="13" font="9">unit.</text>
+<text top="778" left="473" width="356" height="13" font="9">Similar arguments also apply to the NMR analysis of the</text>
+<text top="796" left="455" width="171" height="13" font="9">single station rotaxane Rot3</text>
+<text top="793" left="626" width="5" height="9" font="10">2</text>
+<text top="791" left="631" width="14" height="12" font="10">•4+</text>
+<text top="796" left="646" width="183" height="13" font="9">: a significant upfield shift of</text>
+<text top="814" left="455" width="374" height="13" font="9">TTF proton signals (ca. 6.8 ppm in the dumbbell, below</text>
+<text top="832" left="455" width="49" height="13" font="9">6.3 ppm</text>
+<text top="828" left="504" width="138" height="18" font="9">‡ in the rotaxane in CD</text>
+<text top="837" left="642" width="5" height="9" font="10">3</text>
+<text top="832" left="647" width="37" height="13" font="9">COCD</text>
+<text top="837" left="684" width="5" height="9" font="10">3</text>
+<text top="832" left="689" width="140" height="13" font="9">) gives indication of the</text>
+<text top="850" left="455" width="163" height="13" font="9">position of the CBPQTNO</text>
+<text top="845" left="618" width="4" height="12" font="10">•</text>
+<text top="850" left="629" width="200" height="13" font="9">ring over the electron-rich reco-</text>
+<text top="868" left="455" width="145" height="13" font="9">gnition unit (see the ESI</text>
+<text top="864" left="600" width="15" height="18" font="9">†).</text>
+<text top="886" left="473" width="356" height="13" font="9">Fig. 4 compares the EPR spectra recorded at 328 K in ACN</text>
+<text top="904" left="455" width="205" height="13" font="9">of the bis-labelled rotaxanes Rot3</text>
+<text top="901" left="660" width="5" height="9" font="10">2</text>
+<text top="899" left="665" width="14" height="12" font="10">•4+</text>
+<text top="904" left="685" width="55" height="13" font="9">and Rot4</text>
+<text top="901" left="740" width="5" height="9" font="10">2</text>
+<text top="899" left="746" width="14" height="12" font="10">•4+</text>
+<text top="904" left="765" width="64" height="13" font="9">with those</text>
+<text top="922" left="455" width="133" height="13" font="9">of the thread (Dumb3</text>
+<text top="917" left="588" width="4" height="12" font="10">•</text>
+<text top="922" left="591" width="122" height="13" font="9">) and the CBPQTNO</text>
+<text top="917" left="714" width="4" height="12" font="10">•</text>
+<text top="922" left="723" width="106" height="13" font="9">wheel interlocked</text>
+<text top="940" left="455" width="198" height="13" font="9">by a diamagnetic dumbbell (Rot2</text>
+<text top="935" left="653" width="14" height="12" font="10">•4+</text>
+<text top="940" left="667" width="8" height="13" font="9">).</text>
+<text top="958" left="473" width="356" height="13" font="9">Because of a larger contribution to the line width from the</text>
+<text top="976" left="455" width="374" height="13" font="9">unresolved coupling with the cyclohexyl hydrogen atoms, the</text>
+<text top="994" left="455" width="356" height="13" font="9">EPR line shape of both dumbbells (the spectrum of Dumb3</text>
+<text top="989" left="811" width="4" height="12" font="10">•</text>
+<text top="994" left="819" width="10" height="13" font="9">is</text>
+<text top="410" left="64" width="52" height="10" font="7">Scheme 2</text>
+<text top="410" left="127" width="40" height="10" font="7">General</text>
+<text top="410" left="180" width="40" height="10" font="7">scheme</text>
+<text top="410" left="234" width="15" height="10" font="7">for</text>
+<text top="410" left="262" width="17" height="10" font="7">the</text>
+<text top="410" left="292" width="59" height="10" font="7">preparation</text>
+<text top="410" left="364" width="11" height="10" font="7">of</text>
+<text top="410" left="388" width="50" height="10" font="7">rotaxanes</text>
+<text top="425" left="64" width="43" height="10" font="7">Rot1,3,4</text>
+<text top="422" left="107" width="5" height="7" font="17">2</text>
+<text top="420" left="112" width="14" height="10" font="17">•4+</text>
+<text top="425" left="129" width="215" height="10" font="7">and the corresponding radical dumbbells.</text>
+<text top="380" left="455" width="28" height="10" font="7">Fig. 3</text>
+<text top="380" left="495" width="32" height="10" font="7">Partial</text>
+<text top="377" left="530" width="4" height="7" font="17">1</text>
+<text top="380" left="534" width="154" height="10" font="7">H NMR spectra (600 MHz, CD</text>
+<text top="384" left="688" width="5" height="7" font="17">3</text>
+<text top="380" left="693" width="137" height="10" font="7">CN, 298 K) of (a) dumbbell</text>
+<text top="395" left="455" width="39" height="10" font="7">Dumb4</text>
+<text top="391" left="494" width="3" height="10" font="17">•</text>
+<text top="395" left="497" width="104" height="10" font="7">; (b) rotaxane Rot4</text>
+<text top="392" left="601" width="5" height="7" font="17">2</text>
+<text top="391" left="606" width="14" height="10" font="17">•4+</text>
+<text top="395" left="619" width="107" height="10" font="7">; and (c) CBPQTNO</text>
+<text top="391" left="727" width="3" height="10" font="17">•</text>
+<text top="395" left="736" width="93" height="10" font="7">host. Red dashed</text>
+<text top="410" left="455" width="374" height="10" font="7">lines evidence the broadening and splitting of the macrocyclic signals</text>
+<text top="425" left="455" width="374" height="10" font="7">and the deshielding of protons b caused by the complexation with the</text>
+<text top="440" left="455" width="72" height="10" font="7">guest Dumb4</text>
+<text top="436" left="527" width="3" height="10" font="17">•</text>
+<text top="440" left="530" width="299" height="10" font="7">. Blue dashed lines evidence the shielding of some DNP</text>
+<text top="455" left="455" width="43" height="10" font="7">protons.</text>
+<text top="452" left="503" width="326" height="15" font="7">α, β = bipyridinium α and β protons; Ph = host p-phenylene</text>
+<text top="470" left="455" width="218" height="10" font="7">protons; a = host benzyl protons, b = CH</text>
+<text top="474" left="673" width="5" height="7" font="17">2</text>
+<text top="470" left="677" width="152" height="10" font="7">O linker; DNP = naphthalene</text>
+<text top="485" left="455" width="91" height="10" font="7">aromatic protons.</text>
+<text top="1050" left="455" width="374" height="14" font="4">‡The signals of TTF overlap with the benzyl proton peaks of the paramagnetic</text>
+<text top="1068" left="455" width="23" height="10" font="4">host.</text>
+<text top="40" left="64" width="157" height="11" font="14">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="14">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="7">This journal is © the Partner Organisations 2018</text>
+<text top="1115" left="745" width="85" height="13" font="7">Org. Chem. Front.</text>
+<text top="706" left="17" width="0" height="11" font="11">Published on 08 March 2018. Downloaded by University of Wisconsin - Madison on 26/03/2018 20:27:21. </text>
+<text top="17" left="746" width="83" height="9" font="15"><a href="http://dx.doi.org/10.1039/C8QO00187A"><b>View Article Online</b></a></text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="18" size="4" family="Times" color="#231f20"/>
+<image top="76" left="94" width="311" height="568" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-4_1.png"/>
+<image top="76" left="463" width="353" height="245" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-4_2.png"/>
+<text top="724" left="64" width="167" height="13" font="9">shown in Fig. 4b) is quite di</text>
+<text top="720" left="231" width="203" height="18" font="9">ﬀerent from that of the CBPQTNO</text>
+<text top="719" left="434" width="4" height="12" font="10">•</text>
+<text top="742" left="64" width="374" height="13" font="9">wheel (see Fig. 4a) where the paramagnetic label is a tetra-</text>
+<text top="760" left="64" width="374" height="13" font="9">methyl piperidinyl derivative. Also the nitrogen hyperfine split-</text>
+<text top="778" left="64" width="103" height="13" font="9">ting constant (a</text>
+<text top="783" left="166" width="7" height="9" font="10">N</text>
+<text top="778" left="174" width="242" height="13" font="9">) measured for the two dumbbells (a</text>
+<text top="783" left="416" width="7" height="9" font="10">N</text>
+<text top="778" left="431" width="7" height="13" font="9">=</text>
+<text top="796" left="64" width="164" height="13" font="9">15.40 G) is significantly di</text>
+<text top="792" left="227" width="210" height="18" font="9">ﬀerent from that measured in the</text>
+<text top="814" left="64" width="133" height="13" font="9">spin-labelled wheel (a</text>
+<text top="819" left="197" width="7" height="9" font="10">N</text>
+<text top="814" left="210" width="228" height="13" font="9">= 15.82 G). It is important to remark</text>
+<text top="832" left="64" width="374" height="13" font="9">that these spectral features allow us to distinguish the EPR</text>
+<text top="850" left="64" width="320" height="13" font="9">signals derived from the two kinds of nitroxide labels.</text>
+<text top="868" left="82" width="305" height="13" font="9">The EPR spectra of bis-labelled rotaxanes Rot3</text>
+<text top="865" left="387" width="5" height="9" font="10">2</text>
+<text top="863" left="392" width="14" height="12" font="10">•4+</text>
+<text top="868" left="415" width="23" height="13" font="9">and</text>
+<text top="886" left="64" width="27" height="13" font="9">Rot4</text>
+<text top="883" left="91" width="5" height="9" font="10">2</text>
+<text top="881" left="96" width="14" height="12" font="10">•4+</text>
+<text top="886" left="117" width="321" height="13" font="9">(Fig. 4c and d, respectively) are characterized by the</text>
+<text top="904" left="64" width="374" height="13" font="9">presence of the five-line pattern which clearly demonstrates a</text>
+<text top="922" left="64" width="374" height="13" font="9">strong spin exchange between the two nitroxide units</text>
+<text top="940" left="64" width="10" height="13" font="9">( J</text>
+<text top="945" left="74" width="15" height="9" font="10">NO</text>
+<text top="943" left="89" width="3" height="8" font="18">•</text>
+<text top="943" left="91" width="19" height="12" font="10">–NO</text>
+<text top="943" left="111" width="3" height="8" font="18">•</text>
+<text top="940" left="114" width="324" height="13" font="9">). The broadening of the second and fourth lines</text>
+<text top="958" left="64" width="374" height="13" font="9">(labelled with star) suggests that the exchange coupling, J, is</text>
+<text top="976" left="64" width="64" height="13" font="9">modulated</text>
+<text top="976" left="143" width="14" height="13" font="9">by</text>
+<text top="976" left="171" width="92" height="13" font="9">conformational</text>
+<text top="976" left="278" width="61" height="13" font="9">dynamics.</text>
+<text top="976" left="353" width="13" height="13" font="9">In</text>
+<text top="976" left="381" width="57" height="13" font="9">principle,</text>
+<text top="994" left="64" width="374" height="13" font="9">J-coupling can be operative by the through-bond or through-</text>
+<text top="1012" left="64" width="374" height="13" font="9">space mechanism or both. Because of the mechanical linkage</text>
+<text top="1030" left="64" width="374" height="13" font="9">between the two nitroxide units, the through-bond mechanism</text>
+<text top="1048" left="64" width="374" height="13" font="9">can be obviously excluded and the interaction must be related</text>
+<text top="1066" left="64" width="374" height="13" font="9">exclusively to through-space interaction. To discard inter-</text>
+<text top="428" left="455" width="374" height="13" font="9">molecular J-coupling between the nitroxide labels of two</text>
+<text top="446" left="455" width="12" height="13" font="9">di</text>
+<text top="443" left="467" width="362" height="18" font="9">ﬀerent rotaxane molecules, we recorded the EPR spectrum of</text>
+<text top="464" left="455" width="374" height="13" font="9">a mixture containing both the dumbbell and the spin-labelled</text>
+<text top="482" left="455" width="374" height="13" font="9">cyclophane under the same conditions. As expected, this spec-</text>
+<text top="500" left="455" width="176" height="13" font="9">trum is characterized by J = 0.</text>
+<text top="518" left="473" width="22" height="13" font="9">The</text>
+<text top="515" left="500" width="5" height="9" font="10">1</text>
+<text top="518" left="505" width="304" height="13" font="9">H NMR spectrum of the two station rotaxane Rot1</text>
+<text top="515" left="810" width="5" height="9" font="10">2</text>
+<text top="513" left="815" width="14" height="12" font="10">•4+</text>
+<text top="536" left="455" width="35" height="13" font="9">in CD</text>
+<text top="542" left="490" width="5" height="9" font="10">3</text>
+<text top="536" left="495" width="334" height="13" font="9">CN is shown in Fig. 5b. Generally a marked shielding of</text>
+<text top="554" left="455" width="374" height="13" font="9">TTF protons indicates that the host encircles the electron</text>
+<text top="572" left="455" width="156" height="13" font="9">donor heterocycle station.</text>
+<text top="569" left="611" width="11" height="9" font="10">12</text>
+<text top="572" left="626" width="203" height="13" font="9">Indeed we detected a shift in the</text>
+<text top="590" left="455" width="225" height="13" font="9">TTF signal in the spectrum of Rot1</text>
+<text top="587" left="680" width="5" height="9" font="10">2</text>
+<text top="585" left="685" width="14" height="12" font="10">•4+</text>
+<text top="590" left="706" width="123" height="13" font="9">(ca. 6.5 ppm in the</text>
+<text top="608" left="455" width="374" height="13" font="9">dumbbell; around 6 ppm in the rotaxane) that falls in a</text>
+<text top="626" left="455" width="374" height="13" font="9">crowded spectral region due to overlapping with the benzyl</text>
+<text top="644" left="455" width="374" height="13" font="9">proton peaks of the paramagnetic host (signals labelled with a</text>
+<text top="662" left="455" width="374" height="13" font="9">in trace b, Fig. 5). The spectrum of the two station rotaxane</text>
+<text top="680" left="455" width="27" height="13" font="9">Rot1</text>
+<text top="677" left="482" width="5" height="9" font="10">2</text>
+<text top="675" left="487" width="14" height="12" font="10">•4+</text>
+<text top="680" left="511" width="318" height="13" font="9">does not show signal displacements of the DNP</text>
+<text top="698" left="455" width="374" height="13" font="9">protons (blue dashed lines in trace a) which is instead observed</text>
+<text top="716" left="455" width="374" height="13" font="9">in the NMR spectrum of the single station DNP rotaxane</text>
+<text top="734" left="455" width="27" height="13" font="9">Rot4</text>
+<text top="731" left="482" width="5" height="9" font="10">2</text>
+<text top="729" left="487" width="14" height="12" font="10">•4+</text>
+<text top="734" left="502" width="328" height="13" font="9">. Both these observations suggest that the paramag-</text>
+<text top="752" left="455" width="355" height="13" font="9">netic host resides preferentially on the TTF recognition unit.</text>
+<text top="770" left="473" width="356" height="13" font="9">In contrast to what is observed in the single station rotax-</text>
+<text top="788" left="455" width="63" height="13" font="9">anes Rot3</text>
+<text top="785" left="518" width="5" height="9" font="10">2</text>
+<text top="783" left="523" width="14" height="12" font="10">•4+</text>
+<text top="788" left="546" width="58" height="13" font="9">and Rot4</text>
+<text top="785" left="604" width="5" height="9" font="10">2</text>
+<text top="783" left="610" width="14" height="12" font="10">•4+</text>
+<text top="788" left="624" width="205" height="13" font="9">, the EPR spectrum of the two</text>
+<text top="806" left="455" width="137" height="13" font="9">station rotaxane Rot1</text>
+<text top="803" left="592" width="5" height="9" font="10">2</text>
+<text top="801" left="597" width="14" height="12" font="10">•4+</text>
+<text top="806" left="621" width="208" height="13" font="9">(see Fig. 4e) shows a three-line</text>
+<text top="824" left="455" width="374" height="13" font="9">pattern. This clearly demonstrates the absence of a spin</text>
+<text top="842" left="455" width="153" height="13" font="9">exchange between two di</text>
+<text top="839" left="608" width="221" height="18" font="9">ﬀerent nitroxide fragments. Because</text>
+<text top="860" left="455" width="51" height="13" font="9">of the di</text>
+<text top="857" left="506" width="324" height="18" font="9">ﬀerent spectroscopic parameters in the EPR spectra of</text>
+<text top="878" left="455" width="224" height="13" font="9">the two nitroxides (line width and a</text>
+<text top="884" left="679" width="7" height="9" font="10">N</text>
+<text top="878" left="686" width="143" height="13" font="9">), the external lines are</text>
+<text top="896" left="455" width="374" height="13" font="9">not symmetric. They can be well reproduced by assuming the</text>
+<text top="914" left="455" width="374" height="13" font="9">superposition (in a 1 : 1 ratio) of the signals derived from the</text>
+<text top="932" left="455" width="120" height="13" font="9">two nitroxide labels.</text>
+<text top="970" left="455" width="107" height="13" font="9">Switching process</text>
+<text top="994" left="455" width="374" height="13" font="9">As mentioned in the Introduction, the switching process in</text>
+<text top="1012" left="455" width="23" height="13" font="9">TTF</text>
+<text top="1008" left="478" width="49" height="18" font="9">–CBPQT</text>
+<text top="1009" left="527" width="11" height="9" font="10">4+</text>
+<text top="1012" left="538" width="291" height="13" font="9">-based rotaxanes is performed by the oxidation</text>
+<text top="1030" left="455" width="197" height="13" font="9">of TTF to the corresponding TTF</text>
+<text top="1025" left="652" width="9" height="12" font="10">•+</text>
+<text top="1030" left="665" width="164" height="13" font="9">radical cation. This process</text>
+<text top="1048" left="455" width="374" height="13" font="9">destabilizes the mechanically interlocked molecule and hence</text>
+<text top="1066" left="455" width="75" height="13" font="9">lowers the e</text>
+<text top="1062" left="530" width="258" height="18" font="9">ﬀective barrier to shuttling of the CBPQT</text>
+<text top="1063" left="788" width="11" height="9" font="10">4+</text>
+<text top="1066" left="805" width="24" height="13" font="9">ring</text>
+<text top="659" left="64" width="29" height="10" font="7">Fig. 4</text>
+<text top="659" left="104" width="280" height="10" font="7">EPR spectra of the investigated rotaxanes and Dumb3</text>
+<text top="655" left="384" width="3" height="10" font="17">•</text>
+<text top="659" left="391" width="47" height="10" font="7">recorded</text>
+<text top="674" left="64" width="298" height="10" font="7">in ACN at 328 K. Stars symbols specify the exchange lines.</text>
+<text top="336" left="455" width="28" height="10" font="7">Fig. 5</text>
+<text top="336" left="495" width="32" height="10" font="7">Partial</text>
+<text top="334" left="530" width="4" height="7" font="17">1</text>
+<text top="336" left="534" width="154" height="10" font="7">H NMR spectra (600 MHz, CD</text>
+<text top="341" left="688" width="5" height="7" font="17">3</text>
+<text top="336" left="693" width="137" height="10" font="7">CN, 298 K) of (a) dumbbell</text>
+<text top="351" left="455" width="38" height="10" font="7">Dumb1</text>
+<text top="347" left="493" width="3" height="10" font="17">•</text>
+<text top="351" left="503" width="123" height="10" font="7">and (b) rotaxane Rot1</text>
+<text top="349" left="626" width="5" height="7" font="17">2</text>
+<text top="347" left="631" width="14" height="10" font="17">•4+</text>
+<text top="351" left="644" width="185" height="10" font="7">. Blue dashed lines evidence the</text>
+<text top="366" left="455" width="131" height="10" font="7">signals of DNP protons (</text>
+<text top="363" left="586" width="243" height="15" font="7">α, β = host bipyridinium α and β protons; a =</text>
+<text top="381" left="455" width="171" height="10" font="7">host benzyl protons, b = host CH</text>
+<text top="386" left="626" width="5" height="7" font="17">2</text>
+<text top="381" left="630" width="47" height="10" font="7">O linker).</text>
+<text top="40" left="64" width="90" height="11" font="14">Research Article</text>
+<text top="40" left="672" width="157" height="11" font="14">Organic Chemistry Frontiers</text>
+<text top="1115" left="64" width="85" height="13" font="7">Org. Chem. Front.</text>
+<text top="1115" left="609" width="220" height="13" font="7">This journal is © the Partner Organisations 2018</text>
+<text top="706" left="17" width="0" height="11" font="11">Published on 08 March 2018. Downloaded by University of Wisconsin - Madison on 26/03/2018 20:27:21. </text>
+<text top="17" left="746" width="83" height="9" font="15"><a href="http://dx.doi.org/10.1039/C8QO00187A"><b>View Article Online</b></a></text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1169" width="892">
+<image top="76" left="115" width="269" height="341" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-5_1.png"/>
+<image top="714" left="514" width="255" height="236" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-5_2.png"/>
+<text top="509" left="64" width="374" height="13" font="9">onto the DNP recognition unit. Thus, we decided to investigate</text>
+<text top="527" left="64" width="374" height="13" font="9">the behaviour of dumbbells and rotaxanes containing a redox-</text>
+<text top="545" left="64" width="374" height="13" font="9">active TTF unit by EPR after its one-electron oxidation with</text>
+<text top="563" left="64" width="40" height="13" font="9">Fe(ClO</text>
+<text top="569" left="104" width="5" height="9" font="10">4</text>
+<text top="563" left="109" width="4" height="13" font="9">)</text>
+<text top="569" left="114" width="5" height="9" font="10">3</text>
+<text top="563" left="119" width="269" height="13" font="9">. The EPR spectrum of the dumbbell Dumb3</text>
+<text top="558" left="388" width="4" height="12" font="10">•</text>
+<text top="563" left="396" width="42" height="13" font="9">in ACN</text>
+<text top="581" left="64" width="287" height="13" font="9">at 328 K after addition of 1 equivalent of Fe(ClO</text>
+<text top="587" left="350" width="5" height="9" font="10">4</text>
+<text top="581" left="356" width="4" height="13" font="9">)</text>
+<text top="587" left="360" width="5" height="9" font="10">3</text>
+<text top="581" left="369" width="69" height="13" font="9">is shown in</text>
+<text top="599" left="64" width="295" height="13" font="9">Fig. 6a. New lines due to the biradical Dumb3</text>
+<text top="596" left="359" width="5" height="9" font="10">2</text>
+<text top="594" left="364" width="14" height="12" font="10">•1+</text>
+<text top="599" left="378" width="60" height="13" font="9">, together</text>
+<text top="617" left="64" width="283" height="13" font="9">with those of the starting nitroxide and TTF</text>
+<text top="612" left="347" width="9" height="12" font="10">•+</text>
+<text top="617" left="363" width="75" height="13" font="9">monoradical</text>
+<text top="635" left="64" width="11" height="13" font="9">(a</text>
+<text top="641" left="75" width="13" height="9" font="10">2H</text>
+<text top="635" left="92" width="56" height="13" font="9">= 1.30 G),</text>
+<text top="632" left="148" width="137" height="18" font="9">§ were clearly detected.</text>
+<text top="653" left="82" width="356" height="13" font="9">The position of these new lines is consistent with a radical</text>
+<text top="671" left="64" width="374" height="13" font="9">showing an electron spin exchange between the nitroxide</text>
+<text top="689" left="64" width="259" height="13" font="9">terminal unit and the oxidised TTF unit ( J</text>
+<text top="695" left="323" width="15" height="9" font="10">NO</text>
+<text top="693" left="338" width="3" height="8" font="18">•</text>
+<text top="692" left="340" width="22" height="12" font="10">–TTF</text>
+<text top="693" left="363" width="6" height="8" font="18">•+</text>
+<text top="689" left="369" width="69" height="13" font="9">). The limit</text>
+<text top="707" left="64" width="374" height="13" font="9">of very rapid exchange has not yet been achieved, as indicated</text>
+<text top="725" left="64" width="61" height="13" font="9">by the di</text>
+<text top="722" left="125" width="313" height="18" font="9">ﬀerent line widths of the exchanging lines. The</text>
+<text top="743" left="64" width="12" height="13" font="9">di</text>
+<text top="740" left="76" width="362" height="18" font="9">ﬀerent widths are a consequence of the diverse g-factors of</text>
+<text top="761" left="64" width="51" height="13" font="9">the TTF</text>
+<text top="756" left="114" width="9" height="12" font="10">•+</text>
+<text top="761" left="131" width="307" height="13" font="9">radical cation and nitroxide exchanging species.</text>
+<text top="779" left="64" width="189" height="13" font="9">Because of the large number of</text>
+<text top="776" left="257" width="181" height="18" font="9">σ bonds in the linker between</text>
+<text top="797" left="64" width="374" height="13" font="9">the two radical units, their principal exchange mechanism</text>
+<text top="815" left="64" width="221" height="13" font="9">must have a through-space character.</text>
+<text top="833" left="82" width="320" height="13" font="9">The EPR spectrum of the single station rotaxane Rot3</text>
+<text top="830" left="402" width="5" height="9" font="10">2</text>
+<text top="828" left="407" width="14" height="12" font="10">•4+</text>
+<text top="833" left="426" width="12" height="13" font="9">in</text>
+<text top="851" left="64" width="345" height="13" font="9">ACN at 328 K after the addition of 1 equivalent of Fe(ClO</text>
+<text top="857" left="409" width="5" height="9" font="10">4</text>
+<text top="851" left="414" width="4" height="13" font="9">)</text>
+<text top="857" left="418" width="5" height="9" font="10">3</text>
+<text top="851" left="428" width="10" height="13" font="9">is</text>
+<text top="869" left="64" width="374" height="13" font="9">shown in Fig. 6c. The EPR spectra of the oxidised rotaxane</text>
+<text top="887" left="64" width="27" height="13" font="9">Rot3</text>
+<text top="884" left="91" width="5" height="9" font="10">3</text>
+<text top="882" left="96" width="14" height="12" font="10">•5+</text>
+<text top="887" left="118" width="320" height="13" font="9">is characterized by the presence of exchange lines</text>
+<text top="905" left="64" width="322" height="13" font="9">together with those of the starting nitroxides and TTF</text>
+<text top="900" left="386" width="9" height="12" font="10">•+</text>
+<text top="905" left="399" width="39" height="13" font="9">mono-</text>
+<text top="923" left="64" width="374" height="13" font="9">radical. The exchange lines show the same line width and res-</text>
+<text top="941" left="64" width="374" height="13" font="9">onate at magnetic field values symmetric with respect to nitr-</text>
+<text top="959" left="64" width="374" height="13" font="9">oxide monoradical lines. These two spectral features suggest</text>
+<text top="977" left="64" width="374" height="13" font="9">that the exchange lines originate from a strong spin exchange</text>
+<text top="76" left="455" width="208" height="13" font="9">between the two nitroxide units ( J</text>
+<text top="81" left="663" width="15" height="9" font="10">NO</text>
+<text top="79" left="677" width="3" height="8" font="18">•</text>
+<text top="79" left="680" width="19" height="12" font="10">–NO</text>
+<text top="79" left="699" width="3" height="8" font="18">•</text>
+<text top="76" left="702" width="127" height="13" font="9">). No evidence of the</text>
+<text top="94" left="455" width="195" height="13" font="9">spin exchange between the TTF</text>
+<text top="89" left="650" width="9" height="12" font="10">•+</text>
+<text top="94" left="665" width="164" height="13" font="9">and nitroxide radical units</text>
+<text top="112" left="455" width="82" height="13" font="9">was observed.</text>
+<text top="130" left="473" width="356" height="13" font="9">This last observation led to two conclusions: (i) the</text>
+<text top="148" left="455" width="43" height="13" font="9">CBPQT</text>
+<text top="145" left="498" width="11" height="9" font="10">4+</text>
+<text top="148" left="514" width="306" height="13" font="9">ring is forced to remain in proximity to the TTF</text>
+<text top="143" left="820" width="9" height="12" font="10">•+</text>
+<text top="166" left="455" width="374" height="13" font="9">radical cation as no alternative binding site of the dumbbell is</text>
+<text top="184" left="455" width="374" height="13" font="9">available for the ring to encircle; and (ii) the absence of the</text>
+<text top="202" left="455" width="374" height="13" font="9">spin exchange can be explained by the ring acting as an</text>
+<text top="217" left="455" width="374" height="18" font="9">‘attenuator’, preventing the exchange interaction between the</text>
+<text top="238" left="455" width="23" height="13" font="9">TTF</text>
+<text top="233" left="478" width="9" height="12" font="10">•+</text>
+<text top="238" left="491" width="153" height="13" font="9">and both nitroxide labels.</text>
+<text top="256" left="473" width="356" height="13" font="9">The absence of the spin exchange between the terminal</text>
+<text top="274" left="455" width="212" height="13" font="9">nitroxide unit (stopper) and TTF</text>
+<text top="269" left="667" width="9" height="12" font="10">•+</text>
+<text top="274" left="684" width="145" height="13" font="9">when encircled by the</text>
+<text top="292" left="455" width="374" height="13" font="9">CBPQT wheel is not surprising, as it has already been observed</text>
+<text top="310" left="455" width="374" height="13" font="9">in an analogous rotaxane containing a diamagnetic CBPQT</text>
+<text top="328" left="455" width="38" height="13" font="9">wheel.</text>
+<text top="325" left="493" width="11" height="9" font="10">17</text>
+<text top="346" left="473" width="356" height="13" font="9">The absence of the spin exchange between the nitroxidic</text>
+<text top="364" left="455" width="107" height="13" font="9">pendant and TTF</text>
+<text top="359" left="562" width="9" height="12" font="10">•+</text>
+<text top="364" left="577" width="248" height="13" font="9">when this is encircled by the CBPQTNO</text>
+<text top="359" left="825" width="4" height="12" font="10">•</text>
+<text top="382" left="455" width="374" height="13" font="9">wheel was confirmed by recording the EPR spectrum of the</text>
+<text top="400" left="455" width="178" height="13" font="9">single station rotaxane Rot2</text>
+<text top="395" left="633" width="14" height="12" font="10">•4+</text>
+<text top="400" left="656" width="173" height="13" font="9">in ACN at 328 K after the</text>
+<text top="418" left="455" width="210" height="13" font="9">addition of 1 equivalent of Fe(ClO</text>
+<text top="423" left="665" width="5" height="9" font="10">4</text>
+<text top="418" left="671" width="4" height="13" font="9">)</text>
+<text top="423" left="675" width="5" height="9" font="10">3</text>
+<text top="418" left="680" width="149" height="13" font="9">. Actually, the EPR spec-</text>
+<text top="436" left="455" width="77" height="13" font="9">trum of Rot2</text>
+<text top="433" left="532" width="5" height="9" font="10">2</text>
+<text top="431" left="538" width="14" height="12" font="10">•5+</text>
+<text top="436" left="552" width="277" height="13" font="9">, shown in Fig. 6b, is simply due to the super-</text>
+<text top="454" left="455" width="374" height="13" font="9">position of the signals derived from the non-exchanging nitr-</text>
+<text top="472" left="455" width="356" height="13" font="9">oxide spin label (a 1 : 1 : 1 triplet with a line separation of a</text>
+<text top="477" left="811" width="7" height="9" font="10">N</text>
+<text top="472" left="822" width="7" height="13" font="9">=</text>
+<text top="490" left="455" width="130" height="13" font="9">15.82 G) and the TTF</text>
+<text top="485" left="585" width="9" height="12" font="10">•+</text>
+<text top="490" left="599" width="204" height="13" font="9">radical cation (a multiplet, with a</text>
+<text top="495" left="804" width="13" height="9" font="10">2H</text>
+<text top="490" left="822" width="7" height="13" font="9">=</text>
+<text top="508" left="455" width="84" height="13" font="9">1.23 G and a</text>
+<text top="513" left="539" width="13" height="9" font="10">4H</text>
+<text top="508" left="559" width="63" height="13" font="9">= 0.63 G).</text>
+<text top="505" left="622" width="207" height="18" font="9">¶ No indication of spin-exchange</text>
+<text top="526" left="455" width="229" height="13" font="9">lines was visible in this EPR spectrum.</text>
+<text top="544" left="473" width="356" height="13" font="9">Having fully characterized the model single station dumb-</text>
+<text top="562" left="455" width="374" height="13" font="9">bell, we proceeded to investigate the behaviour of the two</text>
+<text top="580" left="455" width="374" height="13" font="9">station derivatives (dumbbell and rotaxane) after addition of</text>
+<text top="598" left="455" width="40" height="13" font="9">Fe(ClO</text>
+<text top="603" left="495" width="5" height="9" font="10">4</text>
+<text top="598" left="501" width="4" height="13" font="9">)</text>
+<text top="603" left="505" width="5" height="9" font="10">3</text>
+<text top="598" left="510" width="184" height="13" font="9">. The EPR spectrum of Dumb1</text>
+<text top="593" left="694" width="4" height="12" font="10">•</text>
+<text top="598" left="702" width="127" height="13" font="9">in ACN at 328 K after</text>
+<text top="616" left="455" width="224" height="13" font="9">the addition of 1 equivalent of Fe(ClO</text>
+<text top="621" left="679" width="5" height="9" font="10">4</text>
+<text top="616" left="685" width="4" height="13" font="9">)</text>
+<text top="621" left="689" width="5" height="9" font="10">3</text>
+<text top="616" left="698" width="115" height="13" font="9">is shown in Fig. 7a.</text>
+<text top="634" left="473" width="356" height="13" font="9">The low field exchange line (labelled with star) was clearly</text>
+<text top="652" left="455" width="198" height="13" font="9">visible in the spectrum of Dumb1</text>
+<text top="649" left="653" width="5" height="9" font="10">2</text>
+<text top="647" left="658" width="14" height="12" font="10">•1+</text>
+<text top="652" left="673" width="157" height="13" font="9">, while that resonating at a</text>
+<text top="432" left="64" width="29" height="10" font="7">Fig. 6</text>
+<text top="432" left="104" width="269" height="10" font="7">EPR spectra recorded in ACN at 328 K of (a) Dumb3</text>
+<text top="428" left="373" width="3" height="10" font="17">•</text>
+<text top="432" left="376" width="48" height="10" font="7">, (b) Rot2</text>
+<text top="428" left="424" width="14" height="10" font="17">•4+</text>
+<text top="447" left="64" width="63" height="10" font="7">and (c) Rot3</text>
+<text top="445" left="127" width="5" height="7" font="17">2</text>
+<text top="443" left="132" width="14" height="10" font="17">•4+</text>
+<text top="447" left="149" width="199" height="10" font="7">after the addition of 1 equiv. of Fe(ClO</text>
+<text top="452" left="348" width="5" height="7" font="17">4</text>
+<text top="447" left="353" width="3" height="10" font="7">)</text>
+<text top="452" left="356" width="5" height="7" font="17">3</text>
+<text top="447" left="361" width="77" height="10" font="7">. Stars symbols</text>
+<text top="462" left="64" width="138" height="10" font="7">specify the exchange lines.</text>
+<text top="966" left="455" width="28" height="10" font="7">Fig. 7</text>
+<text top="966" left="494" width="305" height="10" font="7">EPR spectra recorded in ACN at 328 K of (a) Dumb1</text>
+<text top="961" left="800" width="3" height="10" font="17">•</text>
+<text top="966" left="810" width="19" height="10" font="7">and</text>
+<text top="981" left="455" width="43" height="10" font="7">(b) Rot1</text>
+<text top="978" left="498" width="5" height="7" font="17">2</text>
+<text top="976" left="503" width="14" height="10" font="17">•4+</text>
+<text top="981" left="522" width="213" height="10" font="7">after the addition of 1 equiv. of Fe(ClO</text>
+<text top="985" left="735" width="5" height="7" font="17">4</text>
+<text top="981" left="740" width="3" height="10" font="7">)</text>
+<text top="985" left="743" width="5" height="7" font="17">3</text>
+<text top="981" left="748" width="81" height="10" font="7">. Stars symbols</text>
+<text top="996" left="455" width="138" height="10" font="7">specify the exchange lines.</text>
+<text top="1035" left="64" width="200" height="14" font="4">§In the presence of 1 equivalent of Fe(ClO</text>
+<text top="1042" left="263" width="4" height="7" font="18">4</text>
+<text top="1038" left="268" width="3" height="10" font="4">)</text>
+<text top="1042" left="271" width="4" height="7" font="18">3</text>
+<text top="1038" left="278" width="160" height="10" font="4">the nitroxide unit starts to oxidize</text>
+<text top="1053" left="64" width="374" height="10" font="4">to the corresponding EPR-silent oxammonium species leading to the formation</text>
+<text top="1068" left="64" width="38" height="10" font="4">of a TTF</text>
+<text top="1064" left="102" width="7" height="9" font="18">•+</text>
+<text top="1068" left="112" width="61" height="10" font="4">monoradical.</text>
+<text top="1050" left="455" width="359" height="14" font="4">¶The coupling of the unpaired electron with four equivalent protons in Rot2</text>
+<text top="1051" left="814" width="4" height="7" font="18">2</text>
+<text top="1049" left="818" width="11" height="9" font="18">•5+</text>
+<text top="1068" left="455" width="335" height="10" font="4">is due to the methylene groups of the two chains bound to the TTF unit.</text>
+<text top="40" left="64" width="157" height="11" font="14">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="14">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="7">This journal is © the Partner Organisations 2018</text>
+<text top="1115" left="745" width="85" height="13" font="7">Org. Chem. Front.</text>
+<text top="706" left="17" width="0" height="11" font="11">Published on 08 March 2018. Downloaded by University of Wisconsin - Madison on 26/03/2018 20:27:21. </text>
+<text top="17" left="746" width="83" height="9" font="15"><a href="http://dx.doi.org/10.1039/C8QO00187A"><b>View Article Online</b></a></text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1169" width="892">
+<image top="76" left="157" width="183" height="269" src="Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A-6_1.png"/>
+<text top="468" left="64" width="135" height="13" font="9">high field was more di</text>
+<text top="464" left="198" width="240" height="18" font="9">ﬃcult to detect because of severe broad-</text>
+<text top="486" left="64" width="374" height="13" font="9">ening. The position of this line is consistent with the occur-</text>
+<text top="504" left="64" width="374" height="13" font="9">rence of the electron spin exchange between the nitroxide term-</text>
+<text top="522" left="64" width="232" height="13" font="9">inal unit and the oxidised TTF unit ( J</text>
+<text top="527" left="296" width="15" height="9" font="10">NO</text>
+<text top="525" left="310" width="3" height="8" font="18">•</text>
+<text top="525" left="313" width="22" height="12" font="10">–TTF</text>
+<text top="525" left="335" width="6" height="8" font="18">•+</text>
+<text top="522" left="341" width="97" height="13" font="9">), irrespective of</text>
+<text top="540" left="64" width="374" height="13" font="9">the large distance between the two radical centers. We attribu-</text>
+<text top="558" left="64" width="374" height="13" font="9">ted this unexpected behaviour to the high flexibility of the</text>
+<text top="576" left="64" width="374" height="13" font="9">glycol chains which allows the terminal paramagnetic nitroxide</text>
+<text top="594" left="64" width="161" height="13" font="9">unit to interact with TTF</text>
+<text top="589" left="225" width="9" height="12" font="10">•+</text>
+<text top="594" left="242" width="151" height="13" font="9">presumably by a charge</text>
+<text top="590" left="392" width="46" height="18" font="9">–charge</text>
+<text top="612" left="64" width="374" height="13" font="9">contact. The intensity of the exchange lines is however very low</text>
+<text top="630" left="64" width="374" height="13" font="9">and the EPR spectrum is dominated by the lines due to the</text>
+<text top="648" left="64" width="163" height="13" font="9">starting nitroxide and TTF</text>
+<text top="643" left="227" width="9" height="12" font="10">•+</text>
+<text top="648" left="242" width="196" height="13" font="9">monoradical. This suggests that</text>
+<text top="666" left="64" width="374" height="13" font="9">only a reduced number of conformations have the two radical</text>
+<text top="684" left="64" width="48" height="13" font="9">units su</text>
+<text top="680" left="111" width="288" height="18" font="9">ﬃciently close to undergo an exchange coupling.</text>
+<text top="702" left="82" width="356" height="13" font="9">This exchange line is also present in the EPR spectrum of</text>
+<text top="720" left="64" width="181" height="13" font="9">the two station rotaxane Rot1</text>
+<text top="717" left="245" width="5" height="9" font="10">2</text>
+<text top="715" left="250" width="14" height="12" font="10">•4+</text>
+<text top="720" left="270" width="168" height="13" font="9">after oxidation with 1 equi-</text>
+<text top="738" left="64" width="103" height="13" font="9">valent of Fe(ClO</text>
+<text top="743" left="167" width="5" height="9" font="10">4</text>
+<text top="738" left="172" width="4" height="13" font="9">)</text>
+<text top="743" left="176" width="5" height="9" font="10">3</text>
+<text top="738" left="189" width="249" height="13" font="9">(see Fig. 7b). As observed in dumbbell</text>
+<text top="756" left="64" width="44" height="13" font="9">Dumb1</text>
+<text top="753" left="108" width="5" height="9" font="10">2</text>
+<text top="751" left="113" width="14" height="12" font="10">•1+</text>
+<text top="756" left="128" width="310" height="13" font="9">, this exchange line resonates at a magnetic field</text>
+<text top="774" left="64" width="374" height="13" font="9">which corresponds to the symmetric centre between the reso-</text>
+<text top="792" left="64" width="374" height="13" font="9">nance field of the TTF radical cation and that of the stopper</text>
+<text top="810" left="64" width="374" height="13" font="9">nitroxide unit. The position of this line is thus consistent with</text>
+<text top="828" left="64" width="374" height="13" font="9">the occurrence of the electron spin exchange between the nitr-</text>
+<text top="846" left="64" width="374" height="13" font="9">oxide terminal unit and oxidised TTF unit. This interaction is</text>
+<text top="864" left="64" width="374" height="13" font="9">possible because the ring moves to the DNP unit after the for-</text>
+<text top="882" left="64" width="95" height="13" font="9">mation of TTF</text>
+<text top="877" left="159" width="9" height="12" font="10">•+</text>
+<text top="882" left="177" width="261" height="13" font="9">leaving it to interact with the nitroxidic</text>
+<text top="900" left="64" width="76" height="13" font="9">stopper unit.</text>
+<text top="918" left="82" width="347" height="13" font="9">To verify the reversibility of the switching process, TTF</text>
+<text top="913" left="429" width="9" height="12" font="10">•+</text>
+<text top="936" left="64" width="374" height="13" font="9">was electrogenerated in deoxygenated acetonitrile inside the</text>
+<text top="954" left="64" width="137" height="13" font="9">EPR cavity (see the ESI</text>
+<text top="950" left="201" width="237" height="18" font="9">†). When the spectrum is recorded in a</text>
+<text top="972" left="64" width="374" height="13" font="9">positive setting close to the first one electron oxidation process</text>
+<text top="990" left="64" width="180" height="13" font="9">of the TTF unit (ca. +0.5 V),</text>
+<text top="986" left="244" width="194" height="18" font="9">∥ it shows the presence of the</text>
+<text top="1008" left="64" width="374" height="13" font="9">exchange line together with those of the starting nitroxides</text>
+<text top="76" left="455" width="51" height="13" font="9">and TTF</text>
+<text top="71" left="506" width="9" height="12" font="10">•+</text>
+<text top="76" left="520" width="300" height="13" font="9">monoradical (Fig. 8b). After the formation of TTF</text>
+<text top="71" left="820" width="9" height="12" font="10">•+</text>
+<text top="94" left="455" width="374" height="13" font="9">was complete the sign of the current can be reversed with the</text>
+<text top="112" left="455" width="374" height="13" font="9">reduction of the TTF radical cation back to neutral TTF and</text>
+<text top="130" left="455" width="374" height="13" font="9">obtain the starting EPR spectrum (Fig. 8c). The complete</text>
+<text top="148" left="455" width="374" height="13" font="9">electrochemical switching cycle of the EPR pattern was</text>
+<text top="166" left="455" width="374" height="13" font="9">repeated several times without an appreciable loss of signal,</text>
+<text top="184" left="455" width="259" height="13" font="9">highlighting the reversibility of the process.</text>
+<text top="234" left="455" width="118" height="19" font="8">Conclusions</text>
+<text top="269" left="455" width="374" height="13" font="9">The reported spin-labelled rotaxanes provide novel examples</text>
+<text top="287" left="455" width="374" height="13" font="9">of polyradicals where the magnetic interactions can be tuned</text>
+<text top="305" left="455" width="374" height="13" font="9">by removal or addition of electrons in a reversible manner.</text>
+<text top="323" left="455" width="124" height="13" font="9">Through-space spin</text>
+<text top="320" left="579" width="250" height="18" font="9">–spin interactions strongly depend on</text>
+<text top="341" left="455" width="374" height="13" font="9">rotaxanation, the movement of the wheel and the flexibility of</text>
+<text top="359" left="455" width="374" height="13" font="9">the thread chain. Hence, spin labelled interlocked molecules</text>
+<text top="377" left="455" width="374" height="13" font="9">represent an intriguing class of complex structures which may</text>
+<text top="395" left="455" width="27" height="13" font="9">have</text>
+<text top="395" left="499" width="64" height="13" font="9">interesting</text>
+<text top="395" left="579" width="73" height="13" font="9">applications</text>
+<text top="395" left="669" width="12" height="13" font="9">in</text>
+<text top="395" left="698" width="55" height="13" font="9">magnetic</text>
+<text top="395" left="770" width="59" height="13" font="9">materials.</text>
+<text top="413" left="455" width="363" height="13" font="9">Experiments in this direction are underway in our laboratory.</text>
+<text top="463" left="455" width="40" height="19" font="8">Con</text>
+<text top="458" left="495" width="149" height="27" font="8">ﬂicts of interest</text>
+<text top="498" left="455" width="194" height="13" font="9">There are no conflicts to declare.</text>
+<text top="548" left="455" width="191" height="19" font="8">Acknowledgements</text>
+<text top="583" left="455" width="323" height="13" font="9">This work was supported by the University of Bologna.</text>
+<text top="633" left="455" width="206" height="19" font="8">Notes and references</text>
+<text top="670" left="462" width="367" height="13" font="9">1 The nature of the mechanical bond - From molecules to</text>
+<text top="688" left="475" width="354" height="13" font="9">machines, ed. C. J. Bruns and J. F. Stoddart, Wiley,</text>
+<text top="706" left="475" width="125" height="13" font="9">Hoboken, USA, 2017.</text>
+<text top="724" left="462" width="367" height="13" font="9">2 A. Coskun, J. M. Spruell, G. Barin, W. R. Dichtel,</text>
+<text top="742" left="475" width="354" height="13" font="9">A. H. Flood, Y. Y. Botros and J. F. Stoddart, Chem. Soc. Rev.,</text>
+<text top="760" left="475" width="89" height="13" font="9">2012, 41, 4827.</text>
+<text top="778" left="462" width="367" height="13" font="9">3 J. Bern, M. Alajarin and R. A. Orenes, J. Am. Chem. Soc.,</text>
+<text top="796" left="475" width="354" height="13" font="9">2010, 132, 10741; J. Wang and B. L. Feringa, Science, 2011,</text>
+<text top="814" left="475" width="354" height="13" font="9">331, 1429; S. F. M. Van Dongen, J. Clerx, K. Nørgaard,</text>
+<text top="832" left="475" width="354" height="13" font="9">T. G. Bloemberg, J. J. L. M. Cornelissen, M. A. Trakselis,</text>
+<text top="850" left="475" width="354" height="13" font="9">S. W. Nelson, S. J. Benkovic, A. E. Rowan and R. J. M. Nolte,</text>
+<text top="868" left="475" width="354" height="13" font="9">Nat. Chem., 2013, 5, 945; V. Blanco, D. A. Leigh, V. Marcos,</text>
+<text top="886" left="475" width="354" height="13" font="9">J. A. Morales-Serna and A. L. Nussbaumer, J. Am. Chem.</text>
+<text top="904" left="475" width="126" height="13" font="9">Soc., 2014, 136, 4905.</text>
+<text top="922" left="462" width="367" height="13" font="9">4 Z. Li, J. C. Barnes, A. Bosoy, J. F. Stoddart and J. I. Zink,</text>
+<text top="940" left="475" width="354" height="13" font="9">Chem. Soc. Rev., 2012, 41, 2590; Z. Zhang, D. Balogh,</text>
+<text top="958" left="475" width="354" height="13" font="9">F. A. Wang, S. Y. Sung, R. Nechushtai and I. Willner, ACS</text>
+<text top="976" left="475" width="119" height="13" font="9">Nano, 2013, 7, 8455.</text>
+<text top="994" left="462" width="367" height="13" font="9">5 G. Jeschke and A. Godt, ChemPhysChem, 2003, 4, 1328;</text>
+<text top="1012" left="475" width="354" height="13" font="9">E. Mileo, C. Casati, P. Franchi, E. Mezzina and M. Lucarini,</text>
+<text top="1030" left="475" width="354" height="13" font="9">Org. Biomol. Chem., 2011, 9, 2920; R. Pievo, C. Casati,</text>
+<text top="1048" left="475" width="354" height="13" font="9">P. Franchi, E. Mezzina, M. Bennati and M. Lucarini,</text>
+<text top="1066" left="475" width="354" height="13" font="9">ChemPhysChem, 2012, 13, 2659; C. Casati, P. Franchi,</text>
+<text top="361" left="64" width="29" height="10" font="7">Fig. 8</text>
+<text top="361" left="104" width="194" height="10" font="7">EPR spectra at 328 K in 0.1 M Bu</text>
+<text top="365" left="298" width="5" height="7" font="17">4</text>
+<text top="361" left="303" width="21" height="10" font="7">NPF</text>
+<text top="365" left="324" width="5" height="7" font="17">6</text>
+<text top="361" left="329" width="109" height="10" font="7">/ACN of the radical</text>
+<text top="376" left="64" width="197" height="10" font="7">species electrogenerated from Rot1</text>
+<text top="373" left="261" width="5" height="7" font="17">2</text>
+<text top="372" left="266" width="14" height="10" font="17">•4+</text>
+<text top="376" left="287" width="151" height="10" font="7">at the following potentials:</text>
+<text top="391" left="64" width="12" height="10" font="7">(a)</text>
+<text top="388" left="80" width="6" height="15" font="7">E</text>
+<text top="395" left="87" width="17" height="7" font="17">appl</text>
+<text top="391" left="107" width="50" height="10" font="7">= 0 V; (b)</text>
+<text top="388" left="162" width="6" height="15" font="7">E</text>
+<text top="395" left="168" width="17" height="7" font="17">appl</text>
+<text top="391" left="189" width="90" height="10" font="7">= +0.5 V; and (c)</text>
+<text top="388" left="283" width="6" height="15" font="7">E</text>
+<text top="395" left="290" width="17" height="7" font="17">appl</text>
+<text top="391" left="310" width="7" height="10" font="7">=</text>
+<text top="388" left="322" width="116" height="15" font="7">−0.5 V. The potentials</text>
+<text top="406" left="64" width="277" height="10" font="7">were applied on the same sample in the sequence a</text>
+<text top="403" left="341" width="97" height="15" font="7">–b–c. Star symbol</text>
+<text top="421" left="64" width="27" height="10" font="7">speci</text>
+<text top="418" left="90" width="115" height="15" font="7">ﬁes the exchange line.</text>
+<text top="1065" left="64" width="306" height="14" font="4">∥The oxidation potential was assumed by data from the literature.</text>
+<text top="1066" left="370" width="4" height="7" font="18">2</text>
+<text top="40" left="64" width="90" height="11" font="14">Research Article</text>
+<text top="40" left="672" width="157" height="11" font="14">Organic Chemistry Frontiers</text>
+<text top="1115" left="64" width="85" height="13" font="7">Org. Chem. Front.</text>
+<text top="1115" left="609" width="220" height="13" font="7">This journal is © the Partner Organisations 2018</text>
+<text top="706" left="17" width="0" height="11" font="11">Published on 08 March 2018. Downloaded by University of Wisconsin - Madison on 26/03/2018 20:27:21. </text>
+<text top="17" left="746" width="83" height="9" font="15"><a href="http://dx.doi.org/10.1039/C8QO00187A"><b>View Article Online</b></a></text>
+</page>
+<page number="7" position="absolute" top="0" left="0" height="1169" width="892">
+<text top="76" left="84" width="354" height="13" font="9">R. Pievo, E. Mezzina and M. Lucarini, J. Am. Chem. Soc.,</text>
+<text top="94" left="84" width="354" height="13" font="9">2012, 134, 19108; P. Franchi, V. Bleve, E. Mezzina,</text>
+<text top="112" left="84" width="354" height="13" font="9">C. Schäfer, G. Ragazzon, M. Albertini, D. Carbonera,</text>
+<text top="130" left="84" width="296" height="13" font="9">A. Credi, M. Di Valentin and M. Lucarini, Chem.</text>
+<text top="127" left="386" width="52" height="18" font="9">– Eur. J.,</text>
+<text top="148" left="84" width="89" height="13" font="9">2016, 22, 8745.</text>
+<text top="166" left="70" width="367" height="13" font="9">6 Y. Yamada, M. Okamoto, K. Furukawa, T. Kato and</text>
+<text top="184" left="84" width="284" height="13" font="9">K. Tanaka, Angew. Chem., Int. Ed., 2012, 51, 709.</text>
+<text top="202" left="70" width="367" height="13" font="9">7 V. Bleve, C. Schäfer, P. Franchi, S. Silvi, E. Mezzina,</text>
+<text top="220" left="84" width="313" height="13" font="9">A. Credi and M. Lucarini, Chemistryopen, 2015, 4, 18.</text>
+<text top="238" left="70" width="25" height="13" font="9">8 V.</text>
+<text top="238" left="109" width="35" height="13" font="9">Bleve,</text>
+<text top="238" left="157" width="11" height="13" font="9">P.</text>
+<text top="238" left="181" width="49" height="13" font="9">Franchi,</text>
+<text top="238" left="244" width="12" height="13" font="9">E.</text>
+<text top="238" left="269" width="72" height="13" font="9">Konstanteli,</text>
+<text top="238" left="355" width="11" height="13" font="9">L.</text>
+<text top="238" left="380" width="58" height="13" font="9">Gualandi,</text>
+<text top="256" left="84" width="299" height="13" font="9">S. M. Goldup, E. Mezzina and M. Lucarini, Chem.</text>
+<text top="252" left="387" width="51" height="18" font="9">– Eur. J.,</text>
+<text top="274" left="84" width="89" height="13" font="9">2018, 24, 1198.</text>
+<text top="292" left="71" width="367" height="13" font="9">9 A. C. Fahrenbach, C. J. Bruns, D. Cao and J. F. Stoddart,</text>
+<text top="310" left="84" width="184" height="13" font="9">Acc. Chem. Res., 2012, 45, 1581.</text>
+<text top="328" left="64" width="374" height="13" font="9">10 R. A. Bissell, E. Cordova, A. E. Kaifer and J. F. Stoddart, Nature,</text>
+<text top="346" left="85" width="344" height="13" font="9">1994, 369, 133; J. F. Stoddart, Chem. Soc. Rev., 2009, 38, 1802.</text>
+<text top="364" left="64" width="374" height="13" font="9">11 E. Mezzina, R. Manoni, F. Romano and M. Lucarini, Asian</text>
+<text top="382" left="85" width="157" height="13" font="9">J. Org. Chem., 2015, 4, 296.</text>
+<text top="76" left="455" width="374" height="13" font="9">12 R. Manoni, F. Romano, C. Casati, P. Franchi, E. Mezzina</text>
+<text top="94" left="476" width="286" height="13" font="9">and M. Lucarini, Org. Chem. Front., 2014, 1, 477.</text>
+<text top="112" left="455" width="374" height="13" font="9">13 A. Rajca, V. Kathirvelu, S. K. Roy, M. Pink, S. Rajca,</text>
+<text top="130" left="476" width="265" height="13" font="9">S. Sarkar, S. S. Eaton and G. R. Eaton, Chem.</text>
+<text top="127" left="744" width="85" height="18" font="9">– Eur. J., 2010,</text>
+<text top="148" left="476" width="353" height="13" font="9">16, 5778; K. Sakai, K. Yamada, T. Yamasaki, Y. Kinoshita,</text>
+<text top="166" left="476" width="10" height="13" font="9">F.</text>
+<text top="166" left="502" width="28" height="13" font="9">Mito</text>
+<text top="166" left="545" width="23" height="13" font="9">and</text>
+<text top="166" left="584" width="14" height="13" font="9">H.</text>
+<text top="166" left="613" width="47" height="13" font="9">Utsumi,</text>
+<text top="166" left="676" width="72" height="13" font="9">Tetrahedron,</text>
+<text top="166" left="764" width="32" height="13" font="9">2010,</text>
+<text top="166" left="811" width="18" height="13" font="9">66,</text>
+<text top="184" left="476" width="32" height="13" font="9">2311.</text>
+<text top="202" left="455" width="374" height="13" font="9">14 A. Margotti, C. Casati, M. Lucarini and E. Mezzina,</text>
+<text top="220" left="476" width="193" height="13" font="9">Tetrahedron Lett., 2008, 49, 4784.</text>
+<text top="238" left="455" width="105" height="13" font="9">15 R. W. Dichtel,</text>
+<text top="235" left="564" width="265" height="18" font="9">Š. M. Ognjen, J. M. Spruell, J. R. Heath and</text>
+<text top="256" left="476" width="294" height="13" font="9">J. F. Stoddart, J. Am. Chem. Soc., 2006, 128, 10388.</text>
+<text top="274" left="455" width="374" height="13" font="9">16 T. D. Lee, G. B. Birrell and J. F. W. Keana, J. Am. Chem. Soc.,</text>
+<text top="292" left="476" width="353" height="13" font="9">1978, 100, 1618; E. Mezzina, M. Fanì, F. Ferroni, P. Franchi,</text>
+<text top="310" left="476" width="353" height="13" font="9">M. Menna and M. Lucarini, J. Org. Chem., 2006, 71, 3773;</text>
+<text top="328" left="476" width="353" height="13" font="9">P. Franchi, M. Fanì, E. Mezzina and M. Lucarini, Org. Lett.,</text>
+<text top="346" left="476" width="88" height="13" font="9">2008, 10, 1901.</text>
+<text top="364" left="455" width="374" height="13" font="9">17 F. Romano, R. Manoni, P. Franchi, E. Mezzina and</text>
+<text top="382" left="476" width="113" height="13" font="9">M. Lucarini, Chem.</text>
+<text top="379" left="592" width="141" height="18" font="9">– Eur. J., 2015, 21, 2775.</text>
+<text top="40" left="64" width="157" height="11" font="14">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="14">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="7">This journal is © the Partner Organisations 2018</text>
+<text top="1115" left="745" width="85" height="13" font="7">Org. Chem. Front.</text>
+<text top="706" left="17" width="0" height="11" font="11">Published on 08 March 2018. Downloaded by University of Wisconsin - Madison on 26/03/2018 20:27:21. </text>
+<text top="17" left="746" width="83" height="9" font="15"><a href="http://dx.doi.org/10.1039/C8QO00187A"><b>View Article Online</b></a></text>
+</page>
+</pdf2xml>

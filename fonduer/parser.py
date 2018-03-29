@@ -76,14 +76,18 @@ class OmniParser(UDFRunner):
     def __init__(
             self,
             structural=True,  # structural information
-            blacklist=["style"],  # ignore tag types, default: style
-            flatten=['span', 'br'],  # flatten tag types, default: span, br
+            blacklist=["style", "script", "meta", "iframe"],  # ignore tag types, default: style
+            # Modified by Wei Li
+            flatten=['br', 'sup', 'small'],  # flatten tag types, default: span, br
             flatten_delim='',
             lingual=True,  # lingual information
             strip=True,
-            replacements=[(u'[\u2010\u2011\u2012\u2013\u2014\u2212\uf02d]',
-                           '-')],
-            tabular=True,  # tabular information
+            # Modified by Wei Li
+            #replacements=[(u'[\u2010\u2011\u2012\u2013\u2014\u2212\uf02d]',
+            #               '-')],
+            replacements=[],
+            #tabular=True,  # tabular information
+            tabular=False,
             visual=False,  # visual information
             pdf_path=None):
 
@@ -186,8 +190,9 @@ class OmniParserUDF(UDF):
                     filename + '.PDF') and not os.path.isfile(filename)
             if create_pdf:  # PDF file does not exist
                 logger.error("Visual parsing failed: pdf files are required")
+            # Added by Wei Li (wli284@wisc.edu)
             for phrase in self.vizlink.parse_visual(
-                    document.name, document.phrases, self.pdf_path):
+                    document.name, document.phrases, document.detailed_figures, self.pdf_path):
                 yield phrase
         else:
             for phrase in self.parse_structure(document, text):
@@ -215,6 +220,50 @@ class OmniParserUDF(UDF):
                     if node[j - 1].tail is None:
                         node[j - 1].tail = ''
                     node[j - 1].tail += self.flatten_delim.join(contents)
+                node.remove(child)
+
+
+    ## Added by Wei Li (wli284@wisc.edu)
+    def get_content(self, node):
+        if node.tag == 'span' and node.get('class') == 'sup_ref':
+            return ''
+        content = ['']
+        if node.text and node.text.strip():
+            content.append(node.text)
+        for child in node:
+            content.append(self.get_content(child))
+        if node.tail and node.tail.strip():
+            content.append(node.tail)
+
+        return self.flatten_delim.join(content)
+
+    def _wei_flatten(self, node):
+        # if a child of this node is in self.flatten, construct a string
+        # containing all text/tail results of the tree based on that child
+        # and append that to the tail of the previous child or head of node
+        num_children = len(node)
+        span_list = ['italic bold', 'bold', 'italic', "bold italic"]
+        for i, child in enumerate(node[::-1]):
+            if child.tag in self.flatten or \
+                    (child.tag == 'span' and child.get('class', default='Other') in span_list):
+                j = num_children - 1 - i  # child index walking backwards
+                contents = ['']
+                contents.append(self.get_content(child))
+                # for descendant in child.getiterator():
+                #     if descendant.text and descendant.text.strip():
+                #         contents.append(descendant.text)
+                #     if descendant.tail and descendant.tail.strip():
+                #         contents.append(descendant.tail)
+                if j == 0:
+                    if node.text is None:
+                        node.text = ''
+                    node.text += self.flatten_delim.join(contents)
+                else:
+                    if node[j - 1].tail is None:
+                        node[j - 1].tail = ''
+                    node[j - 1].tail += self.flatten_delim.join(contents)
+                node.remove(child)
+            elif (child.tag == 'a' and child.get('title') == "Select to navigate to references"):
                 node.remove(child)
 
     def parse_structure(self, document, text):
@@ -249,7 +298,9 @@ class OmniParserUDF(UDF):
 
             # flattens children of node that are in the 'flatten' list
             if self.flatten:
-                self._flatten(node)
+                # Modified by Wei Li (wli284@wisc.edu)
+                #self._flatten(node)
+                self._wei_flatten(node)
 
             for field in ['text', 'tail']:
                 text = getattr(node, field)
@@ -298,18 +349,19 @@ class OmniParserUDF(UDF):
                                 logger.exception(str(e))
 
             for child in node:
-                if child.tag == 'table':
-                    yield from parse_node(
-                        child,
-                        TableInfo(document=table_info.document),
-                        figure_info)
+                yield from parse_node(child, table_info, figure_info)
+                # if child.tag == 'table' and self.tabular:
+                #     yield from parse_node(
+                #         child,
+                #         TableInfo(document=table_info.document),
+                #         figure_info)
                 # elif child.tag == 'img':
                 #     yield from parse_node(
                 #         child,
                 #         table_info,
                 #         FigureInfo(document=figure_info.document))
-                else:
-                    yield from parse_node(child, table_info, figure_info)
+                # else:
+                #     yield from parse_node(child, table_info, figure_info)
 
             if self.tabular:
                 table_info.exit_tabular(node)
