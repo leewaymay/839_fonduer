@@ -248,6 +248,8 @@ class VisualLinker(object):
         for figure in self.figures:
             figure_name = figure.name.replace(' ', '')
             src_img = self.coordinate_image_map.get(figure_name)
+            if not src_img:
+                continue
             figure.top = int(float(src_img.get('top'))*self.html_pdf_dim_ratio[1])
             figure.bottom = int((float(src_img.get('top')) + float(src_img.get('height')))*self.html_pdf_dim_ratio[1])
             figure.left = int(float(src_img.get('left'))*self.html_pdf_dim_ratio[0])
