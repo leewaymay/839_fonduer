@@ -17,7 +17,8 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 from editdistance import eval as editdist  # Alternative library: python-levenshtein
-
+from PIL import Image
+import pytesseract
 
 class VisualLinker(object):
     def __init__(self, time=False, verbose=False):
@@ -28,6 +29,7 @@ class VisualLinker(object):
         self.pdf_word_list = None
         self.pdf_image_list = None
         self.coordinate_image_map = None
+        self.OCR_list = None
         self.html_word_list = None
         self.links = None
         self.pdf_dim = None
@@ -52,8 +54,27 @@ class VisualLinker(object):
         for phrase in self.update_coordinates():
             yield phrase
 
-
     #
+    def help_OCR(self, img_list, coordinate_map):
+        img_ocr_list = {}
+        for img in img_list:
+            img_str = img.string
+            cap = re.search('((Fig)|(Scheme)|(Figure))\s*\.?\s*\d+', img_str).group()
+            cap = cap.replace(" ", "")
+            if cap in coordinate_map:
+                src_img = coordinate_map.get(cap)
+                path = "./" + src_img.get('src')
+                try:
+                    img = Image.open(path)
+
+                except:
+                    print("OCR: Image not found!")
+                ocr_text = pytesseract.image_to_string(img, lang='eng')
+                img_ocr_list.update({cap : ocr_text})
+
+        return img_ocr_list
+
+
     def extract_pdf_image(self):
         num_pages = subprocess.check_output(
             "pdfinfo '{}' | grep -a Pages | sed 's/[^0-9]*//'".format(
@@ -96,6 +117,9 @@ class VisualLinker(object):
 
         self.pdf_image_list = pdf_image_list
         self.coordinate_image_map = coordinate_image_map
+
+        # Xiuyuan He
+        self.OCR_list = self.help_OCR(pdf_image_list, coordinate_image_map)
 
         if len(self.pdf_word_list) == 0:
             raise RuntimeError(
@@ -145,6 +169,7 @@ class VisualLinker(object):
     def help_match(self, dict1, dict2, page):
         return abs(float(dict1['top'])+float(dict1['height']) - float(dict2['top'])) < float(page.get('height'))/10 and \
             abs(float(dict1['left']) - float(dict2['left'])) < float(page.get('width'))/5
+
 
     def extract_pdf_words(self):
         num_pages = subprocess.check_output(
