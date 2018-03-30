@@ -114,6 +114,8 @@ class CandidateExtractorUDF(UDF):
 
                 # Check for self-joins, "nested" joins (joins from span to its subspan), and flipped duplicate
                 # "symmetric" relations
+
+                # Modified by Zhewen (zsong39@wisc.edu) catch attribute error
                 try:
                     if not self.self_relations and a == b:
                         continue
@@ -198,19 +200,24 @@ class OmniFigures(CandidateSpace):
                 yield TemporaryImage(figure)
 
 
+# Added by Wei & Zhewen
+
 class OmniDetailedFigures(CandidateSpace):
     """
     Defines the space of candidates as all figures in a Document _x_,
     indexing by **position offset**.
     """
 
-    def __init__(self):
+    def __init__(self, type=None):
         """
         Initialize OmniFigures.
 
         Only support figure type filter.
         """
         CandidateSpace.__init__(self)
+        if type is not None:
+            self.type=type.strip().lower()
+        self.type = None
 
 
     def apply(self, session, context):
@@ -220,6 +227,7 @@ class OmniDetailedFigures(CandidateSpace):
         if not isinstance(context, Document):
             raise TypeError("Input Contexts to OmniFigures.apply() must be of type Document")
 
-        df = session.query(DetailedFigure).filter(DetailedFigure.document_id == context.id).all()
-        for figure in df:
-            yield TemporaryImage(figure)
+        doc = session.query(Document).filter(Document.id == context.id).one()
+        for figure in doc.detailed_figures:
+            if self.type is None or figure.url.lower().endswith(self.type):
+                yield TemporaryImage(figure)

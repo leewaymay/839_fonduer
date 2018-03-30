@@ -135,6 +135,7 @@ class VisualLinker(object):
         if self.verbose:
             print("Extracted %d pdf images" % len(self.pdf_image_list))
         os.chdir('../')
+        os.rmdir(tempDir)
 
     def _coordinates_from_XML_Image(self, page, page_num):
         coordinate_caption_map = {}
