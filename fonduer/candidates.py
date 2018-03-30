@@ -90,6 +90,7 @@ class CandidateExtractorUDF(UDF):
         # by the Matcher
         for i in range(self.arity):
             self.child_context_sets[i].clear()
+
             for tc in self.matchers[i].apply(self.candidate_spaces[i].apply(self.session, context)):
                 tc.load_id_or_insert(self.session)
                 self.child_context_sets[i].add(tc)

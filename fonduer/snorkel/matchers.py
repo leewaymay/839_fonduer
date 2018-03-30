@@ -71,11 +71,15 @@ class Matcher(object):
         Apply the Matcher to a **generator** of candidates
         Optionally only takes the longest match (NOTE: assumes this is the *first* match)
         """
-        seen_spans = set()
+        #seen_spans = set()
         for c in candidates:
+            '''
             if self.f(c) and (not self.longest_match_only or not any([self._is_subspan(c, s) for s in seen_spans])):
                 if self.longest_match_only:
                     seen_spans.add(self._get_span(c))
+                yield c
+            '''
+            if self.f(c):
                 yield c
 
 
