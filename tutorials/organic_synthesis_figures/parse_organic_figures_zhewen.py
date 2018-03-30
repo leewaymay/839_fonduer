@@ -84,9 +84,9 @@ def do_nothing_matcher(fig):
     return True
 
 fig_matcher = LambdaFunctionFigureMatcher(func=do_nothing_matcher)
-from fonduer import OmniFigures
+from fonduer.candidates import OmniDetailedFigures
 
-figs = OmniFigures(type='png')
+figs = OmniDetailedFigures()
 
 candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_ngrams, figs],

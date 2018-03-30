@@ -8,6 +8,7 @@ from fonduer.models import TemporaryImage
 from fonduer.snorkel.candidates import CandidateSpace, Ngrams
 from fonduer.snorkel.models import Candidate
 from fonduer.snorkel.models.context import Document
+from fonduer.models.context import DetailedFigure
 from fonduer.snorkel.udf import UDF, UDFRunner
 
 class CandidateExtractor(UDFRunner):
@@ -113,12 +114,15 @@ class CandidateExtractorUDF(UDF):
 
                 # Check for self-joins, "nested" joins (joins from span to its subspan), and flipped duplicate
                 # "symmetric" relations
-                if not self.self_relations and a == b:
-                    continue
-                elif not self.nested_relations and (a in b or b in a):
-                    continue
-                elif not self.symmetric_relations and ai > bi:
-                    continue
+                try:
+                    if not self.self_relations and a == b:
+                        continue
+                    elif not self.nested_relations and (a in b or b in a):
+                        continue
+                    elif not self.symmetric_relations and ai > bi:
+                        continue
+                except AttributeError:
+                    pass
 
             # Assemble candidate arguments
             for i, arg_name in enumerate(self.candidate_class.__argnames__):
@@ -192,3 +196,30 @@ class OmniFigures(CandidateSpace):
         for figure in doc.figures:
             if self.type is None or figure.url.lower().endswith(self.type):
                 yield TemporaryImage(figure)
+
+
+class OmniDetailedFigures(CandidateSpace):
+    """
+    Defines the space of candidates as all figures in a Document _x_,
+    indexing by **position offset**.
+    """
+
+    def __init__(self):
+        """
+        Initialize OmniFigures.
+
+        Only support figure type filter.
+        """
+        CandidateSpace.__init__(self)
+
+
+    def apply(self, session, context):
+        """
+        Generate OmniFigures from a Document by parsing all of its Figures.
+        """
+        if not isinstance(context, Document):
+            raise TypeError("Input Contexts to OmniFigures.apply() must be of type Document")
+
+        df = session.query(DetailedFigure).filter(DetailedFigure.document_id == context.id).all()
+        for figure in df:
+            yield TemporaryImage(figure)
