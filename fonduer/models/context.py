@@ -76,6 +76,12 @@ class DetailedFigure(Context):
     url = Column(String)
     description = Column(String)
     name = Column(String)
+    text = Column(String)
+    page   = Column(Integer)
+    top    = Column(Integer)
+    left   = Column(Integer)
+    bottom = Column(Integer)
+    right  = Column(Integer)
 
 
     __mapper_args__ = {
