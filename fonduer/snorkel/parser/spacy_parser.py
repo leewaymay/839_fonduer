@@ -14,8 +14,12 @@ try:
     import spacy
     from spacy.cli import download
     from spacy import util
+    from spacy.tokens import Doc
+    from spacy.tokenizer import Tokenizer
 except:
     raise Exception("spaCy not installed. Use `pip install spacy`.")
+
+import re
 
 
 class Spacy(Parser):
@@ -55,10 +59,18 @@ class Spacy(Parser):
 
         super(Spacy, self).__init__(name="spacy")
         self.model = Spacy.load_lang_model(lang)
+        self.model.tokenizer = self.custom_tokenizer(self.model)
         self.num_threads = num_threads
 
         self.pipeline = [proc for _, proc in self.model.__dict__['pipeline']]
 
+    def custom_tokenizer(self, nlp): # zhewen
+        prefix_re = re.compile(r'''^["'“]''')
+        suffix_re = re.compile(r'''["'”,]$''')
+        infix_re = re.compile(r'''[~]''')
+        return Tokenizer(nlp.vocab, prefix_search=prefix_re.search,
+                         suffix_search=suffix_re.search,
+                         infix_finditer=infix_re.finditer)
 
     @staticmethod
     def is_package(name):

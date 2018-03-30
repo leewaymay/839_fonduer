@@ -290,6 +290,7 @@ class OmniParserUDF(UDF):
         self.phrase_num = 0
         self.abs_phrase_offset = 0
 
+
         def parse_node(node, table_info=None, figure_info=None):
             if node.tag is etree.Comment:
                 return
@@ -347,6 +348,7 @@ class OmniParserUDF(UDF):
                                     parent = table_info.parent
                                     parts = table_info.apply_tabular(
                                         parts, parent, self.position)
+
                                 yield Phrase(**parts)
                                 self.position += 1
                                 self.phrase_num += 1

@@ -29,8 +29,8 @@ doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
 corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
 #                           flatten=['sup', 'sub', 'small'],
 #                           ignore=['italic', 'bold'],
-#                           blacklist=['style', 'script', 'meta', 'noscript'])
-)
+                           blacklist=['style', 'script', 'meta', 'noscript'])
+
 corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
@@ -57,10 +57,13 @@ pprint([x.name for x in train_docs])
 
 from fonduer import RegexMatchSpan, DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
 
-prefix_rgx = '((?:meth|eth|hex|hept|iso|tetra|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).*)'
-suffix_rgx = '(.*(?:ane|ene|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|ether|amine|ide|dine))'
-dashes_rgx = '(.*(?:\-*\d+,*\-|\-[a-z]\-).*)'
-prod_matcher = RegexMatchSpan(rgx='|'.join([prefix_rgx, suffix_rgx, dashes_rgx]), longest_match_only=True)
+prefix_rgx = '((meth|hex|hept|iso|benz|tetra|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+suffix_rgx = '(.+(ane|ene|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine))'
+dashes_rgx = '(\w*(\-?\d+\'?,\d+\'?\-?|\-[a-z]+\-)\w*)'
+ions_rgx = '([A-Z]+[a-z]*\d*\+)'
+#abbr_rgx = '([A-Z|\-][A-Z|\-]+)'
+prod_matcher = RegexMatchSpan(rgx='|'.join([prefix_rgx, suffix_rgx, ions_rgx]),
+                              longest_match_only=True, ignore_case=False)
 
 
 from fonduer import CandidateExtractor
