@@ -30,5 +30,84 @@ doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
 corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path)
 corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
-import timeit
-timeit.timeit('corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)')
+from fonduer import Document, Phrase, Figure
+
+docs = session.query(Document).order_by(Document.name).all()
+ld   = len(docs)
+
+train_docs = set()
+dev_docs   = set()
+test_docs  = set()
+splits = (0.5, 0.75)
+data = [(doc.name, doc) for doc in docs]
+data.sort(key=lambda x: x[0])
+for i, (doc_name, doc) in enumerate(data):
+    if i < splits[0] * ld:
+        train_docs.add(doc)
+    elif i < splits[1] * ld:
+        dev_docs.add(doc)
+    else:
+        test_docs.add(doc)
+from pprint import pprint
+pprint([x.name for x in train_docs])
+
+
+
+
+from fonduer import RegexMatchSpan, DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
+
+attr_matcher = RegexMatchSpan(rgx=r'(?:[1][5-9]|20)[05]', longest_match_only=False)
+eeca_rgx = r'([ABC][A-Z][WXYZ]?[0-9]{3,5}(?:[A-Z]){0,5}[0-9]?[A-Z]?(?:-[A-Z0-9]{1,7})?(?:[-][A-Z0-9]{1,2})?(?:\/DG)?)'
+jedec_rgx = r'(2N\d{3,4}[A-Z]{0,5}[0-9]?[A-Z]?)'
+jis_rgx = r'(2S[ABCDEFGHJKMQRSTVZ]{1}[\d]{2,4})'
+part_rgx = '|'.join([eeca_rgx, jedec_rgx, jis_rgx, others_rgx])
+part_rgx_matcher = RegexMatchSpan(rgx=part_rgx, longest_match_only=True)
+
+from organic_spaces import OmniNgramsPart, OmniNgramsTemp
+
+part_ngrams = OmniNgramsPart(parts_by_doc=None, n_max=3)
+attr_ngrams = OmniNgramsTemp(n_max=2)
+from fonduer import CandidateExtractor
+
+from fonduer.matchers import LambdaFunctionFigureMatcher
+
+def do_nothing_matcher(fig):
+    return True
+
+def do_nothing_filter(c):
+    (orgnic, attr) = c
+    if same_table((part, attr)):
+        return (is_horz_aligned((part, attr)) or is_vert_aligned((part, attr)))
+    return True
+
+from fonduer.lf_helpers import *
+import re
+
+def stg_temp_filter(c):
+    (part, attr) = c
+    if same_table((part, attr)):
+        return (is_horz_aligned((part, attr)) or is_vert_aligned((part, attr)))
+    return True
+
+candidate_filter = stg_temp_filter
+
+fig_matcher = LambdaFunctionFigureMatcher(func=do_nothing_matcher)
+
+
+
+from fonduer import OmniFigures
+
+figs = OmniFigures(type='png')
+
+from fonduer import CandidateExtractor
+
+
+candidate_extractor = CandidateExtractor(Org_Fig,
+                        [org_ngrams, figs],
+                        [organic_matcher, fig_matcher],
+                        candidate_filter=do_nothing_filter)
+
+candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+
+train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
+print("Number of candidates:", len(train_cands))
