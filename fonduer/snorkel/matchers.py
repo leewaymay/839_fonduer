@@ -275,6 +275,13 @@ class RegexMatchEach(RegexMatch):
         tokens = c.get_attrib_tokens(self.attrib)
         return True if tokens and all([self.r.match(t) is not None for t in tokens]) else False
 
+class RegexMatchSplitEach(RegexMatch):
+    """Matches regex pattern on **each token**"""
+    def _f(self, c):
+        tokens = c.get_attrib_tokens(self.attrib)
+        if self.attrib == WORDS:
+            tokens = ' '.join(tokens).split(' ')
+        return True if tokens and all([self.r.match(t) is not None for t in tokens]) else False
 
 class PersonMatcher(RegexMatchEach):
     """

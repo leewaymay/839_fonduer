@@ -268,6 +268,8 @@ class OmniParserUDF(UDF):
                     node[j - 1].tail += self.flatten_delim.join(contents)
                 node.remove(child)
             elif (child.tag == 'a' and child.get('title') == "Select to navigate to references"):
+                if child.tail:
+                    node.text += ' ' + child.tail
                 node.remove(child)
 
     def parse_structure(self, document, text):
