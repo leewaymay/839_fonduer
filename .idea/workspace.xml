@@ -2,524 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9936b901-5a8e-41cb-90be-5bccff89fc87" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/hardware/max_storage_temp_tutorial.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/c4qo00250d-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/c4qo00250d-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/c4qo00250d-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/c4qo00250d-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/c4qo00250d-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/c4qo00250d-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/c4qo00250d-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/A room-temperature synthesis of 2,2′-bisoxazoles through palladium-catalyzed oxidative coupling of α-isocyanoacetamides - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00250D_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/GetAnchorText.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/JQueryPlugins.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-s6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-u4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-u5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/c6qo00284f-u6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/nr-spa-1071.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Approach to the synthesis of the C1–C11 and C14–C18 portion of Leucascandrolide A - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C6QO00284F_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/GetAnchorText.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/JQueryPlugins.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/c4qo00242c-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/c4qo00242c-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/c4qo00242c-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/c4qo00242c-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/c4qo00242c-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/nr-spa-1071.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/GetAnchorText.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/JQueryPlugins.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-f9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-p1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-p2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s38.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s39.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s40.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s41.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s42.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s43.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s44.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s45.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s46.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s47.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s48.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s49.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s50.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s51.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s52.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s53.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s54.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s55.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s56.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s57.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s58.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s59.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s60.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s61.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s62.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s63.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s64.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s65.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s66.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s67.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s68.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s69.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s70.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s71.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s72.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s73.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s74.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-s9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/c4np00143e-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/char_e001.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/char_e002.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/nr-spa-1071.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Chemistry of the pheromones of mealybug and scale insects - Natural Product Reports (RSC Publishing) DOI_10.1039_C4NP00143E_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/c4qo00240g-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Copper-catalyzed tandem trifluoromethylation_cyclization of internal alkynes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00240G_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/50003242" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/c8qo00191j-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/c8qo00191j-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/c8qo00191j-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/c8qo00191j-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/c8qo00191j-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/c8qo00191j-u4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/c8qo00191j-u5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Domino cyclization_trifluoromethylation of 2-alkynylanilines using fluoroform-derived CuCF 3 _ synthesis of 3-(trifluoromethyl)indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00191J_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/c4qo00253a-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/c4qo00253a-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/c4qo00253a-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/c4qo00253a-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/c4qo00253a-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/c4qo00253a-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient and scalable Pd-catalyzed double aminocarbonylations under atmospheric pressure at low catalyst loadings - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00253A_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/GetAnchorText.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/JQueryPlugins.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/c5qo00211g-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/c5qo00211g-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/c5qo00211g-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/c5qo00211g-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/c5qo00211g-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/nr-spa-1071.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Efficient synthesis of 2-nitroimidazole derivatives and the bioreductive clinical candidate Evofosfamide (TH-302) - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00211G_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/c4qo00210e-u9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Enantioselective allylic amination of MBH carbonates catalyzed by novel chiral 4-dialkylaminopyridine catalysts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00210E_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/c4qo00221k-u9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Fe_S-catalyzed decarboxylative redox condensation of arylacetic acids with nitroarenes - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00221K_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/b_char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-u4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-u5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/c4qo00256c-u6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/char_e001.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal fluorine atom transfer radical addition_ silver-catalyzed carbofluorination of unactivated alkenes with ketones in aqueous solution - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00256C_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/GetAnchorText.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/JQueryPlugins.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/c5qo00109a-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/c5qo00109a-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/c5qo00109a-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/c5qo00109a-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/nr-spa-1071.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/50000925" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/CROSSMARK_Colo.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/GetAnchorText.j.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/JQueryPlugins.m.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-s6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/c5qo00005j-s7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/nr-spa-1071.min.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Lewis acid catalyzed Nazarov type cyclization for the synthesis of a substituted indane framework_ total synthesis of (±)-mutisianthol - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00005J_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/50003242" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-s6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/c8qo00147b-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Photoredox-catalyzed cascade annulation of methyl(2-(phenylethynyl)phenyl)sulfanes and methyl(2-(phenylethynyl)phenyl)selanes with sulfonyl chlorides_ ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00147B_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/50003169" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/GetAnchorText.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/JQueryPlugins.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-f9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-p1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-p2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-p3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-t1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-t2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-t3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-t4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-t5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-t6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-t7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/c4ee03297g-u9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/nr-spa-1071.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Solution processed organic thermoelectrics_ towards flexible thermoelectric modules - Energy &amp; Environmental Science (RSC Publishing) DOI_10.1039_C4EE03297G_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/3o7.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/50001542" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/CrossMarkIE.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/GetAnchorText.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/JQueryPlugins.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-f2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-s5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-s6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/c5qo00019j-u9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/gtm.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/nr-spa-1071.min.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Stereoconvergent synthesis of 1-deoxynojirimycin isomers by using the 3 component 4 centred Ugi reaction - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00019J_files/widget.js.下载" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/50003242" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-f8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/c8qo00187a-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis and characterization of a doubly spin-labelled electrochemically driven molecular shuttle - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00187A_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/50003242" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/c8qo00008e-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/c8qo00008e-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/c8qo00008e-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/c8qo00008e-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/c8qo00008e-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/c8qo00008e-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Synthesis of trans -disubstituted-2,3-dihydrobenzofurans by a formal [4 + 1] annulation between para -quinone methides and sulfonium salts - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00008E_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/50003242" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/c8qo00143j-f1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/c8qo00143j-f2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/c8qo00143j-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/c8qo00143j-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/c8qo00143j-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/c8qo00143j-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/char_2009.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Total synthesis of C 19 -diterpenoid alkaloid_ construction of a functionalized ABCDE-ring system - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00143J_files/widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/3o7.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/50003242" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/CROSSMARK_Color_square.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/CrossMarkIE.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/GetAnchorText.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/JQueryPlugins.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/c8qo00219c-s1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/c8qo00219c-s2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/c8qo00219c-s3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/c8qo00219c-s4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/c8qo00219c-u1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/c8qo00219c-u2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/c8qo00219c-u3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/eec2473e72" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/gtm.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/nr-spa-1071.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/html/Visible light photoredox catalysis_ conversion of a mixture of thiophenols and nitriles into 2-substituted benzothiazoles via consecutive C–S and C–N ... - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C8QO00219C_files/widget.js" />
-      <change beforePath="$PROJECT_DIR$/fonduer/__init__.py" afterPath="$PROJECT_DIR$/fonduer/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/fonduer/candidates.py" afterPath="$PROJECT_DIR$/fonduer/candidates.py" />
-      <change beforePath="$PROJECT_DIR$/fonduer/parser.py" afterPath="$PROJECT_DIR$/fonduer/parser.py" />
-      <change beforePath="$PROJECT_DIR$/fonduer/snorkel/matchers.py" afterPath="$PROJECT_DIR$/fonduer/snorkel/matchers.py" />
-      <change beforePath="$PROJECT_DIR$/fonduer/visual.py" afterPath="$PROJECT_DIR$/fonduer/visual.py" />
-      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures.py" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures.py" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/pdf/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A/--1_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/pdf/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A/--1_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/pdf/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A/--1_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/pdf/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A/--1_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/pdf/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A/--2_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/data/pdf/Formal synthesis of (−)-platensimycin - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C5QO00109A/--2_2.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py" />
-      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/pdf/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C/--1_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/pdf/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C/--1_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/pdf/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C/--1_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/pdf/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C/--2_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/pdf/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C/--2_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/pdf/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C/--2_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/pdf/Brønsted acid-catalyzed synthesis of carbazoles from 2-substituted indoles - Organic Chemistry Frontiers (RSC Publishing) DOI_10.1039_C4QO00242C/--3_1.png" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -533,38 +29,88 @@
       <file leaf-file-name="parse_organic_figures_zhewen.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="804">
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visual.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonduer/visual.py">
+      <file leaf-file-name="parse.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/parse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candidates.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fonduer/candidates.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candidates.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fonduer/snorkel/candidates.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="191">
-              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <file leaf-file-name="attributes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/fonduer/lib/python3.6/site-packages/sqlalchemy/orm/attributes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="181">
+              <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pytesseract.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/fonduer/lib/python3.6/site-packages/pytesseract/pytesseract.py">
+      <file leaf-file-name="udf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fonduer/snorkel/udf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-763">
-              <caret line="100" column="29" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="29" />
+            <state relative-caret-position="371">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matchers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fonduer/snorkel/matchers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_spaces.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fonduer/models/context.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -580,61 +126,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidates.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonduer/candidates.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-475">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <marker date="1522460185589" expanded="true" signature="10027:10067" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="udf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonduer/snorkel/udf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matchers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonduer/snorkel/matchers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="263" column="6" lean-forward="false" selection-start-line="263" selection-start-column="6" selection-end-line="263" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="candidates.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonduer/snorkel/candidates.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2361">
-              <caret line="144" column="8" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="144" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product_spaces.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>union</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -644,6 +148,7 @@
       <list>
         <option value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures.py" />
         <option value="$PROJECT_DIR$/fonduer/async_annotations.py" />
+        <option value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/parse.py" />
         <option value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py" />
       </list>
     </option>
@@ -690,6 +195,13 @@
               <item name="tutorials" type="462c0819:PsiDirectoryNode" />
               <item name="organic_synthesis_figures" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="839_fonduer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="839_fonduer" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorials" type="462c0819:PsiDirectoryNode" />
+              <item name="organic_synthesis_figures" type="462c0819:PsiDirectoryNode" />
+              <item name="testdata" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -716,6 +228,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.parse_organic_figures_zhewen">
+    <configuration name="parse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="839_fonduer" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/parse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="parse_organic_figures" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -752,14 +282,16 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.parse_organic_figures" />
       <item index="1" class="java.lang.String" itemvalue="Python.parse_organic_figures_zhewen" />
+      <item index="2" class="java.lang.String" itemvalue="Python.parse" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.parse_organic_figures_zhewen" />
-        <item index="1" class="java.lang.String" itemvalue="Python.parse_organic_figures" />
+        <item index="1" class="java.lang.String" itemvalue="Python.parse" />
+        <item index="2" class="java.lang.String" itemvalue="Python.parse_organic_figures" />
       </list>
     </recent_temporary>
   </component>
@@ -786,12 +318,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17897575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41615543" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41615543" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -814,12 +346,12 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures.py</url>
-          <line>37</line>
+          <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py</url>
-          <line>101</line>
+          <line>129</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -834,8 +366,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py</url>
-          <line>89</line>
-          <option name="timeStamp" value="13" />
+          <line>101</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -848,68 +385,60 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>(r'('+r'|'.join(split_tokens)+r')' if split_tokens and len(split_tokens) &gt; 0 else None) == '( )'</expression-string>
+        <expression-string>child.f(c)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(r'('+r'|'.join(split_tokens)+r')' if split_tokens and len(split_tokens) &gt; 0 else None) == '()'</expression-string>
+        <expression-string>c</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>r'('+r'|'.join(split_tokens)+r')' if split_tokens and len(split_tokens) &gt; 0 else None == '()'</expression-string>
+        <expression-string>fig.figure.description.split(&quot; &quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>r'('+r'|'.join(split_tokens)+r')' if split_tokens and len(split_tokens) &gt; 0 else None</expression-string>
+        <expression-string>fig.figure.text.split(&quot;\n&quot;)'R3\\/ Bronsted Acid'</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>print(fig.figure.text)</expression-string>
+        <expression-string>fig.figure.text.split(&quot;\n&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fig.figure.text</expression-string>
+        <expression-string>ocr_wlist</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fig.figure.name</expression-string>
+        <expression-string>prod_matcher</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fig.figure.name ==</expression-string>
+        <expression-string>!True</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fig.figure.name == 'Fig.1'</expression-string>
+        <expression-string>any(value for value in ['synthesis'] if value in w_list)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/fonduer/lib/python3.6/site-packages/psycopg2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -992,56 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fonduer/matchers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fonduer/snorkel/matchers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="263" column="6" lean-forward="false" selection-start-line="263" selection-start-column="6" selection-end-line="263" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fonduer/snorkel/candidates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2361">
-          <caret line="144" column="8" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="144" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fonduer/snorkel/udf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/fonduer/lib/python3.6/site-packages/pytesseract/pytesseract.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-763">
@@ -1058,20 +537,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2073">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="1071" column="0" lean-forward="false" selection-start-line="1071" selection-start-column="0" selection-end-line="1071" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fonduer/snorkel/udf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fonduer/models/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/fonduer/lib/python3.6/site-packages/sqlalchemy/orm/attributes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="234" column="0" lean-forward="false" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fonduer/matchers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fonduer/candidates.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <marker date="1522460185589" expanded="true" signature="10027:10067" ph="..." />
-          </folding>
+        <state relative-caret-position="173">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fonduer/snorkel/candidates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fonduer/snorkel/matchers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="804">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding />
         </state>
       </provider>
