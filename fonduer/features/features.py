@@ -1,5 +1,6 @@
 from fonduer.features.content_features import *
 from fonduer.features.core_features import *
+from fonduer.features.organic_features import *
 from fonduer.features.structural_features import *
 from fonduer.features.table_features import *
 from fonduer.features.visual_features import *
@@ -21,19 +22,10 @@ def get_all_feats(candidates):
 def get_organic_image_feats(candidates):
     for id, f, v in get_organic_feats(candidates):
         yield id, f, v
+    '''
     for id, f, v in get_image_feats(candidates):
         yield id, f, v
     for id, f, v in get_combined_feats(candidates):
         yield id, f, v
-
-def get_organic_feats(candidates):
-    #TODO: debug candidates should be unary here
-    pass
-
-def get_image_feats(candidates):
-    pass
-
-def get_combined_feats(candidates):
-    
-    pass
+    '''
 
