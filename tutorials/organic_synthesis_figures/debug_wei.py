@@ -88,6 +88,3 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         candidate_filter=candidate_filter)
 
 candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
-
-import timeit
-timeit.timeit('print("hello!")')

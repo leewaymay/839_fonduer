@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9936b901-5a8e-41cb-90be-5bccff89fc87" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/fonduer/matchers.py" afterPath="$PROJECT_DIR$/fonduer/matchers.py" />
-      <change beforePath="$PROJECT_DIR$/fonduer/snorkel/matchers.py" afterPath="$PROJECT_DIR$/fonduer/snorkel/matchers.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/debug_wei_part2.py" />
+      <change beforePath="$PROJECT_DIR$/fonduer/async_annotations.py" afterPath="$PROJECT_DIR$/fonduer/async_annotations.py" />
+      <change beforePath="$PROJECT_DIR$/fonduer/features/features.py" afterPath="$PROJECT_DIR$/fonduer/features/features.py" />
+      <change beforePath="$PROJECT_DIR$/fonduer/snorkel/udf.py" afterPath="$PROJECT_DIR$/fonduer/snorkel/udf.py" />
+      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/debug_wei.py" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/debug_wei.py" />
       <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py" />
-      <change beforePath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/parse.py" afterPath="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="parse.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="165">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,17 +92,7 @@
         <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="context.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonduer/models/context.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="484" column="0" lean-forward="false" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -142,8 +133,8 @@
         <option value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/testdata/parse.py" />
         <option value="$PROJECT_DIR$/fonduer/matchers.py" />
         <option value="$PROJECT_DIR$/fonduer/snorkel/matchers.py" />
-        <option value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py" />
         <option value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_xiuyuan.py" />
+        <option value="$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py" />
       </list>
     </option>
   </component>
@@ -659,7 +650,7 @@ re.search(regex, 'thishaid')</expression-string>
     <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/product_spaces.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -688,14 +679,6 @@ re.search(regex, 'thishaid')</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="93" column="21" lean-forward="true" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_xiuyuan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
@@ -704,10 +687,18 @@ re.search(regex, 'thishaid')</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse_organic_figures_zhewen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1707">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tutorials/organic_synthesis_figures/parse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="24" column="51" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        <state relative-caret-position="165">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
