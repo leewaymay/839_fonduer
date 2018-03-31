@@ -42,7 +42,7 @@ ld   = len(docs)
 train_docs = set()
 dev_docs   = set()
 test_docs  = set()
-splits = (0.8, 0.9)
+splits = (0.5, 0.9)
 data = [(doc.name, doc) for doc in docs]
 data.sort(key=lambda x: x[0])
 for i, (doc_name, doc) in enumerate(data):
@@ -82,48 +82,42 @@ from tutorials.organic_synthesis_figures.product_spaces import OmniNgramsProd
 prod_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
 
 from fonduer.matchers import LambdaFunctionFigureMatcher
+import time
 
 def white_black_list_matcher(fig):
+    # print("enter filter 1")
+    # enter_time = time.time()
     white_list = ['synthesis', 'plausible']
-    black_list = ['spectra', 'x-ray', 'copyright']
+    black_list = ['spectra', 'x-ray', 'copyright', 'structur', 'application']
 
-    fig_desc = fig.figure.description.replace(" ", "").lower()
-    w = b = False
-    if any(fig_desc.find(v) >= 0 for v in white_list): w = True
-    if any(fig_desc.find(v) >= 0 for v in black_list): b = True
-    if b and (not w):
-        print('removed due to black list and not saved by white list!')
-        print(fig.figure.description)
+    fig_desc = fig.figure.description.lower()
+    in_white = in_black = False
+    if any(fig_desc.find(v) >= 0 for v in white_list): in_white = True
+    if any(fig_desc.find(v) >= 0 for v in black_list): in_black = True
+    if in_black and (not in_white):
+        print('Filtered by f1!')
         return False
+    # print("{} has passed filter 1 in {} seconds!".format(fig.figure.name, time.time()-enter_time))
     return True
 
 def contain_organic_matcher(fig):
+    # print("{} has failed filter 1 in {} seconds!".format(fig.figure.name, time.time() - enter_time))
+    # filter 2
+    desc_wordlist = fig.figure.description.lower().split(' ')
+    if any(re.search(org_rgx, w) for w in desc_wordlist): return True
+    if not fig.figure.text == '':
+        orc_wordlist = fig.figure.text.lower().split('\n')
+        orc_wordlist = [w for w in orc_wordlist if not w == '']
+        if any(re.search(org_rgx, w) for w in orc_wordlist): return True
 
-
-    # fig_desc_wlist = fig.figure.description.split(" ")
-    fig_desc = fig.figure.description.replace(" ", "").lower()
-    # fig_desc_wlist = [word.lower() for word in fig_desc_wlist]
-    # ocr_wlist = fig.figure.text.split("\n")
-
-    orc_str = fig.figure.text.lower()
-    if re.search(org_rgx, fig_desc) or re.search(org_rgx, orc_str):
-        return True
-    # for word in ocr_wlist:
-    #     if not word or len(word.strip()) == 0:
-    #         continue
-    #     wl = word.strip().split(" ")
-    #     wl = [w.lower() for w in wl]
-    #     for v in wl:
-    #         if prod_matcher.f(v):
-    #             return True
-    print('removed due to not contain organic!')
+    print('Filtered by f2! Removed!')
     print(fig.figure.description)
     return False
-
 
 fig_matcher1 = LambdaFunctionFigureMatcher(func=white_black_list_matcher)
 fig_matcher2 = LambdaFunctionFigureMatcher(func=contain_organic_matcher)
 fig_matcher = Union(fig_matcher1, fig_matcher2)
+# fig_matcher = LambdaFunctionFigureMatcher(func=figure_filter)
 
 from fonduer.candidates import OmniDetailedFigures
 

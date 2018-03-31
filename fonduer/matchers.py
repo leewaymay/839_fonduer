@@ -19,6 +19,8 @@ class LambdaFunctionFigureMatcher(FigureMatcher):
     def init(self):
         try:
             self.func = self.opts['func']
+            # Added by Wei Li, Xiuyuan He
+            self.longest_match_only = False
         except KeyError:
             raise Exception("Please supply a function f as func=f.")
 
