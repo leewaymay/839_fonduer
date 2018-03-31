@@ -17,7 +17,7 @@ from fonduer.parser import HTMLPreprocessor
 from fonduer.parser import OmniParser
 from fonduer.snorkel.annotations import load_gold_labels
 from fonduer.snorkel.learning import GenerativeModel, SparseLogisticRegression
-from fonduer.snorkel.matchers import (RegexMatchSpan, DictionaryMatch,
+from fonduer.snorkel.matchers import (RegexMatchSpan, DictionaryMatch,RegexMatchSplitEach,
                                       LambdaFunctionMatcher, Intersect, Union)
 
 # Raise the visibility of these subpackages to the package level for cleaner

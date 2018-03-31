@@ -8,6 +8,7 @@ from builtins import range
 from builtins import object
 import http.client
 import os
+import shutil
 import re
 import subprocess
 import warnings
@@ -135,7 +136,7 @@ class VisualLinker(object):
         if self.verbose:
             print("Extracted %d pdf images" % len(self.pdf_image_list))
         os.chdir('../')
-        os.rmdir(tempDir)
+        shutil.rmtree(tempDir)
 
     def _coordinates_from_XML_Image(self, page, page_num):
         coordinate_caption_map = {}
