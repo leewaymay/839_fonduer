@@ -2,13 +2,13 @@
 
 import os
 import sys
-
+os.system('bash ./set_env.sh')
 PARALLEL = 1 # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
 
-os.environ['FONDUERHOME'] = '/Users/liwei/BoxSync/s2016/Dropbox/839_fonduer'
+os.environ['FONDUERHOME'] = '/home/xiuyuan/private/839/fonduer_new/839_fonduer'
 os.environ['FONDUERDBNAME'] = ATTRIBUTE
-os.environ['SNORKELDB'] = 'postgres://localhost:5432/' + os.environ['FONDUERDBNAME']
+os.environ['SNORKELDB'] = 'postgres://postgres:112233@localhost:5432/' + os.environ['FONDUERDBNAME']
 
 
 from fonduer import SnorkelSession
@@ -21,8 +21,8 @@ Org_Fig = candidate_subclass('Org_Fig', ['organic','figure'])
 
 from fonduer import HTMLPreprocessor, OmniParser
 
-docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/html/'
-pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/pdf/'
+docs_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/html/'
+pdf_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/pdf/'
 
 max_docs = float(2)
 doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
