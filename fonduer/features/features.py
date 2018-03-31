@@ -28,13 +28,12 @@ def get_organic_image_feats(candidates):
 
 def get_organic_feats(candidates):
     #TODO: debug candidates should be unary here
-    for id, f, v in get_core_feats(candidates):
-        yield id, f, v
-    ###
+    pass
 
 def get_image_feats(candidates):
     pass
 
 def get_combined_feats(candidates):
+    
     pass
 
