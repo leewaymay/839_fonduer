@@ -671,3 +671,103 @@ class Image(Context, TemporaryImage):
     def __gt__(self, other):
         # Allow sorting by comparing the string representations of each
         return self.__repr__() > other.__repr__()
+
+class TemporaryDetailedImage(TemporaryContext):
+    """The TemporaryContext version of Figure"""
+    def __init__(self, figure):
+        super(TemporaryDetailedImage, self).__init__()
+        self.figure   = figure  # The figure Context
+
+    def __len__(self):
+        return 1
+
+    def __eq__(self, other):
+        try:
+            return self.figure.position == other.figure.position \
+                and self.figure.url == other.figure.url
+        except AttributeError:
+            return False
+
+    def __ne__(self, other):
+        try:
+            return self.figure.position != other.figure.position \
+                or self.figure.url != other.figure.url
+        except AttributeError:
+            return True
+
+    def __contains__(self, other_span):
+        return self.__eq__(other_span)
+
+    def __hash__(self):
+        return hash(self.figure)
+
+    def get_stable_id(self):
+        return "%s::%s:%s" % (self.figure.document.id, self._get_polymorphic_identity(), self.figure.position)
+
+    def _get_table_name(self):
+        return 'detailed_image'
+
+    def _get_polymorphic_identity(self):
+        return 'detailed_image'
+
+    def _get_insert_query(self):
+        return """INSERT INTO detailed_image VALUES(:id, :document_id, :image_id, :url, :description, 
+                              :fig_name, :text, :page, :pos_top, :pos_left, :pos_bottom, :pos_right)"""
+
+    def _get_insert_args(self):
+        return {'document_id': self.figure.document.id,
+                'image_id' : self.figure.position,
+                'url'      : self.figure.url,
+                'description':self.figure.description,
+                'fig_name'     : self.figure.name,
+                'text'     : self.figure.text,
+                'page'     : self.figure.page,
+                'pos_top'      : self.figure.top,
+                'pos_left'     : self.figure.left,
+                'pos_bottom'   : self.figure.bottom,
+                'pos_right'    : self.figure.right
+                }
+
+    def __repr__(self):
+        return '%s(document=%s, position=%s, url=%s)' \
+            % (self.__class__.__name__, self.figure.document.name.encode('utf-8'), \
+                self.figure.position, self.figure.url)
+
+    def _get_instance(self, **kwargs):
+        return TemporaryDetailedImage(**kwargs)
+
+
+class DetailedImage(Context, TemporaryDetailedImage):
+    """
+    A candidate of figure, identified by Context id and position.
+    """
+    __tablename__ = 'detailed_image'
+    id            = Column(Integer, ForeignKey('context.id', ondelete='CASCADE'), primary_key=True)
+    document_id   = Column(Integer, ForeignKey('document.id', ondelete='CASCADE'))
+    position      = Column(Integer, nullable=False)
+    url           = Column(String)
+    description = Column(String)
+    name = Column(String)
+    text = Column(String)
+    page   = Column(Integer)
+    top    = Column(Integer)
+    left   = Column(Integer)
+    bottom = Column(Integer)
+    right  = Column(Integer)
+    document = relationship('Document',
+                            backref=backref('detailed_images', order_by=position, cascade='all, delete-orphan'),
+                            foreign_keys=document_id)
+    __table_args__ = (
+        UniqueConstraint(document_id, position),
+    )
+
+    __mapper_args__ = {
+        'polymorphic_identity': 'detailed_image',
+    }
+
+    def __repr__(self):
+        return "DetailedImage(Doc: %s, Position: %s, Url: %s, Figure_description: %s)" % (self.document.name.encode('utf-8'), self.position, self.url, self.description)
+
+    def __gt__(self, other):
+        # Allow sorting by comparing the string representations of each
+        return self.__repr__() > other.__repr__()

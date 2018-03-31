@@ -4,7 +4,7 @@ from copy import deepcopy
 from itertools import product
 from sqlalchemy.sql import select
 
-from fonduer.models import TemporaryImage
+from fonduer.models import TemporaryImage, TemporaryDetailedImage
 from fonduer.snorkel.candidates import CandidateSpace, Ngrams
 from fonduer.snorkel.models import Candidate
 from fonduer.snorkel.models.context import Document
@@ -230,4 +230,4 @@ class OmniDetailedFigures(CandidateSpace):
         doc = session.query(Document).filter(Document.id == context.id).one()
         for figure in doc.detailed_figures:
             if self.type is None or figure.url.lower().endswith(self.type):
-                yield TemporaryImage(figure)
+                yield TemporaryDetailedImage(figure)
