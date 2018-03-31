@@ -2,13 +2,13 @@
 
 import os
 import sys
-# os.system('bash ./set_env.sh')
+
 PARALLEL = 1 # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
 
-os.environ['FONDUERHOME'] = '/home/xiuyuan/private/839/fonduer_new/839_fonduer/'
+os.environ['FONDUERHOME'] = '/Users/Zitman/Documents/Graduate/Courses/CS839/Project/839_fonduer/tutorials'
 os.environ['FONDUERDBNAME'] = ATTRIBUTE
-os.environ['SNORKELDB'] = 'postgres://postgres:112233@localhost:5432/' + os.environ['FONDUERDBNAME']
+os.environ['SNORKELDB'] = 'postgres://localhost:5432/' + os.environ['FONDUERDBNAME']
 
 
 from fonduer import SnorkelSession
@@ -20,7 +20,6 @@ from fonduer import candidate_subclass
 Org_Fig = candidate_subclass('Org_Fig', ['product','figure'])
 
 from fonduer import HTMLPreprocessor, OmniParser
-
 
 docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/html/'
 pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/pdf/'
@@ -36,7 +35,6 @@ corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=
 
 from fonduer import Document
 
-# get docs
 docs = session.query(Document).order_by(Document.name).all()
 ld   = len(docs)
 
@@ -59,7 +57,6 @@ pprint([x.name for x in train_docs])
 
 from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
     DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
-
 
 prefix_rgx = '(.+(meth|cycl|tri|tetra|hex|hept|iso|carb|benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
 suffix_rgx = '(.+(ane|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine).+)'
@@ -89,53 +86,15 @@ def candidate_filter(c):
             return True
 
 
-from tutorials.organic_synthesis_figures.product_spaces import OmniNgramsProd
+from product_spaces import OmniNgramsProd
 prod_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
 
 from fonduer.matchers import LambdaFunctionFigureMatcher
 
-def white_black_list_matcher(fig):
-    white_list = ['synthesis', 'plausible']
-    black_list = ['spectra', 'x-ray', 'copyright']
-
-    fig_desc = fig.figure.description.replace(" ", "").lower()
-    w = b = False
-    if any(fig_desc.find(v) >= 0 for v in white_list): w = True
-    if any(fig_desc.find(v) >= 0 for v in black_list): b = True
-    if b and (not w):
-        print('removed due to black list and not saved by white list!')
-        print(fig.figure.description)
-        return False
+def do_nothing_matcher(fig):
     return True
 
-def contain_organic_matcher(fig):
-
-
-    # fig_desc_wlist = fig.figure.description.split(" ")
-    fig_desc = fig.figure.description.replace(" ", "").lower()
-    # fig_desc_wlist = [word.lower() for word in fig_desc_wlist]
-    # ocr_wlist = fig.figure.text.split("\n")
-
-    orc_str = fig.figure.text.lower()
-    if re.search(org_rgx, fig_desc) or re.search(org_rgx, orc_str):
-        return True
-    # for word in ocr_wlist:
-    #     if not word or len(word.strip()) == 0:
-    #         continue
-    #     wl = word.strip().split(" ")
-    #     wl = [w.lower() for w in wl]
-    #     for v in wl:
-    #         if prod_matcher.f(v):
-    #             return True
-    print('removed due to not contain organic!')
-    print(fig.figure.description)
-    return False
-
-
-fig_matcher1 = LambdaFunctionFigureMatcher(func=white_black_list_matcher)
-fig_matcher2 = LambdaFunctionFigureMatcher(func=contain_organic_matcher)
-fig_matcher = Union(fig_matcher1, fig_matcher2)
-
+fig_matcher = LambdaFunctionFigureMatcher(func=do_nothing_matcher)
 from fonduer.candidates import OmniDetailedFigures
 
 figs = OmniDetailedFigures()
@@ -145,7 +104,7 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-#candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 print("Number of candidates:", len(train_cands))
@@ -155,5 +114,3 @@ from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
-
-print(F_train)
