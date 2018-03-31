@@ -334,6 +334,7 @@ class BatchAnnotator(UDFRunner):
 
 
 class BatchFeatureAnnotator(BatchAnnotator):
+    # Modified by Zhewen
     def __init__(self, candidate_type, f=get_all_feats, **kwargs):
         super(BatchFeatureAnnotator, self).__init__(candidate_type, annotation_type='feature', f=f, **kwargs)
 

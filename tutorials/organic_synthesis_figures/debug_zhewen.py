@@ -145,7 +145,7 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+#candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 print("Number of candidates:", len(train_cands))
@@ -155,3 +155,5 @@ from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
+
+print(F_train)

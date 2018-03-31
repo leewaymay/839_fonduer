@@ -43,22 +43,27 @@ for i, (doc_name, doc) in enumerate(data):
 from pprint import pprint
 pprint([x.name for x in train_docs])
 
-from fonduer import RegexMatchSpan, DictionaryMatch, RegexMatchSplitEach,\
-    LambdaFunctionMatcher, Intersect, Union
+from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
+    DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
 
-prefix_rgx = '((meth|di|bi|tri|tetra|hex|hept|iso)?(benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
-suffix_rgx = '(.+(ane|ene|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine))'
-dashes_rgx = '(\w*(\-?\d+\'?,\d+\'?\-?|\-[a-z]+\-)\w*)'
-ions_rgx = '([A-Z]+[a-z]*\d*\+)'
-#abbr_rgx = '([A-Z|\-][A-Z|\-]+)'
+prefix_rgx = '(.+(meth|cycl|tri|tetra|hex|hept|iso|carb|benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+suffix_rgx = '(.+(ane|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine).+)'
+
+dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'
+comma_dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?,[a-z|\d]\'?\-)\w*)'
+inorganic_rgx = '(([A-Z][a-z]?\d*\+?){2,})'
 
 
-prod_matcher = RegexMatchSplitEach(rgx='|'.join([prefix_rgx, suffix_rgx, ions_rgx]),
-                              longest_match_only=False, ignore_case=False)
+rgx_matcher = RegexMatchSplitEach(rgx='|'.join([prefix_rgx, suffix_rgx, dash_rgx, comma_dash_rgx, inorganic_rgx]),
+                              longest_match_only=True, ignore_case=False)
 
+blacklist = ['CAS', 'PDF', 'RSC', 'SAR', 'TEM']
+
+prod_blacklist_lambda_matcher = LambdaFunctionMatcher(func=lambda x: x.text not in blacklist, ignore_case=False)
+#prod_matcher = rgx_matcher
+prod_matcher = Intersect(rgx_matcher, prod_blacklist_lambda_matcher)
 
 from fonduer import CandidateExtractor
-
 from fonduer.lf_helpers import *
 import re
 
