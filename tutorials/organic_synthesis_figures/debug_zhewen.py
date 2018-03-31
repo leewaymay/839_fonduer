@@ -70,8 +70,8 @@ rgx_matcher = RegexMatchSplitEach(rgx='|'.join([prefix_rgx, suffix_rgx, dash_rgx
                               longest_match_only=True, ignore_case=False)
 
 blacklist = ['CAS', 'PDF', 'RSC', 'SAR', 'TEM']
-
 prod_blacklist_lambda_matcher = LambdaFunctionMatcher(func=lambda x: x.text not in blacklist, ignore_case=False)
+
 #prod_matcher = rgx_matcher
 prod_matcher = Intersect(rgx_matcher, prod_blacklist_lambda_matcher)
 
