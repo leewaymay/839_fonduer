@@ -25,7 +25,7 @@ from fonduer.snorkel.utils import (
     matrix_tn
 )
 from fonduer.snorkel.utils import remove_files
-from fonduer.features.features import get_all_feats
+from fonduer.features.features import get_all_feats, get_organic_image_feats
 
 # Used to conform to existing annotation key API call
 # Note that this anontation matrix class can not be replaced with snorkel one
