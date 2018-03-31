@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.41.0">
+<page number="1" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="0" size="29" family="Times" color="#61b0c7"/>
+	<fontspec id="1" size="27" family="Times" color="#2056ad"/>
+	<fontspec id="2" size="20" family="Times" color="#5f5c5d"/>
+	<fontspec id="3" size="19" family="Times" color="#ffffff"/>
+	<fontspec id="4" size="8" family="Times" color="#231f20"/>
+	<fontspec id="5" size="21" family="Times" color="#231f20"/>
+	<fontspec id="6" size="13" family="Times" color="#231f20"/>
+	<fontspec id="7" size="7" family="Times" color="#231f20"/>
+	<fontspec id="8" size="9" family="Times" color="#231f20"/>
+	<fontspec id="9" size="19" family="Times" color="#231f20"/>
+	<fontspec id="10" size="11" family="Times" color="#231f20"/>
+	<fontspec id="11" size="6" family="Times" color="#231f20"/>
+	<fontspec id="12" size="4" family="Times" color="#231f20"/>
+	<fontspec id="13" size="10" family="Times" color="#000000"/>
+	<fontspec id="14" size="11" family="Times" color="#ffffff"/>
+	<fontspec id="15" size="7" family="Times" color="#ffffff"/>
+<image top="30" left="500" width="329" height="80" src="./images/-1_1.png"/>
+<image top="206" left="64" width="91" height="36" src="./images/-1_2.png"/>
+<image top="436" left="489" width="303" height="144" src="./images/-1_3.png"/>
+<text top="53" left="64" width="145" height="29" font="0">ORGANIC</text>
+<text top="48" left="218" width="145" height="34" font="1">CHEMISTRY</text>
+<text top="93" left="64" width="128" height="20" font="2">FRONTIERS</text>
+<text top="149" left="77" width="204" height="20" font="3">RESEARCH ARTICLE</text>
+<text top="255" left="64" width="181" height="10" font="4">Cite this: Org. Chem. Front., 2016, 3,</text>
+<text top="269" left="64" width="23" height="10" font="4">1120</text>
+<text top="333" left="64" width="127" height="10" font="4">Received 20th June 2016,</text>
+<text top="347" left="64" width="121" height="10" font="4">Accepted 12th July 2016</text>
+<text top="366" left="64" width="130" height="10" font="4">DOI: 10.1039/c6qo00284f</text>
+<text top="389" left="64" width="102" height="10" font="4"><a href="http://www.rsc.li/frontiers-organic">rsc.li/frontiers-organic</a></text>
+<text top="208" left="259" width="398" height="22" font="5">Approach to the synthesis of the C1</text>
+<text top="203" left="657" width="107" height="31" font="5">–C11 and</text>
+<text top="236" left="259" width="44" height="22" font="5">C14</text>
+<text top="230" left="303" width="428" height="31" font="5">–C18 portion of Leucascandrolide A†‡</text>
+<text top="278" left="259" width="82" height="14" font="6">T. J. Hunter,</text>
+<text top="274" left="341" width="8" height="20" font="6">§</text>
+<text top="275" left="349" width="6" height="9" font="7">a</text>
+<text top="278" left="359" width="59" height="14" font="6">J. Zheng</text>
+<text top="274" left="418" width="8" height="20" font="6">§</text>
+<text top="275" left="425" width="7" height="9" font="7">b</text>
+<text top="278" left="436" width="77" height="14" font="6">and G. A. O</text>
+<text top="274" left="513" width="65" height="20" font="6">’Doherty*</text>
+<text top="275" left="578" width="7" height="9" font="7">b</text>
+<text top="316" left="259" width="570" height="11" font="8">An asymmetric synthesis of the C1 to C11 and C14 to C18 fragments of the macrocyclic portion of the</text>
+<text top="334" left="259" width="570" height="11" font="8">antibiotic Leucascandrolide A was achieved in 21 total steps from an achiral dienoate. The key 4-hydroxy-</text>
+<text top="352" left="259" width="570" height="11" font="8">2,5-pyran portion of the natural product was established by oxy-Michael cyclization of a 5,7,9,11-tetraol</text>
+<text top="370" left="259" width="570" height="11" font="8">intermediate, which in turn was established by an iterative asymmetric-hydration of dienoates. Alternative</text>
+<text top="388" left="259" width="365" height="11" font="8">strategies for establishing the polyol stereochemistry were explored.</text>
+<text top="436" left="64" width="120" height="19" font="9">Introduction</text>
+<text top="471" left="64" width="133" height="13" font="10">As part of humankind</text>
+<text top="468" left="197" width="241" height="18" font="10">’s continuous search for unique biologi-</text>
+<text top="489" left="64" width="374" height="13" font="10">cally active structures from the deep blue sea, Leucascandro-</text>
+<text top="507" left="64" width="374" height="14" font="10">lide A (1) was discovered in the Coral Sea oﬀ the northeastern</text>
+<text top="525" left="64" width="144" height="13" font="10">coast of New Caledonia.</text>
+<text top="522" left="207" width="5" height="9" font="11">1</text>
+<text top="525" left="217" width="221" height="13" font="10">In 1996, Pietra reported the isolation</text>
+<text top="543" left="64" width="374" height="13" font="10">of the macrocyclic lactone from the calcareous sponge Leucas-</text>
+<text top="561" left="64" width="374" height="13" font="10">candra caveolata. A combination of 2D-NMR and Mosher ester</text>
+<text top="579" left="64" width="374" height="13" font="10">analysis was used to assign the absolute and relative stereo-</text>
+<text top="597" left="64" width="374" height="13" font="10">chemistry of the macrocyclic natural product. In addition to its</text>
+<text top="615" left="64" width="374" height="13" font="10">novel structure, interest in Leucascandrolide A was further</text>
+<text top="633" left="64" width="374" height="13" font="10">peaked by discovery that it possessed potent anticancer and</text>
+<text top="651" left="64" width="162" height="13" font="10">antifungal activity, with IC</text>
+<text top="656" left="225" width="11" height="9" font="11">50</text>
+<text top="651" left="241" width="197" height="13" font="10">value against the human KB (70</text>
+<text top="669" left="64" width="374" height="13" font="10">nM) and P388 (350 nM) cell lines and activity against Candida</text>
+<text top="687" left="64" width="51" height="13" font="10">albicans.</text>
+<text top="684" left="114" width="5" height="9" font="11">1</text>
+<text top="687" left="128" width="310" height="13" font="10">As is often the problem associated with marine</text>
+<text top="705" left="64" width="374" height="13" font="10">natural products isolated from sponges, as opposed to the bac-</text>
+<text top="723" left="64" width="374" height="13" font="10">teria that most likely produce it, Leucascandrolide A no longer</text>
+<text top="741" left="64" width="284" height="13" font="10">appears to be available from the same sponge.</text>
+<text top="738" left="348" width="5" height="9" font="11">2</text>
+<text top="741" left="358" width="80" height="13" font="10">These factors</text>
+<text top="759" left="64" width="374" height="13" font="10">have inspired synthetic organic chemist to pursue the total</text>
+<text top="777" left="64" width="238" height="13" font="10">synthesis of Leucascandrolide A (Fig. 1).</text>
+<text top="795" left="82" width="356" height="13" font="10">A mere four years after its isolation, the first total synthesis</text>
+<text top="813" left="64" width="308" height="13" font="10">of Leucascandrolide A was completed by Leighton.</text>
+<text top="810" left="372" width="5" height="9" font="11">3</text>
+<text top="813" left="382" width="56" height="13" font="10">Since the</text>
+<text top="831" left="64" width="317" height="13" font="10">Leighton synthesis there have been 10 other total</text>
+<text top="828" left="381" width="5" height="9" font="11">4</text>
+<text top="831" left="394" width="44" height="13" font="10">and 11</text>
+<text top="849" left="64" width="107" height="13" font="10">formal syntheses.</text>
+<text top="846" left="171" width="5" height="9" font="11">5</text>
+<text top="849" left="183" width="255" height="13" font="10">More recently, Kozmin was able to show</text>
+<text top="867" left="64" width="374" height="13" font="10">that Leucascandrolide A inhibits oxidative phosphorylation via</text>
+<text top="885" left="64" width="189" height="13" font="10">interaction with cytochrome bc</text>
+<text top="890" left="252" width="5" height="9" font="11">1</text>
+<text top="885" left="263" width="53" height="13" font="10">complex.</text>
+<text top="882" left="316" width="5" height="9" font="11">6</text>
+<text top="885" left="326" width="112" height="13" font="10">As part of a larger</text>
+<text top="903" left="64" width="374" height="13" font="10">program aimed at the synthesis and SAR-study of anticancer</text>
+<text top="648" left="455" width="374" height="13" font="10">agents that act by inhibition of ion transport, we became inter-</text>
+<text top="666" left="455" width="266" height="13" font="10">ested in the synthesis of Leucascandrolide A.</text>
+<text top="684" left="473" width="356" height="13" font="10">Retrosynthetically, we envisioned that the Leucascandrolide</text>
+<text top="702" left="455" width="374" height="14" font="10">A macrocycle (1) could be derived by ring closing cross meta-</text>
+<text top="720" left="455" width="374" height="14" font="10">thesis and reductive cyclization of diene 2 (Scheme 1). Com-</text>
+<text top="738" left="455" width="374" height="14" font="10">pound 2 in turn could be derived from an anti-selective</text>
+<text top="756" left="455" width="374" height="14" font="10">crotylation of aldehyde 3. Aldehyde 3 could be prepared by an</text>
+<text top="774" left="455" width="374" height="14" font="10">esterification of alcohol 4 and acid 5. Carboxylic acid 5 could</text>
+<text top="792" left="455" width="374" height="14" font="10">be derived from protected tetraol 6, which could result from a</text>
+<text top="810" left="455" width="374" height="13" font="10">diastereoselective allylation/cross metathesis of protected tri-</text>
+<text top="828" left="455" width="94" height="14" font="10">hydroxy ester 7.</text>
+<text top="825" left="549" width="5" height="9" font="11">7</text>
+<text top="828" left="558" width="271" height="13" font="10">Previously we have shown that esters such as</text>
+<text top="846" left="455" width="374" height="14" font="10">7 can be derived by the iterative asymmetric hydration of</text>
+<text top="864" left="455" width="100" height="14" font="10">dienoates like 8.</text>
+<text top="861" left="555" width="5" height="9" font="11">8</text>
+<text top="864" left="565" width="23" height="13" font="10">The</text>
+<text top="861" left="593" width="236" height="18" font="10">β-hydroxy enone 4 was also envisioned</text>
+<text top="882" left="455" width="374" height="13" font="10">as ultimately arising from an asymmetric hydration of a dieno-</text>
+<text top="900" left="455" width="207" height="13" font="10">ate. Herein we describe our latest e</text>
+<text top="897" left="662" width="168" height="18" font="10">ﬀorts aimed at the synthesis</text>
+<text top="918" left="455" width="374" height="13" font="10">of the C1 to C11 and C14 to C18 containing fragment of Leuca-</text>
+<text top="936" left="455" width="156" height="14" font="10">scandrolide A, aldehyde 3.</text>
+<text top="995" left="455" width="216" height="19" font="9">Results and discussion</text>
+<text top="1030" left="455" width="92" height="13" font="10">Our synthetic e</text>
+<text top="1027" left="547" width="282" height="18" font="10">ﬀorts aimed at Leucascandrolide A began with</text>
+<text top="1048" left="455" width="374" height="14" font="10">aldehyde 9 (Scheme 2), which we previously had shown could</text>
+<text top="1066" left="455" width="310" height="14" font="10">be made from the DibalH reduction of esters like 7.</text>
+<text top="1063" left="765" width="5" height="9" font="11">9</text>
+<text top="1066" left="775" width="54" height="13" font="10">Exposure</text>
+<text top="595" left="455" width="28" height="10" font="8">Fig. 1</text>
+<text top="595" left="494" width="168" height="10" font="8">Structure of Leucascandrolide A.</text>
+<text top="1005" left="64" width="367" height="14" font="4">†This manuscript is dedicated to Barry M. Trost on the occasion of this 75</text>
+<text top="1006" left="431" width="7" height="7" font="12">th</text>
+<text top="1023" left="64" width="42" height="10" font="4">birthday.</text>
+<text top="1035" left="64" width="53" height="14" font="4">‡Electronic</text>
+<text top="1038" left="132" width="69" height="10" font="4">supplementary</text>
+<text top="1038" left="217" width="56" height="10" font="4">information</text>
+<text top="1038" left="289" width="22" height="10" font="4">(ESI)</text>
+<text top="1038" left="326" width="43" height="10" font="4">available.</text>
+<text top="1038" left="385" width="15" height="10" font="4">See</text>
+<text top="1038" left="416" width="22" height="10" font="4">DOI:</text>
+<text top="1053" left="64" width="92" height="10" font="4">10.1039/c6qo00284f</text>
+<text top="1065" left="64" width="82" height="14" font="4">§Co-first authors.</text>
+<text top="961" left="64" width="4" height="7" font="12">a</text>
+<text top="963" left="68" width="298" height="10" font="4">MilliporeSigma, 645 Science Drive, Madison, Wisconsin 53711, USA</text>
+<text top="976" left="64" width="4" height="7" font="12">b</text>
+<text top="978" left="68" width="356" height="10" font="4">Department of Chemistry and Chemical Biology, Northeastern University, Boston,</text>
+<text top="993" left="64" width="249" height="10" font="4">Massachusetts 02115, USA. E-mail: g.odoherty@neu.edu</text>
+<text top="1118" left="64" width="188" height="11" font="8">1120 | Org. Chem. Front., 2016, 3, 1120</text>
+<text top="1116" left="251" width="27" height="15" font="8">–1125</text>
+<text top="1116" left="609" width="220" height="13" font="8">This journal is © the Partner Organisations 2016</text>
+<text top="656" left="17" width="0" height="11" font="13">Published on 12 July 2016. Downloaded on 26/03/2018 20:37:10. </text>
+<text top="141" left="679" width="124" height="14" font="14"><a href="http://dx.doi.org/10.1039/C6QO00284F"><b>View Article Online</b></a></text>
+<text top="160" left="679" width="110" height="9" font="15"><a href="http://pubs.rsc.org/en/journals/journal/QO"><b>View Journal </b></a><a href="http://pubs.rsc.org/en/journals/journal/QO?issueid=QO003009"><b> | View Issue</b></a></text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="16" size="9" family="Times" color="#2c3839"/>
+	<fontspec id="17" size="7" family="Times" color="#000000"/>
+<image top="76" left="89" width="716" height="323" src="./images/-2_1.png"/>
+<image top="468" left="98" width="695" height="168" src="./images/-2_2.png"/>
+<text top="704" left="64" width="374" height="14" font="10">of aldehyde 9 to the vinylogous Horner–Wadsworth–Emmons</text>
+<text top="722" left="64" width="374" height="14" font="10">reagent 10 and LiOH as base gave the desired dienoate 11</text>
+<text top="740" left="64" width="38" height="13" font="10">(68%),</text>
+<text top="737" left="102" width="11" height="9" font="11">10</text>
+<text top="740" left="119" width="319" height="13" font="10">which could be converted into the desired syn/anti-</text>
+<text top="758" left="64" width="374" height="13" font="10">1,3,5-triol by our three step asymmetric hydration protocol.</text>
+<text top="776" left="64" width="374" height="14" font="10">Thus, treating the E,E-dienoate 11 to the typical Sharpless</text>
+<text top="794" left="64" width="69" height="13" font="10">asymmetric</text>
+<text top="794" left="147" width="92" height="13" font="10">dihydroxylation</text>
+<text top="794" left="254" width="64" height="13" font="10">conditions</text>
+<text top="794" left="332" width="23" height="13" font="10">(5%</text>
+<text top="794" left="370" width="25" height="13" font="10">OsO</text>
+<text top="800" left="395" width="5" height="9" font="11">4</text>
+<text top="794" left="401" width="4" height="13" font="10">,</text>
+<text top="794" left="419" width="19" height="13" font="10">6%</text>
+<text top="812" left="64" width="38" height="13" font="10">(DHQ)</text>
+<text top="818" left="102" width="5" height="9" font="11">2</text>
+<text top="812" left="107" width="51" height="13" font="10">PHAL, K</text>
+<text top="818" left="159" width="5" height="9" font="11">3</text>
+<text top="812" left="164" width="32" height="13" font="10">FeCN</text>
+<text top="818" left="196" width="5" height="9" font="11">6</text>
+<text top="812" left="201" width="43" height="13" font="10">, MeSO</text>
+<text top="818" left="245" width="5" height="9" font="11">2</text>
+<text top="812" left="250" width="20" height="13" font="10">NH</text>
+<text top="818" left="270" width="5" height="9" font="11">2</text>
+<text top="812" left="276" width="162" height="14" font="10">), provided diol 12 in good</text>
+<text top="830" left="64" width="245" height="13" font="10">yield (71%) and as a single diastereomer.</text>
+<text top="827" left="309" width="11" height="9" font="11">11</text>
+<text top="830" left="323" width="115" height="14" font="10">Exposing diol 12 to</text>
+<text top="848" left="64" width="374" height="13" font="10">a pyridine solution of triphosgene converted it into a cyclic</text>
+<text top="866" left="64" width="374" height="14" font="10">carbonate 13 in good yield (79%). When cyclic carbonate 13</text>
+<text top="884" left="64" width="300" height="13" font="10">was exposed to our Pd-reduction conditions (HCO</text>
+<text top="890" left="363" width="5" height="9" font="11">2</text>
+<text top="884" left="369" width="27" height="13" font="10">H/Et</text>
+<text top="890" left="396" width="5" height="9" font="11">3</text>
+<text top="884" left="401" width="37" height="13" font="10">N, 1%</text>
+<text top="902" left="64" width="16" height="13" font="10">Pd</text>
+<text top="908" left="79" width="5" height="9" font="11">2</text>
+<text top="902" left="85" width="31" height="13" font="10">(dba)</text>
+<text top="908" left="115" width="5" height="9" font="11">3</text>
+<text top="902" left="121" width="36" height="13" font="10">·CHCl</text>
+<text top="908" left="156" width="5" height="9" font="11">3</text>
+<text top="902" left="162" width="57" height="13" font="10">/5% PPh</text>
+<text top="908" left="219" width="5" height="9" font="11">3</text>
+<text top="902" left="224" width="214" height="13" font="10">) it cleanly reacted to give the</text>
+<text top="920" left="64" width="111" height="13" font="10">5-hydroxy-1-enoate</text>
+<text top="917" left="178" width="212" height="18" font="10">anti-14a in an excellent yield (79%).</text>
+<text top="938" left="82" width="356" height="13" font="10">Following a nearly identical procedure, we previously have</text>
+<text top="956" left="64" width="67" height="13" font="10">shown that</text>
+<text top="953" left="136" width="302" height="18" font="10">anti-14b (Table 1), with a C11 PMB-group, can be</text>
+<text top="974" left="64" width="207" height="14" font="10">prepared from a dienoate like 8 (P</text>
+<text top="971" left="271" width="5" height="9" font="11">3</text>
+<text top="974" left="281" width="47" height="13" font="10">= PMB).</text>
+<text top="971" left="328" width="5" height="9" font="11">8</text>
+<text top="974" left="338" width="100" height="13" font="10">Similarly, the C5</text>
+<text top="992" left="64" width="78" height="13" font="10">diastereomer</text>
+<text top="989" left="146" width="292" height="18" font="10">syn-14b, was also prepared from the same dieno-</text>
+<text top="1010" left="64" width="374" height="13" font="10">ate, by simply replacing the ligand in the Sharpless dihydroxy-</text>
+<text top="1028" left="64" width="102" height="13" font="10">lation to (DHQD)</text>
+<text top="1034" left="165" width="5" height="9" font="11">2</text>
+<text top="1028" left="171" width="38" height="13" font="10">PHAL.</text>
+<text top="1046" left="82" width="203" height="13" font="10">To our surprise, we found it di</text>
+<text top="1043" left="285" width="153" height="18" font="10">ﬃcult to protect the C5</text>
+<text top="1064" left="64" width="62" height="13" font="10">alcohol of</text>
+<text top="1061" left="133" width="305" height="18" font="10">anti-14a with either a TBDPS-group or a benzyl-</text>
+<text top="704" left="455" width="374" height="13" font="10">group (Table 1). The benzyl protection was similarly proble-</text>
+<text top="722" left="455" width="374" height="13" font="10">matic, whether acidic or basic conditions were used. In con-</text>
+<text top="740" left="455" width="216" height="13" font="10">trast, we were able to react alcohol</text>
+<text top="737" left="677" width="152" height="18" font="10">anti-14b with MOMCl to</text>
+<text top="758" left="455" width="97" height="13" font="10">give MOM-ether</text>
+<text top="755" left="556" width="273" height="18" font="10">anti-15d in a satisfactory yield (47%). To our</text>
+<text top="776" left="455" width="175" height="13" font="10">delight, the C5 diastereomer</text>
+<text top="773" left="635" width="194" height="18" font="10">syn-14b reacted under a similar</text>
+<text top="794" left="455" width="102" height="13" font="10">procedure to give</text>
+<text top="791" left="561" width="191" height="18" font="10">syn-15d in a similar yield (52%).</text>
+<text top="812" left="473" width="148" height="13" font="10">We surmised that the di</text>
+<text top="809" left="621" width="208" height="18" font="10">ﬃculty associated with the protec-</text>
+<text top="830" left="455" width="374" height="13" font="10">tion of the C5 hydroxyl group could be due to the acidity of the</text>
+<text top="848" left="455" width="374" height="13" font="10">C4 position and the propensity of the substrate to undergo</text>
+<text top="866" left="455" width="374" height="14" font="10">elimination to form dienoates 11. Thus we decided to explore</text>
+<text top="884" left="455" width="374" height="13" font="10">an alternative procedure (Scheme 3) for the synthesis of</text>
+<text top="902" left="455" width="75" height="13" font="10">enoates, like</text>
+<text top="899" left="534" width="295" height="18" font="10">syn-15. Specifically, we decided to pursue a route</text>
+<text top="920" left="455" width="374" height="13" font="10">where the protection step occurred before the ester group was</text>
+<text top="938" left="455" width="374" height="13" font="10">introduced. This revised route was envisioned to occur</text>
+<text top="956" left="455" width="48" height="13" font="10">through</text>
+<text top="956" left="517" width="15" height="13" font="10">an</text>
+<text top="956" left="546" width="59" height="13" font="10">allylation,</text>
+<text top="956" left="619" width="61" height="13" font="10">protection</text>
+<text top="956" left="694" width="23" height="13" font="10">and</text>
+<text top="956" left="731" width="99" height="13" font="10">cross-metathesis</text>
+<text top="974" left="455" width="59" height="13" font="10">sequence.</text>
+<text top="992" left="473" width="356" height="13" font="10">The revised route began with the unselective allylation of</text>
+<text top="1010" left="455" width="374" height="14" font="10">aldehyde 9 with an allylic Grignard reagent (AllylMgCl). The</text>
+<text top="1028" left="455" width="374" height="13" font="10">Grignard addition occurred to give a mixture of diastereomeric</text>
+<text top="1046" left="455" width="132" height="13" font="10">homo-allylic alcohols</text>
+<text top="1043" left="596" width="233" height="18" font="10">syn-16a and anti-16a (1.2 : 1), which</text>
+<text top="1064" left="455" width="374" height="13" font="10">could be separated by silica gel chromatography. Fortunately,</text>
+<text top="415" left="64" width="51" height="10" font="8">Scheme 1</text>
+<text top="415" left="126" width="195" height="10" font="8">Retrosynthesis of Leucascandrolide A.</text>
+<text top="651" left="64" width="52" height="10" font="8">Scheme 2</text>
+<text top="651" left="127" width="178" height="10" font="8">Os/Pd approach to protected triol.</text>
+<text top="40" left="64" width="157" height="11" font="16">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="16">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="8">This journal is © the Partner Organisations 2016</text>
+<text top="1115" left="617" width="212" height="15" font="8">Org. Chem. Front., 2016, 3, 1120–1125 | 1121</text>
+<text top="656" left="17" width="0" height="11" font="13">Published on 12 July 2016. Downloaded on 26/03/2018 20:37:10. </text>
+<text top="17" left="746" width="83" height="9" font="17"><a href="http://dx.doi.org/10.1039/C6QO00284F"><b>View Article Online</b></a></text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="18" size="5" family="Times" color="#231f20"/>
+<image top="103" left="80" width="341" height="60" src="./images/-3_1.png"/>
+<image top="274" left="80" width="342" height="62" src="./images/-3_2.png"/>
+<image top="502" left="85" width="331" height="312" src="./images/-3_3.png"/>
+<image top="103" left="511" width="263" height="59" src="./images/-3_4.png"/>
+<image top="274" left="510" width="264" height="58" src="./images/-3_5.png"/>
+<text top="903" left="64" width="266" height="13" font="10">the diastereoselectivity for the formation of</text>
+<text top="900" left="336" width="102" height="18" font="10">syn-16a could be</text>
+<text top="921" left="64" width="344" height="13" font="10">improved by an oxidation/reduction sequence (Scheme 3).</text>
+<text top="939" left="82" width="178" height="13" font="10">Thus, the mixture of alcohols</text>
+<text top="936" left="264" width="174" height="18" font="10">syn/anti-16a was treated with</text>
+<text top="957" left="64" width="53" height="13" font="10">the Dess</text>
+<text top="954" left="117" width="321" height="18" font="10">–Martin reagent to give β,γ-unsaturated enone 17 in</text>
+<text top="975" left="64" width="304" height="14" font="10">good yield (88%). Then reduction of enone 17 with</text>
+<text top="978" left="372" width="5" height="9" font="7">L</text>
+<text top="975" left="377" width="61" height="13" font="10">-selectride</text>
+<text top="993" left="64" width="123" height="13" font="10">occurred to give the</text>
+<text top="990" left="193" width="245" height="18" font="10">syn-16a as the major isomer. When the</text>
+<text top="1011" left="64" width="160" height="13" font="10">reaction was performed at</text>
+<text top="1008" left="229" width="208" height="18" font="10">−90 °C the maximal syn/anti ratio</text>
+<text top="1029" left="64" width="123" height="13" font="10">was achieved (&gt;4 : 1).</text>
+<text top="1047" left="82" width="356" height="13" font="10">To our delight we were able to protect both homo-allylic</text>
+<text top="1065" left="64" width="49" height="13" font="10">alcohols</text>
+<text top="1062" left="122" width="316" height="18" font="10">syn-16a and anti-16a with both the TBDPS and</text>
+<text top="543" left="455" width="16" height="13" font="10">Bn</text>
+<text top="540" left="471" width="358" height="18" font="10">– ether groups, as well as the MOM-group. While the</text>
+<text top="561" left="455" width="374" height="13" font="10">yields for the benzyl protection of either the syn- or</text>
+<text top="579" left="455" width="374" height="13" font="10">anti-homoallylic alcohols were suboptimal, both TBDPS-</text>
+<text top="597" left="455" width="374" height="13" font="10">and MOM-groups could be installed in excellent yields</text>
+<text top="615" left="455" width="18" height="13" font="10">(78</text>
+<text top="612" left="473" width="356" height="18" font="10">–87%), providing ample quantities syn-18a and syn-18d and</text>
+<text top="630" left="455" width="374" height="18" font="10">anti-18a and anti-18d to pursue the cross metathesis protocol</text>
+<text top="651" left="455" width="55" height="13" font="10">(Table 2).</text>
+<text top="669" left="473" width="356" height="13" font="10">With an improved procedure for installing protecting</text>
+<text top="687" left="455" width="171" height="13" font="10">groups at the C5 position in</text>
+<text top="684" left="631" width="198" height="18" font="10">syn-/anti-18, we next investigated</text>
+<text top="705" left="455" width="139" height="13" font="10">the cross metathesis of</text>
+<text top="702" left="599" width="230" height="18" font="10">syn-18 and anti-18 to form syn-15 and</text>
+<text top="720" left="455" width="374" height="18" font="10">anti-15 and the subsequent deprotection to form diols syn-19</text>
+<text top="741" left="455" width="23" height="13" font="10">and</text>
+<text top="738" left="484" width="345" height="18" font="10">anti-19. Treatment of syn-18b–d with ethyl acrylate and</text>
+<text top="759" left="455" width="374" height="13" font="10">Grubbs II catalyst (1.5%) cleanly provided the desired enoates</text>
+<text top="774" left="455" width="374" height="18" font="10">syn-15b–d in excellent yields (90–96%). Unfortunately, the</text>
+<text top="795" left="455" width="374" height="13" font="10">primary TBS-groups were not compatible with the benzylidene</text>
+<text top="813" left="455" width="374" height="13" font="10">deprotection conditions, whereas the PMB-group survived. The</text>
+<text top="831" left="455" width="374" height="13" font="10">deprotection of the benzylidene group was accomplished by</text>
+<text top="849" left="455" width="125" height="13" font="10">heating the enoates</text>
+<text top="846" left="587" width="242" height="18" font="10">syn-15c/d in 80% aqueous acetic acid</text>
+<text top="867" left="455" width="186" height="13" font="10">(60 °C) to provide the syn-diols</text>
+<text top="864" left="646" width="183" height="18" font="10">syn-19c/d (72% and 80%). Fol-</text>
+<text top="885" left="455" width="295" height="13" font="10">lowing a similar procedure, the anti-diastereomer</text>
+<text top="882" left="754" width="75" height="18" font="10">anti-16d was</text>
+<text top="903" left="455" width="113" height="13" font="10">also converted into</text>
+<text top="900" left="572" width="109" height="18" font="10">anti-19d (Table 3).</text>
+<text top="921" left="473" width="356" height="13" font="10">We next pursued the formation of the 2,6-cis-pyran ring.</text>
+<text top="939" left="455" width="374" height="13" font="10">This was most easily accomplished under basic conditions.</text>
+<text top="957" left="455" width="326" height="13" font="10">The addition of 1 equiv. of potassium t-butoxide to a</text>
+<text top="954" left="786" width="43" height="18" font="10">−40 °C</text>
+<text top="975" left="455" width="69" height="13" font="10">solution of</text>
+<text top="972" left="531" width="298" height="18" font="10">syn-19c in THF, followed by warming to room</text>
+<text top="993" left="455" width="324" height="13" font="10">temperature led to the formation of tetrahydropyran</text>
+<text top="990" left="785" width="44" height="18" font="10">syn-20c</text>
+<text top="1011" left="455" width="196" height="13" font="10">(70%). Under similar condition</text>
+<text top="1008" left="658" width="171" height="18" font="10">syn-19d was converted into</text>
+<text top="1029" left="455" width="95" height="13" font="10">tetrahydropyran</text>
+<text top="1026" left="558" width="271" height="18" font="10">syn-20d (61%). These conditions produced</text>
+<text top="1047" left="455" width="95" height="13" font="10">tetrahydropyran</text>
+<text top="1044" left="554" width="275" height="18" font="10">syn-21c in 70% yield as a 6 : 1 ratio of cis and</text>
+<text top="1065" left="455" width="246" height="13" font="10">trans diastereomers, and tetrahydropyran</text>
+<text top="1062" left="706" width="124" height="18" font="10">syn-21d product in a</text>
+<text top="76" left="64" width="38" height="10" font="8">Table 1</text>
+<text top="76" left="113" width="178" height="10" font="8">Screening of protection groups on</text>
+<text top="74" left="294" width="94" height="15" font="8">δ-hydroxyl enoate</text>
+<text top="184" left="64" width="28" height="11" font="8">Entry</text>
+<text top="184" left="133" width="17" height="11" font="8">SM</text>
+<text top="184" left="217" width="8" height="11" font="8">R</text>
+<text top="181" left="225" width="5" height="8" font="18">1</text>
+<text top="184" left="283" width="8" height="11" font="8">R</text>
+<text top="181" left="291" width="5" height="8" font="18">2</text>
+<text top="184" left="360" width="34" height="11" font="8">Yield (</text>
+<text top="181" left="394" width="41" height="16" font="8">anti-15)</text>
+<text top="208" left="64" width="6" height="11" font="8">1</text>
+<text top="206" left="70" width="5" height="8" font="18">a</text>
+<text top="205" left="133" width="43" height="16" font="8">anti-14a</text>
+<text top="208" left="217" width="21" height="11" font="8">TBS</text>
+<text top="208" left="283" width="36" height="11" font="8">TBDPS</text>
+<text top="208" left="360" width="16" height="11" font="8">NR</text>
+<text top="206" left="376" width="4" height="8" font="18">e</text>
+<text top="208" left="383" width="4" height="11" font="8">(</text>
+<text top="205" left="387" width="47" height="16" font="8">anti-15a)</text>
+<text top="222" left="64" width="6" height="11" font="8">2</text>
+<text top="219" left="70" width="5" height="8" font="18">b</text>
+<text top="219" left="133" width="43" height="16" font="8">anti-14a</text>
+<text top="222" left="217" width="21" height="11" font="8">TBS</text>
+<text top="222" left="283" width="15" height="11" font="8">Bn</text>
+<text top="222" left="360" width="28" height="11" font="8">Low (</text>
+<text top="219" left="388" width="48" height="16" font="8">anti-15b)</text>
+<text top="235" left="64" width="6" height="11" font="8">3</text>
+<text top="233" left="70" width="4" height="8" font="18">c</text>
+<text top="232" left="133" width="44" height="16" font="8">anti-14b</text>
+<text top="235" left="217" width="25" height="11" font="8">PMB</text>
+<text top="235" left="283" width="15" height="11" font="8">Bn</text>
+<text top="235" left="360" width="28" height="11" font="8">Low (</text>
+<text top="232" left="388" width="46" height="16" font="8">anti-15c)</text>
+<text top="249" left="64" width="6" height="11" font="8">4</text>
+<text top="246" left="70" width="5" height="8" font="18">d</text>
+<text top="246" left="133" width="44" height="16" font="8">anti-14b</text>
+<text top="249" left="217" width="25" height="11" font="8">PMB</text>
+<text top="249" left="283" width="30" height="11" font="8">MOM</text>
+<text top="249" left="360" width="30" height="11" font="8">47% (</text>
+<text top="246" left="390" width="48" height="16" font="8">anti-15d)</text>
+<text top="357" left="64" width="28" height="11" font="8">Entry</text>
+<text top="357" left="136" width="17" height="11" font="8">SM</text>
+<text top="357" left="220" width="8" height="11" font="8">R</text>
+<text top="355" left="228" width="5" height="8" font="18">1</text>
+<text top="357" left="289" width="8" height="11" font="8">R</text>
+<text top="355" left="297" width="5" height="8" font="18">2</text>
+<text top="357" left="364" width="34" height="11" font="8">Yield (</text>
+<text top="354" left="398" width="37" height="16" font="8">syn-15)</text>
+<text top="381" left="64" width="6" height="11" font="8">5</text>
+<text top="379" left="70" width="5" height="8" font="18">d</text>
+<text top="379" left="136" width="40" height="16" font="8">syn-14b</text>
+<text top="381" left="220" width="25" height="11" font="8">PMB</text>
+<text top="381" left="289" width="30" height="11" font="8">MOM</text>
+<text top="381" left="364" width="30" height="11" font="8">52% (</text>
+<text top="379" left="394" width="44" height="16" font="8">syn-15d)</text>
+<text top="407" left="64" width="109" height="11" font="8">Reaction conditions:</text>
+<text top="404" left="176" width="5" height="8" font="18">a</text>
+<text top="407" left="183" width="255" height="11" font="8">TBDPSCl (2 equiv.), imidazole (2.5 equiv.), DMF,</text>
+<text top="420" left="64" width="31" height="11" font="8">18 h.</text>
+<text top="418" left="103" width="5" height="8" font="18">b</text>
+<text top="420" left="110" width="304" height="11" font="8">Benzyl trichloroacetimidate (1.2 equiv.), TMSOTf, CH</text>
+<text top="425" left="414" width="5" height="8" font="18">2</text>
+<text top="420" left="419" width="11" height="11" font="8">Cl</text>
+<text top="425" left="430" width="5" height="8" font="18">2</text>
+<text top="420" left="435" width="3" height="11" font="8">.</text>
+<text top="431" left="64" width="4" height="8" font="18">c</text>
+<text top="434" left="70" width="217" height="11" font="8">BnBr (2 equiv.), NaH, TBAI, THF, 24 h.</text>
+<text top="431" left="292" width="5" height="8" font="18">d</text>
+<text top="434" left="299" width="139" height="11" font="8">MOMCl (4 equiv.), DMAP</text>
+<text top="447" left="64" width="85" height="11" font="8">(3% equiv.), i-Pr</text>
+<text top="452" left="148" width="5" height="8" font="18">2</text>
+<text top="447" left="153" width="43" height="11" font="8">NEt, CH</text>
+<text top="452" left="196" width="5" height="8" font="18">2</text>
+<text top="447" left="201" width="11" height="11" font="8">Cl</text>
+<text top="452" left="212" width="5" height="8" font="18">2</text>
+<text top="447" left="217" width="32" height="11" font="8">, 0 °C.</text>
+<text top="445" left="252" width="4" height="8" font="18">e</text>
+<text top="447" left="259" width="92" height="11" font="8">NR = no reaction.</text>
+<text top="830" left="64" width="52" height="10" font="8">Scheme 3</text>
+<text top="830" left="127" width="199" height="10" font="8">Alternative synthesis of protected triol.</text>
+<text top="76" left="455" width="39" height="10" font="8">Table 2</text>
+<text top="76" left="505" width="279" height="10" font="8">Screening of protection groups on homoallyic alcohol</text>
+<text top="184" left="455" width="28" height="11" font="8">Entry</text>
+<text top="184" left="526" width="17" height="11" font="8">SM</text>
+<text top="184" left="609" width="8" height="11" font="8">R</text>
+<text top="181" left="616" width="5" height="8" font="18">1</text>
+<text top="184" left="676" width="8" height="11" font="8">R</text>
+<text top="181" left="684" width="5" height="8" font="18">2</text>
+<text top="184" left="755" width="34" height="11" font="8">Yield (</text>
+<text top="181" left="789" width="37" height="16" font="8">syn-18)</text>
+<text top="208" left="455" width="6" height="11" font="8">1</text>
+<text top="205" left="461" width="5" height="8" font="18">a</text>
+<text top="205" left="526" width="39" height="16" font="8">syn-16a</text>
+<text top="208" left="609" width="21" height="11" font="8">TBS</text>
+<text top="208" left="676" width="36" height="11" font="8">TBDPS</text>
+<text top="208" left="755" width="30" height="11" font="8">83% (</text>
+<text top="205" left="785" width="43" height="16" font="8">syn-18a)</text>
+<text top="221" left="455" width="6" height="11" font="8">2</text>
+<text top="219" left="461" width="5" height="8" font="18">b</text>
+<text top="218" left="526" width="39" height="16" font="8">syn-16a</text>
+<text top="221" left="609" width="21" height="11" font="8">TBS</text>
+<text top="221" left="676" width="15" height="11" font="8">Bn</text>
+<text top="221" left="755" width="30" height="11" font="8">48% (</text>
+<text top="218" left="785" width="44" height="16" font="8">syn-18b)</text>
+<text top="235" left="455" width="6" height="11" font="8">3</text>
+<text top="232" left="461" width="4" height="8" font="18">c</text>
+<text top="232" left="526" width="40" height="16" font="8">syn-16b</text>
+<text top="235" left="609" width="25" height="11" font="8">PMB</text>
+<text top="235" left="676" width="15" height="11" font="8">Bn</text>
+<text top="235" left="755" width="30" height="11" font="8">49% (</text>
+<text top="232" left="785" width="42" height="16" font="8">syn-18c)</text>
+<text top="248" left="455" width="6" height="11" font="8">4</text>
+<text top="246" left="461" width="5" height="8" font="18">d</text>
+<text top="246" left="526" width="40" height="16" font="8">syn-16b</text>
+<text top="248" left="609" width="25" height="11" font="8">PMB</text>
+<text top="248" left="676" width="30" height="11" font="8">MOM</text>
+<text top="248" left="755" width="30" height="11" font="8">87% (</text>
+<text top="246" left="785" width="44" height="16" font="8">syn-18d)</text>
+<text top="353" left="455" width="28" height="11" font="8">Entry</text>
+<text top="353" left="524" width="17" height="11" font="8">SM</text>
+<text top="353" left="609" width="8" height="11" font="8">R</text>
+<text top="351" left="616" width="5" height="8" font="18">1</text>
+<text top="353" left="674" width="8" height="11" font="8">R</text>
+<text top="351" left="682" width="5" height="8" font="18">2</text>
+<text top="353" left="751" width="34" height="11" font="8">Yield (</text>
+<text top="350" left="785" width="41" height="16" font="8">anti-18)</text>
+<text top="378" left="455" width="6" height="11" font="8">5</text>
+<text top="375" left="461" width="5" height="8" font="18">a</text>
+<text top="375" left="524" width="43" height="16" font="8">anti-16a</text>
+<text top="378" left="609" width="21" height="11" font="8">TBS</text>
+<text top="378" left="674" width="36" height="11" font="8">TBDPS</text>
+<text top="378" left="751" width="30" height="11" font="8">78% (</text>
+<text top="375" left="781" width="47" height="16" font="8">anti-18a)</text>
+<text top="391" left="455" width="6" height="11" font="8">6</text>
+<text top="389" left="461" width="5" height="8" font="18">b</text>
+<text top="388" left="524" width="44" height="16" font="8">anti-16b</text>
+<text top="391" left="609" width="25" height="11" font="8">PMB</text>
+<text top="391" left="674" width="15" height="11" font="8">Bn</text>
+<text top="391" left="751" width="30" height="11" font="8">52% (</text>
+<text top="388" left="781" width="46" height="16" font="8">anti-18c)</text>
+<text top="405" left="455" width="6" height="11" font="8">7</text>
+<text top="402" left="461" width="5" height="8" font="18">d</text>
+<text top="402" left="524" width="44" height="16" font="8">anti-16b</text>
+<text top="405" left="609" width="25" height="11" font="8">PMB</text>
+<text top="405" left="674" width="30" height="11" font="8">MOM</text>
+<text top="405" left="751" width="30" height="11" font="8">85% (</text>
+<text top="402" left="781" width="48" height="16" font="8">anti-18d)</text>
+<text top="430" left="455" width="109" height="11" font="8">Reaction conditions:</text>
+<text top="428" left="567" width="5" height="8" font="18">a</text>
+<text top="430" left="574" width="255" height="11" font="8">TBDPSCl (2 equiv.), imidazole (2.5 equiv.), DMF,</text>
+<text top="444" left="455" width="31" height="11" font="8">18 h.</text>
+<text top="441" left="494" width="5" height="8" font="18">b</text>
+<text top="444" left="501" width="304" height="11" font="8">Benzyl trichloroacetimidate (1.2 equiv.), TMSOTf, CH</text>
+<text top="449" left="805" width="5" height="8" font="18">2</text>
+<text top="444" left="810" width="11" height="11" font="8">Cl</text>
+<text top="449" left="821" width="5" height="8" font="18">2</text>
+<text top="444" left="826" width="3" height="11" font="8">.</text>
+<text top="455" left="455" width="4" height="8" font="18">c</text>
+<text top="457" left="461" width="217" height="11" font="8">BnBr (2 equiv.), NaH, TBAI, THF, 24 h.</text>
+<text top="455" left="683" width="5" height="8" font="18">d</text>
+<text top="457" left="690" width="139" height="11" font="8">MOMCl (4 equiv.), DMAP</text>
+<text top="471" left="455" width="85" height="11" font="8">(3% equiv.), i-Pr</text>
+<text top="475" left="539" width="5" height="8" font="18">2</text>
+<text top="471" left="544" width="43" height="11" font="8">NEt, CH</text>
+<text top="475" left="587" width="5" height="8" font="18">2</text>
+<text top="471" left="592" width="11" height="11" font="8">Cl</text>
+<text top="475" left="604" width="5" height="8" font="18">2</text>
+<text top="471" left="608" width="32" height="11" font="8">, 0 °C.</text>
+<text top="40" left="64" width="90" height="11" font="16">Research Article</text>
+<text top="40" left="672" width="157" height="11" font="16">Organic Chemistry Frontiers</text>
+<text top="1118" left="64" width="187" height="11" font="8">1122 | Org. Chem. Front., 2016, 3, 1120</text>
+<text top="1116" left="251" width="27" height="15" font="8">–1125</text>
+<text top="1116" left="609" width="220" height="13" font="8">This journal is © the Partner Organisations 2016</text>
+<text top="656" left="17" width="0" height="11" font="13">Published on 12 July 2016. Downloaded on 26/03/2018 20:37:10. </text>
+<text top="17" left="746" width="83" height="9" font="17"><a href="http://dx.doi.org/10.1039/C6QO00284F"><b>View Article Online</b></a></text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1169" width="892">
+<image top="103" left="178" width="537" height="63" src="./images/-4_1.png"/>
+<image top="264" left="178" width="537" height="64" src="./images/-4_2.png"/>
+<image top="480" left="476" width="328" height="132" src="./images/-4_3.png"/>
+<image top="480" left="106" width="290" height="462" src="./images/-4_4.png"/>
+<text top="1011" left="64" width="374" height="13" font="10">61% yield with a 7 : 1 ratio of cis to trans diastereomers. For-</text>
+<text top="1029" left="64" width="338" height="13" font="10">mation of the methyl ether was accomplished using Me</text>
+<text top="1034" left="402" width="5" height="9" font="11">3</text>
+<text top="1029" left="407" width="25" height="13" font="10">OBF</text>
+<text top="1034" left="433" width="5" height="9" font="11">4</text>
+<text top="1047" left="64" width="15" height="13" font="10">on</text>
+<text top="1044" left="85" width="353" height="18" font="10">syn-20c and syn-20d to produce the products syn-21c and</text>
+<text top="1062" left="64" width="374" height="18" font="10">syn-21d in excellent yields (75 and 97%, respectively)</text>
+<text top="686" left="455" width="374" height="13" font="10">(Scheme 4). Turning to the synthesis of the C1 to C11 and the</text>
+<text top="704" left="455" width="374" height="13" font="10">C14 to C18 portion of Leuscandrolide A, we undertook the syn-</text>
+<text top="722" left="455" width="374" height="14" font="10">thesis of alcohol 24 from δ-hydroxy enoate 22. Previously we</text>
+<text top="740" left="455" width="374" height="14" font="10">have shown that 22 can be prepared by an asymmetric hydration</text>
+<text top="758" left="455" width="183" height="13" font="10">of the corresponding dienoate.</text>
+<text top="755" left="638" width="5" height="9" font="11">8</text>
+<text top="758" left="647" width="182" height="14" font="10">The double bond of enoate 22</text>
+<text top="776" left="455" width="302" height="13" font="10">was oxidatively cleaved by a dihydroxylation (OsO</text>
+<text top="781" left="757" width="5" height="9" font="11">4</text>
+<text top="776" left="762" width="67" height="13" font="10">/NMO)/diol</text>
+<text top="794" left="455" width="90" height="13" font="10">cleavage (NaIO</text>
+<text top="799" left="545" width="5" height="9" font="11">4</text>
+<text top="794" left="551" width="278" height="14" font="10">) sequence to form aldehyde 23. Addition of</text>
+<text top="812" left="455" width="374" height="14" font="10">vinylmagnesium bromide to the aldehyde 23 and manganese</text>
+<text top="830" left="455" width="374" height="13" font="10">dioxide oxidation of the allylic alcohol completed the synthesis</text>
+<text top="848" left="455" width="142" height="14" font="10">of enone 24 (Scheme 5).</text>
+<text top="866" left="473" width="356" height="13" font="10">To demonstrate the viability of the synthesis going forward,</text>
+<text top="884" left="455" width="374" height="13" font="10">we chose to pursue the fragment coupling sequence with ester</text>
+<text top="899" left="455" width="374" height="18" font="10">syn-21d. With the synthesis of enone 24 complete, the ester 26</text>
+<text top="920" left="455" width="374" height="13" font="10">was synthesized via a DCC coupling of the carboxylic acid of</text>
+<text top="938" left="455" width="374" height="14" font="10">ester 25 and alcohol 24. The hydrolysis of ester syn-21d</text>
+<text top="956" left="455" width="374" height="13" font="10">was accomplished by treatment with LiOH in THF and</text>
+<text top="974" left="455" width="11" height="13" font="10">H</text>
+<text top="979" left="466" width="5" height="9" font="11">2</text>
+<text top="974" left="471" width="358" height="13" font="10">O. The conversion of the PMB-ether to the aldehyde began</text>
+<text top="992" left="455" width="374" height="13" font="10">with a DDQ deprotection. Treatment of a dichloromethane</text>
+<text top="1010" left="455" width="144" height="14" font="10">solution of 26 with H</text>
+<text top="1015" left="599" width="5" height="9" font="11">2</text>
+<text top="1010" left="604" width="225" height="13" font="10">O and DDQ produced the primary</text>
+<text top="1028" left="455" width="374" height="14" font="10">alcohol 27 in 78% yield. Oxidation of the primary alcohol 27 to</text>
+<text top="1046" left="455" width="374" height="14" font="10">the aldehyde 3 was accomplished with Dess–Martin reagent</text>
+<text top="1064" left="455" width="69" height="13" font="10">(Scheme 6).</text>
+<text top="76" left="64" width="39" height="10" font="8">Table 3</text>
+<text top="76" left="114" width="138" height="10" font="8">Alternative route to diol 19</text>
+<text top="187" left="64" width="28" height="11" font="8">Entry</text>
+<text top="187" left="191" width="17" height="11" font="8">SM</text>
+<text top="187" left="330" width="8" height="11" font="8">R</text>
+<text top="185" left="337" width="5" height="8" font="18">1</text>
+<text top="187" left="453" width="8" height="11" font="8">R</text>
+<text top="185" left="461" width="5" height="8" font="18">2</text>
+<text top="187" left="582" width="34" height="11" font="8">Yield (</text>
+<text top="184" left="616" width="37" height="16" font="8">syn-15)</text>
+<text top="187" left="755" width="34" height="11" font="8">Yield (</text>
+<text top="184" left="789" width="37" height="16" font="8">syn-19)</text>
+<text top="212" left="64" width="6" height="11" font="8">1</text>
+<text top="209" left="191" width="40" height="16" font="8">syn-18b</text>
+<text top="212" left="330" width="21" height="11" font="8">TBS</text>
+<text top="212" left="453" width="15" height="11" font="8">Bn</text>
+<text top="212" left="582" width="30" height="11" font="8">96% (</text>
+<text top="209" left="612" width="44" height="16" font="8">syn-15b)</text>
+<text top="212" left="755" width="16" height="11" font="8">NA</text>
+<text top="209" left="771" width="4" height="8" font="18">c</text>
+<text top="212" left="777" width="4" height="11" font="8">(</text>
+<text top="209" left="781" width="44" height="16" font="8">syn-19b)</text>
+<text top="225" left="64" width="6" height="11" font="8">2</text>
+<text top="222" left="191" width="39" height="16" font="8">syn-18c</text>
+<text top="225" left="330" width="25" height="11" font="8">PMB</text>
+<text top="225" left="453" width="15" height="11" font="8">Bn</text>
+<text top="225" left="582" width="30" height="11" font="8">91% (</text>
+<text top="222" left="612" width="43" height="16" font="8">syn-15c)</text>
+<text top="225" left="755" width="30" height="11" font="8">72% (</text>
+<text top="222" left="785" width="42" height="16" font="8">syn-19c)</text>
+<text top="239" left="64" width="6" height="11" font="8">3</text>
+<text top="236" left="191" width="40" height="16" font="8">syn-18d</text>
+<text top="239" left="330" width="25" height="11" font="8">PMB</text>
+<text top="239" left="453" width="30" height="11" font="8">MOM</text>
+<text top="239" left="582" width="30" height="11" font="8">90% (</text>
+<text top="236" left="612" width="44" height="16" font="8">syn-15d)</text>
+<text top="239" left="755" width="30" height="11" font="8">80% (</text>
+<text top="236" left="785" width="44" height="16" font="8">syn-19d)</text>
+<text top="350" left="64" width="28" height="11" font="8">Entry</text>
+<text top="350" left="187" width="17" height="11" font="8">SM</text>
+<text top="350" left="326" width="8" height="11" font="8">R</text>
+<text top="347" left="334" width="5" height="8" font="18">1</text>
+<text top="350" left="447" width="8" height="11" font="8">R</text>
+<text top="347" left="454" width="5" height="8" font="18">2</text>
+<text top="350" left="578" width="34" height="11" font="8">Yield (</text>
+<text top="347" left="612" width="41" height="16" font="8">anti-15)</text>
+<text top="350" left="751" width="34" height="11" font="8">Yield (</text>
+<text top="347" left="785" width="41" height="16" font="8">anti-19)</text>
+<text top="374" left="64" width="6" height="11" font="8">4</text>
+<text top="371" left="187" width="43" height="16" font="8">anti-18a</text>
+<text top="374" left="326" width="21" height="11" font="8">TBS</text>
+<text top="374" left="447" width="36" height="11" font="8">TBDPS</text>
+<text top="374" left="578" width="30" height="11" font="8">88% (</text>
+<text top="371" left="608" width="47" height="16" font="8">anti-15a)</text>
+<text top="374" left="751" width="25" height="11" font="8">low (</text>
+<text top="371" left="776" width="47" height="16" font="8">anti-19a)</text>
+<text top="387" left="64" width="6" height="11" font="8">5</text>
+<text top="385" left="187" width="44" height="16" font="8">anti-18b</text>
+<text top="387" left="326" width="25" height="11" font="8">PMB</text>
+<text top="387" left="447" width="30" height="11" font="8">MOM</text>
+<text top="387" left="578" width="30" height="11" font="8">92% (</text>
+<text top="385" left="608" width="48" height="16" font="8">anti-15d)</text>
+<text top="387" left="751" width="30" height="11" font="8">71% (</text>
+<text top="385" left="781" width="48" height="16" font="8">anti-19d)</text>
+<text top="413" left="64" width="111" height="11" font="8">Reaction conditions:</text>
+<text top="410" left="181" width="5" height="8" font="18">a</text>
+<text top="413" left="188" width="351" height="11" font="8">Ethyl acrylate (2.5 equiv.), Grubbs II catalyst (1.5% equiv.), CH</text>
+<text top="418" left="539" width="5" height="8" font="18">2</text>
+<text top="413" left="544" width="11" height="11" font="8">Cl</text>
+<text top="418" left="555" width="5" height="8" font="18">2</text>
+<text top="413" left="560" width="71" height="11" font="8">, reflux, 4 h.</text>
+<text top="410" left="637" width="5" height="8" font="18">b</text>
+<text top="413" left="644" width="100" height="11" font="8">80% acetic acid/H</text>
+<text top="418" left="743" width="5" height="8" font="18">2</text>
+<text top="413" left="748" width="81" height="11" font="8">O, 60 °C, 4 h.</text>
+<text top="424" left="64" width="4" height="8" font="18">c</text>
+<text top="426" left="70" width="79" height="11" font="8">Not attempted.</text>
+<text top="628" left="455" width="52" height="10" font="8">Scheme 5</text>
+<text top="628" left="518" width="100" height="10" font="8">Synthesis of enone.</text>
+<text top="957" left="64" width="52" height="10" font="8">Scheme 4</text>
+<text top="957" left="127" width="150" height="10" font="8">Synthesis of tetrahydropyran.</text>
+<text top="40" left="64" width="157" height="11" font="16">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="16">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="8">This journal is © the Partner Organisations 2016</text>
+<text top="1115" left="616" width="213" height="15" font="8">Org. Chem. Front., 2016, 3, 1120–1125 | 1123</text>
+<text top="656" left="17" width="0" height="11" font="13">Published on 12 July 2016. Downloaded on 26/03/2018 20:37:10. </text>
+<text top="17" left="746" width="83" height="9" font="17"><a href="http://dx.doi.org/10.1039/C6QO00284F"><b>View Article Online</b></a></text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1169" width="892">
+<image top="76" left="123" width="644" height="266" src="./images/-5_1.png"/>
+<text top="418" left="64" width="118" height="19" font="9">Conclusions</text>
+<text top="454" left="64" width="374" height="13" font="10">In conclusion we have shown the viability of the asymmetric</text>
+<text top="472" left="64" width="374" height="13" font="10">hydration of dienoate for the synthesis of key chiral building</text>
+<text top="490" left="64" width="374" height="13" font="10">blocks for the synthesis of a potential Leuscandrolide A precur-</text>
+<text top="508" left="64" width="374" height="14" font="10">sor 2. The further elaboration of this advanced intermediate is</text>
+<text top="526" left="64" width="260" height="13" font="10">ongoing and will be reported in due course.</text>
+<text top="580" left="64" width="191" height="19" font="9">Acknowledgements</text>
+<text top="616" left="64" width="374" height="13" font="10">We are grateful to NIH (GM090259) and NSF (CHE-1565788)</text>
+<text top="634" left="64" width="222" height="13" font="10">for financial support of this research.</text>
+<text top="689" left="64" width="206" height="19" font="9">Notes and references</text>
+<text top="724" left="70" width="47" height="13" font="10">1 M. D</text>
+<text top="721" left="117" width="321" height="18" font="10">’Ambrosio, A. Guerriero, C. Debitus and F. Pietra,</text>
+<text top="742" left="84" width="177" height="14" font="10">Helv. Chim. Acta, 1996, 79, 51.</text>
+<text top="760" left="70" width="46" height="13" font="10">2 M. D</text>
+<text top="757" left="116" width="322" height="18" font="10">’Ambrosio, M. Tato, C. Debitus and F. Pietra, Helv.</text>
+<text top="778" left="84" width="151" height="14" font="10">Chim. Acta, 1999, 82, 347.</text>
+<text top="796" left="70" width="367" height="13" font="10">3 K. R. Hornberger, C. L. Hamblett and J. L. Leighton, J. Am.</text>
+<text top="814" left="84" width="173" height="14" font="10">Chem. Soc., 2000, 122, 12894.</text>
+<text top="832" left="70" width="367" height="13" font="10">4 (a) I. Paterson and M. Tudge, Angew. Chem., Int. Ed., 2003,</text>
+<text top="850" left="84" width="354" height="14" font="10">42, 343; (b) I. Paterson and M. Tudge, Tetrahedron, 2003,</text>
+<text top="868" left="84" width="354" height="14" font="10">59, 6833; (c) Y. Wang, J. Janjic and S. A. Kozmin, J. Am.</text>
+<text top="886" left="84" width="354" height="14" font="10">Chem. Soc., 2002, 124, 13670; (d) Y. Wang, J. Janjic and</text>
+<text top="904" left="84" width="354" height="14" font="10">S. A. Kozmin, Pure Appl. Chem., 2005, 77, 1161; (e) A. Fettes</text>
+<text top="922" left="84" width="354" height="14" font="10">and E. M. Carreira, Angew. Chem., Int. Ed., 2002, 41, 4098;</text>
+<text top="940" left="84" width="354" height="14" font="10">(f ) A. Fettes and E. M. Carreira, J. Org. Chem., 2003, 68,</text>
+<text top="958" left="84" width="354" height="13" font="10">9274; (g) P. Wipf and J. T. Reeves, Chem. Commun., 2002,</text>
+<text top="976" left="84" width="354" height="13" font="10">2066; (h) M. T. Crimmins and P. Siliphalvanh, Org. Lett.,</text>
+<text top="994" left="84" width="354" height="14" font="10">2003, 5, 4641; (i) D. R. Williams, S. Patnaik and</text>
+<text top="1012" left="84" width="354" height="14" font="10">S. V. Plummer, Org. Lett., 2003, 5, 5035; ( j) P. A. Evans and</text>
+<text top="1030" left="84" width="354" height="14" font="10">W. J. Andrews, Angew. Chem., Int. Ed., 2008, 47, 5426;</text>
+<text top="1048" left="84" width="354" height="13" font="10">(k) H. H. Jung, J. R. Seiders and P. E. Floreancig, Angew.</text>
+<text top="1066" left="84" width="354" height="14" font="10">Chem., Int. Ed., 2007, 46, 8464; (l) Q. Su, L. A. Dakin and</text>
+<text top="418" left="475" width="354" height="14" font="10">J. S. Panek, J. Org. Chem., 2007, 72, 2; (m) Q. Su and</text>
+<text top="436" left="475" width="354" height="14" font="10">J. S. Panek, Angew. Chem., Int. Ed., 2005, 44, 1223;</text>
+<text top="454" left="475" width="354" height="13" font="10">(n) L. J. Van Orden, B. D. Patterson and S. D. Rychnovsky,</text>
+<text top="472" left="475" width="172" height="14" font="10">J. Org. Chem., 2007, 72, 5784.</text>
+<text top="490" left="462" width="367" height="13" font="10">5 (a) M. T. Crimmins, C. A. Carroll and B. W. King, Org. Lett.,</text>
+<text top="508" left="475" width="354" height="14" font="10">2000, 2, 597; (b) L. A. Dakin, N. F. Langille and J. S. Panek,</text>
+<text top="526" left="475" width="354" height="14" font="10">J. Org. Chem., 2002, 67, 6812; (c) L. A. Dakin and</text>
+<text top="544" left="475" width="354" height="14" font="10">J. S. Panek, Org. Lett., 2003, 5, 3995; (d) L. Ferrie,</text>
+<text top="562" left="475" width="354" height="13" font="10">L. Boulard, F. Pradaux, S. Bouzbouz, S. Reymond,</text>
+<text top="580" left="475" width="354" height="14" font="10">P. Capdevielle and J. Cossy, J. Org. Chem., 2008, 73, 1864;</text>
+<text top="598" left="475" width="354" height="13" font="10">(e) L. Ferrie, S. Reymond, P. Capdevielle and J. Cossy, Org.</text>
+<text top="616" left="475" width="354" height="14" font="10">Lett., 2007, 9, 2461; (f ) D. J. Kopecky and S. D. Rychnovsky,</text>
+<text top="634" left="475" width="354" height="14" font="10">J. Am. Chem. Soc., 2001, 123, 8420; (g) S. A. Kozmin, Org.</text>
+<text top="652" left="475" width="354" height="14" font="10">Lett., 2001, 3, 755; (h) K. Lee, H. Kim and J. Hong, Org.</text>
+<text top="670" left="475" width="354" height="14" font="10">Lett., 2011, 13, 2722; (i) D. R. Williams, S. V. Plummer and</text>
+<text top="688" left="475" width="354" height="14" font="10">S. Patnaik, Angew. Chem., Int. Ed., 2003, 42, 3934;</text>
+<text top="706" left="475" width="354" height="13" font="10">( j) D. R. Williams, S. V. Plummer and S. Patnaik, Tetra-</text>
+<text top="724" left="475" width="354" height="14" font="10">hedron, 2011, 67, 5083; (k) P. Wipf and T. H. Graham, J. Org.</text>
+<text top="742" left="475" width="354" height="14" font="10">Chem., 2001, 66, 3242; (l) J. S. Yadav, M. R. Pattanayak,</text>
+<text top="760" left="475" width="330" height="14" font="10">P. P. Das and D. K. Mohapatra, Org. Lett., 2011, 13, 1710.</text>
+<text top="778" left="462" width="367" height="13" font="10">6 O. A. Ulanovskaya, J. Janjic, M. Suzuki, S. S. Sabharwal,</text>
+<text top="796" left="475" width="354" height="13" font="10">P. T. Schumacker, S. J. Kron and S. A. Kozmin, Nat. Chem.</text>
+<text top="814" left="475" width="108" height="14" font="10">Biol., 2008, 4, 418.</text>
+<text top="832" left="462" width="193" height="13" font="10">7 (a) C. M. Smith and G. A. O</text>
+<text top="828" left="655" width="174" height="18" font="10">’Doherty, Org. Lett., 2003, 5,</text>
+<text top="850" left="475" width="178" height="13" font="10">1959; (b) M. Li and G. A. O</text>
+<text top="846" left="653" width="176" height="18" font="10">’Doherty, Org. Lett., 2006, 8,</text>
+<text top="868" left="475" width="300" height="13" font="10">6087; (c) H. Guo, M. S. Mortensen and G. A. O</text>
+<text top="864" left="775" width="54" height="18" font="10">’Doherty,</text>
+<text top="886" left="475" width="149" height="14" font="10">Org. Lett., 2008, 10, 3149.</text>
+<text top="904" left="462" width="194" height="13" font="10">8 (a) T. J. Hunter and G. A. O</text>
+<text top="900" left="655" width="174" height="18" font="10">’Doherty, Org. Lett., 2001, 3,</text>
+<text top="922" left="475" width="31" height="13" font="10">2777;</text>
+<text top="922" left="521" width="15" height="13" font="10">(b)</text>
+<text top="922" left="550" width="11" height="13" font="10">T.</text>
+<text top="922" left="575" width="8" height="13" font="10">J.</text>
+<text top="922" left="597" width="46" height="13" font="10">Hunter,</text>
+<text top="922" left="657" width="11" height="13" font="10">Y.</text>
+<text top="922" left="682" width="37" height="13" font="10">Wang,</text>
+<text top="922" left="733" width="8" height="13" font="10">J.</text>
+<text top="922" left="756" width="37" height="13" font="10">Zheng</text>
+<text top="922" left="807" width="22" height="13" font="10">and</text>
+<text top="940" left="475" width="49" height="13" font="10">G. A. O</text>
+<text top="936" left="525" width="305" height="18" font="10">’Doherty, Synthesis, 2016, 1700; (c) S. D. Garaas,</text>
+<text top="958" left="475" width="152" height="13" font="10">T. J. Hunter and G. A. O</text>
+<text top="954" left="627" width="202" height="18" font="10">’Doherty, J. Org. Chem., 2002, 67,</text>
+<text top="976" left="475" width="157" height="13" font="10">2682; (d) M. Li and G. A. O</text>
+<text top="972" left="632" width="197" height="18" font="10">’Doherty, Org. Lett., 2006, 8, 3987;</text>
+<text top="994" left="475" width="260" height="13" font="10">(e) Y. Wang, Y. Xing, Q. Zhang and G. A. O</text>
+<text top="990" left="735" width="94" height="18" font="10">’Doherty, Chem.</text>
+<text top="1012" left="475" width="148" height="14" font="10">Commun., 2011, 47, 8493.</text>
+<text top="1030" left="462" width="163" height="13" font="10">9 (a) Y. Wang and G. A. O</text>
+<text top="1026" left="624" width="205" height="18" font="10">’Doherty, J. Am. Chem. Soc., 2013,</text>
+<text top="1048" left="475" width="354" height="14" font="10">135, 9334–9337; (b) T. J. Hunter and G. A. O’Doherty, Org.</text>
+<text top="1066" left="475" width="110" height="14" font="10">Lett., 2001, 3, 1049</text>
+<text top="1062" left="586" width="38" height="18" font="10">–1052.</text>
+<text top="357" left="64" width="52" height="10" font="8">Scheme 6</text>
+<text top="357" left="127" width="232" height="10" font="8">Completion of Leucascandrolide A fragment.</text>
+<text top="40" left="64" width="90" height="11" font="16">Research Article</text>
+<text top="40" left="672" width="157" height="11" font="16">Organic Chemistry Frontiers</text>
+<text top="1118" left="64" width="188" height="11" font="8">1124 | Org. Chem. Front., 2016, 3, 1120</text>
+<text top="1116" left="251" width="27" height="15" font="8">–1125</text>
+<text top="1116" left="609" width="220" height="13" font="8">This journal is © the Partner Organisations 2016</text>
+<text top="656" left="17" width="0" height="11" font="13">Published on 12 July 2016. Downloaded on 26/03/2018 20:37:10. </text>
+<text top="17" left="746" width="83" height="9" font="17"><a href="http://dx.doi.org/10.1039/C6QO00284F"><b>View Article Online</b></a></text>
+</page>
+<page number="6" position="absolute" top="0" left="0" height="1169" width="892">
+<text top="76" left="64" width="374" height="13" font="10">10 (a) R. S. Burden and L. Crombie, J. Chem. Soc. C, 1969,</text>
+<text top="94" left="85" width="353" height="14" font="10">2477; (b) F. Bohlmann and C. Zdero, Chem. Ber., 1973, 106,</text>
+<text top="112" left="85" width="353" height="14" font="10">3779; (c) W. R. Roush, J. Am. Chem. Soc., 1980, 102, 1390;</text>
+<text top="130" left="85" width="353" height="14" font="10">(d) D. A. Evans and D. M. Fitch, J. Org. Chem., 1997, 62,</text>
+<text top="148" left="85" width="25" height="13" font="10">454;</text>
+<text top="148" left="122" width="14" height="13" font="10">(e)</text>
+<text top="148" left="150" width="13" height="13" font="10">G.</text>
+<text top="148" left="176" width="14" height="13" font="10">H.</text>
+<text top="148" left="203" width="44" height="13" font="10">Posner,</text>
+<text top="148" left="260" width="8" height="13" font="10">J.</text>
+<text top="148" left="281" width="13" height="13" font="10">K.</text>
+<text top="148" left="307" width="24" height="13" font="10">Lee,</text>
+<text top="148" left="344" width="16" height="13" font="10">M.</text>
+<text top="148" left="373" width="13" height="13" font="10">C.</text>
+<text top="148" left="398" width="39" height="13" font="10">White,</text>
+<text top="166" left="85" width="353" height="13" font="10">R. H. Hutchings, H. Dai, J. L. Kachinski, P. Dolan and</text>
+<text top="184" left="85" width="11" height="13" font="10">T.</text>
+<text top="184" left="111" width="16" height="13" font="10">W.</text>
+<text top="184" left="142" width="49" height="13" font="10">Kensler,</text>
+<text top="184" left="207" width="8" height="13" font="10">J.</text>
+<text top="184" left="230" width="24" height="13" font="10">Org.</text>
+<text top="184" left="270" width="40" height="13" font="10">Chem.,</text>
+<text top="184" left="326" width="32" height="13" font="10">1997,</text>
+<text top="184" left="373" width="18" height="14" font="10">62,</text>
+<text top="184" left="406" width="32" height="13" font="10">3299;</text>
+<text top="202" left="85" width="353" height="13" font="10">(f ) A. G. M. Barrett, D. Hamprecht, A. J. P. White and</text>
+<text top="220" left="85" width="353" height="14" font="10">D. J. Williams, J. Am. Chem. Soc., 1997, 119, 8608;</text>
+<text top="238" left="85" width="353" height="13" font="10">(g) J. M. Takacs, M. R. Jaber, F. Clement and C. Walters,</text>
+<text top="256" left="85" width="353" height="14" font="10">J. Org. Chem., 1998, 63, 6757; (h) M. Nazare and</text>
+<text top="274" left="85" width="131" height="13" font="10">H. Waldmann, Chem.</text>
+<text top="271" left="222" width="216" height="18" font="10">– Eur. J., 2001, 7, 3363; (i) M. Sun,</text>
+<text top="292" left="85" width="353" height="13" font="10">Y. Deng, E. Batyreva, W. Sha and R. G. Salomon, J. Org.</text>
+<text top="310" left="85" width="353" height="14" font="10">Chem., 2002, 67, 3575; ( j) T. Tsuzuki, K. Tanaka,</text>
+<text top="328" left="85" width="353" height="14" font="10">S. Kuwahara and T. Miyazawa, Lipids, 2005, 40, 147;</text>
+<text top="76" left="476" width="353" height="14" font="10">(k) R. Barth and J. Mulzer, Angew. Chem., Int. Ed., 2007, 46,</text>
+<text top="94" left="476" width="353" height="13" font="10">5791; (l) J. T. Markiewicz, D. J. Schauer, J. Lofstedt,</text>
+<text top="112" left="476" width="353" height="13" font="10">S. J. Corden, O. Wiest and P. Helquist, J. Org. Chem., 2010,</text>
+<text top="130" left="476" width="53" height="14" font="10">75, 2061.</text>
+<text top="148" left="455" width="374" height="13" font="10">11 (a) H. Berker, M. A. Soler and K. B. Sharpless, Tetrahedron,</text>
+<text top="166" left="476" width="353" height="14" font="10">1995, 51, 1345; (b) Y. Zhang and G. A. O’Doherty, Tetra-</text>
+<text top="184" left="476" width="353" height="14" font="10">hedron, 2005, 61, 6337–6351. For synthetic application of</text>
+<text top="202" left="476" width="234" height="13" font="10">this, see: (c) T. J. Hunter and G. A. O</text>
+<text top="198" left="710" width="119" height="18" font="10">’Doherty, Org. Lett.,</text>
+<text top="220" left="476" width="353" height="14" font="10">2002, 4, 4447; (d) Y. Xing and G. A. O’Doherty, Org. Lett.,</text>
+<text top="238" left="476" width="353" height="14" font="10">2009, 11, 1107; (e) Md. M. Ahmed, M. S. Mortensen and</text>
+<text top="256" left="476" width="13" height="13" font="10">G.</text>
+<text top="256" left="503" width="12" height="13" font="10">A.</text>
+<text top="256" left="528" width="10" height="13" font="10">O</text>
+<text top="252" left="538" width="291" height="18" font="10">’Doherty, J. Org. Chem., 2006, 71, 7741;</text>
+<text top="274" left="476" width="191" height="13" font="10">(f ) Md. M. Ahmed and G. A. O</text>
+<text top="271" left="667" width="162" height="18" font="10">’Doherty, Tetrahedron Lett.,</text>
+<text top="292" left="476" width="353" height="14" font="10">2005, 46, 3015–3019; (g) Md. M. Ahmed, B. P. Berry,</text>
+<text top="310" left="476" width="236" height="13" font="10">T. J. Hunter, D. J. Tomcik and G. A. O</text>
+<text top="306" left="712" width="117" height="18" font="10">’Doherty, Org. Lett.,</text>
+<text top="328" left="476" width="74" height="14" font="10">2005, 7, 745.</text>
+<text top="40" left="64" width="157" height="11" font="16">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="16">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="8">This journal is © the Partner Organisations 2016</text>
+<text top="1115" left="616" width="213" height="15" font="8">Org. Chem. Front., 2016, 3, 1120–1125 | 1125</text>
+<text top="656" left="17" width="0" height="11" font="13">Published on 12 July 2016. Downloaded on 26/03/2018 20:37:10. </text>
+<text top="17" left="746" width="83" height="9" font="17"><a href="http://dx.doi.org/10.1039/C6QO00284F"><b>View Article Online</b></a></text>
+</page>
+</pdf2xml>
