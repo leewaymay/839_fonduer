@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="0.41.0">
+<page number="1" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="0" size="29" family="Times" color="#61b0c7"/>
+	<fontspec id="1" size="27" family="Times" color="#2056ad"/>
+	<fontspec id="2" size="20" family="Times" color="#5f5c5d"/>
+	<fontspec id="3" size="19" family="Times" color="#ffffff"/>
+	<fontspec id="4" size="8" family="Times" color="#231f20"/>
+	<fontspec id="5" size="21" family="Times" color="#231f20"/>
+	<fontspec id="6" size="13" family="Times" color="#231f20"/>
+	<fontspec id="7" size="7" family="Times" color="#231f20"/>
+	<fontspec id="8" size="9" family="Times" color="#231f20"/>
+	<fontspec id="9" size="19" family="Times" color="#231f20"/>
+	<fontspec id="10" size="11" family="Times" color="#231f20"/>
+	<fontspec id="11" size="6" family="Times" color="#231f20"/>
+	<fontspec id="12" size="4" family="Times" color="#231f20"/>
+	<fontspec id="13" size="10" family="Times" color="#000000"/>
+	<fontspec id="14" size="11" family="Times" color="#ffffff"/>
+	<fontspec id="15" size="7" family="Times" color="#ffffff"/>
+<image top="30" left="500" width="329" height="80" src="./images/cooper-1_1.png"/>
+<image top="206" left="64" width="91" height="36" src="./images/cooper-1_2.png"/>
+<image top="638" left="472" width="344" height="414" src="./images/cooper-1_3.png"/>
+<text top="53" left="64" width="145" height="29" font="0">ORGANIC</text>
+<text top="48" left="218" width="145" height="34" font="1">CHEMISTRY</text>
+<text top="93" left="64" width="128" height="20" font="2">FRONTIERS</text>
+<text top="149" left="77" width="204" height="20" font="3">RESEARCH ARTICLE</text>
+<text top="255" left="64" width="180" height="10" font="4">Cite this: Org. Chem. Front., 2014, 1,</text>
+<text top="269" left="64" width="24" height="10" font="4">1280</text>
+<text top="333" left="64" width="150" height="10" font="4">Received 4th September 2014,</text>
+<text top="347" left="64" width="148" height="10" font="4">Accepted 3rd November 2014</text>
+<text top="366" left="64" width="134" height="10" font="4">DOI: 10.1039/c4qo00240g</text>
+<text top="389" left="64" width="102" height="10" font="4"><a href="http://www.rsc.li/frontiers-organic">rsc.li/frontiers-organic</a></text>
+<text top="208" left="259" width="323" height="22" font="5">Copper-catalyzed tandem tri</text>
+<text top="203" left="582" width="213" height="31" font="5">ﬂuoromethylation/</text>
+<text top="236" left="259" width="333" height="22" font="5">cyclization of internal alkynes</text>
+<text top="230" left="592" width="12" height="31" font="5">†</text>
+<text top="278" left="259" width="87" height="14" font="6">Yun-Long Ji,</text>
+<text top="275" left="346" width="6" height="9" font="7">a</text>
+<text top="278" left="356" width="100" height="14" font="6">Jin-Hong Lin,*</text>
+<text top="275" left="456" width="6" height="9" font="7">a</text>
+<text top="278" left="465" width="103" height="14" font="6">Ji-Chang Xiao*</text>
+<text top="275" left="569" width="6" height="9" font="7">a</text>
+<text top="278" left="579" width="123" height="14" font="6">and Yu-Cheng Gu</text>
+<text top="275" left="702" width="7" height="9" font="7">b</text>
+<text top="316" left="259" width="160" height="11" font="8">Copper-catalyzed tandem tri</text>
+<text top="313" left="420" width="410" height="16" font="8">ﬂuoromethylation/cyclization of internal alkynes with Umemoto’s reagent</text>
+<text top="334" left="259" width="72" height="11" font="8">leads to 3-tri</text>
+<text top="331" left="331" width="498" height="16" font="8">ﬂuoromethyl-1,2-dihydronaphthalene derivatives in moderate to good yields. The utility of</text>
+<text top="352" left="259" width="532" height="11" font="8">this copper-catalyzed tandem reaction was demonstrated by oxidizing and reducing the tri</text>
+<text top="349" left="791" width="38" height="16" font="8">ﬂuoro-</text>
+<text top="370" left="259" width="570" height="11" font="8">methylated product to give naphthalene and tetrahydronaphthalene, respectively, and the development</text>
+<text top="388" left="259" width="122" height="11" font="8">of a short route to a tri</text>
+<text top="385" left="381" width="224" height="16" font="8">ﬂuoromethylated analogue of Nafoxidine.</text>
+<text top="436" left="64" width="120" height="19" font="9">Introduction</text>
+<text top="471" left="64" width="374" height="13" font="10">The incorporation of a trifluoromethyl group into a drug can-</text>
+<text top="489" left="64" width="374" height="13" font="10">didate usually modifies its physical, chemical and biological</text>
+<text top="507" left="64" width="246" height="13" font="10">properties through steric and electronic e</text>
+<text top="504" left="309" width="35" height="18" font="10">ﬀects.</text>
+<text top="504" left="345" width="5" height="9" font="11">1</text>
+<text top="507" left="354" width="84" height="13" font="10">Consequently,</text>
+<text top="525" left="64" width="80" height="13" font="10">determined e</text>
+<text top="522" left="144" width="294" height="18" font="10">ﬀorts have been directed towards the exploration</text>
+<text top="543" left="64" width="22" height="13" font="10">of e</text>
+<text top="540" left="86" width="352" height="18" font="10">ﬃcient and broadly applicable methods for trifluoromethyl-</text>
+<text top="561" left="64" width="34" height="13" font="10">ation.</text>
+<text top="558" left="98" width="5" height="9" font="11">2</text>
+<text top="561" left="108" width="330" height="13" font="10">Transition metal-catalyzed or -mediated methods have</text>
+<text top="579" left="64" width="374" height="13" font="10">proven to be highly attractive because of their high level of</text>
+<text top="597" left="64" width="356" height="13" font="10">functional group tolerance and mild reaction conditions.</text>
+<text top="594" left="419" width="19" height="9" font="11">2b,3</text>
+<text top="615" left="64" width="43" height="13" font="10">Copper</text>
+<text top="612" left="107" width="5" height="9" font="11">4</text>
+<text top="615" left="119" width="91" height="13" font="10">and palladium</text>
+<text top="612" left="209" width="5" height="9" font="11">5</text>
+<text top="615" left="222" width="216" height="13" font="10">complexes have been shown to be</text>
+<text top="633" left="64" width="42" height="13" font="10">quite e</text>
+<text top="630" left="106" width="332" height="18" font="10">ﬃcient for the trifluoromethylation of a wide variety of</text>
+<text top="651" left="64" width="346" height="13" font="10">functional groups, leading to the construction of a new C</text>
+<text top="648" left="410" width="23" height="18" font="10">–CF</text>
+<text top="656" left="433" width="5" height="9" font="11">3</text>
+<text top="669" left="64" width="35" height="13" font="10">bond.</text>
+<text top="687" left="82" width="356" height="13" font="10">Intensive studies have been devoted to the development of</text>
+<text top="705" left="64" width="290" height="13" font="10">general approaches for the construction of the C</text>
+<text top="710" left="354" width="21" height="9" font="11">vinyl</text>
+<text top="702" left="375" width="23" height="18" font="10">–CF</text>
+<text top="710" left="398" width="5" height="9" font="11">3</text>
+<text top="705" left="407" width="31" height="13" font="10">bond</text>
+<text top="723" left="64" width="202" height="13" font="10">via trifluoromethylation of olefins</text>
+<text top="720" left="266" width="5" height="9" font="11">6</text>
+<text top="723" left="275" width="64" height="13" font="10">or alkynes.</text>
+<text top="720" left="339" width="5" height="9" font="11">7</text>
+<text top="723" left="348" width="90" height="13" font="10">However, these</text>
+<text top="741" left="64" width="70" height="13" font="10">methods su</text>
+<text top="738" left="134" width="304" height="18" font="10">ﬀer from the need to prefunctionalize olefinic sub-</text>
+<text top="759" left="64" width="374" height="13" font="10">strates, or are limited to the trifluoromethylation of terminal</text>
+<text top="777" left="64" width="374" height="13" font="10">alkynes. The direct trifluoromethylation of internal alkynes to</text>
+<text top="795" left="64" width="79" height="13" font="10">construct a C</text>
+<text top="800" left="143" width="21" height="9" font="11">vinyl</text>
+<text top="792" left="164" width="23" height="18" font="10">–CF</text>
+<text top="800" left="187" width="5" height="9" font="11">3</text>
+<text top="795" left="196" width="242" height="13" font="10">bond remains a significant challenge. In</text>
+<text top="813" left="64" width="374" height="13" font="10">continuation of our research interest in the chemistry of tri-</text>
+<text top="831" left="64" width="111" height="13" font="10">fluoromethylation,</text>
+<text top="828" left="175" width="5" height="9" font="11">8</text>
+<text top="831" left="185" width="253" height="13" font="10">we have now investigated the copper-cata-</text>
+<text top="849" left="64" width="30" height="13" font="10">lyzed</text>
+<text top="849" left="110" width="46" height="13" font="10">tandem</text>
+<text top="849" left="172" width="34" height="13" font="10">direct</text>
+<text top="849" left="222" width="188" height="13" font="10">trifluoromethylation/cyclization</text>
+<text top="849" left="426" width="12" height="13" font="10">of</text>
+<text top="867" left="64" width="365" height="13" font="10">internal alkynes to achieve the difunctionalization of alkynes.</text>
+<text top="885" left="82" width="356" height="13" font="10">Very recently, the use of copper-catalyzed direct trifluoro-</text>
+<text top="903" left="64" width="283" height="13" font="10">methylation of internal alkynes to construct C</text>
+<text top="908" left="346" width="21" height="9" font="11">vinyl</text>
+<text top="900" left="368" width="23" height="18" font="10">–CF</text>
+<text top="908" left="390" width="5" height="9" font="11">3</text>
+<text top="903" left="401" width="37" height="13" font="10">bonds</text>
+<text top="435" left="455" width="238" height="13" font="10">has been reported by other groups.</text>
+<text top="432" left="693" width="5" height="9" font="11">9</text>
+<text top="435" left="708" width="121" height="13" font="10">Liu and coworkers</text>
+<text top="453" left="455" width="374" height="13" font="10">described the domino copper-catalyzed trifluoromethylation/</text>
+<text top="471" left="455" width="36" height="13" font="10">Meyer</text>
+<text top="468" left="491" width="339" height="18" font="10">–Schuster rearrangement of propargylic alcohols with</text>
+<text top="489" left="455" width="34" height="13" font="10">Togni</text>
+<text top="486" left="489" width="340" height="18" font="10">’s reagent leading to α-trifluoromethyl enones as pro-</text>
+<text top="507" left="455" width="156" height="13" font="10">ducts (eqn (1), Scheme 1).</text>
+<text top="504" left="611" width="11" height="9" font="11">9a</text>
+<text top="507" left="626" width="203" height="13" font="10">Interestingly, trifluoromethylation</text>
+<text top="525" left="455" width="12" height="13" font="10">of</text>
+<text top="525" left="480" width="101" height="13" font="10">homopropargylic</text>
+<text top="525" left="595" width="49" height="13" font="10">alcohols</text>
+<text top="525" left="658" width="7" height="13" font="10">a</text>
+<text top="522" left="665" width="165" height="18" font="10">ﬀords 3-trifluoromethyl-3-</text>
+<text top="543" left="455" width="194" height="13" font="10">butenal derivatives via a quite di</text>
+<text top="540" left="649" width="180" height="18" font="10">ﬀerent reaction route (eqn (2),</text>
+<text top="561" left="455" width="69" height="13" font="10">Scheme 1).</text>
+<text top="558" left="524" width="11" height="9" font="11">9b</text>
+<text top="561" left="542" width="168" height="13" font="10">The construction of the C</text>
+<text top="566" left="711" width="21" height="9" font="11">vinyl</text>
+<text top="558" left="732" width="23" height="18" font="10">–CF</text>
+<text top="566" left="754" width="5" height="9" font="11">3</text>
+<text top="561" left="768" width="62" height="13" font="10">bond and</text>
+<text top="579" left="455" width="374" height="13" font="10">difunctionalization of alkynes were achieved in the above two</text>
+<text top="1067" left="455" width="51" height="10" font="8">Scheme 1</text>
+<text top="1067" left="517" width="13" height="10" font="8">Tri</text>
+<text top="1065" left="531" width="193" height="15" font="8">ﬂuoromethylation of internal alkynes.</text>
+<text top="1035" left="64" width="374" height="14" font="4">†Electronic supplementary information (ESI) available. CCDC 1018298.</text>
+<text top="1053" left="64" width="374" height="10" font="4">For ESI and crystallographic data in CIF or other electronic format see</text>
+<text top="1068" left="64" width="118" height="10" font="4">DOI: 10.1039/c4qo00240g</text>
+<text top="947" left="64" width="4" height="7" font="12">a</text>
+<text top="950" left="68" width="329" height="10" font="4">Key Laboratory of Organofluorine Chemistry, Shanghai Institute of Organic</text>
+<text top="964" left="64" width="348" height="10" font="4">Chemistry, Chinese Academy of Sciences, 345 Lingling Road, Shanghai 200032,</text>
+<text top="979" left="64" width="340" height="10" font="4">China. E-mail: jlin@sioc.ac.cn, jchxiao@sioc.ac.cn; Fax: (+86) 21-6416-6128;</text>
+<text top="994" left="64" width="198" height="10" font="4">Tel: (+86) 21-5492-5380, (+86) 21-5492-5340</text>
+<text top="1007" left="64" width="4" height="7" font="12">b</text>
+<text top="1009" left="68" width="74" height="10" font="4">Syngenta, Jealott</text>
+<text top="1007" left="142" width="256" height="14" font="4">’s Hill International Research Centre, Bracknell, Berkshire,</text>
+<text top="1025" left="64" width="63" height="10" font="4">RG42 6EY, UK</text>
+<text top="1118" left="64" width="190" height="11" font="8">1280 | Org. Chem. Front., 2014, 1, 1280</text>
+<text top="1116" left="254" width="29" height="15" font="8">–1284</text>
+<text top="1116" left="609" width="220" height="13" font="8">This journal is © the Partner Organisations 2014</text>
+<text top="664" left="17" width="0" height="11" font="13">Published on 04 November 2014. Downloaded on 26/03/2018 20:31:55. </text>
+<text top="141" left="679" width="124" height="14" font="14"><a href="http://dx.doi.org/10.1039/C4QO00240G"><b>View Article Online</b></a></text>
+<text top="160" left="679" width="110" height="9" font="15"><a href="http://pubs.rsc.org/en/journals/journal/QO"><b>View Journal </b></a><a href="http://pubs.rsc.org/en/journals/journal/QO?issueid=QO001011"><b> | View Issue</b></a></text>
+</page>
+<page number="2" position="absolute" top="0" left="0" height="1169" width="892">
+	<fontspec id="16" size="5" family="Times" color="#231f20"/>
+	<fontspec id="17" size="9" family="Times" color="#2c3839"/>
+	<fontspec id="18" size="7" family="Times" color="#000000"/>
+<image top="101" left="466" width="353" height="241" src="./images/cooper-2_1.png"/>
+<text top="76" left="64" width="374" height="13" font="10">reactions. On the basis that cyclic structures are commonly</text>
+<text top="94" left="64" width="374" height="13" font="10">found in natural products and drugs, studies on tandem tri-</text>
+<text top="112" left="64" width="374" height="13" font="10">fluoromethylation/cyclization are also worthy of attention. The</text>
+<text top="130" left="64" width="374" height="13" font="10">Hou group disclosed the trifluoromethylation of homopro-</text>
+<text top="148" left="64" width="173" height="13" font="10">pargyl amines with Umemoto</text>
+<text top="144" left="237" width="201" height="18" font="10">’s reagent giving 4-trifluoromethyl-</text>
+<text top="166" left="64" width="198" height="13" font="10">2,3-dihydro-pyrroliums (eqn (3)).</text>
+<text top="163" left="262" width="9" height="9" font="11">9c</text>
+<text top="166" left="278" width="160" height="13" font="10">During the preparation of</text>
+<text top="184" left="64" width="374" height="13" font="10">this manuscript, Ding et al. reported the trifluoromethylation</text>
+<text top="202" left="64" width="374" height="13" font="10">of propiolates resulting in trifluoromethylated coumarins as</text>
+<text top="220" left="64" width="115" height="13" font="10">products (eqn (4)).</text>
+<text top="217" left="179" width="11" height="9" font="11">9d</text>
+<text top="220" left="196" width="242" height="13" font="10">Heterocycles were formed in these two</text>
+<text top="238" left="64" width="224" height="13" font="10">processes (eqn (3) and (4)). Our e</text>
+<text top="235" left="288" width="150" height="18" font="10">ﬀorts are aimed at the</text>
+<text top="256" left="64" width="374" height="13" font="10">tandem trifluoromethylation/cyclization of internal alkynes to</text>
+<text top="274" left="64" width="374" height="13" font="10">construct carbon rings (eqn (5)). Preliminary results are</text>
+<text top="292" left="64" width="103" height="13" font="10">described herein.</text>
+<text top="289" left="167" width="11" height="9" font="11">10</text>
+<text top="347" left="64" width="216" height="19" font="9">Results and discussion</text>
+<text top="382" left="64" width="374" height="13" font="10">Our first attempt at trifluoromethylation of the internal alkyne</text>
+<text top="400" left="64" width="374" height="14" font="10">1a with Umemoto’s reagent catalyzed by CuI in DCM was suc-</text>
+<text top="418" left="64" width="374" height="14" font="10">cessful, leading to the desired product 2a, albeit in low yield</text>
+<text top="436" left="64" width="374" height="14" font="10">(Table 1, entry 1). 2,4,6-Trimethyl pyridine (L1) was used both</text>
+<text top="454" left="64" width="374" height="13" font="10">as the ligand and the base. An examination of other copper</text>
+<text top="472" left="64" width="221" height="13" font="10">sources suggested that CuTc [copper(</text>
+<text top="475" left="285" width="3" height="9" font="7">I</text>
+<text top="472" left="288" width="150" height="13" font="10">)thiophene-2-carboxylate]</text>
+<text top="490" left="64" width="331" height="13" font="10">was a suitable catalyst (entry 3), while Cu(0) and Cu(</text>
+<text top="493" left="394" width="6" height="9" font="7">II</text>
+<text top="490" left="401" width="37" height="13" font="10">) were</text>
+<text top="508" left="64" width="31" height="13" font="10">not e</text>
+<text top="505" left="95" width="343" height="18" font="10">ﬀective for this transformation (entries 2, 4, and 5). The</text>
+<text top="526" left="64" width="374" height="13" font="10">reaction in 1,2-dichloroethane (DCE) gave essentially the same</text>
+<text top="544" left="64" width="374" height="13" font="10">yields (entry 6 vs. entry 3). The use of other more polar solvents</text>
+<text top="562" left="64" width="374" height="13" font="10">resulted in much lower yields or almost no reaction at all</text>
+<text top="580" left="64" width="56" height="13" font="10">(entries 7</text>
+<text top="576" left="120" width="318" height="18" font="10">–10). The use of the bulky ligand L2 or the bidentate</text>
+<text top="598" left="64" width="374" height="14" font="10">ligand (L3 or L4) instead of L1 did not improve the yield</text>
+<text top="616" left="64" width="64" height="13" font="10">(entries 11</text>
+<text top="613" left="128" width="310" height="18" font="10">–13). Umemoto’s reagent, in combination with the</text>
+<text top="634" left="64" width="374" height="14" font="10">system CuTc/L3, was the only useful reagent for this conver-</text>
+<text top="652" left="64" width="374" height="13" font="10">sion. Other trifluoromethylating reagents gave dramatically</text>
+<text top="670" left="64" width="374" height="13" font="10">lower yields of the expected product (entry 14) or led to none</text>
+<text top="688" left="64" width="374" height="13" font="10">of the expected product at all (entries 15 and 16). The loading</text>
+<text top="706" left="64" width="374" height="14" font="10">of L3 had a significant eﬀect on the reaction yield (entries</text>
+<text top="724" left="64" width="14" height="13" font="10">17</text>
+<text top="721" left="78" width="360" height="18" font="10">–19 vs. entry 12), and the use of 0.8 equiv. of L3 improved</text>
+<text top="742" left="64" width="374" height="13" font="10">the yield to 51% (entry 18). The yield was slightly improved</text>
+<text top="760" left="64" width="374" height="13" font="10">when the reaction was carried out in DCE and the temperature</text>
+<text top="778" left="64" width="374" height="13" font="10">was elevated to 80 °C (entry 20). A higher loading of Umemo-</text>
+<text top="796" left="64" width="12" height="13" font="10">to</text>
+<text top="792" left="76" width="362" height="18" font="10">’s reagent I increased the yield (entry 21), but the yield did</text>
+<text top="814" left="64" width="374" height="14" font="10">not increase further with loadings beyond 1.5 equiv. of I (entry 22).</text>
+<text top="832" left="64" width="374" height="13" font="10">Interestingly, in the presence of MeOH (0.1 mL), the reac-</text>
+<text top="850" left="64" width="374" height="13" font="10">tion gave the expected product in good yield (entry 23 vs. entry 21).</text>
+<text top="868" left="64" width="374" height="13" font="10">The desired transformation took place only to a very limited</text>
+<text top="886" left="64" width="301" height="13" font="10">extent in the absence of a copper source (entry 24).</text>
+<text top="904" left="82" width="209" height="13" font="10">Since methanol had a positive e</text>
+<text top="900" left="290" width="148" height="18" font="10">ﬀect on the conversion</text>
+<text top="922" left="64" width="374" height="13" font="10">(Table 1, entry 23), we reasoned that other alcohols might also</text>
+<text top="940" left="64" width="374" height="13" font="10">be favourable. To our surprise, under the standard conditions</text>
+<text top="958" left="64" width="374" height="13" font="10">shown in entry 21 of Table 1, the addition of ethanol or isopro-</text>
+<text top="976" left="64" width="374" height="13" font="10">panol inhibited the desired transformation, and the reaction</text>
+<text top="994" left="64" width="374" height="13" font="10">produced ethoxy- or isopropoxy-substituted side products,</text>
+<text top="1012" left="64" width="374" height="13" font="10">respectively (eqn (1) and (2), Scheme 2). The phenoxy-substi-</text>
+<text top="1030" left="64" width="374" height="14" font="10">tuted substrate 1b could be converted to the desired product</text>
+<text top="1048" left="64" width="374" height="14" font="10">2b in good yield under the standard conditions (eqn (3)).</text>
+<text top="1066" left="64" width="374" height="14" font="10">However, in the presence of methanol, compound 2b turned</text>
+<text top="868" left="455" width="374" height="13" font="10">out to be a side product and the methoxy-substituted com-</text>
+<text top="886" left="455" width="374" height="14" font="10">pound 2a was the major product (eqn (4)). These results indi-</text>
+<text top="904" left="455" width="374" height="13" font="10">cated that the use of methanol as an additive was only</text>
+<text top="922" left="455" width="374" height="13" font="10">favourable for the conversion of substrates in which the homo-</text>
+<text top="940" left="455" width="356" height="13" font="10">propargylic benzene ring was substituted by a 4-MeO group.</text>
+<text top="958" left="473" width="356" height="13" font="10">We then investigated the substrate scope of the tandem tri-</text>
+<text top="976" left="455" width="374" height="13" font="10">fluoromethylation/cyclization under the optimized reaction</text>
+<text top="994" left="455" width="374" height="13" font="10">conditions (Table 1, entry 21). As shown in Table 2, irrespective</text>
+<text top="1012" left="455" width="374" height="13" font="10">of whether the homopropargylic benzene ring is substituted by</text>
+<text top="1030" left="455" width="374" height="13" font="10">an electron-withdrawing group or an electron-donating group,</text>
+<text top="1048" left="455" width="374" height="13" font="10">the tandem reactions can proceed very well to give the desired</text>
+<text top="1066" left="455" width="374" height="14" font="10">products in moderate to good yields (2a–2n). For substrates</text>
+<text top="78" left="455" width="38" height="10" font="8">Table 1</text>
+<text top="78" left="504" width="200" height="10" font="8">Screening of reaction conditions for tri</text>
+<text top="75" left="704" width="93" height="15" font="8">ﬂuoromethylation</text>
+<text top="73" left="797" width="4" height="10" font="16">a</text>
+<text top="368" left="455" width="28" height="11" font="8">Entry</text>
+<text top="368" left="502" width="22" height="11" font="8">[Cu]</text>
+<text top="368" left="597" width="7" height="11" font="8">L</text>
+<text top="368" left="627" width="38" height="11" font="8">Solvent</text>
+<text top="355" left="682" width="33" height="11" font="8">Temp.</text>
+<text top="368" left="682" width="20" height="11" font="8">(°C)</text>
+<text top="365" left="732" width="20" height="16" font="8">“CF</text>
+<text top="373" left="752" width="5" height="8" font="16">3</text>
+<text top="366" left="757" width="5" height="8" font="16">+</text>
+<text top="365" left="761" width="5" height="16" font="8">”</text>
+<text top="355" left="783" width="27" height="11" font="8">Yield</text>
+<text top="352" left="810" width="5" height="8" font="16">b</text>
+<text top="368" left="783" width="18" height="11" font="8">(%)</text>
+<text top="396" left="455" width="6" height="11" font="8">1</text>
+<text top="396" left="502" width="19" height="11" font="8">CuI</text>
+<text top="396" left="597" width="13" height="13" font="8">L1</text>
+<text top="396" left="627" width="27" height="11" font="8">DCM</text>
+<text top="396" left="682" width="12" height="11" font="8">50</text>
+<text top="396" left="732" width="4" height="13" font="8">I</text>
+<text top="396" left="783" width="12" height="11" font="8">27</text>
+<text top="409" left="455" width="6" height="11" font="8">2</text>
+<text top="409" left="502" width="40" height="11" font="8">(MeCN)</text>
+<text top="414" left="543" width="5" height="8" font="16">4</text>
+<text top="409" left="548" width="28" height="11" font="8">CuPF</text>
+<text top="414" left="576" width="5" height="8" font="16">6</text>
+<text top="409" left="597" width="13" height="13" font="8">L1</text>
+<text top="409" left="627" width="27" height="11" font="8">DCM</text>
+<text top="409" left="682" width="12" height="11" font="8">50</text>
+<text top="409" left="732" width="4" height="13" font="8">I</text>
+<text top="409" left="783" width="6" height="11" font="8">5</text>
+<text top="423" left="455" width="6" height="11" font="8">3</text>
+<text top="423" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="423" left="597" width="13" height="13" font="8">L1</text>
+<text top="423" left="627" width="27" height="11" font="8">DCM</text>
+<text top="423" left="682" width="12" height="11" font="8">50</text>
+<text top="423" left="732" width="4" height="13" font="8">I</text>
+<text top="423" left="783" width="12" height="11" font="8">39</text>
+<text top="436" left="455" width="6" height="11" font="8">4</text>
+<text top="436" left="502" width="43" height="11" font="8">Cu(OAc)</text>
+<text top="441" left="546" width="5" height="8" font="16">2</text>
+<text top="436" left="597" width="13" height="13" font="8">L1</text>
+<text top="436" left="627" width="27" height="11" font="8">DCM</text>
+<text top="436" left="682" width="12" height="11" font="8">50</text>
+<text top="436" left="732" width="4" height="13" font="8">I</text>
+<text top="436" left="783" width="6" height="11" font="8">4</text>
+<text top="450" left="455" width="6" height="11" font="8">5</text>
+<text top="450" left="502" width="15" height="11" font="8">Cu</text>
+<text top="450" left="597" width="13" height="13" font="8">L1</text>
+<text top="450" left="627" width="27" height="11" font="8">DCM</text>
+<text top="450" left="682" width="12" height="11" font="8">50</text>
+<text top="450" left="732" width="4" height="13" font="8">I</text>
+<text top="450" left="783" width="46" height="11" font="8">Complex</text>
+<text top="463" left="455" width="6" height="11" font="8">6</text>
+<text top="463" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="463" left="597" width="13" height="13" font="8">L1</text>
+<text top="463" left="627" width="24" height="11" font="8">DCE</text>
+<text top="463" left="682" width="12" height="11" font="8">50</text>
+<text top="463" left="732" width="4" height="13" font="8">I</text>
+<text top="463" left="783" width="12" height="11" font="8">36</text>
+<text top="477" left="455" width="6" height="11" font="8">7</text>
+<text top="477" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="477" left="597" width="13" height="13" font="8">L1</text>
+<text top="477" left="627" width="23" height="11" font="8">THF</text>
+<text top="477" left="682" width="12" height="11" font="8">50</text>
+<text top="477" left="732" width="4" height="13" font="8">I</text>
+<text top="477" left="783" width="6" height="11" font="8">8</text>
+<text top="490" left="455" width="6" height="11" font="8">8</text>
+<text top="490" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="490" left="597" width="13" height="13" font="8">L1</text>
+<text top="490" left="627" width="17" height="11" font="8">CH</text>
+<text top="495" left="644" width="5" height="8" font="16">3</text>
+<text top="490" left="649" width="16" height="11" font="8">CN</text>
+<text top="490" left="682" width="12" height="11" font="8">50</text>
+<text top="490" left="732" width="4" height="13" font="8">I</text>
+<text top="490" left="783" width="12" height="11" font="8">23</text>
+<text top="504" left="455" width="6" height="11" font="8">9</text>
+<text top="504" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="504" left="597" width="13" height="13" font="8">L1</text>
+<text top="504" left="627" width="34" height="11" font="8">MeOH</text>
+<text top="504" left="682" width="12" height="11" font="8">50</text>
+<text top="504" left="732" width="4" height="13" font="8">I</text>
+<text top="504" left="783" width="28" height="11" font="8">Trace</text>
+<text top="517" left="455" width="12" height="11" font="8">10</text>
+<text top="517" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="517" left="597" width="13" height="13" font="8">L1</text>
+<text top="517" left="627" width="26" height="11" font="8">DMF</text>
+<text top="517" left="682" width="12" height="11" font="8">50</text>
+<text top="517" left="732" width="4" height="13" font="8">I</text>
+<text top="517" left="783" width="12" height="11" font="8">20</text>
+<text top="531" left="455" width="12" height="11" font="8">11</text>
+<text top="531" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="531" left="597" width="13" height="13" font="8">L2</text>
+<text top="531" left="627" width="27" height="11" font="8">DCM</text>
+<text top="531" left="682" width="12" height="11" font="8">50</text>
+<text top="531" left="732" width="4" height="13" font="8">I</text>
+<text top="531" left="783" width="12" height="11" font="8">35</text>
+<text top="544" left="455" width="12" height="11" font="8">12</text>
+<text top="542" left="467" width="4" height="8" font="16">c</text>
+<text top="544" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="544" left="597" width="13" height="13" font="8">L3</text>
+<text top="544" left="627" width="27" height="11" font="8">DCM</text>
+<text top="544" left="682" width="12" height="11" font="8">50</text>
+<text top="544" left="732" width="4" height="13" font="8">I</text>
+<text top="544" left="783" width="12" height="11" font="8">40</text>
+<text top="558" left="455" width="12" height="11" font="8">13</text>
+<text top="555" left="467" width="4" height="8" font="16">c</text>
+<text top="558" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="558" left="597" width="13" height="13" font="8">L4</text>
+<text top="558" left="627" width="27" height="11" font="8">DCM</text>
+<text top="558" left="682" width="12" height="11" font="8">50</text>
+<text top="558" left="732" width="4" height="13" font="8">I</text>
+<text top="558" left="783" width="12" height="11" font="8">39</text>
+<text top="571" left="455" width="12" height="11" font="8">14</text>
+<text top="569" left="467" width="11" height="8" font="16">c,d</text>
+<text top="571" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="571" left="597" width="13" height="13" font="8">L3</text>
+<text top="571" left="627" width="27" height="11" font="8">DCM</text>
+<text top="571" left="682" width="12" height="11" font="8">50</text>
+<text top="571" left="732" width="8" height="13" font="8">II</text>
+<text top="571" left="783" width="6" height="11" font="8">8</text>
+<text top="585" left="455" width="12" height="11" font="8">15</text>
+<text top="582" left="467" width="4" height="8" font="16">c</text>
+<text top="585" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="585" left="597" width="13" height="13" font="8">L3</text>
+<text top="585" left="627" width="27" height="11" font="8">DCM</text>
+<text top="585" left="682" width="12" height="11" font="8">50</text>
+<text top="585" left="732" width="12" height="13" font="8">III</text>
+<text top="585" left="783" width="6" height="11" font="8">0</text>
+<text top="598" left="455" width="12" height="11" font="8">16</text>
+<text top="596" left="467" width="4" height="8" font="16">c</text>
+<text top="598" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="598" left="597" width="13" height="13" font="8">L3</text>
+<text top="598" left="627" width="27" height="11" font="8">DCM</text>
+<text top="598" left="682" width="12" height="11" font="8">50</text>
+<text top="598" left="732" width="11" height="13" font="8">IV</text>
+<text top="598" left="783" width="6" height="11" font="8">0</text>
+<text top="612" left="455" width="12" height="11" font="8">17</text>
+<text top="609" left="467" width="4" height="8" font="16">e</text>
+<text top="612" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="612" left="597" width="13" height="13" font="8">L3</text>
+<text top="612" left="627" width="27" height="11" font="8">DCM</text>
+<text top="612" left="682" width="12" height="11" font="8">50</text>
+<text top="612" left="732" width="4" height="13" font="8">I</text>
+<text top="612" left="783" width="12" height="11" font="8">16</text>
+<text top="625" left="455" width="12" height="11" font="8">18</text>
+<text top="623" left="469" width="3" height="8" font="16">f</text>
+<text top="625" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="625" left="597" width="13" height="13" font="8">L3</text>
+<text top="625" left="627" width="27" height="11" font="8">DCM</text>
+<text top="625" left="682" width="12" height="11" font="8">50</text>
+<text top="625" left="732" width="4" height="13" font="8">I</text>
+<text top="625" left="783" width="12" height="11" font="8">51</text>
+<text top="639" left="455" width="12" height="11" font="8">19</text>
+<text top="636" left="467" width="4" height="8" font="16">g</text>
+<text top="639" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="639" left="597" width="13" height="13" font="8">L3</text>
+<text top="639" left="627" width="27" height="11" font="8">DCM</text>
+<text top="639" left="682" width="12" height="11" font="8">50</text>
+<text top="639" left="732" width="4" height="13" font="8">I</text>
+<text top="639" left="783" width="12" height="11" font="8">31</text>
+<text top="652" left="455" width="12" height="11" font="8">20</text>
+<text top="650" left="469" width="3" height="8" font="16">f</text>
+<text top="652" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="652" left="597" width="13" height="13" font="8">L3</text>
+<text top="652" left="627" width="24" height="11" font="8">DCE</text>
+<text top="652" left="682" width="12" height="11" font="8">80</text>
+<text top="652" left="732" width="4" height="13" font="8">I</text>
+<text top="652" left="783" width="12" height="11" font="8">54</text>
+<text top="666" left="455" width="12" height="11" font="8">21</text>
+<text top="663" left="469" width="10" height="8" font="16">f,h</text>
+<text top="666" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="666" left="597" width="13" height="13" font="8">L3</text>
+<text top="666" left="627" width="24" height="11" font="8">DCE</text>
+<text top="666" left="682" width="12" height="11" font="8">80</text>
+<text top="666" left="732" width="4" height="13" font="8">I</text>
+<text top="666" left="783" width="12" height="11" font="8">66</text>
+<text top="679" left="455" width="12" height="11" font="8">22</text>
+<text top="677" left="469" width="8" height="8" font="16">f,i</text>
+<text top="679" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="679" left="597" width="13" height="13" font="8">L3</text>
+<text top="679" left="627" width="24" height="11" font="8">DCE</text>
+<text top="679" left="682" width="12" height="11" font="8">80</text>
+<text top="679" left="732" width="4" height="13" font="8">I</text>
+<text top="679" left="783" width="12" height="11" font="8">64</text>
+<text top="693" left="455" width="12" height="11" font="8">23</text>
+<text top="690" left="469" width="17" height="8" font="16">f,h, j</text>
+<text top="693" left="502" width="27" height="11" font="8">CuTc</text>
+<text top="693" left="597" width="13" height="13" font="8">L3</text>
+<text top="693" left="627" width="24" height="11" font="8">DCE</text>
+<text top="693" left="682" width="12" height="11" font="8">80</text>
+<text top="693" left="732" width="4" height="13" font="8">I</text>
+<text top="693" left="783" width="12" height="11" font="8">82</text>
+<text top="706" left="455" width="12" height="11" font="8">24</text>
+<text top="704" left="469" width="10" height="8" font="16">f,h</text>
+<text top="703" left="502" width="12" height="16" font="8">—</text>
+<text top="706" left="597" width="13" height="13" font="8">L3</text>
+<text top="706" left="627" width="24" height="11" font="8">DCE</text>
+<text top="706" left="682" width="12" height="11" font="8">80</text>
+<text top="706" left="732" width="4" height="13" font="8">I</text>
+<text top="706" left="783" width="28" height="11" font="8">Trace</text>
+<text top="729" left="455" width="5" height="8" font="16">a</text>
+<text top="732" left="462" width="367" height="13" font="8">Reaction conditions: 1a (0.1 mmol), trifluoromethylating reagent</text>
+<text top="745" left="455" width="374" height="11" font="8">(1 equiv.), copper source (20 mol%) and L (1.2 equiv.) in solvent (1 mL).</text>
+<text top="756" left="455" width="5" height="8" font="16">b</text>
+<text top="759" left="462" width="80" height="11" font="8">Determined by</text>
+<text top="756" left="546" width="9" height="8" font="16">19</text>
+<text top="759" left="555" width="274" height="11" font="8">F NMR with the use of trifluoromethyl benzene as</text>
+<text top="772" left="455" width="116" height="11" font="8">an internal standard.</text>
+<text top="770" left="576" width="4" height="8" font="16">c</text>
+<text top="772" left="582" width="138" height="11" font="8">0.5 equiv. of L was used.</text>
+<text top="770" left="725" width="5" height="8" font="16">d</text>
+<text top="772" left="732" width="97" height="13" font="8">2 equiv. of II was</text>
+<text top="786" left="455" width="28" height="11" font="8">used.</text>
+<text top="783" left="487" width="4" height="8" font="16">e</text>
+<text top="786" left="493" width="137" height="13" font="8">0.2 equiv. of L3 was used.</text>
+<text top="783" left="635" width="3" height="8" font="16">f</text>
+<text top="786" left="639" width="138" height="13" font="8">0.8 equiv. of L3 was used.</text>
+<text top="783" left="781" width="4" height="8" font="16">g</text>
+<text top="786" left="787" width="42" height="11" font="8">1 equiv.</text>
+<text top="799" left="455" width="87" height="13" font="8">of L3 was used.</text>
+<text top="797" left="548" width="5" height="8" font="16">h</text>
+<text top="799" left="555" width="137" height="13" font="8">1.5 equiv. of I was used.</text>
+<text top="797" left="697" width="3" height="8" font="16">i</text>
+<text top="799" left="702" width="127" height="13" font="8">2 equiv. of I was used.</text>
+<text top="810" left="455" width="2" height="8" font="16">j</text>
+<text top="813" left="460" width="219" height="11" font="8">MeOH (0.1 mL) was added as an additive.</text>
+<text top="40" left="64" width="157" height="11" font="17">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="17">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="8">This journal is © the Partner Organisations 2014</text>
+<text top="1115" left="612" width="217" height="15" font="8">Org. Chem. Front., 2014, 1, 1280–1284 | 1281</text>
+<text top="664" left="17" width="0" height="11" font="13">Published on 04 November 2014. Downloaded on 26/03/2018 20:31:55. </text>
+<text top="17" left="746" width="83" height="9" font="18"><a href="http://dx.doi.org/10.1039/C4QO00240G"><b>View Article Online</b></a></text>
+</page>
+<page number="3" position="absolute" top="0" left="0" height="1169" width="892">
+<image top="76" left="72" width="353" height="438" src="./images/cooper-3_1.png"/>
+<image top="101" left="455" width="353" height="653" src="./images/cooper-3_2.png"/>
+<text top="580" left="64" width="374" height="13" font="10">substituted with a methoxy group on the homopropargylic</text>
+<text top="598" left="64" width="374" height="13" font="10">benzene ring, superior results were obtained with the use of</text>
+<text top="615" left="64" width="374" height="14" font="10">methanol as an additive (2a and 2c). In contrast, the presence</text>
+<text top="634" left="64" width="374" height="13" font="10">of methanol in the reaction led to a lower yield for the con-</text>
+<text top="652" left="64" width="374" height="14" font="10">version of 2d. Substrates substituted in the ortho-position of</text>
+<text top="669" left="64" width="374" height="13" font="10">the homopropargylic benzene ring could also be converted</text>
+<text top="688" left="64" width="374" height="14" font="10">smoothly to the corresponding products (2c, 2d, 2f and 2n). In</text>
+<text top="706" left="64" width="374" height="13" font="10">the cases of substrates with a methoxy group on the meta- or</text>
+<text top="723" left="64" width="374" height="14" font="10">ortho-position of the ethynyl benzene ring (2o–2p), or with the</text>
+<text top="742" left="64" width="374" height="13" font="10">other electron-donating group on the ethynyl benzene ring</text>
+<text top="760" left="64" width="374" height="14" font="10">(2q–2r), moderate yields of the expected products were obtained.</text>
+<text top="777" left="64" width="374" height="13" font="10">But an electron-withdrawing group led to a dramatic decrease in</text>
+<text top="796" left="64" width="374" height="14" font="10">the yield (2s). The reaction could also be applied to a propargylic</text>
+<text top="814" left="64" width="80" height="13" font="10">ether, albeit a</text>
+<text top="810" left="143" width="264" height="18" font="10">ﬀording the cyclized product in low yield (2t).</text>
+<text top="831" left="82" width="356" height="14" font="10">The structure of the product 2h was determined by single</text>
+<text top="850" left="64" width="90" height="13" font="10">crystal X-ray di</text>
+<text top="846" left="154" width="102" height="18" font="10">ﬀraction (Fig. 1).</text>
+<text top="847" left="256" width="11" height="9" font="11">11</text>
+<text top="850" left="272" width="166" height="13" font="10">The structures of the other</text>
+<text top="868" left="64" width="212" height="13" font="10">products were surmised by analogy.</text>
+<text top="885" left="82" width="356" height="13" font="10">The tandem trifluoromethylation/cyclization might not</text>
+<text top="904" left="64" width="374" height="13" font="10">involve radical species, because the well-known radical scavenger,</text>
+<text top="922" left="64" width="374" height="13" font="10">2,2,6,6-tetramethyl-1-piperidinyloxy (TEMPO), did not suppress</text>
+<text top="939" left="64" width="191" height="13" font="10">the desired reaction (Scheme 3).</text>
+<text top="958" left="82" width="356" height="13" font="10">On the basis of the above results, we propose that the reac-</text>
+<text top="976" left="64" width="374" height="13" font="10">tion mechanism shown in Scheme 4 is plausible. The oxi-</text>
+<text top="993" left="64" width="80" height="13" font="10">dation of Cu(</text>
+<text top="996" left="144" width="3" height="9" font="7">I</text>
+<text top="993" left="147" width="86" height="13" font="10">) by Umemoto</text>
+<text top="990" left="233" width="137" height="18" font="10">’s reagent produces CF</text>
+<text top="999" left="371" width="5" height="9" font="11">3</text>
+<text top="993" left="376" width="21" height="13" font="10">Cu(</text>
+<text top="996" left="397" width="10" height="9" font="7">III</text>
+<text top="993" left="406" width="31" height="13" font="10">), the</text>
+<text top="1012" left="64" width="374" height="14" font="10">electrophilic attack of which to substrate 1 generates inter-</text>
+<text top="1030" left="64" width="374" height="14" font="10">mediate A. Reductive elimination leads to intermediate B and</text>
+<text top="1047" left="64" width="179" height="13" font="10">regeneration of the catalyst Cu(</text>
+<text top="1050" left="243" width="3" height="9" font="7">I</text>
+<text top="1047" left="246" width="192" height="13" font="10">). The subsequent intramolecular</text>
+<text top="1066" left="64" width="374" height="14" font="10">cyclization gives intermediate C (path I), followed by aromati-</text>
+<text top="886" left="455" width="374" height="14" font="10">sation by loss of proton to furnish the final product 2. If the</text>
+<text top="904" left="455" width="374" height="13" font="10">homopropargylic benzene ring is substituted by a 4-RO group,</text>
+<text top="922" left="455" width="374" height="14" font="10">intermediate B might also undergo ipso Friedel–Crafts reaction</text>
+<text top="940" left="455" width="24" height="13" font="10">to a</text>
+<text top="936" left="478" width="351" height="18" font="10">ﬀord intermediate D (path II). The presence of methanol</text>
+<text top="958" left="455" width="374" height="14" font="10">as an additive can stabilize intermediate D by converting this</text>
+<text top="976" left="455" width="374" height="14" font="10">intermediate to E. The Wagner–Meerwein rearrangement of</text>
+<text top="994" left="455" width="374" height="14" font="10">intermediate D then produces intermediate C, and facile aro-</text>
+<text top="1012" left="455" width="374" height="14" font="10">matisation gives the final product 2. The second path explains</text>
+<text top="1030" left="455" width="374" height="14" font="10">the formation of the by-products 2a′ or 2a″ with the use of</text>
+<text top="1048" left="455" width="374" height="13" font="10">other alcohols as additives, and also explains the conversion of</text>
+<text top="1066" left="455" width="349" height="14" font="10">substrate 1b to 2a in the presence of methanol (Scheme 2).</text>
+<text top="530" left="64" width="52" height="10" font="8">Scheme 2</text>
+<text top="530" left="127" width="171" height="10" font="8">The use of alcohol as an additive.</text>
+<text top="78" left="455" width="39" height="10" font="8">Table 2</text>
+<text top="78" left="505" width="169" height="10" font="8">Substrate scope of the tandem tri</text>
+<text top="75" left="674" width="149" height="15" font="8">ﬂuoromethylation/cyclization</text>
+<text top="73" left="822" width="4" height="10" font="16">a</text>
+<text top="774" left="455" width="5" height="8" font="16">a</text>
+<text top="776" left="462" width="365" height="13" font="8">Reaction conditions: 1 (0.1 mmol), trifluoromethylating reagent</text>
+<text top="790" left="455" width="372" height="13" font="8">(1.5 equiv.), CuTc (20 mol%) and L3 (0.8 equiv.) at 80 °C in DCE (1 mL).</text>
+<text top="803" left="455" width="81" height="11" font="8">Isolated yields.</text>
+<text top="801" left="541" width="5" height="8" font="16">b</text>
+<text top="803" left="548" width="279" height="11" font="8">Methanol (0.1 mL) was used as an additive in the</text>
+<text top="817" left="455" width="46" height="11" font="8">reaction.</text>
+<text top="814" left="504" width="4" height="8" font="16">c</text>
+<text top="817" left="510" width="229" height="11" font="8">The yield in parenthesis was determined by</text>
+<text top="814" left="742" width="9" height="8" font="16">19</text>
+<text top="817" left="752" width="75" height="11" font="8">F NMR for the</text>
+<text top="830" left="455" width="250" height="11" font="8">reaction with methanol (0.1 mL) as an additive.</text>
+<text top="40" left="64" width="90" height="11" font="17">Research Article</text>
+<text top="40" left="672" width="157" height="11" font="17">Organic Chemistry Frontiers</text>
+<text top="1118" left="64" width="189" height="11" font="8">1282 | Org. Chem. Front., 2014, 1, 1280</text>
+<text top="1116" left="253" width="29" height="15" font="8">–1284</text>
+<text top="1116" left="609" width="220" height="13" font="8">This journal is © the Partner Organisations 2014</text>
+<text top="664" left="17" width="0" height="11" font="13">Published on 04 November 2014. Downloaded on 26/03/2018 20:31:55. </text>
+<text top="17" left="746" width="83" height="9" font="18"><a href="http://dx.doi.org/10.1039/C4QO00240G"><b>View Article Online</b></a></text>
+</page>
+<page number="4" position="absolute" top="0" left="0" height="1169" width="892">
+<image top="76" left="102" width="300" height="287" src="./images/cooper-4_1.png"/>
+<image top="429" left="94" width="312" height="99" src="./images/cooper-4_2.png"/>
+<image top="591" left="72" width="353" height="282" src="./images/cooper-4_3.png"/>
+<image top="76" left="472" width="342" height="358" src="./images/cooper-4_4.png"/>
+<text top="939" left="82" width="356" height="13" font="10">The utility of this copper-catalyzed tandem reaction was</text>
+<text top="957" left="64" width="374" height="13" font="10">demonstrated by oxidizing and reducing trifluoromethylated</text>
+<text top="975" left="64" width="374" height="14" font="10">product 2a to the naphthalene 3 and the tetrahydronaphthal-</text>
+<text top="993" left="64" width="374" height="14" font="10">ene 4, respectively, and the development of a short route to a</text>
+<text top="1011" left="64" width="374" height="13" font="10">trifluoromethylated analogue of Nafoxidine, an anticancer</text>
+<text top="1029" left="64" width="374" height="13" font="10">agent (Scheme 5). Under the standard trifluoromethylat-</text>
+<text top="1047" left="64" width="374" height="14" font="10">ing conditions, the substrate 1u was converted smoothly</text>
+<text top="1065" left="64" width="374" height="13" font="10">into a mixture of trifluoromethylated dihydronaphthalenes</text>
+<text top="490" left="455" width="374" height="13" font="10">(52% yield) composed of para- and ortho-cyclized products</text>
+<text top="508" left="455" width="374" height="13" font="10">(2.3 : 1). The treatment of the isolated para-cyclized dihydro-</text>
+<text top="526" left="455" width="243" height="13" font="10">naphthalene with pyrrolidine in ethanol a</text>
+<text top="523" left="698" width="131" height="18" font="10">ﬀorded the Nafoxidine</text>
+<text top="544" left="455" width="142" height="14" font="10">analogue 5 in 82% yield.</text>
+<text top="586" left="455" width="118" height="19" font="9">Conclusions</text>
+<text top="621" left="455" width="374" height="13" font="10">In conclusion, we have described the copper-catalyzed tandem</text>
+<text top="639" left="455" width="188" height="13" font="10">trifluoromethylation/cyclization</text>
+<text top="639" left="657" width="12" height="13" font="10">of</text>
+<text top="639" left="683" width="47" height="13" font="10">internal</text>
+<text top="639" left="744" width="44" height="13" font="10">alkynes</text>
+<text top="639" left="803" width="26" height="13" font="10">with</text>
+<text top="657" left="455" width="59" height="13" font="10">Umemoto</text>
+<text top="654" left="514" width="315" height="18" font="10">’s reagent leading to 3-trifluoromethyl-1,2-dihydro-</text>
+<text top="675" left="455" width="374" height="13" font="10">naphthalene derivatives in moderate to good yields. The new</text>
+<text top="693" left="455" width="374" height="13" font="10">method can be applied to the synthesis of a trifluoromethyl-</text>
+<text top="711" left="455" width="374" height="13" font="10">ated analogue of Nafoxidine, demonstrating the utility of this</text>
+<text top="729" left="455" width="374" height="13" font="10">tandem trifluoromethylation/cyclization. This tandem trans-</text>
+<text top="747" left="455" width="374" height="13" font="10">formation represents a convenient method for the difunctiona-</text>
+<text top="765" left="455" width="316" height="13" font="10">lization-type trifluoromethylation of internal alkynes.</text>
+<text top="808" left="455" width="191" height="19" font="9">Acknowledgements</text>
+<text top="843" left="455" width="374" height="13" font="10">We thank the National Natural Science Foundation (21032006,</text>
+<text top="861" left="455" width="374" height="13" font="10">21172240, 21421002, 21472222), the National Basic Research</text>
+<text top="879" left="455" width="374" height="13" font="10">Program of China (2015CB931900), the Science and Technology</text>
+<text top="897" left="455" width="374" height="13" font="10">Commission of Shanghai Municipality (14ZR1448800), the</text>
+<text top="915" left="455" width="374" height="13" font="10">Chinese Academy of Sciences and the Syngenta PhD Fellowship</text>
+<text top="933" left="455" width="374" height="13" font="10">Awarded to Y.-L. Ji. We thank Dr John Clough of Syngenta at</text>
+<text top="951" left="455" width="37" height="13" font="10">Jealott</text>
+<text top="948" left="492" width="337" height="18" font="10">’s Hill International Research Centre for proof reading the</text>
+<text top="969" left="455" width="71" height="13" font="10">manuscript.</text>
+<text top="1013" left="455" width="206" height="19" font="9">Notes and references</text>
+<text top="1048" left="462" width="367" height="13" font="10">1 (a) K. Uneyama, Organofluorine Chemistry, Blackwell Pub-</text>
+<text top="1066" left="475" width="354" height="13" font="10">lishing, Oxford, 2006; (b) K. Muller, C. Faeh and</text>
+<text top="378" left="64" width="28" height="10" font="8">Fig. 1</text>
+<text top="378" left="103" width="40" height="10" font="8">X-ray di</text>
+<text top="376" left="143" width="76" height="15" font="8">ﬀraction of 2h.</text>
+<text top="543" left="64" width="52" height="10" font="8">Scheme 3</text>
+<text top="544" left="127" width="276" height="10" font="8">Mechanistic experiment involving a radical scavenger.</text>
+<text top="888" left="64" width="52" height="10" font="8">Scheme 4</text>
+<text top="888" left="127" width="160" height="10" font="8">Proposed reaction mechanism.</text>
+<text top="449" left="455" width="52" height="10" font="8">Scheme 5</text>
+<text top="449" left="518" width="184" height="10" font="8">The utilities of the tandem reaction.</text>
+<text top="40" left="64" width="157" height="11" font="17">Organic Chemistry Frontiers</text>
+<text top="40" left="739" width="90" height="11" font="17">Research Article</text>
+<text top="1115" left="64" width="220" height="13" font="8">This journal is © the Partner Organisations 2014</text>
+<text top="1115" left="611" width="218" height="15" font="8">Org. Chem. Front., 2014, 1, 1280–1284 | 1283</text>
+<text top="664" left="17" width="0" height="11" font="13">Published on 04 November 2014. Downloaded on 26/03/2018 20:31:55. </text>
+<text top="17" left="746" width="83" height="9" font="18"><a href="http://dx.doi.org/10.1039/C4QO00240G"><b>View Article Online</b></a></text>
+</page>
+<page number="5" position="absolute" top="0" left="0" height="1169" width="892">
+<text top="76" left="84" width="354" height="14" font="10">F. Diederich, Science, 2007, 317, 1881–1886; (c) S. Purser,</text>
+<text top="94" left="84" width="354" height="13" font="10">P. R. Moore, S. Swallow and V. Gouverneur, Chem. Soc. Rev.,</text>
+<text top="112" left="84" width="354" height="14" font="10">2008, 37, 320–330; (d) Chiral Drugs: Chemistry and Biological</text>
+<text top="130" left="84" width="354" height="13" font="10">Action, ed. G.-Q. Lin, Q.-D. You and J.-F. Cheng, John Wiley</text>
+<text top="148" left="84" width="241" height="13" font="10">&amp; Sons, Inc., Hoboken, New Jersey, 2011.</text>
+<text top="166" left="70" width="367" height="13" font="10">2 For recent reviews, please see: (a) T. Furuya, A. S. Kamlet</text>
+<text top="184" left="84" width="354" height="14" font="10">and T. Ritter, Nature, 2011, 473, 470–477; (b) O. A. Tomashenko</text>
+<text top="202" left="84" width="354" height="14" font="10">and V. V. Grushin, Chem. Rev., 2011, 111, 4475–4521;</text>
+<text top="220" left="84" width="354" height="14" font="10">(c) A. Studer, Angew. Chem., Int. Ed., 2012, 51, 8950–8958;</text>
+<text top="238" left="84" width="354" height="13" font="10">(d) T. Liang, C. N. Neumann and T. Ritter, Angew. Chem.,</text>
+<text top="256" left="84" width="354" height="14" font="10">Int. Ed., 2013, 52, 8214–8264; (e) L. Chu and F. L. Qing, Acc.</text>
+<text top="274" left="84" width="354" height="14" font="10">Chem. Res., 2014, 47, 1513–1522; (f ) H. Egami and</text>
+<text top="292" left="84" width="354" height="14" font="10">M. Sodeoka, Angew. Chem., Int. Ed., 2014, 53, 8294–8308;</text>
+<text top="310" left="84" width="354" height="14" font="10">(g) E. Merino and C. Nevado, Chem. Soc. Rev., 2014, 43,</text>
+<text top="328" left="84" width="28" height="13" font="10">6598</text>
+<text top="325" left="112" width="326" height="18" font="10">–6608. For recent examples, please see: (h) Y. Yasu,</text>
+<text top="346" left="84" width="354" height="14" font="10">T. Koike and M. Akita, Angew. Chem., Int. Ed., 2012, 51,</text>
+<text top="364" left="84" width="28" height="13" font="10">9567</text>
+<text top="360" left="112" width="326" height="18" font="10">–9571; (i) X. Wang, Y. Xu, F. Mo, G. Ji, D. Qiu, J. Feng,</text>
+<text top="382" left="84" width="354" height="13" font="10">Y. Ye, S. Zhang, Y. Zhang and J. Wang, J. Am. Chem. Soc.,</text>
+<text top="400" left="84" width="354" height="14" font="10">2013, 135, 10330–10333; ( j) Y. Zeng, L. Zhang, Y. Zhao, C. Ni,</text>
+<text top="418" left="84" width="354" height="14" font="10">J. Zhao and J. Hu, J. Am. Chem. Soc., 2013, 135, 2955–2958;</text>
+<text top="436" left="84" width="354" height="13" font="10">(k) W. Kong, M. Casimiro, N. Fuentes, E. Merino and</text>
+<text top="454" left="84" width="354" height="14" font="10">C. Nevado, Angew. Chem., Int. Ed., 2013, 52, 13086–13090;</text>
+<text top="472" left="84" width="354" height="13" font="10">(l) M. Shang, S. Z. Sun, H. L. Wang, B. N. Laforteza, H. X. Dai</text>
+<text top="490" left="84" width="341" height="14" font="10">and J. Q. Yu, Angew. Chem., Int. Ed., 2014, 53, 10439–10442.</text>
+<text top="508" left="70" width="367" height="13" font="10">3 For recent reviews, please see: (a) H. Liu, Z. Gu and</text>
+<text top="526" left="84" width="354" height="14" font="10">X. Jiang, Adv. Synth. Catal., 2013, 355, 617–626; (b) T. Liu</text>
+<text top="544" left="84" width="260" height="13" font="10">and Q. Shen, Eur. J. Org. Chem., 2012, 6679</text>
+<text top="541" left="344" width="93" height="18" font="10">–6687; (c) J. Xu,</text>
+<text top="562" left="84" width="354" height="14" font="10">X. Liu and Y. Fu, Tetrahedron Lett., 2014, 55, 585–594;</text>
+<text top="580" left="84" width="354" height="13" font="10">(d) G. Landelle, A. Panossian, S. Pazenok, J.-P. Vors and</text>
+<text top="598" left="84" width="328" height="14" font="10">F. R. Leroux, Beilstein J. Org. Chem., 2013, 9, 2476–2536.</text>
+<text top="616" left="70" width="367" height="13" font="10">4 (a) F. Wang, D. Wang, X. Mu, P. Chen and G. Liu, J. Am.</text>
+<text top="634" left="84" width="354" height="14" font="10">Chem. Soc., 2014, 136, 10202–10205; (b) M. Shang, S. Z. Sun,</text>
+<text top="652" left="84" width="354" height="13" font="10">H. L. Wang, B. N. Laforteza, H. X. Dai and J. Q. Yu, Angew.</text>
+<text top="670" left="84" width="354" height="14" font="10">Chem., Int. Ed., 2014, 53, 10439–10442; (c) F. Wang, X. Qi,</text>
+<text top="688" left="84" width="354" height="13" font="10">Z. Liang, P. Chen and G. Liu, Angew. Chem., Int. Ed., 2014,</text>
+<text top="706" left="84" width="354" height="14" font="10">53, 1881–1886; (d) Z. He, R. Zhang, M. Hu, L. Li, C. Ni and</text>
+<text top="724" left="84" width="217" height="14" font="10">J. Hu, Chem. Sci., 2013, 4, 3478–3483.</text>
+<text top="742" left="70" width="367" height="13" font="10">5 (a) E. J. Cho, T. D. Senecal, T. Kinzel, Y. Zhang,</text>
+<text top="760" left="84" width="354" height="14" font="10">D. A. Watson and S. L. Buchwald, Science, 2010, 328, 1679–</text>
+<text top="778" left="84" width="354" height="13" font="10">1681; (b) X. Wang, L. Truesdale and J.-Q. Yu, J. Am. Chem.</text>
+<text top="796" left="84" width="354" height="14" font="10">Soc., 2010, 132, 3648–3649; (c) X.-G. Zhang, H.-X. Dai,</text>
+<text top="814" left="84" width="354" height="14" font="10">M. Wasa and J.-Q. Yu, J. Am. Chem. Soc., 2012, 134, 11948–</text>
+<text top="832" left="84" width="354" height="13" font="10">11951; (d) X. Mu, T. Wu, H.-y. Wang, Y.-l. Guo and G. Liu,</text>
+<text top="850" left="84" width="354" height="14" font="10">J. Am. Chem. Soc., 2011, 134, 878–881; (e) M. C. Nielsen,</text>
+<text top="868" left="84" width="354" height="13" font="10">K. J. Bonney and F. Schoenebeck, Angew. Chem., Int. Ed.,</text>
+<text top="886" left="84" width="123" height="14" font="10">2014, 53, 5903–5906.</text>
+<text top="76" left="462" width="367" height="14" font="10">6 (a) E. Cho and S. Buchwald, Org. Lett., 2011, 13, 6552–6555;</text>
+<text top="94" left="475" width="354" height="13" font="10">(b) A. Hafner and S. Brase, Adv. Synth. Catal., 2011,</text>
+<text top="112" left="475" width="354" height="14" font="10">353, 3044–3048; (c) A. T. Parsons, T. D. Senecal and</text>
+<text top="130" left="475" width="354" height="14" font="10">S. L. Buchwald, Angew. Chem., Int. Ed., 2012, 51, 2947–2950;</text>
+<text top="148" left="475" width="354" height="13" font="10">(d) Z. He, T. Luo, M. Hu, Y. Cao and J. Hu, Angew. Chem.,</text>
+<text top="166" left="475" width="354" height="14" font="10">Int. Ed., 2012, 51, 3944–3947; (e) Y. Li, L. Wu, H. Neumann</text>
+<text top="184" left="475" width="354" height="14" font="10">and M. Beller, Chem. Commun., 2013, 49, 2628–2630;</text>
+<text top="202" left="475" width="354" height="13" font="10">(f ) Y. Yasu, T. Koike and M. Akita, Chem. Commun., 2013,</text>
+<text top="220" left="475" width="354" height="14" font="10">49, 2037–2039; (g) Z. Li, Z. Cui and Z.-Q. Liu, Org. Lett.,</text>
+<text top="238" left="475" width="354" height="14" font="10">2013, 15, 406–409; (h) N. Iqbal, S. Choi, E. Kim and</text>
+<text top="256" left="475" width="354" height="14" font="10">E. J. Cho, J. Org. Chem., 2012, 77, 11383–11387; (i) T. Liu</text>
+<text top="274" left="475" width="354" height="14" font="10">and Q. Shen, Org. Lett., 2011, 13, 2342–2345; ( j) C. Feng</text>
+<text top="292" left="475" width="354" height="14" font="10">and T.-P. Loh, Angew. Chem., Int. Ed., 2013, 52, 12414–</text>
+<text top="310" left="475" width="344" height="14" font="10">12417; (k) C. Feng and T.-P. Loh, Chem. Sci., 2012, 3, 3458.</text>
+<text top="328" left="462" width="367" height="13" font="10">7 (a) P. G. Janson, I. Ghoneim, N. O. Ilchenko and</text>
+<text top="346" left="475" width="354" height="14" font="10">K. J. Szabo, Org. Lett., 2012, 14, 2882–2885; (b) N. Iqbal,</text>
+<text top="364" left="475" width="354" height="13" font="10">J. Jung, S. Park and E. J. Cho, Angew. Chem., Int. Ed., 2014,</text>
+<text top="382" left="475" width="354" height="14" font="10">53, 539–542; (c) S. Mizuta, S. Verhoog, K. M. Engle,</text>
+<text top="400" left="475" width="145" height="13" font="10">T. Khotavivattana, M. O</text>
+<text top="397" left="620" width="209" height="18" font="10">’Duill, K. Wheelhouse, G. Rassias,</text>
+<text top="418" left="475" width="354" height="13" font="10">M. Medebielle and V. Gouverneur, J. Am. Chem. Soc., 2013,</text>
+<text top="436" left="475" width="95" height="14" font="10">135, 2505–2508.</text>
+<text top="454" left="462" width="367" height="13" font="10">8 (a) C.-P. Zhang, Z.-L. Wang, Q.-Y. Chen, C.-T. Zhang,</text>
+<text top="472" left="475" width="354" height="14" font="10">Y.-C. Gu and J.-C. Xiao, Angew. Chem., Int. Ed., 2011, 50,</text>
+<text top="490" left="475" width="28" height="13" font="10">1896</text>
+<text top="487" left="504" width="326" height="18" font="10">–1900; (b) C.-P. Zhang, J. Cai, C.-B. Zhou, X.-P. Wang,</text>
+<text top="508" left="475" width="354" height="13" font="10">X. Zheng, Y.-C. Gu and J.-C. Xiao, Chem. Commun., 2011,</text>
+<text top="526" left="475" width="53" height="14" font="10">47, 9516</text>
+<text top="522" left="529" width="300" height="18" font="10">–9518; (c) C.-P. Zhang, Z.-L. Wang, Q.-Y. Chen,</text>
+<text top="544" left="475" width="354" height="13" font="10">C.-T. Zhang, Y.-C. Gu and J.-C. Xiao, Chem. Commun., 2011,</text>
+<text top="562" left="475" width="354" height="14" font="10">47, 6632–6634; (d) Y.-L. Ji, J.-J. Kong, J.-H. Lin, J.-C. Xiao</text>
+<text top="580" left="475" width="323" height="14" font="10">and Y.-C. Gu, Org. Biomol. Chem., 2014, 12, 2903–2906.</text>
+<text top="598" left="462" width="367" height="13" font="10">9 (a) Y. P. Xiong, M. Y. Wu, X. Y. Zhang, C. L. Ma, L. Huang,</text>
+<text top="616" left="475" width="354" height="14" font="10">L. J. Zhao, B. Tan and X. Y. Liu, Org. Lett., 2014, 16, 1000–</text>
+<text top="634" left="475" width="354" height="13" font="10">1003; (b) P. Gao, Y.-W. Shen, R. Fang, X.-H. Hao, Z.-H. Qiu,</text>
+<text top="652" left="475" width="354" height="13" font="10">F. Yang, X.-B. Yan, Q. Wang, X.-J. Gong, X.-Y. Liu and</text>
+<text top="670" left="475" width="354" height="14" font="10">Y.-M. Liang, Angew. Chem., Int. Ed., 2014, 53, 7629–7633;</text>
+<text top="688" left="475" width="354" height="13" font="10">(c) G.-C. Ge, X.-J. Huang, C.-H. Ding, S.-L. Wan, L.-X. Dai</text>
+<text top="706" left="475" width="354" height="14" font="10">and X.-L. Hou, Chem. Commun., 2014, 50, 3048–3051;</text>
+<text top="724" left="475" width="354" height="14" font="10">(d) Y. Li, Y. Lu, G. Qiu and Q. Ding, Org. Lett., 2014, 16,</text>
+<text top="742" left="475" width="28" height="13" font="10">4240</text>
+<text top="738" left="504" width="38" height="18" font="10">–4243.</text>
+<text top="760" left="455" width="374" height="13" font="10">10 When the manuscript was complete, the group of Fu also</text>
+<text top="778" left="476" width="353" height="13" font="10">reported the copper-catalyzed tandem trifluoromethylaryla-</text>
+<text top="796" left="476" width="353" height="13" font="10">tion/cyclization of internal alkynes: J. Xu, Y.-L. Wang,</text>
+<text top="814" left="476" width="353" height="14" font="10">T.-J. Gong, B. Xiao and Y. Fu, Chem. Commun., 2014, 50,</text>
+<text top="832" left="476" width="35" height="13" font="10">12915</text>
+<text top="829" left="511" width="45" height="18" font="10">–12918.</text>
+<text top="850" left="455" width="374" height="14" font="10">11 The structure of the product 2h was determined by single</text>
+<text top="868" left="476" width="88" height="13" font="10">crystal X-ray di</text>
+<text top="865" left="564" width="265" height="18" font="10">ﬀraction (see ESI†). Summary of data CCDC</text>
+<text top="886" left="476" width="53" height="13" font="10">1018298.</text>
+<text top="40" left="64" width="90" height="11" font="17">Research Article</text>
+<text top="40" left="672" width="157" height="11" font="17">Organic Chemistry Frontiers</text>
+<text top="1118" left="64" width="190" height="11" font="8">1284 | Org. Chem. Front., 2014, 1, 1280</text>
+<text top="1116" left="253" width="29" height="15" font="8">–1284</text>
+<text top="1116" left="609" width="220" height="13" font="8">This journal is © the Partner Organisations 2014</text>
+<text top="664" left="17" width="0" height="11" font="13">Published on 04 November 2014. Downloaded on 26/03/2018 20:31:55. </text>
+<text top="17" left="746" width="83" height="9" font="18"><a href="http://dx.doi.org/10.1039/C4QO00240G"><b>View Article Online</b></a></text>
+</page>
+</pdf2xml>
