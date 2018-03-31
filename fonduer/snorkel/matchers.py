@@ -71,16 +71,14 @@ class Matcher(object):
         Apply the Matcher to a **generator** of candidates
         Optionally only takes the longest match (NOTE: assumes this is the *first* match)
         """
-        #seen_spans = set()
+        seen_spans = set()
         for c in candidates:
-            '''
+
             if self.f(c) and (not self.longest_match_only or not any([self._is_subspan(c, s) for s in seen_spans])):
                 if self.longest_match_only:
                     seen_spans.add(self._get_span(c))
                 yield c
-            '''
-            if self.f(c):
-                yield c
+
 
 
 WORDS = 'words'
@@ -275,6 +273,13 @@ class RegexMatchEach(RegexMatch):
         tokens = c.get_attrib_tokens(self.attrib)
         return True if tokens and all([self.r.match(t) is not None for t in tokens]) else False
 
+class RegexMatchSplitEach(RegexMatch):
+    """Matches regex pattern on **each token**"""
+    def _f(self, c):
+        tokens = c.get_attrib_tokens(self.attrib)
+        if self.attrib == WORDS:
+            tokens = ' '.join(tokens).split(' ')
+        return True if tokens and all([self.r.match(t) is not None for t in tokens]) else False
 
 class PersonMatcher(RegexMatchEach):
     """

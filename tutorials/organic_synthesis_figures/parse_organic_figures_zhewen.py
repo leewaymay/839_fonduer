@@ -56,14 +56,15 @@ from pprint import pprint
 pprint([x.name for x in train_docs])
 
 
-from fonduer import RegexMatchSpan, DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
+from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
+    DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
 
-prefix_rgx = '((meth|hex|hept|iso|benz|tetra|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+prefix_rgx = '((meth|di|bi|tri|tetra|hex|hept|iso)?(benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
 suffix_rgx = '(.+(ane|ene|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine))'
 dashes_rgx = '(\w*(\-?\d+\'?,\d+\'?\-?|\-[a-z]+\-)\w*)'
 ions_rgx = '([A-Z]+[a-z]*\d*\+)'
 #abbr_rgx = '([A-Z|\-][A-Z|\-]+)'
-prod_matcher = RegexMatchSpan(rgx='|'.join([prefix_rgx, suffix_rgx, ions_rgx]),
+prod_matcher = RegexMatchSplitEach(rgx='|'.join([prefix_rgx, suffix_rgx, ions_rgx]),
                               longest_match_only=True, ignore_case=False)
 
 

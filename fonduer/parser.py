@@ -268,6 +268,16 @@ class OmniParserUDF(UDF):
                     node[j - 1].tail += self.flatten_delim.join(contents)
                 node.remove(child)
             elif (child.tag == 'a' and child.get('title') == "Select to navigate to references"):
+                j = num_children - 1 - i  # child index walking backwards
+                if child.tail:
+                    if j == 0:
+                        if node.text is None:
+                            node.text = ''
+                        node.text += child.tail
+                    else:
+                        if node[j - 1].tail is None:
+                            node[j - 1].tail = ''
+                        node[j - 1].tail += child.tail
                 node.remove(child)
 
     def parse_structure(self, document, text):
@@ -520,6 +530,10 @@ class DetailedFigureInfo(object):
         self.caller = caller
 
     def enter_figure(self, node, figure_idx):
+        # if node.tag == 'div' and 'class' in node.attrib:
+        #     for element in node.iter():
+        #         if element.tag == 'img' and 'src' in element.attrib:
+        #             pass
         if node.tag == "div" and 'class' in node.attrib and node.attrib['class']=='image_table':
             figure_idx += 1
             stable_id = "%s::%s:%s:%s" % \

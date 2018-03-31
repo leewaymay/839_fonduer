@@ -21,8 +21,8 @@ Org_Fig = candidate_subclass('Org_Fig', ['organic','figure'])
 
 from fonduer import HTMLPreprocessor, OmniParser
 
-docs_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/html/'
-pdf_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/pdf/'
+docs_path = os.environ['FONDUERHOME'] + '/tutorials/organic_synthesis_figures/data/html/'
+pdf_path = os.environ['FONDUERHOME'] + '/tutorials/organic_synthesis_figures/data/pdf/'
 
 max_docs = float(2)
 doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
@@ -51,10 +51,98 @@ for i, (doc_name, doc) in enumerate(data):
 from pprint import pprint
 pprint([x.name for x in train_docs])
 
+# Part two
+
+
+from fonduer import RegexMatchSpan, DictionaryMatch, RegexMatchSplitEach,\
+    LambdaFunctionMatcher, Intersect, Union
+
+# prefix_rgx = '((meth|di|bi|tri|tetra|hex|hept|iso)?(benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+# suffix_rgx = '(.+(ane|ene|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine))'
+# dashes_rgx = '(\w*(\-?\d+\'?,\d+\'?\-?|\-[a-z]+\-)\w*)'
+# ions_rgx = '([A-Z]+[a-z]*\d*\+)'
+# #abbr_rgx = '([A-Z|\-][A-Z|\-]+)'
+prefix_rgx = '((meth|hex|hept|iso|benz|tetra|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+suffix_rgx = '(.+(ane|ene|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine))'
+dashes_rgx = '(\w*(\-?\d+\'?,\d+\'?\-?|\-[a-z]+\-)\w*)'
+ions_rgx = '([A-Z]+[a-z]*\d*\+)'
+#abbr_rgx = '([A-Z|\-][A-Z|\-]+)'
+
+prod_matcher = RegexMatchSplitEach(rgx='|'.join([prefix_rgx, suffix_rgx, ions_rgx]),
+                              longest_match_only=False, ignore_case=False)
+
+
+from fonduer import CandidateExtractor
+
+from fonduer.lf_helpers import *
+import re
+
+def candidate_filter(c):
+    return True
+
+
+from product_spaces import OmniNgramsProd
+prod_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
+
+from fonduer.matchers import LambdaFunctionFigureMatcher
+
+def do_nothing_matcher(fig):
+    return True
+
+fig_matcher = LambdaFunctionFigureMatcher(func=do_nothing_matcher)
+from fonduer.candidates import OmniDetailedFigures
+
+figs = OmniDetailedFigures()
+
+candidate_extractor = CandidateExtractor(Org_Fig,
+                        [prod_ngrams, figs],
+                        [prod_matcher, fig_matcher],
+                        candidate_filter=candidate_filter)
+
+candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
 
 
 
-from fonduer import RegexMatchSpan, DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
+# Part 2.5
+prefix_rgx = '((meth|hex|hept|iso|benz|tetra|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+suffix_rgx = '(.+(ane|ene|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine))'
+dashes_rgx = '(\w*(\-?\d+\'?,\d+\'?\-?|\-[a-z]+\-)\w*)'
+ions_rgx = '([A-Z]+[a-z]*\d*\+)'
+#abbr_rgx = '([A-Z|\-][A-Z|\-]+)'
+prod_matcher = RegexMatchSpan(rgx='|'.join([prefix_rgx, suffix_rgx, ions_rgx]),
+                              longest_match_only=False, ignore_case=False)
+
+
+from fonduer import CandidateExtractor
+
+from fonduer.lf_helpers import *
+import re
+
+def candidate_filter(c):
+    return True
+
+
+from product_spaces import OmniNgramsProd
+prod_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
+
+from fonduer.matchers import LambdaFunctionFigureMatcher
+
+def do_nothing_matcher(fig):
+    return True
+
+fig_matcher = LambdaFunctionFigureMatcher(func=do_nothing_matcher)
+from fonduer import OmniFigures
+
+figs = OmniFigures()
+
+candidate_extractor = CandidateExtractor(Org_Fig,
+                        [prod_ngrams, figs],
+                        [prod_matcher, fig_matcher],
+                        candidate_filter=candidate_filter,
+                        symmetric_relations=False)
+
+candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+
 
 attr_matcher = RegexMatchSpan(rgx=r'(?:[1][5-9]|20)[05]', longest_match_only=False)
 eeca_rgx = r'([ABC][A-Z][WXYZ]?[0-9]{3,5}(?:[A-Z]){0,5}[0-9]?[A-Z]?(?:-[A-Z0-9]{1,7})?(?:[-][A-Z0-9]{1,2})?(?:\/DG)?)'
