@@ -161,6 +161,28 @@ def same_table(c):
                 and c[i].sentence.table == c[0].sentence.table
                 for i in range(len(c))))
 
+# Added by Wei Li
+
+def same_file(organic, figure):
+    """Return True if all candidate are from the same file.
+
+    :rtype: boolean
+    """
+    return organic.sentence.document == figure.figure.document
+
+def mentionsFig(organic, figure):
+    text = organic.sentence.text.replace(' ', '').lower()
+    fig_name = figure.figure.name.replace(' ', '').lower()
+    return text.find(fig_name) != -1
+
+def mentionsOrg(figure, organic):
+    fig_text = figure.figure.description
+    if figure.figure.text and len(figure.figure.text) != 0:
+        fig_text += figure.figure.text
+    fig_text.replace(' ', '').lower()
+    organic_name = organic.text
+    return fig_text.find(organic_name) != -1
+
 
 def same_row(c):
     """Return True if all Spans in the given candidate are from the same Row.
