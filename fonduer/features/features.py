@@ -16,3 +16,25 @@ def get_all_feats(candidates):
         yield id, f, v
     for id, f, v in get_visual_feats(candidates):
         yield id, f, v
+
+# Added by wei li, zhewen song
+def get_organic_image_feats(candidates):
+    for id, f, v in get_organic_feats(candidates):
+        yield id, f, v
+    for id, f, v in get_image_feats(candidates):
+        yield id, f, v
+    for id, f, v in get_combined_feats(candidates):
+        yield id, f, v
+
+def get_organic_feats(candidates):
+    #TODO: debug candidates should be unary here
+    for id, f, v in get_core_feats(candidates):
+        yield id, f, v
+    ###
+
+def get_image_feats(candidates):
+    pass
+
+def get_combined_feats(candidates):
+    pass
+
