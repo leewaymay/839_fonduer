@@ -52,15 +52,7 @@ def get_organic_feats(candidates):
 
 
 def _generate_core_feats(span):
-    yield "SPAN_TYPE_[%s]" % (
-        'IMPLICIT' if isinstance(span, ImplicitSpan) else 'EXPLICIT')
-
     string = span.get_span()
-    if string[0].isupper():
-        yield "STARTS_WITH_CAPITAL"
-
-    yield "LENGTH_{}".format(span.get_n())
-
     if string.upper() == string:
         yield "ABBREVIATION"
 
@@ -73,10 +65,19 @@ def _generate_core_feats(span):
     if ',' in string and string[-1] != ',' and string[0] != ',':
         yield "CONTAINS_COMMA"
 
+    yield "DEP_LABELS_[{}]".format('_'.join(span.dep_labels).upper())
+    yield "DEP_PARENTS_[{}]".format('_'.join(map(str, span.dep_parents)))
+    yield "NER_TAGS_[{}]".format('_'.join(span.ner_tags).upper())
+    yield "PAGE_{}".format(span.page)
+    yield "POS_TAGS_[{}]".format('_'.join(span.pos_tags).upper())
+
+
 def _generate_sentence_feats(span):
     sentence = span.sentence.text
     string = span.get_span()
-    keywords = ['synthesis', 'made', 'catalyze', 'generate', 'product']
+    keywords = ['synthesis', 'syntheses', 'made', 'catalyze', 'generate', 'product', 'produce',
+                'formation', 'developed', 'approach', 'yields']
+
     freq = sentence.count(string)
     if freq == 1:
         yield "ONCE_IN_SENTENCE".format(freq)
@@ -89,6 +90,13 @@ def _generate_sentence_feats(span):
     for kw in keywords:
         if kw in sentence:
             yield "CONTAINS_{}".format(kw.upper())
+        if span.char_start - (sentence.find(kw) + len(kw) + 1) < 5 or \
+            sentence.find(kw) - span.char_end < 5:
+            yield "NEAR_{}".format(kw.upper())
+    if span.char_start - (sentence.find('of') + 2) == 1:
+        yield "CONTAINS_(OF)"
+    if span.char_start - (sentence.find('of the') + 7) == 1:
+        yield "CONTAINS_(OF_THE)"
 
 def _generate_document_feats(span):
     phrase_num = span.sentence.phrase_num
@@ -100,6 +108,8 @@ def _generate_document_feats(span):
     for i in range(len(doc.phrases)):
         if i != phrase_num and string in doc.phrases[i].words:
             freq += 1
+        if 'summar' in doc.phrases[i].text or 'conclusion' in doc.phrases[i].text:
+            yield "APPEARED_IN_CONCLUSION"
     if freq == 1:
         yield "ONCE_IN_DOCUMENT".format(freq)
     if freq == 2:
@@ -113,8 +123,8 @@ def _generate_caption_feats(span):
     doc = span.sentence.document
     string = span.get_span()
     freq = 1
-    for i in range(len(doc.detailed_figures)):
-        freq += doc.detailed_figures[i].description.count(string)
+    for i in range(len(doc.detailed_images)):
+        freq += doc.detailed_images[i].description.count(string)
     if freq == 1:
         yield "ONCE_IN_CAPTIONS".format(freq)
     if freq == 2:
@@ -128,8 +138,8 @@ def _generate_image_feats(span):
     doc = span.sentence.document
     string = span.get_span()
     freq = 1
-    for i in range(len(doc.detailed_figures)):
-        freq += doc.detailed_figures[i].text.count(string)
+    for i in range(len(doc.detailed_images)):
+        freq += doc.detailed_images[i].text.count(string)
     if freq == 1:
         yield "ONCE_IN_IMAGES".format(freq)
     if freq == 2:
