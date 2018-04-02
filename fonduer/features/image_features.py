@@ -156,7 +156,11 @@ def _generate_img_feats(span, **kwargs):
     img = lf_helpers.find_image(span)
     prev_content = None
     for sibs in img.previous_siblings:
-        if not (sibs is None or sibs == '\n' or sibs.name == 'br' or ('image_table' in sibs.get('class', ['NOTHING']))):
+        if sibs:
+            if sibs.has_attr('name') and sibs.name == 'br':
+                continue
+            if sibs.has_attr('get') and ('image_table' in sibs.get('class', [])):
+                continue
             # print('find prev content!')
             prev_content = sibs.text
             break

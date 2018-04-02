@@ -21,17 +21,17 @@ Org_Fig = candidate_subclass('Org_Fig', ['product','figure'])
 
 from fonduer import HTMLPreprocessor, OmniParser
 
-docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/html/'
-pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/pdf/'
+docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/html/'
+pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/pdf/'
 
-max_docs = 3
+max_docs = 10
 doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
 corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
 #                           flatten=['sup', 'sub', 'small'],
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-#corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -119,7 +119,7 @@ def contain_organic_matcher(fig):
         orc_wordlist = [w for w in orc_wordlist if not w == '']
         if any(re.search(org_rgx, w) for w in orc_wordlist): return True
 
-    print(fig.figure.name + " " + fig.figure.description)
+    #print(fig.figure.name + " " + fig.figure.description)
     return False
 
 fig_matcher1 = LambdaFunctionFigureMatcher(func=white_black_list_matcher)
@@ -137,7 +137,7 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-#candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 print("Number of candidates:", len(train_cands))

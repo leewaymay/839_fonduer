@@ -55,7 +55,7 @@ def html_binary_features(organic, figure):
     if image_node == None:
         return
     #TODO use image node to produce more features
-
+    #TODO use beautiful soup to find first appearance
     pass
 
 def context_binary_features(organic, figure):
@@ -79,7 +79,7 @@ def page_aligned(organic, figure):
     if is_same_sent_fig_page(organic, figure):
         yield "SENTENCE_SAME_PAGE", DEF_VALUE
 
-    for num_page in range(1, 3):
+    for num_page in range(1, 5):
         if is_nearby_org_fig_page(organic, figure, num_page):
             yield "WITHIN_{}_PAGE".format(num_page), DEF_VALUE
 

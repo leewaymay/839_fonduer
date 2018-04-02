@@ -8,6 +8,7 @@ from fonduer.features.image_features import *
 from fonduer.features.combined_features import *
 
 
+
 def get_all_feats(candidates):
     for id, f, v in get_core_feats(candidates):
         yield id, f, v

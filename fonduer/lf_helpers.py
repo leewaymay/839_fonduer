@@ -734,20 +734,36 @@ def search_fig_first_apprearance(organic, figure):
         fig_name = figure.name.strip().replace(' ','')
         if text.find(fig_name) != -1:
             dist = i - organic.sentence.phrase_num
-            if i < -300:
-                return "FIG_FAR_AHEAD"
-            elif i < -100:
-                return "FIG_NEAR_AHEAD"
-            elif i < 0:
-                return "FIG_CLOSE_AHEAD"
-            elif i == 0:
-                return "FIG_EXACT_MATCH"
-            elif i < 100:
-                return "FIG_CLOSE_AFTER"
-            elif i <= 300:
-                return "FIG_NEAR_BEHIND"
+            if fuzz.partial_ratio(organic.text.strip().replace(' ',''), text) > 85:
+                yield "ORG_IN_FIG_FIRST_MENTION"
+            pg_dist = sum(doc.phrases[i].page)/len(doc.phrases[i].page) - \
+                      sum(organic.sentence.page)/len(organic.sentence.page)
+
+            if pg_dist < -2:
+                yield "ORG_MENTION_FAR_AHEAD"
+            elif pg_dist < 0:
+                yield "ORG_MENTION_NEAR_AHEAD"
+            elif pg_dist == 0:
+                yield "ORG_MENTION_SAME_PAGE"
+            elif pg_dist < 3:
+                yield "ORG_MENTION_NEAR_BEHIND"
             else:
-                return "FIG_FAR_BEHIND"
+                yield "ORG_MENTION_FAR_BEHIND"
+
+            if i < -300:
+                yield "FIG_FAR_AHEAD"
+            elif i < -100:
+                yield "FIG_NEAR_AHEAD"
+            elif i < 0:
+                yield "FIG_CLOSE_AHEAD"
+            elif i == 0:
+                yield "FIG_EXACT_MATCH"
+            elif i < 100:
+                yield "FIG_CLOSE_AFTER"
+            elif i <= 300:
+                yield "FIG_NEAR_BEHIND"
+            else:
+                yield "FIG_FAR_BEHIND"
     return "NO_MATCH"
 
 
@@ -1337,7 +1353,6 @@ def find_image(span):
     img_list = soup.find_all('div', class_ = 'image_table')
     for i in img_list:
         if i.img.get('src') == span.url:
-            # print("image found!")
             return i
 
 
