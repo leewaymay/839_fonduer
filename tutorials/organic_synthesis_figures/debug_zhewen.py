@@ -58,7 +58,7 @@ pprint([x.name for x in train_docs])
 from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
     DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
 
-prefix_rgx = '(\(?(mono|bi|di|tri|tetra|hex|hept|oct|iso|a?cycl|poly)?(meth|carb|benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+prefix_rgx = '(\(?((mono|bi|di|tri|tetra|hex|hept|oct|iso|a?cycl|poly).+)?(meth|carb|benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
 suffix_rgx = '(.+(ane|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine|(or?mone)|thiol)\)?)'
 
 dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'

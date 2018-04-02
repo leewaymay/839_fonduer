@@ -73,7 +73,7 @@ def _generate_core_feats(span):
     yield "DEP_LABELS_[{}]".format('_'.join(span.dep_labels).upper())
     yield "DEP_PARENTS_[{}]".format('_'.join(map(str, span.dep_parents)))
     yield "NER_TAGS_[{}]".format('_'.join(span.ner_tags).upper())
-    yield "PAGE_{}".format(span.page)
+    yield "PAGE_[{}]".format(span.page[0])
     yield "POS_TAGS_[{}]".format('_'.join(span.pos_tags).upper())
 
 
@@ -108,7 +108,14 @@ def _generate_document_feats(span):
         if string in doc.phrases[i].words:
             if freq == 0: # first appearance
                 yield "PAGE_DISTANCE_FROM_FIRST_APPEARANCE_[{}]".format(span.page[0] - doc.phrases[i].page[0])
-                yield "PHRASE_DISTANCE_FROM_FIRST_APPEARANCE_[{}]".format(phrase_num - i)
+                if phrase_num - i == 0:
+                    yield "SAME_PHRASE_WITH_FIRST_APPEARANCE"
+                elif phrase_num - i == 1:
+                    yield "ONE_PHRASE_FROM_FIRST_APPEARANCE"
+                elif phrase_num - i == 2:
+                    yield "TWO_PHRASES_FROM_FIRST_APPEARANCE"
+                else:
+                    yield "MANY_PHRASES_FROM_FIRST_APPEARANCE"
             freq += 1
         if 'summar' in doc.phrases[i].text or 'conclusion' in doc.phrases[i].text:
             yield "MENTIONED_IN_CONCLUSION"
@@ -133,6 +140,10 @@ def _generate_image_feats(span):
 def _generate_html_feats(span):
     sentence = span.sentence
     yield "XPATH_LENGTH_[{}]".format(len(sentence.xpath.split('/')))
+    if sentence.html_tag == 'span':
+        yield "HTML_SPAN"
+    if sentence.html_attrs == 'class=graphic_title':
+        yield "GRAPHIC_TITLE"
 
 def _generate_approximate_feats(span):
     phrase_num = span.sentence.phrase_num
