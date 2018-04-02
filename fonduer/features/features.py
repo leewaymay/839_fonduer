@@ -4,12 +4,9 @@ from fonduer.features.organic_features import *
 from fonduer.features.structural_features import *
 from fonduer.features.table_features import *
 from fonduer.features.visual_features import *
-<<<<<<< HEAD
 from fonduer.features.image_features import *
-=======
 from fonduer.features.combined_features import *
 
->>>>>>> b2f45acc6c5e97a65d067851be185f714d66b97e
 
 
 def get_all_feats(candidates):
