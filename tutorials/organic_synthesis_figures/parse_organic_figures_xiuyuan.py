@@ -42,7 +42,7 @@ ld   = len(docs)
 train_docs = set()
 dev_docs   = set()
 test_docs  = set()
-splits = (1.0, 0.9)
+splits = (0.2, 0.9)
 data = [(doc.name, doc) for doc in docs]
 data.sort(key=lambda x: x[0])
 for i, (doc_name, doc) in enumerate(data):

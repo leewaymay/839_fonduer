@@ -1337,7 +1337,7 @@ def find_image(span):
     img_list = soup.find_all('div', class_ = 'image_table')
     for i in img_list:
         if i.img.get('src') == span.url:
-            print("image found!")
+            # print("image found!")
             return i
 
 

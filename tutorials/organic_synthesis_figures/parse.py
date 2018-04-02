@@ -2,7 +2,7 @@
 
 import os
 import sys
-# os.system('bash ./set_env.sh')
+os.system('bash ./set_env.sh')
 PARALLEL = 1 # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
 
