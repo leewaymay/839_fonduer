@@ -18,7 +18,7 @@ from fonduer.utils_table import (min_row_diff, min_col_diff, is_row_aligned,
 from fonduer.utils_visual import (
     bbox_from_span, bbox_from_phrase, bbox_horz_aligned, bbox_vert_aligned,
     bbox_vert_aligned_left, bbox_vert_aligned_right, bbox_vert_aligned_center)
-
+from bs4 import BeautifulSoup
 
 def get_between_ngrams(c, attrib='words', n_min=1, n_max=1, lower=True):
     """Return the ngrams _between_ two unary Spans of a binary-Span Candidate.
@@ -1213,3 +1213,56 @@ def lowest_common_ancestor_depth(c):
     ancestor2 = np.array(c[1].sentence.xpath.split('/'))
     min_len = min(ancestor1.size, ancestor2.size)
     return min_len - np.argmin(ancestor1[:min_len] == ancestor2[:min_len])
+
+
+def find_image(span):
+    html_content = span.document.text
+    soup = BeautifulSoup(html_content, "html.parser")
+
+    img_list = soup.find_all('div', class_ = 'image_table')
+    for i in img_list:
+        if i.img.get('src') == span.url:
+            print("image found!")
+            return i
+
+
+def cut_string(prev_content, name):
+    subs_list = []
+    name = name.strip()
+    count = 0
+    while True:
+        start = prev_content.find(name)
+        if not start == -1:
+            start = prev_content.find(name) + len(name)
+            subs_list.append(prev_content[0:start])
+            prev_content = prev_content[start:]
+            count += 1
+        elif not prev_content == '':
+            subs_list.append(prev_content)
+            break
+        else:
+            break
+
+    return subs_list, count
+
+
+def get_near_string(prev_content, name):
+    if prev_content == '' or name == '':
+        # print('Error: Got empty input!')
+        return None, None
+
+    name = name.strip()
+    start = prev_content.find(name)
+
+    if not start == -1:
+        if start <= 100:
+            pre = prev_content[:start]
+        else:
+            pre = prev_content[start - 101 : start-1]
+        if len(prev_content) <= start + len(name) + 100:
+            post = prev_content[start:]
+        else:
+            post = prev_content[start:start + len(name) + 100]
+        return pre, post
+
+    return None, None

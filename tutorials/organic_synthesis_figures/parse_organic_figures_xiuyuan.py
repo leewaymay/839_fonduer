@@ -42,7 +42,7 @@ ld   = len(docs)
 train_docs = set()
 dev_docs   = set()
 test_docs  = set()
-splits = (0.2, 0.9)
+splits = (1.0, 0.9)
 data = [(doc.name, doc) for doc in docs]
 data.sort(key=lambda x: x[0])
 for i, (doc_name, doc) in enumerate(data):
@@ -110,7 +110,18 @@ def white_black_list_matcher(fig):
     if in_black and (not in_white):
         print('Filtered by f1!')
         return False
-    # print("{} has passed filter 1 in {} seconds!".format(fig.figure.name, time.time()-enter_time))
+    # # print("{} has passed filter 1 in {} seconds!".format(fig.figure.name, time.time()-enter_time))
+    # elif in_black:
+    #     desc_wordlist = fig.figure.description.lower().split(' ')
+    #     if any(re.search(org_rgx, w) for w in desc_wordlist): return True
+    #     if not fig.figure.text == '':
+    #         orc_wordlist = fig.figure.text.lower().split('\n')
+    #         orc_wordlist = [w for w in orc_wordlist if not w == '']
+    #         if any(re.search(org_rgx, w) for w in orc_wordlist): return True
+    #
+    #     print('Filtered by f2! Removed!')
+    #     print(fig.figure.name + " " + fig.figure.description)
+    #     return False
     return True
 
 def contain_organic_matcher(fig):
@@ -130,7 +141,7 @@ def contain_organic_matcher(fig):
 fig_matcher1 = LambdaFunctionFigureMatcher(func=white_black_list_matcher)
 fig_matcher2 = LambdaFunctionFigureMatcher(func=contain_organic_matcher)
 fig_matcher = Union(fig_matcher1, fig_matcher2)
-# fig_matcher = LambdaFunctionFigureMatcher(func=figure_filter)
+# fig_matcher = LambdaFunctionFigureMatcher(func=white_black_list_matcher)
 
 from fonduer.candidates import OmniDetailedFigures
 
