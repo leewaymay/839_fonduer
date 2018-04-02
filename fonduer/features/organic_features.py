@@ -1,6 +1,7 @@
 from fonduer.models import ImplicitSpan
 from fonduer.snorkel.models import TemporarySpan
 import re
+from fuzzywuzzy import fuzz
 
 FEAT_PRE = "CORE_"
 DEF_VALUE = 1
@@ -43,6 +44,10 @@ def get_organic_feats(candidates):
                     unary_feats[span.stable_id].add(f)
                 for f in _generate_image_feats(span):
                     unary_feats[span.stable_id].add(f)
+                for f in _generate_html_feats(span):
+                    unary_feats[span.stable_id].add(f)
+                for f in _generate_approximate_feats(span):
+                    unary_feats[span.stable_id].add(f)
 
             for f in unary_feats[span.stable_id]:
                 yield candidate.id, FEAT_PRE + pre + f, DEF_VALUE
@@ -52,15 +57,7 @@ def get_organic_feats(candidates):
 
 
 def _generate_core_feats(span):
-    yield "SPAN_TYPE_[%s]" % (
-        'IMPLICIT' if isinstance(span, ImplicitSpan) else 'EXPLICIT')
-
     string = span.get_span()
-    if string[0].isupper():
-        yield "STARTS_WITH_CAPITAL"
-
-    yield "LENGTH_{}".format(span.get_n())
-
     if string.upper() == string:
         yield "ABBREVIATION"
 
@@ -73,68 +70,93 @@ def _generate_core_feats(span):
     if ',' in string and string[-1] != ',' and string[0] != ',':
         yield "CONTAINS_COMMA"
 
+    yield "DEP_LABELS_[{}]".format('_'.join(span.dep_labels).upper())
+    yield "DEP_PARENTS_[{}]".format('_'.join(map(str, span.dep_parents)))
+    yield "NER_TAGS_[{}]".format('_'.join(span.ner_tags).upper())
+    yield "PAGE_[{}]".format(span.page[0])
+    yield "POS_TAGS_[{}]".format('_'.join(span.pos_tags).upper())
+
+
 def _generate_sentence_feats(span):
     sentence = span.sentence.text
     string = span.get_span()
-    keywords = ['synthesis', 'made', 'catalyze', 'generate', 'product']
+    keywords = ['synthesis', 'syntheses', 'made', 'catalyze', 'generate', 'product', 'produce',
+                'formation', 'developed', 'approach', 'yields', 'reaction',
+                'fig', 'scheme', 'graph', 'diagram', 'table']
+
     freq = sentence.count(string)
-    if freq == 1:
-        yield "ONCE_IN_SENTENCE".format(freq)
-    if freq == 2:
-        yield "TWICE_IN_SENTENCE".format(freq)
-    if freq == 3:
-        yield "THREE_TIMES_IN_SENTENCE".format(freq)
-    if freq > 3:
-        yield "MANY_TIMES_IN_SENTENCE".format(freq)
+    yield "APPEARED_{}_TIMES_IN_SENTENCE".format(freq)
     for kw in keywords:
         if kw in sentence:
-            yield "CONTAINS_{}".format(kw.upper())
+            yield "CONTAINS_KEYWORD_[{}]".format(kw.upper())
+        if span.char_start - (sentence.find(kw) + len(kw) + 1) < 5 or \
+            sentence.find(kw) - span.char_end < 5:
+            yield "NEAR_KEYWORD_[{}]".format(kw.upper())
+    if span.char_start - (sentence.find('of') + 2) == 1:
+        yield "CONTAINS_[OF]"
+    if span.char_start - (sentence.find('of the') + 7) == 1:
+        yield "CONTAINS_[OF_THE]"
 
 def _generate_document_feats(span):
     phrase_num = span.sentence.phrase_num
     doc = span.sentence.document
     string = span.get_span()
     if string in doc.name:
-        yield "APPEARED_IN_DOC_NAME"
+        yield "MENTIONED_IN_DOC_NAME"
     freq = 0
     for i in range(len(doc.phrases)):
-        if i != phrase_num and string in doc.phrases[i].words:
+        if string in doc.phrases[i].words:
+            if freq == 0: # first appearance
+                yield "PAGE_DISTANCE_FROM_FIRST_APPEARANCE_[{}]".format(span.page[0] - doc.phrases[i].page[0])
+                if phrase_num - i == 0:
+                    yield "SAME_PHRASE_WITH_FIRST_APPEARANCE"
+                elif phrase_num - i == 1:
+                    yield "ONE_PHRASE_FROM_FIRST_APPEARANCE"
+                elif phrase_num - i == 2:
+                    yield "TWO_PHRASES_FROM_FIRST_APPEARANCE"
+                else:
+                    yield "MANY_PHRASES_FROM_FIRST_APPEARANCE"
             freq += 1
-    if freq == 1:
-        yield "ONCE_IN_DOCUMENT".format(freq)
-    if freq == 2:
-        yield "TWICE_IN_DOCUMENT".format(freq)
-    if freq == 3:
-        yield "THREE_TIMES_IN_DOCUMENT".format(freq)
-    if freq > 3:
-        yield "MANY_TIMES_IN_DOC".format(freq)
+        if 'summar' in doc.phrases[i].text or 'conclusion' in doc.phrases[i].text:
+            yield "MENTIONED_IN_CONCLUSION"
+    yield "APPEARED_[{}]_TIMES_IN_DOC".format(freq)
 
 def _generate_caption_feats(span):
     doc = span.sentence.document
     string = span.get_span()
     freq = 1
-    for i in range(len(doc.detailed_figures)):
-        freq += doc.detailed_figures[i].description.count(string)
-    if freq == 1:
-        yield "ONCE_IN_CAPTIONS".format(freq)
-    if freq == 2:
-        yield "TWICE_IN_CAPTIONS".format(freq)
-    if freq == 3:
-        yield "THREE_TIMES_IN_CAPTIONS".format(freq)
-    if freq > 3:
-        yield "MANY_TIMES_IN_CAPTIONS".format(freq)
+    for i in range(len(doc.detailed_images)):
+        freq += doc.detailed_images[i].description.count(string)
+    yield "APPEARED_[{}]_TIMES_IN_CAPTIONS".format(freq)
 
 def _generate_image_feats(span):
     doc = span.sentence.document
     string = span.get_span()
     freq = 1
-    for i in range(len(doc.detailed_figures)):
-        freq += doc.detailed_figures[i].text.count(string)
-    if freq == 1:
-        yield "ONCE_IN_IMAGES".format(freq)
-    if freq == 2:
-        yield "TWICE_IN_IMAGES".format(freq)
-    if freq == 3:
-        yield "THREE_TIMES_IN_IMAGES".format(freq)
-    if freq > 3:
-        yield "MANY_TIMES_IN_IMAGES".format(freq)
+    for i in range(len(doc.detailed_images)):
+        freq += doc.detailed_images[i].text.count(string)
+    yield "APPEARED_[{}]_TIMES_IN_IMAGES".format(freq)
+
+def _generate_html_feats(span):
+    sentence = span.sentence
+    yield "XPATH_LENGTH_[{}]".format(len(sentence.xpath.split('/')))
+    if sentence.html_tag == 'span':
+        yield "HTML_SPAN"
+    if sentence.html_attrs == 'class=graphic_title':
+        yield "GRAPHIC_TITLE"
+
+def _generate_approximate_feats(span):
+    phrase_num = span.sentence.phrase_num
+    doc = span.sentence.document
+    string = span.get_span()
+    freq75, freq90, freq100 = 0, 0, 0
+    for i in range(len(doc.phrases)):
+        if i != phrase_num and fuzz.partial_ratio(string, doc.phrases[i].text) >= 75:
+            freq75 += 1
+        if i != phrase_num and fuzz.partial_ratio(string, doc.phrases[i].text) >= 90:
+            freq90 += 1
+        if i != phrase_num and fuzz.partial_ratio(string, doc.phrases[i].text) == 100:
+            freq100 += 1
+    yield "APPEARED_[{}]_TIMES_FUZZY_75".format(freq75)
+    yield "APPEARED_[{}]_TIMES_FUZZY_90".format(freq90)
+    yield "APPEARED_[{}]_TIMES_FUZZY_100".format(freq100)

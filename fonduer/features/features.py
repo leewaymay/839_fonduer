@@ -4,7 +4,12 @@ from fonduer.features.organic_features import *
 from fonduer.features.structural_features import *
 from fonduer.features.table_features import *
 from fonduer.features.visual_features import *
+<<<<<<< HEAD
 from fonduer.features.image_features import *
+=======
+from fonduer.features.combined_features import *
+
+>>>>>>> b2f45acc6c5e97a65d067851be185f714d66b97e
 
 
 def get_all_feats(candidates):
@@ -21,10 +26,9 @@ def get_all_feats(candidates):
 
 # Added by wei li, zhewen song
 def get_organic_image_feats(candidates):
-    # for id, f, v in get_organic_feats(candidates):
-    #     yield id, f, v
+    for id, f, v in get_organic_feats(candidates):
+        yield id, f, v
     for id, f, v in get_image_feats(candidates):
         yield id, f, v
-    # for id, f, v in get_combined_feats(candidates):
-    #     yield id, f, v
-
+    for id, f, v in get_combined_feats(candidates):
+        yield id, f, v

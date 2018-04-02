@@ -197,4 +197,3 @@ pprint([x.name for x in train_docs])
 #
 # train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 # print("Number of candidates:", len(train_cands))
->>>>>>> 1781b347415e29833b149d009f829f047f95c8dc
