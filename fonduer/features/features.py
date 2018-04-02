@@ -4,7 +4,6 @@ from fonduer.features.organic_features import *
 from fonduer.features.structural_features import *
 from fonduer.features.table_features import *
 from fonduer.features.visual_features import *
-
 from fonduer.features.image_features import *
 from fonduer.features.combined_features import *
 
