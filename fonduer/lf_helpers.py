@@ -18,7 +18,12 @@ from fonduer.utils_table import (min_row_diff, min_col_diff, is_row_aligned,
 from fonduer.utils_visual import (
     bbox_from_span, bbox_from_phrase, bbox_horz_aligned, bbox_vert_aligned,
     bbox_vert_aligned_left, bbox_vert_aligned_right, bbox_vert_aligned_center)
+from fuzzywuzzy import fuzz
 
+
+# Default dimensions for 8.5" x 11"
+DEFAULT_WIDTH = 612
+DEFAULT_HEIGHT = 792
 
 def get_between_ngrams(c, attrib='words', n_min=1, n_max=1, lower=True):
     """Return the ngrams _between_ two unary Spans of a binary-Span Candidate.
@@ -632,6 +637,120 @@ def overlap(a, b):
 ############################
 # Visual feature helpers
 ############################
+def is_same_org_fig_page(org, fig):
+    return fig.page in org.page
+
+def is_same_sent_fig_page(org, fig):
+    return fig.page in org.sentence.page
+
+def is_nearby_org_fig_page(org, fig, num_pages):
+    for i in range(1, num_pages+1):
+        if (fig.page-i) in org.page or (fig.page+i) in org.page:
+            return True
+    return False
+
+def fig_on_prev_page(org, fig):
+    return fig.page < min(org.page)
+
+def org_on_prev_page(org, fig):
+    return fig.page > max(org.page)
+
+def within_distance(org, fig, ratio, page_width=DEFAULT_WIDTH, page_height=DEFAULT_HEIGHT):
+    fig_vert_pos = (fig.top+fig.bottom)/2.0
+    fig_horz_pos = (fig.left+fig.right)/2.0
+    org_vert_pos = (org.top[0]+org.bottom[0])/2.0
+    org_horz_pos = (org.left[0]+org.right[0])/2.0
+
+    org_vert_pos += page_height * (org.page[0] - fig.page)
+
+    if abs(fig_vert_pos - org_vert_pos) <= ratio * page_height:
+        yield "WITHIN_{}_VERT_PAGE".format(ratio)
+    if abs(fig_horz_pos - org_horz_pos) <= ratio * page_width:
+        yield "WITHIN_{}_HORZ_PAGE".format(ratio)
+
+def ahead_feature(org, fig, page_height=DEFAULT_HEIGHT):
+    fig_vert_pos = (fig.top + fig.bottom) / 2.0
+    fig_horz_pos = (fig.left + fig.right) / 2.0
+    org_vert_pos = (org.top[0] + org.bottom[0]) / 2.0
+    org_horz_pos = (org.left[0] + org.right[0]) / 2.0
+
+    org_vert_pos += page_height * (org.page[0] - fig.page)
+
+    if org_vert_pos < fig_vert_pos:
+        yield "ORG_AHEAD_VERT_PDF"
+    if org_horz_pos < fig_horz_pos:
+        yield "ORG_AHEAD_HORZ_PDF"
+
+def fig_contains_org(organic, figure, scores=[75]):
+
+    fig_text = figure.description
+    if figure.text:
+        text = ' '.join(figure.text.strip().replace('\n', ' ').split())
+        fig_text += ' ' + text
+    for score in scores:
+        if fuzz.partial_ratio(organic.text, fig_text) >= score:
+            yield "FIG_HAS_ORG_{}_SCORE".format(score)
+
+def org_contains_fig_name(organic, figure, scores=[75]):
+    fig_text = figure.name
+    organic_text = organic.sentence.text
+    for score in scores:
+        if fuzz.partial_ratio(organic_text, fig_text) >= score:
+            yield "ORG_HAS_FIG_{}_SCORE".format(score)
+        if organic.text.find(fig_text) != -1:
+            yield "ORG_FIG_EXACT_MATCH"
+
+def fig_text_matches_org_text(organic, figure, scores=[75]):
+    fig_text = figure.description
+    organic_text = organic.sentence.text
+    for score in scores:
+        if fuzz.token_set_ratio(organic_text, fig_text) >= score:
+            yield "ORG_FIG_TEXT_{}_SCORE".format(score)
+
+def both_contain_keywords(organic, figure, keywords):
+    fig_text = figure.description
+    organic_text = organic.sentence.text
+    img_contains = False
+    for word in keywords:
+        if fuzz.partial_ratio(word, fig_text) > 90:
+            img_contains = True
+            break
+    if img_contains:
+        for word in keywords:
+            if fuzz.ratio(word, organic_text) > 90:
+                return True
+    return False
+
+def search_fig_first_apprearance(organic, figure):
+
+    doc = organic.sentence.document
+    for i in range(len(doc.phrases)):
+        text = doc.phrases[i].text
+        if i < len(doc.phrases) - 1:
+            text += doc.phrases[i+1].text
+        text = text.strip().replace(' ', '')
+        if len(text) < 4:
+            continue
+        fig_name = figure.name.strip().replace(' ','')
+        if text.find(fig_name) != -1:
+            dist = i - organic.sentence.phrase_num
+            if i < -300:
+                return "FIG_FAR_AHEAD"
+            elif i < -100:
+                return "FIG_NEAR_AHEAD"
+            elif i < 0:
+                return "FIG_CLOSE_AHEAD"
+            elif i == 0:
+                return "FIG_EXACT_MATCH"
+            elif i < 100:
+                return "FIG_CLOSE_AFTER"
+            elif i <= 300:
+                return "FIG_NEAR_BEHIND"
+            else:
+                return "FIG_FAR_BEHIND"
+    return "NO_MATCH"
+
+
 def get_page(span):
     """Return the page number of the given span.
 
@@ -854,10 +973,6 @@ def get_visual_distance(c, axis=None):
     # TODO
     return
 
-
-# Default dimensions for 8.5" x 11"
-DEFAULT_WIDTH = 612
-DEFAULT_HEIGHT = 792
 
 
 def get_page_vert_percentile(span,
