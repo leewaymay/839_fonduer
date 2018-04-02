@@ -158,12 +158,15 @@ def copy_postgres(segment_file_blob, table_name, tsv_columns):
     if DBPORT:
         cmd = ('cat %s | psql -p %s %s -U %s -c "COPY %s(%s) '
                 'FROM STDIN" --set=ON_ERROR_STOP=true') % \
-                (segment_file_blob, DBPORT, DBNAME, 'postgres', table_name, tsv_columns)
+                (segment_file_blob, DBPORT, DBNAME, DBUSER, table_name, tsv_columns)
     else:
         cmd = ('cat %s | psql %s -U %s -c "COPY %s(%s) '
                 'FROM STDIN" --set=ON_ERROR_STOP=true') % \
-                (segment_file_blob, DBNAME, 'postgres', table_name, tsv_columns)
-    _out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, shell=True)
+                (segment_file_blob, DBNAME, DBUSER, table_name, tsv_columns)
+    try:
+        _out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, shell=True)
+    except subprocess.CalledProcessError as e:
+        _out = e.output
     print(_out)
 
 

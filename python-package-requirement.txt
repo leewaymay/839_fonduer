@@ -1,6 +1,7 @@
 bs4
 editdistance
 future
+fuzzywuzzy[speedup]
 ipywidgets>=7.0
 jupyter
 lxml==3.6.4
