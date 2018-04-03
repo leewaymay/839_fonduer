@@ -3,7 +3,7 @@ from fonduer.snorkel.models import TemporarySpan
 import re
 from fuzzywuzzy import fuzz
 
-FEAT_PRE = "CORE_"
+FEAT_PRE = "ORGANIC_"
 DEF_VALUE = 1
 
 unary_feats = {}
@@ -73,7 +73,6 @@ def _generate_core_feats(span):
     yield "DEP_LABELS_[{}]".format('_'.join(span.dep_labels).upper())
     yield "DEP_PARENTS_[{}]".format('_'.join(map(str, span.dep_parents)))
     yield "NER_TAGS_[{}]".format('_'.join(span.ner_tags).upper())
-    yield "PAGE_[{}]".format(span.page[0])
     yield "POS_TAGS_[{}]".format('_'.join(span.pos_tags).upper())
 
 
@@ -107,15 +106,10 @@ def _generate_document_feats(span):
     for i in range(len(doc.phrases)):
         if string in doc.phrases[i].words:
             if freq == 0: # first appearance
-                yield "PAGE_DISTANCE_FROM_FIRST_APPEARANCE_[{}]".format(span.page[0] - doc.phrases[i].page[0])
-                if phrase_num - i == 0:
-                    yield "SAME_PHRASE_WITH_FIRST_APPEARANCE"
-                elif phrase_num - i == 1:
-                    yield "ONE_PHRASE_FROM_FIRST_APPEARANCE"
-                elif phrase_num - i == 2:
-                    yield "TWO_PHRASES_FROM_FIRST_APPEARANCE"
-                else:
-                    yield "MANY_PHRASES_FROM_FIRST_APPEARANCE"
+                dpage = span.page[0] - doc.phrases[i].page[0]
+                yield "PAGE_DISTANCE_FROM_FIRST_APPEARANCE_[{}]".format(dpage if dpage < 3 else 'MANY')
+                dph = phrase_num - i
+                yield "PHRASE_DISTANCE_FROM_FIRST_APPEARANCE_[{}]".format(dph if dph < 3 else 'MANY')
             freq += 1
         if 'summar' in doc.phrases[i].text or 'conclusion' in doc.phrases[i].text:
             yield "MENTIONED_IN_CONCLUSION"
@@ -157,6 +151,6 @@ def _generate_approximate_feats(span):
             freq90 += 1
         if i != phrase_num and fuzz.partial_ratio(string, doc.phrases[i].text) == 100:
             freq100 += 1
-    yield "APPEARED_[{}]_TIMES_FUZZY_75".format(freq75)
-    yield "APPEARED_[{}]_TIMES_FUZZY_90".format(freq90)
-    yield "APPEARED_[{}]_TIMES_FUZZY_100".format(freq100)
+    yield "APPEARED_[{}]_TIMES_FUZZY_75".format(freq75//10 if freq75//10 < 4 else 'MANY')
+    yield "APPEARED_[{}]_TIMES_FUZZY_90".format(freq90//10 if freq90//10 < 4 else 'MANY')
+    yield "APPEARED_[{}]_TIMES_FUZZY_100".format(freq100//10 if freq100//10 < 4 else 'MANY')
