@@ -10,6 +10,7 @@ os.environ['FONDUERHOME'] = '/Users/Zitman/Documents/Graduate/Courses/CS839/Proj
 os.environ['FONDUERDBNAME'] = ATTRIBUTE
 os.environ['SNORKELDB'] = 'postgres://localhost:5432/' + os.environ['FONDUERDBNAME']
 
+restart = False
 
 from fonduer import SnorkelSession
 
@@ -17,7 +18,7 @@ session = SnorkelSession()
 
 from fonduer import candidate_subclass
 
-Org_Fig = candidate_subclass('Org_Fig', ['product','figure'])
+Org_Fig = candidate_subclass('Org_Fig', ['organic','figure'])
 
 from fonduer import HTMLPreprocessor, OmniParser
 
@@ -31,7 +32,8 @@ corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+if restart:
+    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -67,7 +69,7 @@ inorganic_rgx = '(([A-Z][a-z]?\d*\+?){2,})'
 
 org_rgx = '|'.join([prefix_rgx, suffix_rgx, dash_rgx, comma_dash_rgx, inorganic_rgx])
 
-rgx_matcher = RegexMatchSplitEach(rgx=org_rgx, longest_match_only=True, ignore_case=False)
+rgx_matcher = RegexMatchSpan(rgx=org_rgx, longest_match_only=True, ignore_case=False)
 
 blacklist = ['CAS', 'PDF', 'RSC', 'SAR', 'TEM']
 prod_blacklist_lambda_matcher = LambdaFunctionMatcher(func=lambda x: x.text not in blacklist, ignore_case=False)
@@ -137,7 +139,8 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+if restart:
+    candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 print("Number of candidates:", len(train_cands))
@@ -148,3 +151,33 @@ from fonduer.features.features import get_organic_image_feats
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
 
+from fonduer import BatchLabelAnnotator
+
+whitelist = ['synthesis', 'syntheses', 'made', 'catalyze', 'generate', 'product', 'produce',
+            'formation', 'developed', 'approach', 'yields', 'reaction',
+            'fig', 'scheme', 'graph', 'diagram', 'table']
+
+blacklist = ['and', 'for', 'of', 'the']
+def LF_same_file(c):
+    return int(c.organic.sentence.document == c.figure.document)
+
+lf_org_img = [LF_same_file] + [lambda c: 1 if kw in c.organic.sentence.text else 0 for kw in whitelist]
+lf_org_img += [lambda c: 0 if kw in c.organic.words else 1 for kw in blacklist]
+
+labeler = BatchLabelAnnotator(Org_Fig, lfs = lf_org_img)
+L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
+
+print(L_train.shape)
+
+L_train.get_candidate(session, 0)
+
+from fonduer import GenerativeModel
+
+gen_model = GenerativeModel()
+gen_model.train(L_train, epochs=500, decay=0.9, step_size=0.001/L_train.shape[0], reg_param=0)
+train_marginals = gen_model.marginals(L_train)
+
+from fonduer import SparseLogisticRegression
+
+disc_model = SparseLogisticRegression()
+disc_model.train(F_train, train_marginals, n_epochs=200, lr=0.001)
