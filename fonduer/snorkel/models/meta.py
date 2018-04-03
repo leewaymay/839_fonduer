@@ -19,11 +19,12 @@ snorkel_conn_string = os.environ['SNORKELDB'] if 'SNORKELDB' in os.environ and o
 
 # Modified by Zhewen
 import sys
+# Modified by Xiuyuan
+DBNAME = snorkel_conn_string.split('/')[-1]
 if 'linux' in sys.platform.lower():
-    DBNAME = 'postgres'
+    DBUSER = 'postgres'
 else:
-    DBNAME = snorkel_conn_string.split('/')[-1]
-DBUSER = os.environ.get('SNORKELDBUSER', getpass.getuser())
+    DBUSER = os.environ.get('SNORKELDBUSER', getpass.getuser())
 DBPORT = urlparse(snorkel_conn_string).port
 
 # Sets global variable indicating whether we are using Postgres

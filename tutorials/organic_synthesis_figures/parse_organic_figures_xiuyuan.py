@@ -59,8 +59,8 @@ pprint([x.name for x in train_docs])
 from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
     DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
 
-prefix_rgx = '(.+(meth|cycl|tri|tetra|hex|hept|iso|carb|benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
-suffix_rgx = '(.+(ane|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine).+)'
+prefix_rgx = '(\(?((mono|bi|di|tri|tetra|hex|hept|oct|iso|a?cycl|poly).+)?(meth|carb|benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
+suffix_rgx = '(.+(ane|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine|(or?mone)|thiol)\)?)'
 
 dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'
 comma_dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?,[a-z|\d]\'?\-)\w*)'
@@ -72,8 +72,10 @@ rgx_matcher = RegexMatchSplitEach(rgx = org_rgx,
                               longest_match_only=False, ignore_case=False)
 
 blacklist = ['CAS', 'PDF', 'RSC', 'SAR', 'TEM']
-
 prod_blacklist_lambda_matcher = LambdaFunctionMatcher(func=lambda x: x.text not in blacklist, ignore_case=False)
+blacklist_rgx = ['methods?.?']
+prod_blacklist_rgx_lambda_matcher = LambdaFunctionMatcher(
+    func=lambda x: all([re.match(r, x.text) is None for r in blacklist_rgx]), ignore_case=False)
 
 prod_matcher = Intersect(rgx_matcher, prod_blacklist_lambda_matcher)
 
@@ -162,3 +164,35 @@ from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
+
+
+from fonduer.lf_helpers import *
+from fuzzywuzzy import fuzz
+import re
+
+
+def LF_text_desc_match(c):
+    product, img = c.get_context()
+    if fuzz.partial_ratio(product.text, img.description) >= 70:
+        return 1
+    else:
+        return 0
+
+def LF_ocr_text_match(c):
+    product, img = c.get_context()
+    ocr_wordlist = img.text.lower().split('\n')
+    ocr_wordlist = [w for w in ocr_wordlist if not w == '']
+    for w in ocr_wordlist:
+        if fuzz.partial_ratio(product.text, w) >= 90:
+            return 1
+    return 0
+
+def LF_text_lenth_match(c):
+    product, img = c.get_context()
+    return -1 if len(product.text) < 5 else 0
+
+def LF_text_lenth_match(c):
+    product, img = c.get_context()
+    return -1 if len(product.text) < 5 else 0
+
+

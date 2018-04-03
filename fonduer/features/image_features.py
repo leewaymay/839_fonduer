@@ -53,7 +53,7 @@ def get_image_feats(candidates):
         #         for f in _generate_img_feats(span, desc_avg = desc_avg, text_avg = text_avg):
         #             unary_feats[span.stable_id].add(f)
         #
-        #     for f in unary_feats[span.stable_id]:
+        #     for f in unary_feats[span.stable_id]:boo
         #         yield candidate.id, FEAT_PRE + f, DEF_VALUE
 
         # Binary candidates
