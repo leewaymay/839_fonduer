@@ -35,7 +35,7 @@ pdf_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data
 
 from fonduer import Document
 
-# get docs
+# divide train/dev/test
 docs = session.query(Document).order_by(Document.name).all()
 ld   = len(docs)
 
@@ -149,37 +149,40 @@ from fonduer.candidates import OmniDetailedFigures
 
 figs = OmniDetailedFigures()
 
+# extract candidate
 candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_ngrams, figs],
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+# candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 print("Number of candidates:", len(train_cands))
 
-
+# extract feature
 from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
-F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
+# F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
+F_train = featurizer.load_matrix(split=0)
 
-
+# labeling function
 from fonduer.lf_helpers import *
 from fuzzywuzzy import fuzz
 import re
 
 
 def LF_text_desc_match(c):
-    product, img = c.get_context()
+    product, img = c.get_contexts()
     if fuzz.partial_ratio(product.text, img.description) >= 70:
         return 1
     else:
         return 0
 
+
 def LF_ocr_text_match(c):
-    product, img = c.get_context()
+    product, img = c.get_contexts()
     ocr_wordlist = img.text.lower().split('\n')
     ocr_wordlist = [w for w in ocr_wordlist if not w == '']
     for w in ocr_wordlist:
@@ -187,12 +190,77 @@ def LF_ocr_text_match(c):
             return 1
     return 0
 
-def LF_text_lenth_match(c):
-    product, img = c.get_context()
-    return -1 if len(product.text) < 5 else 0
 
 def LF_text_lenth_match(c):
-    product, img = c.get_context()
+    product, img = c.get_contexts()
     return -1 if len(product.text) < 5 else 0
 
 
+def LF_match_keywords(c):
+    args = c.get_contexts()
+    if len(args) != 2:
+        raise NotImplementedError("Only handles binary candidates currently")
+    organic, figure, = args
+    keywords = ['synthesis', 'reaction', 'produce', 'yield', 'formation', 'approach']
+    return 1 if both_contain_keywords(organic, figure, keywords) else 0
+
+def LF_match_page(c):
+    args = c.get_contexts()
+    if len(args) != 2:
+        raise NotImplementedError("Only handles binary candidates currently")
+    organic, figure, = args
+    return 1 if is_same_org_fig_page(organic, figure) else 0
+
+def LF_pos_near(c):
+    args = c.get_contexts()
+    if len(args) != 2:
+        raise NotImplementedError("Only handles binary candidates currently")
+    organic, figure, = args
+    return 1 if org_pos_near_fig(organic, figure) else 0
+
+def LF_organic_compound(c):
+    args = c.get_contexts()
+    organic = args[0]
+    result = re.search(org_rgx, organic.text)
+    return 1 if result else 0
+
+
+org_fig_lfs = [
+    LF_text_desc_match,
+    LF_ocr_text_match,
+    LF_text_lenth_match,
+    LF_match_keywords,
+    LF_match_page,
+    LF_pos_near,
+    LF_organic_compound
+]
+
+
+from fonduer import BatchLabelAnnotator
+
+labeler = BatchLabelAnnotator(Org_Fig, lfs = org_fig_lfs)
+L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
+print(L_train.shape)
+
+L_train.get_candidate(session, 0)
+
+from fonduer import GenerativeModel
+
+gen_model = GenerativeModel()
+gen_model.train(L_train, epochs=500, decay=0.9, step_size=0.001/L_train.shape[0], reg_param=0)
+
+train_marginals = gen_model.marginals(L_train)
+print(gen_model.weights.lf_accuracy)
+
+from fonduer import SparseLogisticRegression
+from fonduer import BatchFeatureAnnotator
+from fonduer.features.features import get_organic_image_feats
+
+featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
+F_train = featurizer.load_matrix(split=0)
+
+disc_model = SparseLogisticRegression()
+disc_model.train(F_train, train_marginals, n_epochs=200, lr=0.001)
+
+#Current we only predict on the training set
+test_score = disc_model.predictions(F_train)
