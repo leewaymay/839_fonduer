@@ -668,6 +668,19 @@ def within_distance(org, fig, ratio, page_width=DEFAULT_WIDTH, page_height=DEFAU
     if abs(fig_horz_pos - org_horz_pos) <= ratio * page_width:
         yield "WITHIN_{}_HORZ_PAGE".format(ratio)
 
+def org_pos_near_fig(org, fig, page_width=DEFAULT_WIDTH, page_height=DEFAULT_HEIGHT):
+    fig_vert_pos = (fig.top + fig.bottom) / 2.0
+    fig_horz_pos = (fig.left + fig.right) / 2.0
+    org_vert_pos = (org.top[0] + org.bottom[0]) / 2.0
+    org_horz_pos = (org.left[0] + org.right[0]) / 2.0
+
+    org_vert_pos += page_height * (org.page[0] - fig.page)
+
+    return abs(fig_vert_pos - org_vert_pos) <= 0.5 * page_height and \
+            abs(fig_horz_pos - org_horz_pos) <= 0.5 * page_width
+
+
+
 def ahead_feature(org, fig, page_height=DEFAULT_HEIGHT):
     fig_vert_pos = (fig.top + fig.bottom) / 2.0
     fig_horz_pos = (fig.left + fig.right) / 2.0
@@ -712,12 +725,12 @@ def both_contain_keywords(organic, figure, keywords):
     organic_text = organic.sentence.text
     img_contains = False
     for word in keywords:
-        if fuzz.partial_ratio(word, fig_text) > 90:
+        if fuzz.token_set_ratio(word, fig_text) > 90:
             img_contains = True
             break
     if img_contains:
         for word in keywords:
-            if fuzz.ratio(word, organic_text) > 90:
+            if fuzz.token_set_ratio(word, organic_text) > 90:
                 return True
     return False
 

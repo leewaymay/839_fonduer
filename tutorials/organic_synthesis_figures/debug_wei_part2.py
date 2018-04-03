@@ -39,5 +39,5 @@ from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
-F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
+# F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
 print(F_train.shape)
