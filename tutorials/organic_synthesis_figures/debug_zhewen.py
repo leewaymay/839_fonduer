@@ -10,7 +10,6 @@ os.environ['FONDUERHOME'] = '/Users/Zitman/Documents/Graduate/Courses/CS839/Proj
 os.environ['FONDUERDBNAME'] = ATTRIBUTE
 os.environ['SNORKELDB'] = 'postgres://localhost:5432/' + os.environ['FONDUERDBNAME']
 
-restart = False
 
 from fonduer import SnorkelSession
 
@@ -32,8 +31,7 @@ corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-if restart:
-    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+#corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -139,26 +137,34 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-if restart:
-    candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
-    candidate_extractor.apply(test_docs, split=2, parallelism=PARALLEL)
+#candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+#candidate_extractor.apply(test_docs, split=2, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
-test_cands = session.query(Org_Fig).filter(Org_Fig.split == 2).all()
-print("Number of train candidates: {}\nNumber of test candidates: {}".format(len(train_cands), len(test_cands)))
+#test_cands = session.query(Org_Fig).filter(Org_Fig.split == 2).all()
+#print("Number of train candidates: {}\nNumber of test candidates: {}".format(len(train_cands), len(test_cands)))
 
 from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
-if restart:
-    F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
-    F_test = featurizer.apply(split=2, replace_key_set=False, parallelism=PARALLEL)
-else:
-    F_train = featurizer.load_matrix(split=0)
-    F_test = featurizer.load_matrix(split=2)
+F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
+#F_test = featurizer.apply(split=2, replace_key_set=False, parallelism=PARALLEL)
+# F_train = featurizer.load_matrix(split=0)
+#F_test = featurizer.load_matrix(split=2)
 
+'''
 from fonduer import BatchLabelAnnotator
+
+def LF_fig_name_match(c):
+    args = c.get_contexts()
+    if len(args) != 2:
+        raise NotImplementedError("Only handles binary candidates currently")
+    product, img = args
+    if img.name == '':
+        return -1
+    else:
+        return 0
 
 def LF_match_page(c):
     args = c.get_contexts()
@@ -172,11 +178,13 @@ def LF_text_desc_match(c):
     args = c.get_contexts()
     if len(args) != 2:
         raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    if fuzz.partial_ratio(organic.text, figure.description) >= 70:
+    product, img = args
+    if fuzz.partial_ratio(product.text, img.description) >= 70:
         return 1
-    else:
+    elif fuzz.partial_ratio(product.text, img.description) <= 40:
         return -1
+    else:
+        return 0
 
 
 def LF_ocr_text_match(c):
@@ -270,6 +278,7 @@ def LF_first_period(c):
     return 0
 
 org_fig_lfs = [
+    LF_fig_name_match,
     LF_text_desc_match,
     LF_ocr_text_match,
     LF_text_length_match,
@@ -280,13 +289,16 @@ org_fig_lfs = [
     LF_organic_compound,
     LF_synthesis_of,
     LF_product_of,
+    LF_first_period,
 ]
 
 
 labeler = BatchLabelAnnotator(Org_Fig, lfs=org_fig_lfs)
 
-L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
-#L_train = labeler.load_matrix(split=0)
+if restart:
+    L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
+else:
+    L_train = labeler.load_matrix(split=0)
 
 print(L_train.shape)
 
@@ -310,4 +322,6 @@ true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
 train_score = disc_model.predictions(F_train)
 
 for i, cand in enumerate(train_cands):
-    print(cand.organic.text, '||||', cand.figure.description, train_score[i])
+    print(cand.organic.text, '||||', cand.figure.url, train_score[i])
+
+'''

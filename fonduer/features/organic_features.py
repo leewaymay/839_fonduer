@@ -1,5 +1,7 @@
 from fonduer.models import ImplicitSpan
 from fonduer.snorkel.models import TemporarySpan
+from .structural_features import strlib_unary_features
+from .content_features import *
 import re
 from fuzzywuzzy import fuzz
 
@@ -7,7 +9,7 @@ FEAT_PRE = "ORGANIC_"
 DEF_VALUE = 1
 
 unary_feats = {}
-
+unary_tdl_feats = {}
 
 def get_organic_feats(candidates):
     candidates = candidates if isinstance(candidates, list) else [candidates]
@@ -47,6 +49,10 @@ def get_organic_feats(candidates):
                 for f in _generate_html_feats(span):
                     unary_feats[span.stable_id].add(f)
                 for f in _generate_approximate_feats(span):
+                    unary_feats[span.stable_id].add(f)
+                for f in _generate_content_feats(span):
+                    f = ' '.join(f.split('\n')) # remove the newline that may be introduced
+                    f = ' '.join(filter(None, f.split(' '))) # trim extra spaces
                     unary_feats[span.stable_id].add(f)
 
             for f in unary_feats[span.stable_id]:
@@ -138,6 +144,8 @@ def _generate_html_feats(span):
         yield "HTML_SPAN"
     if sentence.html_attrs == 'class=graphic_title':
         yield "GRAPHIC_TITLE"
+    for f, v in strlib_unary_features(span):
+        yield f
 
 def _generate_approximate_feats(span):
     phrase_num = span.sentence.phrase_num
@@ -154,3 +162,20 @@ def _generate_approximate_feats(span):
     yield "APPEARED_[{}]_TIMES_FUZZY_75".format(freq75//10 if freq75//10 < 4 else 'MANY')
     yield "APPEARED_[{}]_TIMES_FUZZY_90".format(freq90//10 if freq90//10 < 4 else 'MANY')
     yield "APPEARED_[{}]_TIMES_FUZZY_100".format(freq100//10 if freq100//10 < 4 else 'MANY')
+
+def _generate_content_feats(span):
+    get_tdl_feats = compile_entity_feature_generator()
+    sent = get_as_dict(span.sentence)
+    xmltree = corenlp_to_xmltree(sent)
+    sidxs = list(range(span.get_word_start(), span.get_word_end() + 1))
+    if len(sidxs) > 0:
+        # Add DDLIB entity features
+        for f in get_ddlib_feats(span, sent, sidxs):
+            yield 'DDL_' + f
+        # Add TreeDLib entity features
+        if span.stable_id not in unary_tdl_feats:
+            unary_tdl_feats[span.stable_id] = set()
+            for f in get_tdl_feats(xmltree.root, sidxs):
+                unary_tdl_feats[span.stable_id].add(f)
+        for f in unary_tdl_feats[span.stable_id]:
+            yield 'TDL_' + f
