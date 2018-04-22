@@ -5,12 +5,13 @@ from fonduer.lf_helpers import *
 from lxml.html import fromstring
 from lxml import etree
 from bs4 import BeautifulSoup
-
+import re
 
 FEAT_PRE = "COMBINED_"
 DEF_VALUE = 1
 
 binary_feats = {}
+dfs_traversal = {}
 
 def get_combined_feats(candidates):
     candidates = candidates if isinstance(candidates, list) else [candidates]
@@ -38,8 +39,12 @@ def get_combined_feats(candidates):
         for f, v in context_binary_features(span, fig):
             binary_feats[candidate.id].add((f, v))
 
+        for f, v in mention_distance(span, fig):
+            binary_feats[candidate.id].add((f, v))
+
         for f, v in binary_feats[candidate.id]:
             yield candidate.id, FEAT_PRE + f, v
+
 
 def structure_binary_features(organic, figure):
     if not organic.sentence.is_visual(): return
@@ -106,5 +111,56 @@ def find_image_in_html(figure, soup):
         if candidate.img.get('src') == figure.url:
             return candidate
     return None
+
+
+def mention_distance(organic, figure):
+    mention = ' '.join(filter(None, figure.name.split(' ')))  # trim extra spaces
+    doc = figure.document
+    root = fromstring(doc.text)
+    tree = etree.ElementTree(root)
+    if mention:
+        if doc not in dfs_traversal:
+            dfs_traversal[doc] = list([tree.getpath(it) for it in root.getiterator()])
+        for phrase in doc.phrases:
+            text = ' '.join(filter(None, phrase.text.split(' ')))  # trim extra spaces
+            if mention in text:
+                yield _get_depth_distance(organic.sentence.xpath, phrase.xpath), DEF_VALUE
+                yield _get_iter_distance(doc, root, organic.sentence.xpath, phrase.xpath), DEF_VALUE
+
+
+def _get_depth_distance(xpath1, xpath2):
+    node1, node2 = xpath1.split('/'), xpath2.split('/')
+    distance = len(node1) + len(node2)
+    for n1, n2 in zip(node1, node2):
+        if n1 == n2:
+            distance -= 2
+        else:
+            break
+    return "DEPTH_DISTANCE_[%s]" % distance
+
+
+def _get_iter_distance(doc, root, xpath1, xpath2):
+    id1, id2 = 0, 0
+    for i, xpath in enumerate(dfs_traversal[doc]):
+        pattern = xpath1 + '([d+])?'
+        pattern = pattern.replace('[', '\[')
+        pattern = pattern.replace(']', '\]')
+        if re.match(pattern, xpath):
+            id1 = i
+        pattern = xpath2 + '([d+])?'
+        pattern = pattern.replace('[', '\[')
+        pattern = pattern.replace(']', '\]')
+        if re.match(pattern, xpath):
+            id2 = i
+    cnt = 0
+    for i in range(min(id1, id2) + 1, max(id1, id2)):
+        if len(root.xpath(dfs_traversal[doc][i])[0]) == 0:
+            cnt += 1
+
+    thresholds = list(range(0, 1001, 50)) + [float('inf')]
+    for i in range(len(thresholds) - 1):
+        if thresholds[i] <= cnt < thresholds[i+1]:
+            return "ITER_DISTANCE_[%s]" % thresholds[i]
+
 
 

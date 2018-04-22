@@ -53,7 +53,7 @@ def get_image_feats(candidates):
         #         for f in _generate_img_feats(span, desc_avg = desc_avg, text_avg = text_avg):
         #             unary_feats[span.stable_id].add(f)
         #
-        #     for f in unary_feats[span.stable_id]:
+        #     for f in unary_feats[span.stable_id]:boo
         #         yield candidate.id, FEAT_PRE + f, DEF_VALUE
 
         # Binary candidates
@@ -133,7 +133,6 @@ def _generate_img_feats(span, **kwargs):
         if not span.description.lower().find(w) == -1:
             yield "IMG_DESC_CONTAIN_SUFFIX_{}".format(w.upper())
 
-
     for w in keyword_list:
         if not span.description.lower().find(w) == -1:
             yield "IMG_DESC_CONTAIN_KEYWORD_{}".format(w.upper())
@@ -146,7 +145,6 @@ def _generate_img_feats(span, **kwargs):
             yield "IMG_DESC_CONTAIN_BLACKLISTED_WORD_{}".format(w.upper())
         # if not span.text.lower().find(w) == -1:
         #     yield "IMG_TEXT_CONTAIN_BLACKLISTED_WORD_{}".format(w.upper())
-
 
     if fuzz.partial_ratio(span.description, span.document.name) >= 50:
         yield "IMG_DESC_DOC_TITLE_MATCH"
