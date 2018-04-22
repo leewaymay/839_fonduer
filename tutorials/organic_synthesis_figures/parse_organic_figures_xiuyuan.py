@@ -24,13 +24,13 @@ from fonduer import HTMLPreprocessor, OmniParser
 docs_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/html/'
 pdf_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/pdf/'
 
-# max_docs = float(10)
+# max_docs = float(4)
 # doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
 # corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
 # #                           flatten=['sup', 'sub', 'small'],
 # #                           ignore=['italic', 'bold'],
 #                            blacklist=['style', 'script', 'meta', 'noscript'])
-
+#
 # corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
@@ -109,7 +109,7 @@ def white_black_list_matcher(fig):
     if any(fig_desc.find(v) >= 0 for v in white_list): in_white = True
     if any(fig_desc.find(v) >= 0 for v in black_list): in_black = True
     if in_black and (not in_white):
-        print('Filtered by f1!')
+        # print('Filtered by f1!')
         return False
     # # print("{} has passed filter 1 in {} seconds!".format(fig.figure.name, time.time()-enter_time))
     # elif in_black:
@@ -135,8 +135,8 @@ def contain_organic_matcher(fig):
         orc_wordlist = [w for w in orc_wordlist if not w == '']
         if any(re.search(org_rgx, w) for w in orc_wordlist): return True
 
-    print('Filtered by f2! Removed!')
-    print(fig.figure.name + " " + fig.figure.description)
+    # print('Filtered by f2! Removed!')
+    # print(fig.figure.name + " " + fig.figure.description)
     return False
 
 fig_matcher1 = LambdaFunctionFigureMatcher(func=white_black_list_matcher)

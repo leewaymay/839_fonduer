@@ -5,7 +5,7 @@ from fonduer.lf_helpers import *
 from lxml.html import fromstring
 from lxml import etree
 from bs4 import BeautifulSoup
-
+from fonduer.features import get_html_structure_feature
 
 FEAT_PRE = "COMBINED_"
 DEF_VALUE = 1
@@ -38,8 +38,13 @@ def get_combined_feats(candidates):
         for f, v in context_binary_features(span, fig):
             binary_feats[candidate.id].add((f, v))
 
+        # added by Xiuyuan
+        for f, v in structural_binary_features(span, fig):
+            binary_feats[candidate.id].add((f, v))
+
         for f, v in binary_feats[candidate.id]:
             yield candidate.id, FEAT_PRE + f, v
+
 
 def structure_binary_features(organic, figure):
     if not organic.sentence.is_visual(): return
@@ -105,7 +110,40 @@ def find_image_in_html(figure, soup):
     for candidate in soup.find_all('div', class_='image_table'):
         if candidate.img.get('src') == figure.url:
             return candidate
-    else:
-        return None
+    return None
 
 
+# added by Xiuyuan
+def structural_binary_features(org, fig):
+    """
+    Structural-related features for a pair of spans
+    """
+    yield "COMMON_ANCESTOR_[%s]" % " ".join(text_fig_common_ancestor((org, fig))), DEF_VALUE
+
+    yield "LOWEST_ANCESTOR_DEPTH_[%d]" % text_fig_lowest_common_ancestor_depth((org, fig)), DEF_VALUE
+
+    h_distance, direction = get_text_img_horizontal_distance(org, fig)
+    d_distance = get_text_img_dfs_distance(org, fig)
+
+    if not (h_distance is None or direction is None):
+        yield "HORIZONTAL_DISTANCE_[%d]" % h_distance, DEF_VALUE
+
+        yield "IMAGE_[%s]_ORGANIC" % ('ABOVE' if h_distance == 1 else 'BELOW'), DEF_VALUE
+
+    if d_distance is not None:
+        if d_distance <= 100:
+            yield "DEEP_DISTANCE_[%s]" % "100", DEF_VALUE
+        elif d_distance <= 150:
+            yield "DEEP_DISTANCE_[%s]" % "150", DEF_VALUE
+        elif d_distance <= 200:
+            yield "DEEP_DISTANCE_[%s]" % "200", DEF_VALUE
+        elif d_distance <= 250:
+            yield "DEEP_DISTANCE_[%s]" % "250", DEF_VALUE
+        elif d_distance <= 300:
+            yield "DEEP_DISTANCE_[%s]" % "300", DEF_VALUE
+        elif d_distance <= 350:
+            yield "DEEP_DISTANCE_[%s]" % "350", DEF_VALUE
+        elif d_distance <= 400:
+            yield "DEEP_DISTANCE_[%s]" % "400", DEF_VALUE
+        else:
+            yield "DEEP_DISTANCE_[%s]" % ">400", DEF_VALUE

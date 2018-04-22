@@ -92,3 +92,4 @@ def strlib_binary_features(span1, span2):
     yield "COMMON_ANCESTOR_[%s]" % " ".join(common_ancestor((span1, span2))), DEF_VALUE
 
     yield "LOWEST_ANCESTOR_DEPTH_[%d]" % lowest_common_ancestor_depth((span1, span2)), DEF_VALUE
+

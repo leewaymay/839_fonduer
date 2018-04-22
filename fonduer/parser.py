@@ -194,6 +194,7 @@ class OmniParserUDF(UDF):
                     filename + '.PDF') and not os.path.isfile(filename)
             if create_pdf:  # PDF file does not exist
                 logger.error("Visual parsing failed: pdf files are required")
+
             # Added by Wei Li (wli284@wisc.edu)
             for phrase in self.vizlink.parse_visual(
                     document.name, document.phrases, document.detailed_figures, self.pdf_path):

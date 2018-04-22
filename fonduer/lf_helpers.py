@@ -20,6 +20,7 @@ from fonduer.utils_visual import (
     bbox_vert_aligned_left, bbox_vert_aligned_right, bbox_vert_aligned_center)
 from bs4 import BeautifulSoup
 from fuzzywuzzy import fuzz
+import os
 
 # Default dimensions for 8.5" x 11"
 DEFAULT_WIDTH = 612
@@ -1334,7 +1335,6 @@ def common_ancestor(c):
     return list(
         ancestor1[:np.argmin(ancestor1[:min_len] == ancestor2[:min_len])])
 
-
 def lowest_common_ancestor_depth(c):
     """Return the minimum distance between a binary-Span Candidate to their lowest common ancestor.
 
@@ -1409,3 +1409,147 @@ def get_near_string(prev_content, name):
         return pre, post
 
     return None, None
+
+
+# get image_table xpath
+def lxml_find_image_xpath(figure, root, tree):
+    imgs = root.findall(".//div[@class='image_table']")
+    # imgs = root.findall(".//div[@class='image_table']//img[@src]")
+    for i in imgs:
+        isrc = i.find(".//img[@src]").attrib.get('src')
+        if figure.url == isrc:
+            return tree.getpath(i)
+
+
+def get_text_img_horizontal_distance(organic, figure):
+
+    root = fromstring(figure.document.text)  # lxml.html.fromstring()
+    tree = etree.ElementTree(root)
+
+    # ancestor1 = np.array(organic.sentence.xpath.split('/'))
+    img_path = lxml_find_image_xpath(figure, root, tree)
+    org_path = organic.sentence.xpath
+    # common_path = os.path.commonprefix([organic_path, img_path])
+
+    ancestor1 = org_path.split('/')
+    ancestor2 = img_path.split('/')
+    # min_len = min(ancestor1.size, ancestor2.size)
+    # l = list(
+    #     ancestor1[:min_len - np.argmin(ancestor1[:min_len] == ancestor2[:min_len])])
+    min_len = min(len(ancestor1), len(ancestor2))
+    common_path = ''
+    for i, e in enumerate(ancestor1[:min_len]):
+        if ancestor1[i] == ancestor2[i]:
+            common_path += e + '/'
+        else:
+            break;
+
+    if common_path == img_path:
+        return 0, 1
+    if common_path == org_path:
+        return 0, -1
+
+    try:
+        common_parent = root.xpath(common_path[:-1])[0]
+    except:
+        print(common_path)
+        return None, None
+
+    img_path_sub = common_path + img_path[len(common_path):].split('/')[0]
+    org_path_sub = common_path + org_path[len(common_path):].split('/')[0]
+    distance = 0
+    found = 0
+    direction = 0
+
+    for e in common_parent:
+        e_path = tree.getpath(e)
+        # e_img_prefix = os.path.commonprefix([e_path, img_path])
+        # e_org_prefix = os.path.commonprefix([e_path, organic_path])
+        if found != 0:
+            distance += 1
+        if e_path == img_path_sub or e_path == org_path_sub:
+            if found == 0:
+                # image above organic
+                if e_path == img_path_sub:
+                    direction = 1
+                else:
+                    direction = -1
+            found += 1
+        if found == 2:
+            return distance, direction
+
+    return None, None
+
+#
+def get_text_img_dfs_distance(organic, figure):
+
+    root = fromstring(figure.document.text)  # lxml.html.fromstring()
+    tree = etree.ElementTree(root)
+
+    # ancestor1 = np.array(organic.sentence.xpath.split('/'))
+    img_path = lxml_find_image_xpath(figure, root, tree)
+    org_path = organic.sentence.xpath
+    # common_path = os.path.commonprefix([org_path, img_path])
+
+    ancestor1 = org_path.split('/')
+    ancestor2 = img_path.split('/')
+    # min_len = min(ancestor1.size, ancestor2.size)
+    # l = list(
+    #     ancestor1[:min_len - np.argmin(ancestor1[:min_len] == ancestor2[:min_len])])
+    min_len = min(len(ancestor1), len(ancestor2))
+    common_path = ''
+    for i, e in enumerate(ancestor1[:min_len]):
+        if ancestor1[i] == ancestor2[i]:
+            common_path += e + '/'
+        else:
+            break;
+
+    if common_path == img_path:
+        return 0, 1
+    if common_path == org_path:
+        return 0, -1
+
+    try:
+        common_parent = root.xpath(common_path[:-1])[0]
+    except:
+        print(common_path)
+        return None
+
+    distance = 0
+    found = 0
+
+    for e in common_parent.iter():
+        e_path = tree.getpath(e)
+        # e_img_prefix = os.path.commonprefix([e_path, img_path])
+        # e_org_prefix = os.path.commonprefix([e_path, organic_path])
+        if found != 0:
+            distance += 1
+        if e_path == img_path or e_path == org_path:
+            found += 1
+        if found == 2:
+            return distance
+    return None
+
+def text_fig_common_ancestor(c):
+    organic = c[0]
+    figure = c[1]
+    root = fromstring(figure.document.text)  # lxml.html.fromstring()
+    tree = etree.ElementTree(root)
+    ancestor1 = np.array(organic.sentence.xpath.split('/'))
+    img_path = lxml_find_image_xpath(figure, root, tree)
+    ancestor2 = np.array(img_path.split('/'))
+
+    min_len = min(ancestor1.size, ancestor2.size)
+    return list(
+        ancestor1[:np.argmin(ancestor1[:min_len] == ancestor2[:min_len])])
+
+def text_fig_lowest_common_ancestor_depth(c):
+    organic = c[0]
+    figure = c[1]
+    root = fromstring(figure.document.text)  # lxml.html.fromstring()
+    tree = etree.ElementTree(root)
+    ancestor1 = np.array(organic.sentence.xpath.split('/'))
+    img_path = lxml_find_image_xpath(figure, root, tree)
+    ancestor2 = np.array(img_path.split('/'))
+    min_len = min(ancestor1.size, ancestor2.size)
+    return min_len - np.argmin(ancestor1[:min_len] == ancestor2[:min_len])
