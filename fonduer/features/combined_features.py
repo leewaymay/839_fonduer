@@ -105,7 +105,6 @@ def find_image_in_html(figure, soup):
     for candidate in soup.find_all('div', class_='image_table'):
         if candidate.img.get('src') == figure.url:
             return candidate
-    else:
-        return None
+    return None
 
 
