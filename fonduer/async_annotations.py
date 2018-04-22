@@ -3,6 +3,7 @@ from __future__ import division
 from builtins import str
 from builtins import zip
 from builtins import range
+import pickle
 import codecs
 import numpy as np
 import scipy.sparse as sparse
@@ -335,6 +336,14 @@ class BatchAnnotator(UDFRunner):
         with snorkel_engine.connect() as con:
             return load_annotation_matrix(con, candidates, split, self.table_name, self.key_table_name, False, None, False, ignore_keys)
 
+    def load_matrix_and_image_features(self, split, ignore_keys=[]):
+        SnorkelSession = new_sessionmaker()
+        session   = SnorkelSession()
+        candidates = session.query(Candidate).filter(Candidate.split == split).all()
+        with snorkel_engine.connect() as con:
+            matrix = load_annotation_matrix(con, candidates, split, self.table_name, self.key_table_name, False, None, False, ignore_keys)
+            image_features = load_image_features(candidates)
+            return matrix, image_features
 
 class BatchFeatureAnnotator(BatchAnnotator):
     # Modified by Zhewen
@@ -451,3 +460,10 @@ def load_annotation_matrix(con, candidates, split, table_name, key_table_name, r
 
     return csr_AnnotationMatrix(lil_feat_matrix, candidate_index=candidate_index,
                                     row_index=row_index, keys=keys, key_index=key_index)
+
+def load_image_features(candidates):
+    feature_matrix = []
+    for cand in candidates:
+        # currently we only have HOG features
+        feature_matrix.append(pickle.loads(cand.figure.image_features[0].features))
+    return np.vstack(feature_matrix)

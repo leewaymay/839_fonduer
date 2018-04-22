@@ -3,7 +3,8 @@ from fonduer.snorkel.models.context import Document
 from fonduer.snorkel.models.meta import SnorkelSession, SnorkelBase, snorkel_engine
 
 from fonduer.models.context import Webpage, Table, Cell, Phrase, Figure, \
-    DetailedFigure, ImplicitSpan, TemporaryImplicitSpan, TemporaryImage, Image, TemporaryDetailedImage, DetailedImage
+    DetailedFigure, ImplicitSpan, TemporaryImplicitSpan, TemporaryImage, Image, \
+    TemporaryDetailedImage, DetailedImage, ImageFeatures
 
 # Use sqlalchemy to create tables for the new context types used by Fonduer
 SnorkelBase.metadata.create_all(snorkel_engine)

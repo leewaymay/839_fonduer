@@ -771,3 +771,32 @@ class DetailedImage(Context, TemporaryDetailedImage):
     def __gt__(self, other):
         # Allow sorting by comparing the string representations of each
         return self.__repr__() > other.__repr__()
+
+
+class ImageFeatures(Context):
+    """A image feature in a Document. Added by Wei Li (wli284@wisc.edu)"""
+    __tablename__ = 'image_features'
+    id            = Column(Integer, ForeignKey('context.id', ondelete='CASCADE'), primary_key=True)
+    image_id     = Column(Integer, ForeignKey('detailed_image.id', ondelete='CASCADE'))
+    position      = Column(Integer, nullable=False)
+    image = relationship('DetailedImage',
+                            backref=backref('image_features', order_by=position, cascade='all, delete-orphan'),
+                            foreign_keys=image_id)
+    description = Column(String)
+    features = Column(PickleType)
+
+
+    __mapper_args__ = {
+        'polymorphic_identity': 'image_features',
+    }
+
+    __table_args__ = (
+        UniqueConstraint(image_id, position),
+    )
+
+    def __repr__(self):
+        return "Figure Features(Image: %s, Position: %s, Url: %s, Figure_description: %s)" % (self.image.name.encode('utf-8'), self.position, self.image.url, self.description)
+
+    def __gt__(self, other):
+        # Allow sorting by comparing the string representations of each
+        return self.__repr__() > other.__repr__()
