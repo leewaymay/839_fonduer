@@ -1,7 +1,7 @@
 # parse organic compound
 
 import os
-import sys
+from scipy import sparse
 
 PARALLEL = 1 # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
@@ -31,7 +31,7 @@ corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-#corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+# corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -137,7 +137,7 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-#candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
 #candidate_extractor.apply(test_docs, split=2, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
@@ -146,12 +146,23 @@ train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 
 from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
+from fonduer.features.read_images import gen_image_features
+
+# Only need to do this once
+print('Generating image features')
+session.execute("delete from context where stable_id like '%feature%'")
+gen_image_features(docs_path=docs_path)
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
-F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
+print('Generating other features')
+F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
+print('Merging image features')
+F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0)) # concatenate dense with sparse matrix
 #F_test = featurizer.apply(split=2, replace_key_set=False, parallelism=PARALLEL)
 # F_train = featurizer.load_matrix(split=0)
 #F_test = featurizer.load_matrix(split=2)
+
+print("Done")
 
 '''
 from fonduer import BatchLabelAnnotator

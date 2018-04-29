@@ -187,3 +187,20 @@ def _generate_img_feats(span, **kwargs):
                 if not post.lower().find(w) == -1:
                     yield "IMG_PREVPARA_POST_CONTAIN_KEYWORD_{}".format(w.upper())
 
+    wordl = get_word_from_fig(span)
+    if wordl:
+        yield "IMG_DESC_ASSOCIATE_ORG"
+
+def get_word_from_fig(figure):
+    keyword = 'of'
+    desc_list = figure.description.split(" ")
+    if keyword not in desc_list:
+        return None
+    idx = desc_list.index(keyword)
+    offset = min(len(desc_list)-1-idx, 5)
+    for i in range(idx + 1, offset + 1):
+        w = desc_list[i]
+        for p in figure.document.phrases:
+            if w in p.words and re.search(org_rgx, p.text):
+                return p.words
+    return None

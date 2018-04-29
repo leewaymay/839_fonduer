@@ -1553,3 +1553,5 @@ def text_fig_lowest_common_ancestor_depth(c):
     ancestor2 = np.array(img_path.split('/'))
     min_len = min(ancestor1.size, ancestor2.size)
     return min_len - np.argmin(ancestor1[:min_len] == ancestor2[:min_len])
+
+

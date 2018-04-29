@@ -23,9 +23,9 @@ def get_all_feats(candidates):
 
 # Added by wei li, zhewen song
 def get_organic_image_feats(candidates):
-    # for id, f, v in get_organic_feats(candidates):
-    #     yield id, f, v
-    # for id, f, v in get_image_feats(candidates):
-    #     yield id, f, v
+    for id, f, v in get_organic_feats(candidates):
+        yield id, f, v
+    for id, f, v in get_image_feats(candidates):
+        yield id, f, v
     for id, f, v in get_combined_feats(candidates):
         yield id, f, v
