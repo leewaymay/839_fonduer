@@ -50,6 +50,8 @@ def get_organic_feats(candidates):
                     unary_feats[span.stable_id].add(f)
                 for f in _generate_approximate_feats(span):
                     unary_feats[span.stable_id].add(f)
+                for f in _generate_negative_feats(span):
+                    unary_feats[span.stable_id].add(f)
                 for f in _generate_content_feats(span):
                     f = ' '.join(f.split('\n')) # remove the newline that may be introduced
                     f = ' '.join(filter(None, f.split(' '))) # trim extra spaces
@@ -179,3 +181,10 @@ def _generate_content_feats(span):
                 unary_tdl_feats[span.stable_id].add(f)
         for f in unary_tdl_feats[span.stable_id]:
             yield 'TDL_' + f
+
+def _generate_negative_feats(span):
+    string = span.get_span()
+    blacklist = ['OF', 'THE', 'FOR', 'IS', 'WAS', 'WITH']
+    for word in string.split():
+        if word.upper() in blacklist:
+            yield 'SPAN_CONTAINING_' + word.upper()

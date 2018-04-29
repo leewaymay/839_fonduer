@@ -46,6 +46,9 @@ def get_combined_feats(candidates):
         for f, v in mention_distance(span, fig):
             binary_feats[candidate.id].add((f, v))
 
+        for f, v in first_mention(span, fig):
+            binary_feats[candidate.id].add((f, v))
+
         for f, v in binary_feats[candidate.id]:
             yield candidate.id, FEAT_PRE + f, v
 
@@ -202,3 +205,17 @@ def _get_iter_distance(doc, root, xpath1, xpath2):
             return "ITER_DISTANCE_[%s]" % thresholds[i]
 
 
+def first_mention(organic, figure):
+    caption = figure.description
+    if caption:
+        words = caption.split()
+        doc = figure.document
+        keys = ['of', ]
+        for i in range(len(words)):
+            if words[i] in keys:
+                for j in range(i + 1, min(len(words), i + 5)):
+                    for phrase in doc.phrases:
+                        if words[j] in phrase.text and \
+                                phrase.id == organic.sentence.id:
+                            yield 'FIRST_MENTION', DEF_VALUE
+                            break  # only for the first mention
