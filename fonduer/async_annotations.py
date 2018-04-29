@@ -464,6 +464,9 @@ def load_annotation_matrix(con, candidates, split, table_name, key_table_name, r
 def load_image_features(candidates):
     feature_matrix = []
     for cand in candidates:
-        # currently we only have HOG features
-        feature_matrix.append(pickle.loads(cand.figure.image_features[0].features))
+        # currently we have 4 features
+        featlist = []
+        for feat in cand.figure.image_features:
+            featlist.append(pickle.loads(feat.features))
+        feature_matrix.append(np.hstack(featlist))
     return np.vstack(feature_matrix)

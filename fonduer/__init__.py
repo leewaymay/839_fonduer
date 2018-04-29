@@ -19,6 +19,7 @@ from fonduer.snorkel.annotations import load_gold_labels
 from fonduer.snorkel.learning import GenerativeModel, SparseLogisticRegression
 from fonduer.snorkel.matchers import (RegexMatchSpan, DictionaryMatch,RegexMatchSplitEach,
                                       LambdaFunctionMatcher, Intersect, Union)
+from fonduer.snorkel.models.context import Context
 
 # Raise the visibility of these subpackages to the package level for cleaner
 # syntax. The key idea here is when we do `from package.submodule1 import foo`
