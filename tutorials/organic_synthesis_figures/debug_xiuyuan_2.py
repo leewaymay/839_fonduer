@@ -1,3 +1,11 @@
+'''
+
+Candidate Extraction
+
+'''
+
+
+
 import os
 import sys
 # os.system('bash ./set_env.sh')
@@ -31,16 +39,16 @@ docs = session.query(Document).order_by(Document.name).all()
 ld   = len(docs)
 
 train_docs = set()
-dev_docs   = set()
+# dev_docs   = set()
 test_docs  = set()
-splits = (1.0, 0.9)
+splits = 5/6
 data = [(doc.name, doc) for doc in docs]
 data.sort(key=lambda x: x[0])
 for i, (doc_name, doc) in enumerate(data):
-    if i < splits[0] * ld:
+    if i < splits * ld:
         train_docs.add(doc)
-    elif i < splits[1] * ld:
-        dev_docs.add(doc)
+    # elif i < splits[1] * ld:
+    #     dev_docs.add(doc)
     else:
         test_docs.add(doc)
 from pprint import pprint
@@ -50,15 +58,8 @@ pprint([x.name for x in train_docs])
 from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
     DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
 
-prefix_rgx = '(\(?((mono|bi|di|tri|tetra|hex|hept|oct|iso|a?cycl|poly).*)?(meth|carb|benz|fluoro|chloro|bromo|iodo|hydro(xy)?|amino|alk).+)'
-suffix_rgx = '(.+(ane|yl|adiene|atriene|kene|k?yne|anol|anediol|anetriol|anone|acid|amine|xide|dine?|(or?mone)|thiol|cine?|rine?|thine?|tone?)s?\)?)'
-
-dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'
-comma_dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?,[a-z|\d]\'?\-)\w*)'
-inorganic_rgx = '(([A-Z][a-z]?\d*\+?){2,})'
-
-org_rgx = '|'.join([prefix_rgx, suffix_rgx, dash_rgx, comma_dash_rgx, inorganic_rgx])
-
+from tutorials.organic_synthesis_figures import regex_matcher
+org_rgx = regex_matcher.get_rgx_matcher()
 rgx_matcher = RegexMatchSplitEach(rgx = org_rgx,
                               longest_match_only=False, ignore_case=False)
 
@@ -146,4 +147,5 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+# candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+candidate_extractor.apply(test_docs, split=1, parallelism=PARALLEL)

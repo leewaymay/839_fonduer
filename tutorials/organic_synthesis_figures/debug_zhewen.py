@@ -32,8 +32,8 @@ corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-if restart:
-    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+#if restart:
+#    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -54,7 +54,7 @@ from pprint import pprint
 pprint([x.name for x in train_docs])
 
 
-from fonduer.snorkel.matchers import LambdaFunctionMatcher, Intersect, Union
+from fonduer.snorkel.matchers import LambdaFunctionMatcher, DictionaryMatch, Intersect, Union
 from fonduer.snorkel.matchers import RegexMatchSpan
 
 from regex_matcher import get_rgx_matcher
@@ -68,8 +68,25 @@ blacklist_rgx = ['methods?.?']
 prod_blacklist_rgx_lambda_matcher = LambdaFunctionMatcher(
     func=lambda x: all([re.match(r, x.text) is None for r in blacklist_rgx]), ignore_case=False)
 
-#prod_matcher = rgx_matcher
-prod_matcher = Intersect(rgx_matcher, prod_blacklist_lambda_matcher, prod_blacklist_rgx_lambda_matcher)
+import csv
+
+def get_organic_set(path):
+    """
+    Reads in the digikey part dictionary and yeilds each part.
+    """
+    all_orgs = set()
+    with open(path, "r") as csvinput:
+        reader = csv.reader(csvinput)
+        for line in reader:
+            (org, _) = line
+            all_orgs.add(org)
+    return all_orgs
+
+dict_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/organic_dictionary.csv'
+org_dict_matcher = DictionaryMatch(d=get_organic_set(dict_path))
+
+prod_matcher = Intersect(Union(rgx_matcher, org_dict_matcher),
+                         prod_blacklist_lambda_matcher, prod_blacklist_rgx_lambda_matcher)
 
 from fonduer import CandidateExtractor
 from fonduer.lf_helpers import *
@@ -124,8 +141,9 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
-candidate_extractor.apply(test_docs, split=1, parallelism=PARALLEL)
+if restart:
+    candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+    candidate_extractor.apply(test_docs, split=1, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 test_cands = session.query(Org_Fig).filter(Org_Fig.split == 1).all()
@@ -134,21 +152,20 @@ print("Number of train candidates: {}\nNumber of test candidates: {}".format(len
 from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
 from fonduer.features.read_images import gen_image_features
-
-# Only need to do this once
-print('Generating image features')
-session.execute("delete from context where stable_id like '%feature%'")
-gen_image_features(docs_path=docs_path)
-
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
-print('Generating other features')
-F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
-F_test = featurizer.apply(split=1, replace_key_set=False, parallelism=PARALLEL) # generate sparse features
+
+if restart:
+    # Only need to do this once
+    print('Generating image features')
+    session.execute("delete from context where stable_id like '%feature%'")
+    gen_image_features(docs_path=docs_path)
+    print('Generating other features')
+    F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
+    F_test = featurizer.apply(split=1, replace_key_set=False, parallelism=PARALLEL) # generate sparse features
+
 print('Merging image features')
-F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0))  # concatenate dense with sparse matrix
-F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1))  # concatenate dense with sparse matrix
-#F_train = featurizer.load_matrix(split=0)
-#F_test = featurizer.load_matrix(split=1)
+F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0)).toarray()  # concatenate dense with sparse matrix
+F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1)).toarray()  # concatenate dense with sparse matrixs
 
 
 from fonduer import BatchLabelAnnotator
@@ -292,8 +309,10 @@ org_fig_lfs = [
 
 labeler = BatchLabelAnnotator(Org_Fig, lfs=org_fig_lfs)
 
-L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
-#L_train = labeler.load_matrix(split=0)
+if restart:
+    L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
+else:
+    L_train = labeler.load_matrix(split=0)
 
 print(L_train.shape)
 
@@ -305,14 +324,15 @@ gen_model = GenerativeModel()
 gen_model.train(L_train, epochs=500, decay=0.9, step_size=0.001/L_train.shape[0], reg_param=0)
 train_marginals = gen_model.marginals(L_train)
 
-from fonduer import SparseLogisticRegression
+from fonduer import LogisticRegression
 
-disc_model = SparseLogisticRegression()
+disc_model = LogisticRegression()
 disc_model.train(F_train, train_marginals, n_epochs=200, lr=0.001)
 
-test_candidates = [F_test.get_candidate(session, i) for i in range(F_test.shape[0])]
-test_score = disc_model.predictions(F_test)
-true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
+#F_test = featurizer.load_matrix(split=1)
+#test_candidates = [F_test.get_candidate(session, i) for i in range(F_test.shape[0])]
+#test_score = disc_model.predictions(F_test)
+#true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
 
 train_score = disc_model.predictions(F_train)
 

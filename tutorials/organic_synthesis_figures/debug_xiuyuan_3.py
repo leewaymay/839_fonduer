@@ -1,3 +1,10 @@
+'''
+
+Featurization
+
+'''
+
+
 import os
 import sys
 # os.system('bash ./set_env.sh')
@@ -31,15 +38,10 @@ from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
-F_train = featurizer.load_matrix(split=0)
+# F_train = featurizer.load_matrix(split=0)
 
 from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
 from fonduer.features.read_images import gen_image_features
 gen_image_features(docs_path=docs_path)
 
-# load gold label
-from tutorials.organic_synthesis_figures.organic_utils import load_organic_labels
-
-gold_file = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/organic_gold.csv'
-load_organic_labels(session, Org_Fig, gold_file, ATTRIBUTE ,annotator_name='gold')

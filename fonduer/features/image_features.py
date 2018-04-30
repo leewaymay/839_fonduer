@@ -4,13 +4,9 @@ from bs4 import BeautifulSoup
 from fuzzywuzzy import fuzz
 from fonduer import lf_helpers
 import re
+from tutorials.organic_synthesis_figures.regex_matcher import get_rgx_matcher
 
-prefix_rgx = '(\(?(mono|bi|di|tri|tetra|hex|hept|oct|iso|a?cycl|poly)?(meth|carb|benz|fluoro|chloro|bromo|iodo|hydroxy|amino|alk).+)'
-suffix_rgx = '(.+(ane|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine|(or?mone)|thiol)\)?)'
-dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'
-comma_dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?,[a-z|\d]\'?\-)\w*)'
-inorganic_rgx = '(([A-Z][a-z]?\d*\+?){2,})'
-org_rgx = '|'.join([prefix_rgx, suffix_rgx, dash_rgx, comma_dash_rgx, inorganic_rgx])
+org_rgx = get_rgx_matcher()
 
 prefix_list = ['cycl', 'tri', 'tetra', 'hex', 'hept', 'iso', 'carb', 'benz', 'fluoro', 'chloro', 'bromo', 'iodo',
                'hydroxy', 'amino', 'alk']
