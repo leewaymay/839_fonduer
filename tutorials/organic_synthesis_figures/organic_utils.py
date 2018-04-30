@@ -9,7 +9,7 @@ from fonduer.snorkel.models import GoldLabel, GoldLabelKey
 from fonduer.snorkel.utils import ProgressBar
 
 from fuzzywuzzy import fuzz
-
+FUZZY_SCORE=60
 
 def get_gold_dict(filename,
                   doc_on=True,
@@ -67,7 +67,7 @@ def load_organic_labels(session,
             GoldLabel.candidate == c).first()
         if label is None:
             for t in gold_dict:
-                if figure_src == t[2] and fuzz.ratio(t[1], organic_name) >= 95:
+                if figure_src == t[2] and fuzz.ratio(t[1], organic_name) >= FUZZY_SCORE:
                     label = GoldLabel(candidate=c, key=ak, value=1)
                     break;
 
@@ -87,11 +87,24 @@ def entity_confusion_matrix(pred, gold):
         pred = set(pred)
     if not isinstance(gold, set):
         gold = set(gold)
-    TP = pred.intersection(gold)
-    FP = pred.difference(gold)
-    FN = gold.difference(pred)
 
-    return (TP, FP, FN)
+    pred_true = set()
+    gold_true = set()
+    TP = set()
+    for p in pred:
+        for g in gold:
+            if p[2] == g[2] and fuzz.ratio(p[1], g[1]) >= FUZZY_SCORE:
+                pred_true.add(p)
+                gold_true.add(g)
+                TP.add((p[2],p[1],g[1]))
+
+    FP = pred.difference(pred_true)
+    FN = gold.difference(gold_true)
+    # TP = pred.intersection(gold)
+    # FP = pred.difference(gold)
+    # FN = gold.difference(pred)
+
+    return (TP, FP, FN, pred_true, gold_true)
 
 
 def entity_level_f1(candidates,
@@ -112,13 +125,13 @@ def entity_level_f1(candidates,
         entity_level_total_recall(candidates, gold_file, 'stg_temp_min')
     """
     docs = [(doc.name).upper() for doc in corpus] if corpus else None
-    val_on = (attribute is not None)
+    fig_on = (attribute is not None)
     gold_set = get_gold_dict(
         gold_file,
         docs=docs,
         doc_on=True,
-        part_on=True,
-        val_on=val_on,
+        org_on=True,
+        fig_on=fig_on,
         attribute=attribute)
     if len(gold_set) == 0:
         print("Gold set is empty.")
@@ -129,33 +142,41 @@ def entity_level_f1(candidates,
     entities = set()
     for i, c in enumerate(candidates):
         pb.bar(i)
-        part = c[0].get_span()
+        org = c[0].text
         doc = c[0].sentence.document.name.upper()
         if attribute:
-            val = c[1].get_span()
-        for p in get_implied_parts(part, doc, parts_by_doc):
-            if attribute:
-                entities.add((doc, p, val))
-            else:
-                entities.add((doc, p))
+            fig = c[1].url
+            entities.add((doc, org, fig))
+        else:
+            entities.add((doc, org))
+        # for p in get_implied_parts(org, doc, parts_by_doc):
+        #     if attribute:
+        #         entities.add((doc, p, fig))
+        #     else:
+        #         entities.add((doc, p))
     pb.close()
+    print(len(entities))
 
-    (TP_set, FP_set, FN_set) = entity_confusion_matrix(entities, gold_set)
+    (TP_set, FP_set, FN_set, pred_true_set, gold_true_set) = entity_confusion_matrix(entities, gold_set)
     TP = len(TP_set)
     FP = len(FP_set)
     FN = len(FN_set)
+    gold_true = len(gold_true_set)
+    pred_true = len(pred_true_set)
 
-    prec = TP / (TP + FP) if TP + FP > 0 else float('nan')
-    rec = TP / (TP + FN) if TP + FN > 0 else float('nan')
+    prec = pred_true / (pred_true + FP) if TP + FP > 0 else float('nan')
+    rec = gold_true / (gold_true + FN) if TP + FN > 0 else float('nan')
     f1 = 2 * (prec * rec) / (prec + rec) if prec + rec > 0 else float('nan')
     print("========================================")
     print("Scoring on Entity-Level Gold Data")
     print("========================================")
+    print("Total Gold labels      {}".format(len(gold_set)))
+    print("Total Predicted labels {}".format(len(entities)))
     print("Corpus Precision {:.3}".format(prec))
     print("Corpus Recall    {:.3}".format(rec))
     print("Corpus F1        {:.3}".format(f1))
     print("----------------------------------------")
-    print("TP: {} | FP: {} | FN: {}".format(TP, FP, FN))
+    print("TP: {}(gold),{}(pred) | FP: {} | FN: {}".format(gold_true, pred_true, FP, FN))
     print("========================================\n")
     return [sorted(list(x)) for x in [TP_set, FP_set, FN_set]]
 
@@ -177,3 +198,4 @@ def entity_to_candidates(entity, candidate_subset):
         if c_entity == entity:
             matches.append(c)
     return matches
+
