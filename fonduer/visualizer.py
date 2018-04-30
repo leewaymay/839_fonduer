@@ -57,6 +57,18 @@ class Visualizer(object):
         imgs = self.display_boxes(pdf_file, boxes, alternate_colors=True)
         return display(*imgs)
 
+
+    def display_image_candidates(self, candidates, pdf_file=None):
+        """
+        Displays the bounding boxes corresponding to candidates on an image of the pdf
+        boxes is a list of 5-tuples (page, top, left, bottom, right)
+        """
+        if not pdf_file:
+            pdf_file = os.path.join(self.pdf_path, candidates[0][0].sentence.document.name + '.pdf')
+        boxes = [box for box in get_org_fig_box(candidates)]
+        imgs = self.display_boxes(pdf_file, boxes, alternate_colors=True)
+        return display(*imgs)
+
     def display_words(self, phrases, target=None, pdf_file=None):
         if not pdf_file:
             pdf_file = os.path.join(self.pdf_path, phrases[0].document.name + '.pdf')
@@ -73,6 +85,11 @@ class Visualizer(object):
         imgs = self.display_boxes(pdf_file, boxes)
         return display(*imgs)
 
+def get_org_fig_box(candidates):
+    for candidate in candidates:
+        span, fig = candidate.get_contexts()
+        yield get_box(span)
+        yield get_img_box(fig)
 
 def get_box(span):
     box = (min(span.get_attrib_tokens('page')),
@@ -81,6 +98,9 @@ def get_box(span):
            min(span.get_attrib_tokens('bottom')),
            max(span.get_attrib_tokens('right')))
     return box
+
+def get_img_box(fig):
+    return (fig.page, fig.top, fig.left, fig.bottom, fig.right)
 
 
 def get_pdf_dim(pdf_file):
@@ -102,6 +122,7 @@ def pdf_to_img(pdf_file, page_num, pdf_dim=None):
     if not pdf_dim:
         pdf_dim = get_pdf_dim(pdf_file)
     page_width, page_height = pdf_dim
+    print('read pdf {}'.format(pdf_file))
     img = Image(filename='{}[{}]'.format(pdf_file, page_num - 1))
     img.resize(page_width, page_height)
     return img
