@@ -8,6 +8,8 @@ from fonduer.lf_helpers import *
 from fonduer.snorkel.models import GoldLabel, GoldLabelKey
 from fonduer.snorkel.utils import ProgressBar
 
+from fuzzywuzzy import fuzz
+
 
 def get_gold_dict(filename,
                   doc_on=True,
@@ -64,9 +66,12 @@ def load_organic_labels(session,
         label = session.query(GoldLabel).filter(GoldLabel.key == ak).filter(
             GoldLabel.candidate == c).first()
         if label is None:
-            if (doc_name, organic_name, figure_src) in gold_dict:
-                label = GoldLabel(candidate=c, key=ak, value=1)
-            else:
+            for t in gold_dict:
+                if figure_src == t[2] and fuzz.ratio(t[1], organic_name) >= 95:
+                    label = GoldLabel(candidate=c, key=ak, value=1)
+                    break;
+
+            if label is None:
                 label = GoldLabel(candidate=c, key=ak, value=-1)
             session.add(label)
             labels.append(label)
@@ -85,6 +90,7 @@ def entity_confusion_matrix(pred, gold):
     TP = pred.intersection(gold)
     FP = pred.difference(gold)
     FN = gold.difference(pred)
+
     return (TP, FP, FN)
 
 

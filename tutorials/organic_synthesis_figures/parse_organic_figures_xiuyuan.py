@@ -24,14 +24,14 @@ from fonduer import HTMLPreprocessor, OmniParser
 docs_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/html/'
 pdf_path = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/data/pdf/'
 
-# max_docs = float(4)
-# doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
-# corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
-# #                           flatten=['sup', 'sub', 'small'],
-# #                           ignore=['italic', 'bold'],
-#                            blacklist=['style', 'script', 'meta', 'noscript'])
-#
-# corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+max_docs = float(10)
+doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
+corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
+#                           flatten=['sup', 'sub', 'small'],
+#                           ignore=['italic', 'bold'],
+                           blacklist=['style', 'script', 'meta', 'noscript'])
+
+corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -164,7 +164,7 @@ from fonduer.features.features import get_organic_image_feats
 
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL)
-# F_train = featurizer.load_matrix(split=0)
+F_train = featurizer.load_matrix(split=0)
 
 
 # load gold label
