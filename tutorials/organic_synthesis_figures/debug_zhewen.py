@@ -3,6 +3,7 @@
 import os
 from scipy import sparse
 
+restart = False
 PARALLEL = 1 # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
 
@@ -21,17 +22,18 @@ Org_Fig = candidate_subclass('Org_Fig', ['organic','figure'])
 
 from fonduer import HTMLPreprocessor, OmniParser
 
-docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/html/'
-pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/pdf/'
+docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/html/'
+pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/pdf/'
 
-max_docs = 1
+max_docs = 24
 doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
 corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
 #                           flatten=['sup', 'sub', 'small'],
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+if restart:
+    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -39,36 +41,27 @@ docs = session.query(Document).order_by(Document.name).all()
 ld   = len(docs)
 
 train_docs = set()
-dev_docs   = set()
 test_docs  = set()
-splits = (0.8, 0.9)
+splits = 5 / 6
 data = [(doc.name, doc) for doc in docs]
 data.sort(key=lambda x: x[0])
 for i, (doc_name, doc) in enumerate(data):
-    if i < splits[0] * ld:
+    if i < splits * ld:
         train_docs.add(doc)
-    elif i < splits[1] * ld:
-        dev_docs.add(doc)
     else:
         test_docs.add(doc)
 from pprint import pprint
 pprint([x.name for x in train_docs])
 
 
-from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
-    DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
+from fonduer.snorkel.matchers import LambdaFunctionMatcher, Intersect, Union
+from fonduer.snorkel.matchers import RegexMatchSpan
 
-prefix_rgx = '(\(?((mono|bi|di|tri|tetra|hex|hept|oct|iso|a?cycl|poly).*)?(meth|carb|benz|fluoro|chloro|bromo|iodo|hydro(xy)?|amino|alk).+)'
-suffix_rgx = '(.+(ane|yl|adiene|atriene|kene|k?yne|anol|anediol|anetriol|anone|acid|amine|xide|dine?|(or?mone)|thiol|cine?|rine?|thine?|tone?)s?\)?)'
+from regex_matcher import get_rgx_matcher
 
-dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'
-comma_dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?,[a-z|\d]\'?\-)\w*)'
-inorganic_rgx = '(([A-Z][a-z]?\d*\+?){2,})'
-
-org_rgx = '|'.join([prefix_rgx, suffix_rgx, dash_rgx, comma_dash_rgx, inorganic_rgx])
+org_rgx = get_rgx_matcher()
 
 rgx_matcher = RegexMatchSpan(rgx=org_rgx, longest_match_only=True, ignore_case=False)
-
 blacklist = ['CAS', 'PDF', 'RSC', 'SAR', 'TEM']
 prod_blacklist_lambda_matcher = LambdaFunctionMatcher(func=lambda x: x.text not in blacklist, ignore_case=False)
 blacklist_rgx = ['methods?.?']
@@ -138,11 +131,11 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         candidate_filter=candidate_filter)
 
 candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
-#candidate_extractor.apply(test_docs, split=2, parallelism=PARALLEL)
+candidate_extractor.apply(test_docs, split=1, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
-#test_cands = session.query(Org_Fig).filter(Org_Fig.split == 2).all()
-#print("Number of train candidates: {}\nNumber of test candidates: {}".format(len(train_cands), len(test_cands)))
+test_cands = session.query(Org_Fig).filter(Org_Fig.split == 1).all()
+print("Number of train candidates: {}\nNumber of test candidates: {}".format(len(train_cands), len(test_cands)))
 
 from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
@@ -156,15 +149,14 @@ gen_image_features(docs_path=docs_path)
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 print('Generating other features')
 F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
+F_test = featurizer.apply(split=1, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
 print('Merging image features')
-F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0)) # concatenate dense with sparse matrix
-#F_test = featurizer.apply(split=2, replace_key_set=False, parallelism=PARALLEL)
-# F_train = featurizer.load_matrix(split=0)
-#F_test = featurizer.load_matrix(split=2)
+F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0))  # concatenate dense with sparse matrix
+F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1))  # concatenate dense with sparse matrix
+F_train = featurizer.load_matrix(split=0)
+F_test = featurizer.load_matrix(split=1)
 
-print("Done")
 
-'''
 from fonduer import BatchLabelAnnotator
 
 def LF_fig_name_match(c):
@@ -306,10 +298,8 @@ org_fig_lfs = [
 
 labeler = BatchLabelAnnotator(Org_Fig, lfs=org_fig_lfs)
 
-if restart:
-    L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
-else:
-    L_train = labeler.load_matrix(split=0)
+L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
+#L_train = labeler.load_matrix(split=0)
 
 print(L_train.shape)
 
@@ -335,4 +325,3 @@ train_score = disc_model.predictions(F_train)
 for i, cand in enumerate(train_cands):
     print(cand.organic.text, '||||', cand.figure.url, train_score[i])
 
-'''
