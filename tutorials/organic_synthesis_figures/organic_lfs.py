@@ -1,5 +1,5 @@
 from fonduer.lf_helpers import *
-from .regex_matcher import *
+from regex_matcher import *
 import re
 org_rgx = get_rgx_matcher()
 

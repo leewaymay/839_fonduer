@@ -18,7 +18,7 @@ def set_up_wei():
     return docs_path, pdf_path
 
 def set_up_zhewen():
-    os.environ['FONDUERHOME'] = '/Users/liwei/BoxSync/s2016/Dropbox/839_fonduer'
+    os.environ['FONDUERHOME'] = '/Users/Zitman/Documents/Graduate/Courses/CS839/Project/839_fonduer'
     os.environ['FONDUERDBNAME'] = ATTRIBUTE
     os.environ['SNORKELDB'] = 'postgres://localhost:5432/' + os.environ['FONDUERDBNAME']
     docs_path = os.environ['FONDUERHOME'] + '/tutorials/organic_synthesis_figures/data/html/'

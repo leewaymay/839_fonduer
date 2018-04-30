@@ -84,7 +84,7 @@ def candidate_filter(c):
 
 
 
-from tutorials.organic_synthesis_figures.product_spaces import OmniNgramsProd
+from tutorials.organic_synthesis_figures.organic_spaces import OmniNgramsProd
 prod_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
 
 from fonduer.matchers import LambdaFunctionFigureMatcher
