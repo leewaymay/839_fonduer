@@ -3,7 +3,7 @@
 import os
 from scipy import sparse
 
-restart = False
+restart = True
 PARALLEL = 1  # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
 
@@ -32,8 +32,8 @@ corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-if restart:
-    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+#if restart:
+#    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -54,7 +54,7 @@ from pprint import pprint
 pprint([x.name for x in train_docs])
 
 
-from fonduer.snorkel.matchers import LambdaFunctionMatcher, Intersect, Union
+from fonduer.snorkel.matchers import LambdaFunctionMatcher, DictionaryMatch, Intersect, Union
 from fonduer.snorkel.matchers import RegexMatchSpan
 
 from regex_matcher import get_rgx_matcher
@@ -68,8 +68,25 @@ blacklist_rgx = ['methods?.?']
 prod_blacklist_rgx_lambda_matcher = LambdaFunctionMatcher(
     func=lambda x: all([re.match(r, x.text) is None for r in blacklist_rgx]), ignore_case=False)
 
-#prod_matcher = rgx_matcher
-prod_matcher = Intersect(rgx_matcher, prod_blacklist_lambda_matcher, prod_blacklist_rgx_lambda_matcher)
+import csv
+
+def get_organic_set(path):
+    """
+    Reads in the digikey part dictionary and yeilds each part.
+    """
+    all_orgs = set()
+    with open(path, "r") as csvinput:
+        reader = csv.reader(csvinput)
+        for line in reader:
+            (org, _) = line
+            all_orgs.add(org)
+    return all_orgs
+
+dict_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/organic_dictionary.csv'
+org_dict_matcher = DictionaryMatch(d=get_organic_set(dict_path))
+
+prod_matcher = Intersect(Union(rgx_matcher, org_dict_matcher),
+                         prod_blacklist_lambda_matcher, prod_blacklist_rgx_lambda_matcher)
 
 from fonduer import CandidateExtractor
 from fonduer.lf_helpers import *
@@ -292,8 +309,10 @@ org_fig_lfs = [
 
 labeler = BatchLabelAnnotator(Org_Fig, lfs=org_fig_lfs)
 
-L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
-#L_train = labeler.load_matrix(split=0)
+if restart:
+    L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
+else:
+    L_train = labeler.load_matrix(split=0)
 
 print(L_train.shape)
 
@@ -310,10 +329,10 @@ from fonduer import LogisticRegression
 disc_model = LogisticRegression()
 disc_model.train(F_train, train_marginals, n_epochs=200, lr=0.001)
 
-F_test = featurizer.load_matrix(split=1)
-test_candidates = [F_test.get_candidate(session, i) for i in range(F_test.shape[0])]
-test_score = disc_model.predictions(F_test)
-true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
+#F_test = featurizer.load_matrix(split=1)
+#test_candidates = [F_test.get_candidate(session, i) for i in range(F_test.shape[0])]
+#test_score = disc_model.predictions(F_test)
+#true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
 
 train_score = disc_model.predictions(F_train)
 
