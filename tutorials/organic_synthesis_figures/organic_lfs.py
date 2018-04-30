@@ -1,6 +1,7 @@
 from fonduer.lf_helpers import *
+from regex_matcher import *
 import re
-org_rgx = '|'.join([])
+org_rgx = get_rgx_matcher()
 
 def LF_fig_name_match(c):
     args = c.get_contexts()

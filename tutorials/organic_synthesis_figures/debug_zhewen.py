@@ -4,7 +4,7 @@ import os
 from scipy import sparse
 
 restart = False
-PARALLEL = 1 # assuming a quad-core machine
+PARALLEL = 1  # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
 
 os.environ['FONDUERHOME'] = '/Users/Zitman/Documents/Graduate/Courses/CS839/Project/839_fonduer/tutorials'
@@ -82,14 +82,12 @@ def candidate_filter(c):
             return True
 
 
-from product_spaces import OmniNgramsProd
+from organic_spaces import OmniNgramsProd
 prod_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
 
 from fonduer.matchers import LambdaFunctionFigureMatcher
 
 def white_black_list_matcher(fig):
-    # print("enter filter 1")
-    # enter_time = time.time()
     white_list = ['synthesis', 'plausible']
     black_list = ['spectra', 'x-ray', 'copyright', 'structur', 'application']
 
@@ -99,11 +97,9 @@ def white_black_list_matcher(fig):
     if any(fig_desc.find(v) >= 0 for v in black_list): in_black = True
     if in_black and (not in_white):
         return False
-    # print("{} has passed filter 1 in {} seconds!".format(fig.figure.name, time.time()-enter_time))
     return True
 
 def contain_organic_matcher(fig):
-    # print("{} has failed filter 1 in {} seconds!".format(fig.figure.name, time.time() - enter_time))
     # filter 2
     desc_wordlist = fig.figure.description.lower().split(' ')
     if any(re.search(org_rgx, w) for w in desc_wordlist): return True
@@ -111,8 +107,6 @@ def contain_organic_matcher(fig):
         orc_wordlist = fig.figure.text.lower().split('\n')
         orc_wordlist = [w for w in orc_wordlist if not w == '']
         if any(re.search(org_rgx, w) for w in orc_wordlist): return True
-
-    #print(fig.figure.name + " " + fig.figure.description)
     return False
 
 fig_matcher1 = LambdaFunctionFigureMatcher(func=white_black_list_matcher)
@@ -130,8 +124,9 @@ candidate_extractor = CandidateExtractor(Org_Fig,
                         [prod_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
-candidate_extractor.apply(test_docs, split=1, parallelism=PARALLEL)
+if restart:
+    candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
+    candidate_extractor.apply(test_docs, split=1, parallelism=PARALLEL)
 
 train_cands = session.query(Org_Fig).filter(Org_Fig.split == 0).all()
 test_cands = session.query(Org_Fig).filter(Org_Fig.split == 1).all()
@@ -140,21 +135,20 @@ print("Number of train candidates: {}\nNumber of test candidates: {}".format(len
 from fonduer import BatchFeatureAnnotator
 from fonduer.features.features import get_organic_image_feats
 from fonduer.features.read_images import gen_image_features
-
-# Only need to do this once
-print('Generating image features')
-session.execute("delete from context where stable_id like '%feature%'")
-gen_image_features(docs_path=docs_path)
-
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
-print('Generating other features')
-F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
-F_test = featurizer.apply(split=1, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
+
+if restart:
+    # Only need to do this once
+    print('Generating image features')
+    session.execute("delete from context where stable_id like '%feature%'")
+    gen_image_features(docs_path=docs_path)
+    print('Generating other features')
+    F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
+    F_test = featurizer.apply(split=1, replace_key_set=False, parallelism=PARALLEL) # generate sparse features
+
 print('Merging image features')
-F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0))  # concatenate dense with sparse matrix
-F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1))  # concatenate dense with sparse matrix
-F_train = featurizer.load_matrix(split=0)
-F_test = featurizer.load_matrix(split=1)
+F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0)).toarray()  # concatenate dense with sparse matrix
+F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1)).toarray()  # concatenate dense with sparse matrixs
 
 
 from fonduer import BatchLabelAnnotator
@@ -311,11 +305,12 @@ gen_model = GenerativeModel()
 gen_model.train(L_train, epochs=500, decay=0.9, step_size=0.001/L_train.shape[0], reg_param=0)
 train_marginals = gen_model.marginals(L_train)
 
-from fonduer import SparseLogisticRegression
+from fonduer import LogisticRegression
 
-disc_model = SparseLogisticRegression()
+disc_model = LogisticRegression()
 disc_model.train(F_train, train_marginals, n_epochs=200, lr=0.001)
 
+F_test = featurizer.load_matrix(split=1)
 test_candidates = [F_test.get_candidate(session, i) for i in range(F_test.shape[0])]
 test_score = disc_model.predictions(F_test)
 true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
@@ -325,3 +320,8 @@ train_score = disc_model.predictions(F_train)
 for i, cand in enumerate(train_cands):
     print(cand.organic.text, '||||', cand.figure.url, train_score[i])
 
+# load gold label
+from tutorials.organic_synthesis_figures.organic_utils import load_organic_labels
+
+gold_file = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/organic_gold.csv'
+load_organic_labels(session, Org_Fig, gold_file, ATTRIBUTE ,annotator_name='gold')
