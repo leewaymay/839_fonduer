@@ -68,6 +68,7 @@ def load_organic_labels(session,
         if label is None:
             for t in gold_dict:
                 if figure_src == t[2] and fuzz.ratio(t[1], organic_name) >= 95:
+                    print(organic_name)
                     label = GoldLabel(candidate=c, key=ak, value=1)
                     break;
 

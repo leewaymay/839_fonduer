@@ -25,6 +25,8 @@ def LF_text_desc_match(c):
     if len(args) != 2:
         raise NotImplementedError("Only handles binary candidates currently")
     product, img = args
+
+    # TODO: increase ratio?
     if fuzz.partial_ratio(product.text, img.description) >= 70:
         return 1
     elif fuzz.partial_ratio(product.text, img.description) <= 40:
