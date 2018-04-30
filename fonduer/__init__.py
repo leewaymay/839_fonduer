@@ -16,7 +16,7 @@ from fonduer.models import (SnorkelSession, Document, Phrase, Figure, DetailedIm
 from fonduer.parser import HTMLPreprocessor
 from fonduer.parser import OmniParser
 from fonduer.snorkel.annotations import load_gold_labels
-from fonduer.snorkel.learning import GenerativeModel, SparseLogisticRegression
+from fonduer.snorkel.learning import GenerativeModel, SparseLogisticRegression, LogisticRegression
 from fonduer.snorkel.matchers import (RegexMatchSpan, DictionaryMatch,RegexMatchSplitEach,
                                       LambdaFunctionMatcher, Intersect, Union)
 from fonduer.snorkel.models.context import Context
