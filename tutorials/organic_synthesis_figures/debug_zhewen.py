@@ -21,17 +21,17 @@ Org_Fig = candidate_subclass('Org_Fig', ['organic','figure'])
 
 from fonduer import HTMLPreprocessor, OmniParser
 
-docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/html/'
-pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/pdf/'
+docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/html/'
+pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/sandbox/pdf/'
 
-max_docs = 10
+max_docs = 1
 doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
 corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
 #                           flatten=['sup', 'sub', 'small'],
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-# corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -59,7 +59,7 @@ from fonduer.snorkel.matchers import RegexMatchSpan, RegexMatchSplitEach,\
     DictionaryMatch, LambdaFunctionMatcher, Intersect, Union
 
 prefix_rgx = '(\(?((mono|bi|di|tri|tetra|hex|hept|oct|iso|a?cycl|poly).*)?(meth|carb|benz|fluoro|chloro|bromo|iodo|hydro(xy)?|amino|alk).+)'
-suffix_rgx = '(.+(ane|yl|adiene|atriene|yne|anol|anediol|anetriol|anone|acid|amine|xide|dine|(or?mone)|thiol|cin)\)?)'
+suffix_rgx = '(.+(ane|yl|adiene|atriene|kene|k?yne|anol|anediol|anetriol|anone|acid|amine|xide|dine?|(or?mone)|thiol|cine?|rine?|thine?|tone?)s?\)?)'
 
 dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'
 comma_dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?,[a-z|\d]\'?\-)\w*)'
