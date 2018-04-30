@@ -144,7 +144,8 @@ def array_tsv_escape(vals):
 
 
 def table_exists(con, name):
-    cur = con.execute("select exists(select * from information_schema.tables where table_name=%s)", (name,))
+    # cur = con.execute("select exists(select * from information_schema.tables where table_name=%s)", (name,))
+    cur = con.execute("select exists(select * from information_schema.tables where table_name='%s')" % name)
     return cur.fetchone()[0]
 
 
