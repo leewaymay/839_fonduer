@@ -3,7 +3,12 @@
 import os
 from scipy import sparse
 
-restart = True
+reparse = False  # VERY EXPENSIVE
+reextract = False
+refeaturize = False  # VERY EXPENSIVE
+with_image_feats = True
+relabel = False
+
 PARALLEL = 1  # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
 
@@ -32,8 +37,8 @@ corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=
 #                           ignore=['italic', 'bold'],
                            blacklist=['style', 'script', 'meta', 'noscript'])
 
-#if restart:
-#    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
+if reparse:
+    corpus_parser.apply(doc_preprocessor, parallelism=PARALLEL)
 
 from fonduer import Document
 
@@ -63,17 +68,14 @@ org_rgx = get_rgx_matcher()
 
 rgx_matcher = RegexMatchSpan(rgx=org_rgx, longest_match_only=True, ignore_case=False)
 blacklist = ['CAS', 'PDF', 'RSC', 'SAR', 'TEM']
-prod_blacklist_lambda_matcher = LambdaFunctionMatcher(func=lambda x: x.text not in blacklist, ignore_case=False)
+org_blacklist_lambda_matcher = LambdaFunctionMatcher(func=lambda x: x.text not in blacklist, ignore_case=False)
 blacklist_rgx = ['methods?.?']
-prod_blacklist_rgx_lambda_matcher = LambdaFunctionMatcher(
+org_blacklist_rgx_lambda_matcher = LambdaFunctionMatcher(
     func=lambda x: all([re.match(r, x.text) is None for r in blacklist_rgx]), ignore_case=False)
 
 import csv
 
 def get_organic_set(path):
-    """
-    Reads in the digikey part dictionary and yeilds each part.
-    """
     all_orgs = set()
     with open(path, "r") as csvinput:
         reader = csv.reader(csvinput)
@@ -85,8 +87,8 @@ def get_organic_set(path):
 dict_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/organic_dictionary.csv'
 org_dict_matcher = DictionaryMatch(d=get_organic_set(dict_path))
 
-prod_matcher = Intersect(Union(rgx_matcher, org_dict_matcher),
-                         prod_blacklist_lambda_matcher, prod_blacklist_rgx_lambda_matcher)
+org_matcher = Union(org_dict_matcher,
+                    Intersect(rgx_matcher, org_blacklist_lambda_matcher, org_blacklist_rgx_lambda_matcher))
 
 from fonduer import CandidateExtractor
 from fonduer.lf_helpers import *
@@ -94,13 +96,17 @@ import re
 
 def candidate_filter(c):
     (organic, figure) = c
+    to_remove = ['synthesis', 'syntheses', 'product', 'reaction', 'the', 'of', 'for', ]
+    for key in to_remove:
+        if key in organic.text.split():
+            return False
     if same_file(organic, figure):
         if mentionsFig(organic, figure) or mentionsOrg(figure, organic):
             return True
 
 
 from organic_spaces import OmniNgramsProd
-prod_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
+org_ngrams = OmniNgramsProd(parts_by_doc=None, n_max=3)
 
 from fonduer.matchers import LambdaFunctionFigureMatcher
 
@@ -137,11 +143,11 @@ from fonduer.candidates import OmniDetailedFigures
 figs = OmniDetailedFigures()
 
 candidate_extractor = CandidateExtractor(Org_Fig,
-                        [prod_ngrams, figs],
-                        [prod_matcher, fig_matcher],
+                        [org_ngrams, figs],
+                        [org_matcher, fig_matcher],
                         candidate_filter=candidate_filter)
 
-if restart:
+if reextract:
     candidate_extractor.apply(train_docs, split=0, parallelism=PARALLEL)
     candidate_extractor.apply(test_docs, split=1, parallelism=PARALLEL)
 
@@ -154,7 +160,7 @@ from fonduer.features.features import get_organic_image_feats
 from fonduer.features.read_images import gen_image_features
 featurizer = BatchFeatureAnnotator(Org_Fig, f=get_organic_image_feats)
 
-if restart:
+if refeaturize:
     # Only need to do this once
     print('Generating image features')
     session.execute("delete from context where stable_id like '%feature%'")
@@ -163,133 +169,17 @@ if restart:
     F_train = featurizer.apply(split=0, replace_key_set=True, parallelism=PARALLEL) # generate sparse features
     F_test = featurizer.apply(split=1, replace_key_set=False, parallelism=PARALLEL) # generate sparse features
 
-print('Merging image features')
-F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0)).toarray()  # concatenate dense with sparse matrix
-F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1)).toarray()  # concatenate dense with sparse matrixs
-
+if with_image_feats:
+    print('Merging image features')
+    F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0)).toarray()  # concatenate dense with sparse matrix
+    F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1)).toarray()  # concatenate dense with sparse matrixs
+else:
+    F_train = featurizer.load_matrix(split=0).toarray()
+    F_test = featurizer.load_matrix(split=1).toarray()
 
 from fonduer import BatchLabelAnnotator
 
-def LF_fig_name_match(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    product, img = args
-    if img.name == '':
-        return -1
-    else:
-        return 0
-
-def LF_match_page(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    return 1 if is_same_org_fig_page(organic, figure) else -1
-
-
-def LF_text_desc_match(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    product, img = args
-    if fuzz.partial_ratio(product.text, img.description) >= 70:
-        return 1
-    elif fuzz.partial_ratio(product.text, img.description) <= 40:
-        return -1
-    else:
-        return 0
-
-
-def LF_ocr_text_match(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    ocr_wordlist = figure.text.lower().split('\n')
-    ocr_wordlist = [w for w in ocr_wordlist if not w == '']
-    for w in ocr_wordlist:
-        if fuzz.partial_ratio(organic.text, w) >= 90:
-            return 1
-    return -1
-
-
-def LF_text_length_match(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    return -1 if len(organic.text) < 5 else 0
-
-
-def LF_match_whitelist(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    whitelist = ['synthesis', 'syntheses', 'made', 'catalyze', 'generate', 'product', 'produce',
-            'formation', 'developed', 'approach', 'yields', 'reaction', 'mechanism', 'proposed',
-            'fig', 'scheme', 'graph', 'diagram', 'table']
-    return 1 if both_contain_keywords(organic, figure, whitelist) else 0
-
-def LF_match_blacklist(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    blacklist = ['and', 'for', 'of', 'the', 'with', 'H2O', 'II']
-    return -1 if organic.text in blacklist else 0
-
-
-def LF_pos_near(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    return 1 if org_pos_near_fig(organic, figure) else 0
-
-def LF_organic_compound(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    return 1 if all([re.search(org_rgx, w) is not None for w in organic.text.split(' ')]) else 0
-
-def LF_synthesis_of(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    words = figure.description.split(' ')
-    words_lower = figure.description.lower().split(' ')
-    if organic.text in words and 'synthesis' in words_lower:
-        org_idx = words.index(organic.text)
-        syn_idx = words_lower.index('synthesis')
-        return 1 if syn_idx + 2 == org_idx else -1
-    return 0
-
-def LF_product_of(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    words = figure.description.split(' ')
-    words_lower = figure.description.lower().split(' ')
-    if organic.text in words and 'product' in words_lower:
-        org_idx = words.index(organic.text)
-        pro_idx = words_lower.index('product')
-        return 1 if pro_idx + 2 == org_idx else -1
-    return 0
-
-def LF_first_period(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    if '.' in figure.description:
-        first = figure.description.split('.')[0]
-        return 1 if organic.text in first else 0
-    return 0
+from organic_lfs import *
 
 org_fig_lfs = [
     LF_fig_name_match,
@@ -300,16 +190,15 @@ org_fig_lfs = [
     LF_match_blacklist,
     LF_match_page,
     LF_pos_near,
-    LF_organic_compound,
-    LF_synthesis_of,
-    LF_product_of,
+    LF_check_redundant_word_in_organic,
+    LF_keyword_of,
     LF_first_period,
 ]
 
 
 labeler = BatchLabelAnnotator(Org_Fig, lfs=org_fig_lfs)
 
-if restart:
+if relabel:
     L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
 else:
     L_train = labeler.load_matrix(split=0)
@@ -318,10 +207,14 @@ print(L_train.shape)
 
 L_train.get_candidate(session, 0)
 
+L_test = labeler.apply_existing(split=1)
+
 from fonduer import GenerativeModel
 
 gen_model = GenerativeModel()
 gen_model.train(L_train, epochs=500, decay=0.9, step_size=0.001/L_train.shape[0], reg_param=0)
+print(gen_model.weights.lf_accuracy)
+
 train_marginals = gen_model.marginals(L_train)
 
 from fonduer import LogisticRegression
@@ -329,18 +222,44 @@ from fonduer import LogisticRegression
 disc_model = LogisticRegression()
 disc_model.train(F_train, train_marginals, n_epochs=200, lr=0.001)
 
-#F_test = featurizer.load_matrix(split=1)
-#test_candidates = [F_test.get_candidate(session, i) for i in range(F_test.shape[0])]
-#test_score = disc_model.predictions(F_test)
-#true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
+F_train_sparse = featurizer.load_matrix(split=0)
+F_test_sparse = featurizer.load_matrix(split=1)
+F_test_sparse.get_candidate(session, 0)
 
+test_candidates = [F_test_sparse.get_candidate(session, i) for i in range(F_test_sparse.shape[0])]
+test_score = disc_model.predictions(F_test)
+true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
 train_score = disc_model.predictions(F_train)
-
-for i, cand in enumerate(train_cands):
-    print(cand.organic.text, '||||', cand.figure.url, train_score[i])
 
 # load gold label
 from tutorials.organic_synthesis_figures.organic_utils import load_organic_labels
+from fonduer import load_gold_labels
 
-gold_file = os.environ['FONDUERHOME'] + 'tutorials/organic_synthesis_figures/organic_gold.csv'
+gold_file = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/organic_gold.csv'
 load_organic_labels(session, Org_Fig, gold_file, ATTRIBUTE ,annotator_name='gold')
+
+L_gold_train = load_gold_labels(session, annotator_name="gold", split=0)
+print(L_train.lf_stats(L_gold_train))
+
+L_gold_test = load_gold_labels(session, annotator_name="gold", split=1)
+
+prec, rec, f1 = gen_model.score(L_test, L_gold_test)
+
+from organic_utils import entity_level_f1
+
+test_score = disc_model.predictions(F_test)
+true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
+
+(TP, FP, FN) = entity_level_f1(true_pred, gold_file, ATTRIBUTE, test_docs)
+
+
+from matplotlib import pyplot as plt
+
+def plot_tp_entity(e):
+    fig = plt.Figure(figsize=(20,20))
+    im = plt.imread(docs_path+e[0])
+    plt.imshow(im, cmap='gray')
+    plt.title("Gold: {}, Extracted: {}".format(e[2], e[1]))
+    print(e[0])
+
+plot_tp_entity(TP[0])
