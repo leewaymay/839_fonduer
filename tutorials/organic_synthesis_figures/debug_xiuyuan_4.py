@@ -33,15 +33,15 @@ load_organic_labels(session, Org_Fig, gold_file, ATTRIBUTE ,annotator_name='gold
 from tutorials.organic_synthesis_figures import organic_lfs
 
 
-# from fonduer import BatchLabelAnnotator
+from fonduer import BatchLabelAnnotator
 #
-# labeler = BatchLabelAnnotator(Org_Fig, lfs = organic_lfs.org_fig_lfs)
-# L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
+labeler = BatchLabelAnnotator(Org_Fig, lfs = organic_lfs.org_fig_lfs)
+L_train = labeler.apply(split=0, clear=True, parallelism=PARALLEL)
 # print(L_train.shape)
 #
 # L_train.get_candidate(session, 0)
 
 # # Applying the Labeling Functions
-# from fonduer import load_gold_labels
-# L_gold_train = load_gold_labels(session, annotator_name='gold', split=0)
-# L_train.lf_stats(L_gold_train)
+from fonduer import load_gold_labels
+L_gold_train = load_gold_labels(session, annotator_name='gold', split=0)
+L_train.lf_stats(L_gold_train)

@@ -84,38 +84,32 @@ def LF_pos_near(c):
     organic, figure, = args
     return 1 if org_pos_near_fig(organic, figure) else 0
 
-def LF_organic_compound(c):
+def LF_check_redundant_word_in_organic(c):
     args = c.get_contexts()
     if len(args) != 2:
         raise NotImplementedError("Only handles binary candidates currently")
     organic, figure, = args
-    return 1 if all([re.search(org_rgx, w) is not None for w in organic.text.split(' ')]) else 0
+    keyword = ['synthesis', 'syntheses', 'product', 'reaction', 'the', 'of', 'for', ]
+    for key in keyword:
+        if key in organic.text:
+            return -1
+    return 0
 
-def LF_synthesis_of(c):
+def LF_keyword_of(c):
+    keyword = ['synthesis', 'syntheses', 'product', 'reaction', ]
     args = c.get_contexts()
     if len(args) != 2:
         raise NotImplementedError("Only handles binary candidates currently")
     organic, figure, = args
     words = figure.description.split(' ')
     words_lower = figure.description.lower().split(' ')
-    if organic.text in words and 'synthesis' in words_lower:
-        org_idx = words.index(organic.text)
-        syn_idx = words_lower.index('synthesis')
-        return 1 if syn_idx + 2 == org_idx else -1
+    for key in keyword:
+        if organic.text in words and key in words_lower:
+            org_idx = words.index(organic.text)
+            syn_idx = words_lower.index(key)
+            return 1 if syn_idx + 2 == org_idx else -1
     return 0
 
-def LF_product_of(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    words = figure.description.split(' ')
-    words_lower = figure.description.lower().split(' ')
-    if organic.text in words and 'product' in words_lower:
-        org_idx = words.index(organic.text)
-        pro_idx = words_lower.index('product')
-        return 1 if pro_idx + 2 == org_idx else -1
-    return 0
 
 def LF_first_period(c):
     args = c.get_contexts()
@@ -158,9 +152,11 @@ org_fig_lfs = [
     LF_match_blacklist,
     LF_match_page,
     LF_pos_near,
-    LF_organic_compound,
-    LF_synthesis_of,
-    LF_product_of,
+    # LF_organic_compound,
+    # LF_synthesis_of,
+    # LF_product_of,
+    LF_keyword_of,
     LF_first_period,
     LF_dict_match,
 ]
+
