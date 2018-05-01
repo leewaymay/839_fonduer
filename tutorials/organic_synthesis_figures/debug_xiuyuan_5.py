@@ -40,7 +40,7 @@ from fonduer import load_gold_labels
 L_gold_train = load_gold_labels(session, annotator_name='gold', split=0)
 print(L_train.lf_stats(L_gold_train))
 
-L_gold_dev = load_gold_labels(session, annotator_name='gold', split=1)
+L_gold_test = load_gold_labels(session, annotator_name='gold', split=1)
 
 
 '''
@@ -55,14 +55,14 @@ gen_model = GenerativeModel()
 gen_model.train(L_train, epochs=500, decay=0.9, step_size=0.001/L_train.shape[0], reg_param=0)
 train_marginals = gen_model.marginals(L_train)
 print(gen_model.weights.lf_accuracy)
-L_dev = labeler.apply_existing(split=1)
+L_test = labeler.apply_existing(split=1)
 print("L_DEV:")
-print(L_dev.shape)
+print(L_test.shape)
 
 
 from fonduer import load_gold_labels
-L_gold_dev = load_gold_labels(session, annotator_name='gold', split=1)
-prec, rec, f1 = gen_model.score(L_dev, L_gold_dev)
+L_gold_test = load_gold_labels(session, annotator_name='gold', split=1)
+prec, rec, f1 = gen_model.score(L_test, L_gold_test)
 
 print("precision: " + str(prec))
 print("recall: " + str(rec))
@@ -70,5 +70,5 @@ print("f1: " + str(f1))
 
 
 
-print(L_dev.lf_stats(L_gold_dev, gen_model.weights.lf_accuracy))
+print(L_test.lf_stats(L_gold_test, gen_model.weights.lf_accuracy))
 
