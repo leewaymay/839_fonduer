@@ -2,6 +2,7 @@ from fonduer.lf_helpers import *
 from regex_matcher import *
 import re
 org_rgx = get_rgx_matcher()
+import pandas as pd
 
 def LF_fig_name_match(c):
     args = c.get_contexts()
@@ -129,3 +130,33 @@ def LF_page_not_match(c):
         return -1
     else:
         return 0
+
+def LF_dict_match(c):
+    args = c.get_contexts()
+    if len(args) != 2:
+        raise NotImplementedError("Only handles binary candidates currently")
+    organic, figure, = args
+    org_dict = pd.read_csv('organic_dictionary.csv', header=None)
+    for i in list(org_dict[0]):
+        if i in figure.description and i in organic.text:
+            return 1
+    return 0
+
+
+org_fig_lfs = [
+    LF_fig_name_match,
+    LF_text_desc_match,
+    LF_ocr_text_match,
+    LF_text_length_match,
+    LF_match_whitelist,
+    LF_match_blacklist,
+    LF_match_page,
+    LF_pos_near,
+    # LF_organic_compound,
+    # LF_synthesis_of,
+    # LF_product_of,
+    LF_keyword_of,
+    LF_first_period,
+    LF_dict_match,
+]
+

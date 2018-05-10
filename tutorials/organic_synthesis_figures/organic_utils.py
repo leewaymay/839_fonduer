@@ -9,7 +9,7 @@ from fonduer.snorkel.models import GoldLabel, GoldLabelKey
 from fonduer.snorkel.utils import ProgressBar
 
 from fuzzywuzzy import fuzz
-FUZZY_SCORE=60
+FUZZY_SCORE=85
 
 def get_gold_dict(filename,
                   doc_on=True,

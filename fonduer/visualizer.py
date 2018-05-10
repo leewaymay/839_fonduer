@@ -92,6 +92,7 @@ class Visualizer(object):
         if not pdf_file:
             pdf_file = os.path.join(self.pdf_path, candidates[0][0].sentence.document.name + '.pdf')
         boxes = [box for box in get_org_fig_box(candidates)]
+        # imgs = self.display_boxes(pdf_file, boxes, alternate_colors=True)
         imgs = self.display_organic_boxes(pdf_file, boxes, alternate_colors=True)
         return display(*imgs)
 
