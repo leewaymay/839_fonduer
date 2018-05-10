@@ -3,11 +3,11 @@
 import os
 from scipy import sparse
 
-reparse = False  # VERY EXPENSIVE
-reextract = False
-refeaturize = False  # VERY EXPENSIVE
+reparse = True  # VERY EXPENSIVE
+reextract = True
+refeaturize = True  # VERY EXPENSIVE
 with_image_feats = True
-relabel = False
+relabel = True
 
 PARALLEL = 1  # assuming a quad-core machine
 ATTRIBUTE = "organic_figure"
@@ -30,7 +30,7 @@ from fonduer import HTMLPreprocessor, OmniParser
 docs_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/html/'
 pdf_path = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/data/pdf/'
 
-max_docs = 24
+max_docs = 102
 doc_preprocessor = HTMLPreprocessor(docs_path, max_docs=max_docs)
 corpus_parser = OmniParser(structural=True, lingual=True, visual=True, pdf_path=pdf_path,
 #                           flatten=['sup', 'sub', 'small'],
@@ -50,6 +50,8 @@ test_docs  = set()
 splits = 5 / 6
 data = [(doc.name, doc) for doc in docs]
 data.sort(key=lambda x: x[0])
+import random
+random.Random(19).shuffle(data)  # for deterministic shuffle
 for i, (doc_name, doc) in enumerate(data):
     if i < splits * ld:
         train_docs.add(doc)

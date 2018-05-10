@@ -562,6 +562,9 @@ class DetailedFigureInfo(object):
                             break
                 if found_source == 3:
                     break
+            if not figure_name:
+                figure_idx -= 1
+                return figure_idx
             self.figure = DetailedFigure(
                 document=self.document,
                 stable_id=stable_id,
