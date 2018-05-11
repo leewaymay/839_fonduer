@@ -3,9 +3,9 @@ import os
 import subprocess
 
 from collections import defaultdict
-from wand.image import Image
-from wand.drawing import Drawing
-from wand.color import Color
+# from wand.image import Image
+# from wand.drawing import Drawing
+# from wand.color import Color
 from bs4 import BeautifulSoup
 from IPython.display import display
 from pdf2image import convert_from_path

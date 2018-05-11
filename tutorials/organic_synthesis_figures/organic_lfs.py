@@ -4,16 +4,6 @@ import re
 org_rgx = get_rgx_matcher()
 import pandas as pd
 
-def LF_fig_name_match(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    product, img = args
-    if img.name == '':
-        return -1
-    else:
-        return 0
-
 def LF_match_page(c):
     args = c.get_contexts()
     if len(args) != 2:
@@ -95,17 +85,6 @@ def LF_pos_near(c):
     organic, figure, = args
     return 1 if org_pos_near_fig(organic, figure) else 0
 
-def LF_check_redundant_word_in_organic(c):
-    args = c.get_contexts()
-    if len(args) != 2:
-        raise NotImplementedError("Only handles binary candidates currently")
-    organic, figure, = args
-    keyword = ['synthesis', 'syntheses', 'product', 'reaction', 'the', 'of', 'for', ]
-    for key in keyword:
-        if key in organic.text:
-            return -1
-    return 0
-
 def LF_keyword_of(c):
     keyword = ['synthesis', 'syntheses', 'product', 'reaction', ]
     args = c.get_contexts()
@@ -155,20 +134,15 @@ def LF_dict_match(c):
 
 
 org_fig_lfs = [
-    # LF_fig_name_match,
     # LF_text_desc_partial_match,
     LF_text_desc_full_match,
-    LF_ocr_text_match,
+    # LF_ocr_text_match,
     LF_text_length_match,
-    LF_match_whitelist,
-    LF_match_blacklist,
-    LF_match_page,
-    LF_pos_near,
-    # LF_organic_compound,
-    # LF_synthesis_of,
-    # LF_product_of,
+    # LF_match_whitelist,
+    # LF_match_blacklist,
+    # LF_match_page,
+    # LF_pos_near,
     LF_keyword_of,
-    LF_first_period,
-    LF_dict_match,
+    # LF_first_period,
 ]
 

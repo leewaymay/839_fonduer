@@ -4,9 +4,9 @@ import os
 from scipy import sparse
 import csv
 
-reparse = False  # VERY EXPENSIVE
-reextract = False
-refeaturize = False  # VERY EXPENSIVE
+reparse = True  # VERY EXPENSIVE
+reextract = True
+refeaturize = True  # VERY EXPENSIVE
 with_image_feats = False
 relabel = True
 
@@ -111,9 +111,13 @@ def candidate_filter(c):
     for key in to_remove:
         if key in organic.text.split():
             return False
+    for word in figure.description.split():
+        if fuzz.ratio(organic.text, word) >= 90:
+            return True
     if same_file(organic, figure):
         if mentionsFig(organic, figure) or mentionsOrg(figure, organic):
             return True
+    return False
 
 
 from organic_spaces import OmniNgramsProd
@@ -185,8 +189,8 @@ if with_image_feats:
     F_train = sparse.hstack(featurizer.load_matrix_and_image_features(split=0)).toarray()  # concatenate dense with sparse matrix
     F_test = sparse.hstack(featurizer.load_matrix_and_image_features(split=1)).toarray()  # concatenate dense with sparse matrixs
 else:
-    F_train = featurizer.load_matrix(split=0).toarray()
-    F_test = featurizer.load_matrix(split=1).toarray()
+    F_train = featurizer.load_matrix(split=0)
+    F_test = featurizer.load_matrix(split=1)
 
 from fonduer import BatchLabelAnnotator
 
@@ -214,9 +218,12 @@ print(gen_model.weights.lf_accuracy)
 
 train_marginals = gen_model.marginals(L_train)
 
-from fonduer import LogisticRegression
+from fonduer import LogisticRegression, SparseLogisticRegression
 
-disc_model = LogisticRegression()
+if with_image_feats:
+    disc_model = LogisticRegression()
+else:
+    disc_model = SparseLogisticRegression()
 disc_model.train(F_train, train_marginals, n_epochs=200, lr=0.001)
 
 F_train_sparse = featurizer.load_matrix(split=0)
@@ -243,9 +250,6 @@ print(L_test.lf_stats(L_gold_test))
 prec, rec, f1 = gen_model.score(L_test, L_gold_test)
 
 from organic_utils import entity_level_f1
-
-test_score = disc_model.predictions(F_test)
-true_pred = [test_candidates[_] for _ in np.nditer(np.where(test_score > 0))]
 
 (TP, FP, FN) = entity_level_f1(true_pred, gold_file, ATTRIBUTE, test_docs)
 
