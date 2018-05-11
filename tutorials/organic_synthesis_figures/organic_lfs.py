@@ -22,7 +22,7 @@ def LF_match_page(c):
     return -1 if not is_same_org_fig_page(organic, figure) else 0
 
 
-def LF_text_desc_match(c):
+def LF_text_desc_partial_match(c):
     args = c.get_contexts()
     if len(args) != 2:
         raise NotImplementedError("Only handles binary candidates currently")
@@ -35,6 +35,17 @@ def LF_text_desc_match(c):
         return -1
     else:
         return 0
+
+def LF_text_desc_full_match(c):
+    args = c.get_contexts()
+    if len(args) != 2:
+        raise NotImplementedError("Only handles binary candidates currently")
+    product, img = args
+
+    for word in img.description.split():
+        if fuzz.ratio(product.text, word) >= 90:
+            return 1
+    return 0
 
 
 def LF_ocr_text_match(c):
@@ -144,8 +155,9 @@ def LF_dict_match(c):
 
 
 org_fig_lfs = [
-    LF_fig_name_match,
-    LF_text_desc_match,
+    # LF_fig_name_match,
+    # LF_text_desc_partial_match,
+    LF_text_desc_full_match,
     LF_ocr_text_match,
     LF_text_length_match,
     LF_match_whitelist,

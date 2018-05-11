@@ -9,7 +9,7 @@ from fonduer.snorkel.models import GoldLabel, GoldLabelKey
 from fonduer.snorkel.utils import ProgressBar
 
 from fuzzywuzzy import fuzz
-FUZZY_SCORE=85
+FUZZY_SCORE = 70
 
 def get_gold_dict(filename,
                   doc_on=True,
@@ -192,9 +192,8 @@ def get_implied_parts(part, doc, parts_by_doc):
 def entity_to_candidates(entity, candidate_subset):
     matches = []
     for c in candidate_subset:
-        c_entity = tuple([c[0].sentence.document.name.upper()] +
-                         [c[i].get_span().upper() for i in range(len(c))])
-        c_entity = tuple([str(x) for x in c_entity])
+        c_entity = tuple((c[0].sentence.document.name.upper(), c[0].text, c[1].url))
+        # c_entity = tuple([str(x) for x in c_entity])
         if c_entity == entity:
             matches.append(c)
     return matches

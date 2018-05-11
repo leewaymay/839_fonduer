@@ -2,11 +2,12 @@
 
 import os
 from scipy import sparse
+import csv
 
-reparse = True  # VERY EXPENSIVE
-reextract = True
-refeaturize = True  # VERY EXPENSIVE
-with_image_feats = True
+reparse = False  # VERY EXPENSIVE
+reextract = False
+refeaturize = False  # VERY EXPENSIVE
+with_image_feats = False
 relabel = True
 
 PARALLEL = 1  # assuming a quad-core machine
@@ -15,7 +16,6 @@ ATTRIBUTE = "organic_figure"
 os.environ['FONDUERHOME'] = '/Users/Zitman/Documents/Graduate/Courses/CS839/Project/839_fonduer/tutorials'
 os.environ['FONDUERDBNAME'] = ATTRIBUTE
 os.environ['SNORKELDB'] = 'postgres://localhost:5432/' + os.environ['FONDUERDBNAME']
-
 
 from fonduer import SnorkelSession
 
@@ -47,13 +47,22 @@ ld   = len(docs)
 
 train_docs = set()
 test_docs  = set()
-splits = 5 / 6
+
+gold_file = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/organic_gold.csv'
+with open(gold_file) as csv_file:
+    data = csv.reader(csv_file)
+    next(data, None)
+    test_doc_names = set(map(lambda x: x[0], data))
+
+# splits = 5 / 6
+# data = [(doc.name, doc) for doc in docs]
+# data.sort(key=lambda x: x[0])
+# import random
+# random.Random(19).shuffle(data)  # for deterministic shuffle
+
 data = [(doc.name, doc) for doc in docs]
-data.sort(key=lambda x: x[0])
-import random
-random.Random(19).shuffle(data)  # for deterministic shuffle
 for i, (doc_name, doc) in enumerate(data):
-    if i < splits * ld:
+    if doc_name not in test_doc_names:
         train_docs.add(doc)
     else:
         test_docs.add(doc)
@@ -98,7 +107,7 @@ import re
 
 def candidate_filter(c):
     (organic, figure) = c
-    to_remove = ['synthesis', 'syntheses', 'product', 'reaction', 'the', 'of', 'for', ]
+    to_remove = ['synthesis', 'syntheses', 'product', 'reaction', 'the', 'of', 'for', 'and', ]
     for key in to_remove:
         if key in organic.text.split():
             return False
@@ -183,20 +192,6 @@ from fonduer import BatchLabelAnnotator
 
 from organic_lfs import *
 
-org_fig_lfs = [
-    LF_fig_name_match,
-    LF_text_desc_match,
-    LF_ocr_text_match,
-    LF_text_length_match,
-    LF_match_whitelist,
-    LF_match_blacklist,
-    LF_match_page,
-    LF_pos_near,
-    LF_check_redundant_word_in_organic,
-    LF_keyword_of,
-    LF_first_period,
-]
-
 
 labeler = BatchLabelAnnotator(Org_Fig, lfs=org_fig_lfs)
 
@@ -237,13 +232,13 @@ train_score = disc_model.predictions(F_train)
 from tutorials.organic_synthesis_figures.organic_utils import load_organic_labels
 from fonduer import load_gold_labels
 
-gold_file = os.environ['FONDUERHOME'] + '/organic_synthesis_figures/organic_gold.csv'
 load_organic_labels(session, Org_Fig, gold_file, ATTRIBUTE ,annotator_name='gold')
 
 L_gold_train = load_gold_labels(session, annotator_name="gold", split=0)
 print(L_train.lf_stats(L_gold_train))
 
 L_gold_test = load_gold_labels(session, annotator_name="gold", split=1)
+print(L_test.lf_stats(L_gold_test))
 
 prec, rec, f1 = gen_model.score(L_test, L_gold_test)
 

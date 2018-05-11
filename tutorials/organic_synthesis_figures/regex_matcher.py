@@ -10,10 +10,12 @@ def get_rgx_matcher():
                  '(meth|carb|benz|fluoro|chloro|bromo|iodo|hydro(xy)?|amino|alk).+)'
     suffix_rgx = '(.+(ane|yl|adiene|atriene|kene|k?yne|anol|anediol|anetriol|anone' \
                  '|acid|amine|xide|dine?|(or?mone)|thiol|cine?|rine?|thine?|tone?)s?\)?)'
+    mid_rgx = '(.*(alkyn|indole?).*)'
     dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?\-)\w*)'
+
     comma_dash_rgx = '((\w+\-|\(?)([a-z|\d]\'?,[a-z|\d]\'?\-)\w*)'
     inorganic_rgx = '(([A-Z][a-z]?\d*\+?){2,})'
-    return '|'.join([prefix_rgx, suffix_rgx, dash_rgx, comma_dash_rgx, inorganic_rgx])
+    return '|'.join([prefix_rgx, suffix_rgx, mid_rgx, dash_rgx, comma_dash_rgx])
 
 
 org_rgx = get_rgx_matcher()
